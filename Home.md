@@ -6,7 +6,7 @@
 
 ### Get started:
 * [Installation Instructions](http://code.google.com/p/google-refine/wiki/InstallationInstructions)
-* [Documentation](http://code.google.com/p/google-refine/wiki/DocumentationForUsers) for Users
+* [Documentation](https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users) for Users
 * [FAQ](https://github.com/OpenRefine/OpenRefine/wiki/FAQ) Frequently Asked Questions
 
 #### Get help:
