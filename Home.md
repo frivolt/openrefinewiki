@@ -11,7 +11,7 @@
 
 #### Get help:
 * [Ask questions here](http://groups.google.com/group/google-refine/)
-* [File bugs and feature requests here](http://code.google.com/p/google-refine/issues/list)
+* [File bugs and feature requests here](https://github.com/OpenRefine/OpenRefine/issues)
 
 #### Back for More?
 
