@@ -20,4 +20,4 @@
 
 #### If You Are a Developer, see
 
-* [Documentation](http://code.google.com/p/google-refine/wiki/DocumentationForDevelopers) for Developers
+* [Documentation](https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers) for Developers
