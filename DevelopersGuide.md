@@ -2,15 +2,13 @@
 
 ##Build and Run Google Refine from an IDE (easier)
 
-Google Refine' source comes with [http://www.eclipse.org/ Eclipse] project files (which can also be imported into [http://netbeans.org/ NetBeans]). 
+Google Refine' source comes with [Ecliupse](http://www.eclipse.org/) project files (which can also be imported into [NetBeans](http://netbeans.org/). 
 
 ###Eclipse
 
 At the command line, go to a directory *not* under your Eclipse workspace directory and clone the source repository:
 
-{{{
-git clone https://github.com/OpenRefine/OpenRefine.git
-}}}
+`git clone https://github.com/OpenRefine/OpenRefine.git`
 
 Then in Eclipse, invoke the Import ... command
 
@@ -30,17 +28,14 @@ Note that the above steps are already packaged for you if you look for the `Refi
 
   # make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
   # in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
-{{{
--Drefine.autoreloading=true  -Drefine.webapp=src/main/webapp
-}}}
+
+`-Drefine.autoreloading=true  -Drefine.webapp=src/main/webapp`
+
   # apply, close the dialog and then click the green run button and voila', you should see it run and open your default browser.
 
 If you want Google Refine logs to be more verbose, append this to the line above
 
-{{{
- -Drefine.verbosity=TRACE
-}}}
-
+ `-Drefine.verbosity=TRACE`
 
 ##Build and Run Refine from the command line using Apache Ant (Fairly Easy and recommended for Windows users)
 
@@ -52,29 +47,21 @@ On Mac OS X and Linux the Google Refine build system requires you to have a Unix
 
 To see what functions are supported by Google Refine's build system, type
 
-{{{
-   ./refine -h
-}}}
+   `./refine -h`
 
 to get a list of them.
 
 *NOTE:* When running from the Windows command line, you should omit the `./`
 
-{{{
-   refine -h
-}}}
+   `refine -h`
 
 ###Building
 
-{{{
-  ./refine build
-}}}
+  `./refine build`
 
 ###Running
 
-{{{
-  ./refine
-}}}
+  `./refine`
 
 ###Testing
 Since Refine is composed of two parts, a server and a in-browser UI, the testing system reflects that:
@@ -84,9 +71,7 @@ Since Refine is composed of two parts, a server and a in-browser UI, the testing
 
 To run the complete testing harness, simply type
 
-{{{
-  ./refine test
-}}}
+  `./refine test`
 
 The above command requires you to have [http://www.python.org/ Python] and [http://curl.haxx.se/ Curl] installed on your machine and available in the path (you might already do, even if you don't know about it so just try it once and see what errors you get). Note that you don't need to have Windmill installed, the script will install it for you and build a proper Python [http://pypi.python.org/pypi/virtualenv virtualenv] so that you don't have to worry about version collisions or polluting your existing Python installation.
 
@@ -98,17 +83,13 @@ If you want to run only the server side portion of the tests run
 
 or, if you want to run only the client side portion of the tests run
 
-{{{
-  ./refine ui_test
-}}}
+  `./refine ui_test`
 
 ==== Testing in Eclipse ====
 
 You can also run the server-side part of the tests directly from Eclipse. To do that you need to have the TestNG launcher plugin installed. If you don't have it, you can get it by [http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm installing new software] from this update URL
 
-{{{
- http://beust.com/eclipse
-}}}
+ `http://beust.com/eclipse`
 
 Once the TestNG launching plugin is installed in your Eclipse, look for the `RefineTests.launch` file in the `main/IDEs/eclipse` folder inside the Google Refine source code, right click on it, select "Run As..." then "RefineTests". This should open a new tab with the TestNG launcher running the Google Refine tests.
 
@@ -124,9 +105,7 @@ The Google Refine build system uses Apache Ant to automate the creation of the i
 
 To build the distributions type
 
-{{{
-  ./refine dist <version>
-}}}
+  `./refine dist <version>`
 
 where 'version' is the release version (for example, 1.3b3).
 
@@ -138,10 +117,8 @@ On Windows, Google Refine requires the [http://java.sun.com/javase/downloads/ind
 
 Open the Windows command line. Navigate to your installation directory, then run Google Refine (the `./` should be omitted when running any of the Refine commands from the Windows command line)
 
-{{{
-   # cd 'C:\\path_to_installation_directory'
-   # refine
-}}}
+>    # cd 'C:\\path_to_installation_directory'
+>    # refine
 
 If you receive a message `Could not find the main class: com.google.refine.Refine. Program will exit.` this means that the `JAVA_HOME` variable is likely not set correctly.
 
