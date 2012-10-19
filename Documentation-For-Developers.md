@@ -1,4 +1,4 @@
-[Developer's Guide] - how to check out the code, build, run, and test
+[Developer's Guide](DevelopersGuide) - how to check out the code, build, run, and test
 
 ### Architecture
 * [Architecture overview](http://code.google.com/p/google-refine/wiki/Architecture)
@@ -21,6 +21,6 @@
 * [https://github.com/maxogden/refine-ruby](https://github.com/maxogden/refine-ruby)
 
 ### Miscellaneous
-* [FAQ](http://code.google.com/p/google-refine/wiki/FAQ) - covers running a Refine server programmatically
-* [Roadmap](http://code.google.com/p/google-refine/wiki/Roadmap)
-* [Releasing a new Version](http://code.google.com/p/google-refine/wiki/ReleasingVersionM)
+* [FAQ](FAQ) - covers running a Refine server programmatically
+* [Roadmap](Roadmap)
+* [Releasing a new Version](ReleasingVersionM)
