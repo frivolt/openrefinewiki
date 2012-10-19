@@ -17,7 +17,7 @@ _Note: we've just moved to our new home here.  If you can't find something or st
 
 #### Back for More?
 
-* [See what's new lately](http://code.google.com/p/google-refine/wiki/WhatsNew)
+* [See what's new lately](WhatsNew)
 * [Understand how to upgrade](http://code.google.com/p/google-refine/wiki/BackUpGoogleRefineData) from Google Refine 2.0 to Google Refine 2.1
 
 #### If You Are a Developer, see
