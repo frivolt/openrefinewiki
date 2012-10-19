@@ -1,4 +1,4 @@
-This is a collection of frequently asked questions on Google Refine. Feel free to ask your own question on the [Google Refine mailing list](http://groups.google.com/group/google-refine/) and we'll try to answer to the best of our abilities and add them to this list.
+This is a collection of frequently asked questions on OpenRefine and its predecessors Google Refine & Freebase Gridwoks. Feel free to ask your own question on the [Refine mailing list](http://groups.google.com/group/google-refine/) and we'll try to answer to the best of our abilities and add them to this list.
 
 ### Questions with Long Answers
 
@@ -9,7 +9,7 @@ This is a collection of frequently asked questions on Google Refine. Feel free t
 
 **I have a question. Where do I ask?**
 
-Send your question to the [Google Refine mailing list](http://groups.google.com/group/google-refine/).
+Send your question to the [Refine mailing list](http://groups.google.com/group/google-refine/).
 
 **I've found a bug or want a new feature. What should I do?**
 
@@ -21,7 +21,7 @@ If you run Refine from the terminal, you can point to the workspace directory th
 
 `./refine -p 3333 -i 0.0.0.0 -m 6000M -d /where/you/want/the/workspace`
 
-**Google Refine opens my browser then waits a long time trying to connect to the server at 165.135.222.96 or another address I don't recognize.**
+**Refine opens my browser then waits a long time trying to connect to the server at 165.135.222.96 or another address I don't recognize.**
 
 Try to run at a specific IP: ./refine -i 127.0.0.1. (Windows users must use a slash character like C:>refine /i 127.0.0.1:8088)
 
@@ -29,7 +29,7 @@ Double check your Chrome or Firefox proxy settings - In Firefox options/advanced
 
 If you get a message "Network Error (tcp_error)" in your browser, you might also try to uncheck "automatically detect settings" and also add an exception to your firewall rules to allow 127.0.0.1 (or whatever IP address you decide to run Refine with)
 
-**What syntax of regular expression (regex) does Google Refine support?**
+**What syntax of regular expression (regex) does Refine support?**
 
 The regular expression syntax is that of Java regex, not of Javascript. See [GREL Regular Expressions](http://code.google.com/p/google-refine/wiki/UnderstandingRegularExpressions).
 
@@ -66,7 +66,7 @@ Several options:
 * use the [facetCount()](http://code.google.com/p/google-refine/wiki/GRELOtherFunctions) function like facetCount(value, 'value', 'column name') > 1 and select 'true' to show all rows that have duplicates
     * from version 2.1, there is a shortcut for this, Facet → Customized facets → Duplicates facet
 
-**Can Google Refine be used as a piece of a larger ETL pipeline?**
+**Can Refine be used as a piece of a larger ETL pipeline?**
 
 Not right now (version 2.0) but we're open and intrigued by the possibility of using Refine in 'batch mode' if the community finds it a useful feature to have. It's worth pointing out that not all Refine features can work unsupervised and without human interaction (clustering, for example), but some can, and for those it makes sense.
 
