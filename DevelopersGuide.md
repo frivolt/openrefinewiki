@@ -1,17 +1,15 @@
-#summary Google Refine Developer's Guide
+#Guide for Google Refine Developers
 
-= Guide for Google Refine Developers =
-
-== Build and Run Google Refine from an IDE (easier) ==
+##Build and Run Google Refine from an IDE (easier)
 
 Google Refine' source comes with [http://www.eclipse.org/ Eclipse] project files (which can also be imported into [http://netbeans.org/ NetBeans]). 
 
-=== Eclipse ===
+###Eclipse
 
-At the command line, go to a directory *not* under your Eclipse workspace directory and check out the source:
+At the command line, go to a directory *not* under your Eclipse workspace directory and clone the source repository:
 
 {{{
-svn co https://google-refine.googlecode.com/svn/trunk grefine
+git clone https://github.com/OpenRefine/OpenRefine.git
 }}}
 
 Then in Eclipse, invoke the Import ... command
@@ -22,13 +20,13 @@ Pick Existing Projects into Workspace
 
   [http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png]
 
-Locate the directory where you've checked out Google Refine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
+Locate the directory where you've checked out Google Refine. Eclipse should detect the project "OpenRefine"  If it also sees sub-projects "grefine", "grefine-server", etc, ignore them/
 
   [http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects3.png]
 
 Note that the above steps are already packaged for you if you look for the `Refine.launch` file in the `server/IDEs/eclipse` folder inside the Google Refine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run Google Refine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
 
-=== Netbeans ===
+###Netbeans
 
   # make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
   # in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
@@ -44,11 +42,11 @@ If you want Google Refine logs to be more verbose, append this to the line above
 }}}
 
 
-== Build and Run Google Refine from the command line using Apache Ant (Fairly Easy and recommended for Windows users) ==
+##Build and Run Refine from the command line using Apache Ant (Fairly Easy and recommended for Windows users)
 
-[http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion Step by step to Get Development Version]
+[Step by step to Get Development Version](wiki/GetDevelopmentVersion)
 
-== Build and Run Google Refine from the command line (harder but more comprehensive) ==
+##Build and Run Refine from the command line (harder but more comprehensive)
 
 On Mac OS X and Linux the Google Refine build system requires you to have a Unix shell; just use a shell compatible with `/bin/sh`. On Windows you can use the Windows command line. (go to `Start` then `Run`, type `cmd` and click `OK`)
 
@@ -66,21 +64,20 @@ to get a list of them.
    refine -h
 }}}
 
-=== Building ===
+###Building
 
 {{{
   ./refine build
 }}}
 
-=== Running ===
+###Running
 
 {{{
   ./refine
 }}}
 
-=== Testing === 
-
-Since Google Refine is composed of two parts, a server and a in-browser UI, the testing system reflects that:
+###Testing
+Since Refine is composed of two parts, a server and a in-browser UI, the testing system reflects that:
 
   * on the server side, it's powered by [http://testng.org/ TestNG] and the unit tests are written in Java;
   * on the client side, it's powered by [http://www.getwindmill.com/ Windmill] and the [http://wiki.github.com/windmill/windmill/javascript-tests functional tests are written in Javascript];
@@ -113,7 +110,7 @@ You can also run the server-side part of the tests directly from Eclipse. To do 
  http://beust.com/eclipse
 }}}
 
-Once the TestNG launching plugin is installed in your Eclipse, look for the `GoogleRefineTests.launch` file in the `main/IDEs/eclipse` folder inside the Google Refine source code, right click on it, select "Run As..." then "GoogleRefineTests". This should open a new tab with the TestNG launcher running the Google Refine tests.
+Once the TestNG launching plugin is installed in your Eclipse, look for the `RefineTests.launch` file in the `main/IDEs/eclipse` folder inside the Google Refine source code, right click on it, select "Run As..." then "RefineTests". This should open a new tab with the TestNG launcher running the Google Refine tests.
 
 ==== Testing on Windows ====
 
