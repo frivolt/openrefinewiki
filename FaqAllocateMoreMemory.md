@@ -35,9 +35,8 @@ If you decide to use the google-refine.exe directly, then set your parameters in
     # -Dsomevar="%SOMEVAR%"
 
 
-Also, in order to use more than 3.5 Gigs RAM you need to download and install Java 64bit and set it as your default `JAVA_HOME`.  As in this screenshot (notice `C:\Program Files\` and NOT the `C:\Program Files (x86)\` folder):
+Also, in order to use more than 3.5 Gigs RAM you need to download and install Java 64bit and set it as your default `JAVA_HOME`.  Note that the path should start with `C:\Program Files\` and NOT the `C:\Program Files (x86)\` folder.
 
-[http://google-refine.googlecode.com/issues/attachment?aid=-2884257417064877035&name=JavaHomePathWin7_64bit.png&token=089b7b02a742d6ab3b07c9dc8664d3b3&inline=1]
 
 ===Mac===
 
