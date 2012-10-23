@@ -3,7 +3,7 @@ This is a collection of frequently asked questions on OpenRefine and its predece
 ### Questions with Long Answers
 
 * [Where is the data stored?](http://code.google.com/p/google-refine/wiki/FaqWhereIsDataStored)
-* [How to allocate more memory?](wiki/FaqAllocateMoreMemory) - Symptoms: `java.lang.OutOfMemoryError` or Refine feels slow.
+* [How to allocate more memory?](FaqAllocateMoreMemory) - Symptoms: `java.lang.OutOfMemoryError` or Refine feels slow.
 
 ### Questions with Short Answers
 
