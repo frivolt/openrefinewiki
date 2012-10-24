@@ -3,7 +3,7 @@
 _Note: we've just moved to our new home here.  If you can't find something or stumble across a broken link, you can check the [old site](http://code.google.com/p/google-refine/) too_
 
 ### Here for the First Time?
-* Watch [these screencasts](http://code.google.com/p/google-refine/wiki/Screencasts) to understand what's possible with Google Refine
+* Watch [these screencasts](Screencasts) to understand what's possible with Google Refine
 * [Find out what people say and do with Google Refine](http://code.google.com/p/google-refine/wiki/WhatPeopleSay), ... [live on Twitter](http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view)
 
 ### Get started:
