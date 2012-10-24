@@ -2,7 +2,7 @@
 
 ##Build and Run Google Refine from an IDE (easier)
 
-Google Refine' source comes with [Ecliupse](http://www.eclipse.org/) project files (which can also be imported into [NetBeans](http://netbeans.org/). 
+Google Refine' source comes with [Eclipse](http://www.eclipse.org/) project files (which can also be imported into [NetBeans](http://netbeans.org/). 
 
 ###Eclipse
 
