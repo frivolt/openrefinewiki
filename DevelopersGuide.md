@@ -12,15 +12,15 @@ At the command line, go to a directory *not* under your Eclipse workspace direct
 
 Then in Eclipse, invoke the Import ... command
 
-  ![ImportSeveralProjects](http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png)
+  ![](http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png)
 
 Pick Existing Projects into Workspace
 
-  ![http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png]
+  ![](http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png)
 
 Locate the directory where you've checked out Google Refine. Eclipse should detect the project "OpenRefine"  If it also sees sub-projects "grefine", "grefine-server", etc, ignore them/
 
-  ![http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects3.png]
+  ![](http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects3.png)
 
 Note that the above steps are already packaged for you if you look for the `Refine.launch` file in the `server/IDEs/eclipse` folder inside the Google Refine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run Google Refine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
 
