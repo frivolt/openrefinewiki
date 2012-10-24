@@ -2,14 +2,14 @@
 
 OpenRefine is a desktop application in that you download it, install it, and run it on your own computer. However, unlike most other desktop applications, it runs as a small web server on your own computer and you point your web browser at that web server in order to use Refine. So, think of Refine as a personal and private web application.
 
-### Release Version
+## Release Version
 
 1. [Download Google Refine here](http://code.google.com/p/google-refine/wiki/Downloads?tm=2).
 2. Install it as detailed below for your operating system.
 3. As long as Google Refine is running, you can point your browser at <http://127.0.0.1:3333/> to use it, and you can even use it in several browser tabs and windows.
 4. If your running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
 
-### Development Version
+## Development Version
 
 **(Anyone wanting the latest trunk version with bug fixes, but some might still be lurking)**
 
@@ -17,9 +17,9 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 1. [Step-by-step to get & build the development version](http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion)
 
-### Install the Release Version on
+## Install the Release Version on
 
-#### Windows
+### Windows
 
 **Install**: Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in C:\Google-Refine).
 
@@ -27,7 +27,7 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 **Shut down**: When you need to shut down Google Refine, switch to that Command window, and press Ctrl-C. Wait until there's a message that says the shutdown is complete. That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.
 
-#### Mac OSX
+### Mac OSX
 
 **Install**: once you have downloaded the .dmg file, open it, and drag the Google Refine icon into the Applications folder icon (just like you would normally install Mac applications).
 
@@ -35,7 +35,7 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 **Shut down**: You can switch to the Google Refine app (clicking on its icon in the dock) and invoke its Quit command.
 
-#### Linux
+### Linux
 
 **Install / Run**: Once you have downloaded the tar.gz file, open a shell and type:
 
@@ -46,7 +46,7 @@ this will start Google Refine and open your browser to its starting page.
 
 **Shut down**: Press Ctrl-C in the shell.
 
-### Running & Configuration
+## Running & Configuration
 By default (and for security reasons) Refine only listens to TCP requests coming from localhost (127.0.0.1). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line
 
 `./refine -i 0.0.0.0`
