@@ -12,7 +12,7 @@ At the command line, go to a directory *not* under your Eclipse workspace direct
 
 Then in Eclipse, invoke the Import ... command
 
-  ![](http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png)
+  ![ImportSeveralProjects](http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png)
 
 Pick Existing Projects into Workspace
 
