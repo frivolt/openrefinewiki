@@ -7,7 +7,7 @@ _Note: we've just moved to our new home here.  If you can't find something or st
 * [Find out what people say and do with Google Refine](http://code.google.com/p/google-refine/wiki/WhatPeopleSay), ... [live on Twitter](http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view)
 
 ### Get started:
-* [Installation Instructions](http://code.google.com/p/google-refine/wiki/InstallationInstructions)
+* [Installation Instructions](wiki/Installation-Instructions)
 * [Documentation](wiki/Documentation-For-Users) for Users
 * [FAQ](wiki/FAQ) Frequently Asked Questions
 
