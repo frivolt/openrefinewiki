@@ -1,4 +1,4 @@
-[Developer's Guide](DevelopersGuide) - how to check out the code, build, run, and test
+[Developer's Guide](wiki/Developers-Guide) - how to check out the code, build, run, and test
 
 ### Architecture
 * [Architecture overview](http://code.google.com/p/google-refine/wiki/Architecture)
