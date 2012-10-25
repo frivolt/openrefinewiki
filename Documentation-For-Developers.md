@@ -3,7 +3,7 @@
 ### Architecture
 * [Architecture overview](Architecture)
 * [Server-Side](Server-side-architecture)
-* [Client-Side](http://code.google.com/p/google-refine/wiki/ClientSideArchitecture)
+* [Client-Side](Client-side-architecture)
 * [Faceted Browsing](http://code.google.com/p/google-refine/wiki/FacetedBrowsingArchitecture)
 
 ### Extensions
