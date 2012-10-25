@@ -19,15 +19,15 @@ Consider first discussing it on the [mailing list](http://groups.google.com/grou
 
 If you run Refine from the terminal, you can point to the workspace directory through the -d parameter, e.g.,
 
-`./refine -p 3333 -i 0.0.0.0 -m 6000M -d /where/you/want/the/workspace`
+    ./refine -p 3333 -i 0.0.0.0 -m 6000M -d /where/you/want/the/workspace
 
 **Refine opens my browser then waits a long time trying to connect to the server at 165.135.222.96 or another address I don't recognize.**
 
-Try to run at a specific IP: ./refine -i 127.0.0.1. (Windows users must use a slash character like C:>refine /i 127.0.0.1:8088)
+Try to run at a specific IP: `./refine -i 127.0.0.1`. (Windows users must use a slash character like `C:>refine /i 127.0.0.1:8088`)
 
 Double check your Chrome or Firefox proxy settings - In Firefox options/advanced/network/connection/settings and switch from "use system proxy settings" to "auto-detect proxy settings for this network".
 
-If you get a message "Network Error (tcp_error)" in your browser, you might also try to uncheck "automatically detect settings" and also add an exception to your firewall rules to allow 127.0.0.1 (or whatever IP address you decide to run Refine with)
+If you get a message "Network Error (tcp_error)" in your browser, you might also try to uncheck "automatically detect settings" and also add an exception to your firewall rules to allow `127.0.0.1` (or whatever IP address you decide to run Refine with)
 
 **What syntax of regular expression (regex) does Refine support?**
 
@@ -39,9 +39,8 @@ A good practice is to use ' single quotes for your Refine Expression syntax and 
 
 EXAMPLES:
 
-`'https://www.googleapis.com/freebase/v1/mqlread?query={"mid":null,"/type/object/key":{"namespace":"/authority/fmd/model","value":"'+escape(cells.ModelName.value, "url")+'"}}'`
-
-`'=HYPERLINK("http://listings.listhub.net/pages/BHAMMLSAL/' + value + '",' + value + ')'`
+    'https://www.googleapis.com/freebase/v1/mqlread?query={"mid":null,"/type/object/key": "namespace":"/authority/fmd/model","value":"'+escape(cells.ModelName.value, "url")+'"}}'
+    '=HYPERLINK("http://listings.listhub.net/pages/BHAMMLSAL/' + value + '",' + value + ')'
 
 **When is it going to be possible to load things into the Freebase main graph, directly or indirectly?**
 
