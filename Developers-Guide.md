@@ -97,7 +97,7 @@ In addition to Python, the [Python for Windows extensions](http://sourceforge.ne
 
 Curl is also required, but you can install it when you install Cygwin (there is a module for it).
 
-### Distributions
+## Distributions
 
 The Google Refine build system uses Apache Ant to automate the creation of the installation packages for the different operating systems. The packages are currently optimized to run on Mac OS X which is the only platform capable of creating the packages for all three OS that we support.
 
