@@ -1,4 +1,4 @@
-(If you have been using Freebase Gridworks 1.1, here are the [upgrading instructions](http://code.google.com/p/google-refine/wiki/UpgradingTo2p0).)
+(If you have been using Freebase Gridworks 1.1, here are the [upgrading instructions](Upgrading-To-2.1).)
 
 OpenRefine is a desktop application in that you download it, install it, and run it on your own computer. However, unlike most other desktop applications, it runs as a small web server on your own computer and you point your web browser at that web server in order to use Refine. So, think of Refine as a personal and private web application.
 
