@@ -4,7 +4,7 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 ## Release Version
 
-1. [Download Google Refine here](http://code.google.com/p/google-refine/wiki/Downloads?tm=2).
+1. [Download Google Refine here](https://github.com/OpenRefine/OpenRefine/zipball/master).
 2. Install it as detailed below for your operating system.
 3. As long as Google Refine is running, you can point your browser at <http://127.0.0.1:3333/> to use it, and you can even use it in several browser tabs and windows.
 4. If your running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
