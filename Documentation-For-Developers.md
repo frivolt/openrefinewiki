@@ -4,7 +4,7 @@
 * [Architecture overview](Architecture)
 * [Server-Side](Server-side-architecture)
 * [Client-Side](Client-side-architecture)
-* [Faceted Browsing](http://code.google.com/p/google-refine/wiki/FacetedBrowsingArchitecture)
+* [Faceted Browsing](Faceted-Browsing-Architecture)
 
 ### Extensions
 * [Write an Extension](http://code.google.com/p/google-refine/wiki/WriteAnExtension)
