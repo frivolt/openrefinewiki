@@ -12,7 +12,7 @@
 * [Extension Points](Extension-points)
 
 ### Service Plug-ins
-* [Reconciliation Service API](http://code.google.com/p/google-refine/wiki/ReconciliationServiceApi)
+* [Reconciliation Service API](Reconciliation-Service-Api)
 * [Suggest API](http://code.google.com/p/google-refine/wiki/SuggestApi)
 
 ### Known Client libraries for Refine
