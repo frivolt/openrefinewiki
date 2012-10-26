@@ -32,4 +32,4 @@ The init() function in controller.js allows the extension to register various cl
 ## Wiring Up the Extension
 Butterfly is able to locate the sample extension because of the path provided in butterfly.properties. Butterfly simply descends into each of those paths and look for MOD-INF directories.
 
-For more information, see [Extension points](wiki/Extension-points).
+For more information, see [Extension-points](Extension-points).
