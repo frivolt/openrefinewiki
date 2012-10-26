@@ -13,7 +13,7 @@
 
 ### Service Plug-ins
 * [Reconciliation Service API](Reconciliation-Service-Api)
-* [Suggest API](http://code.google.com/p/google-refine/wiki/SuggestApi)
+* [Suggest API](Suggest-API)
 
 ### Known Client libraries for Refine
 * [https://github.com/PaulMakepeace/refine-client-py/](https://github.com/PaulMakepeace/refine-client-py/)
