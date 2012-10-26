@@ -29,7 +29,7 @@ If you really really absolutely need to refer to your images in your Javascript 
     ModuleWirings["my-extension"] + "images/x.png"
 
 ### Client-side HTML Templates
-Beside Javascript, CSS, and images, your extension might also include HTML templates that get loaded on the fly by your Javascript code and injected into the page's DOM. For example, here is the Cluster/Edit dialog template, which gets loaded by code in this Javascript file:
+Beside Javascript, CSS, and images, your extension might also include HTML templates that get loaded on the fly by your Javascript code and injected into the page's DOM. For example, here is [the Cluster/Edit dialog template](../tree/master/main/webapp/modules/core/scripts/dialogs/clustering-dialog.html), which gets loaded by code in [this Javascript](../tree/master/main/webapp/modules/core/scripts/dialogs/clustering-dialog.js) file:
 
     var dialog = $(DOM.loadHTML("core", "scripts/dialogs/clustering-dialog.html"));
 DOM.loadHTML returns the content of the file as a string, and $(...) turns it into a DOM fragment. Where "core" is, you would want your extension's name. The path of the HTML file is relative to your extension's module subdirectory.
@@ -56,12 +56,12 @@ The main menu can be extended by calling any one of the methods MenuBar.appendTo
       );
 The array [ "core/project", "core/export", "core/export-templating" ] pinpoints the reference menu item.
 
-See the beginning of this file for IDs of menu items and submenus.
+See the beginning of [menu-bar.js](../tree/master/main/webapp/modules/core/scripts/project/menu-bar.js) for IDs of menu items and submenus.
 
 ### Column Header Menu
 The drop-down menu of each column can also be extended, but the mechanism is slightly different compared to the main menu. Because the drop-down menu for a particular column is constructed on the fly when the user actually clicks the drop-down menu button, extending the column header menu can't really be done once at start-up time, but must be done every time a column header menu gets created. So, registration in this case involves providing a function that gets called each such time:
 
-  DataTableColumnHeaderUI.extendMenu(function(column, columnHeaderUI, menu) { ... do stuff to menu ... });
+    DataTableColumnHeaderUI.extendMenu(function(column, columnHeaderUI, menu) { ... do stuff to menu ... });
 That function takes in the column object (which contains the column's name), the column header UI object (generally not so useful), and the menu to extend. In the previous code line where it says "do stuff to menu", you can write something like this:
 
       MenuSystem.appendTo(menu, [ "core/facet" ], [
@@ -73,7 +73,7 @@ That function takes in the column object (which contains the column's name), the
             }
           },
       ]);
-In addition to MenuSystem.appendTo, you can also call MenuSystem.insertBefore and MenuSystem.insertAfter which the same 3 arguments. To see what IDs you can use, see the function DataTableColumnHeaderUI.prototype._createMenuForColumnHeader in this file.
+In addition to MenuSystem.appendTo, you can also call MenuSystem.insertBefore and MenuSystem.insertAfter which the same 3 arguments. To see what IDs you can use, see the function DataTableColumnHeaderUI.prototype._createMenuForColumnHeader in [column-header-ui.js](../tree/master/main/webapp/modules/core/scripts/views/data-table/column-header-ui.js) file.
 
 ## Server-side Extension Points
 ### Ajax Commands
@@ -86,7 +86,7 @@ The client-side of Google Refine gets things done by calling AJAX commands on th
 Your command will then be accessible at http://127.0.0.1:3333/command/my-extension/my-command.
 
 ### Operations
-Most commands change the project's data. Most of them do so by creating abstract operations. See the Changes, History, Processes, and Operations section of the Server-side Architecture document.
+Most commands change the project's data. Most of them do so by creating abstract operations. See the Changes, History, Processes, and Operations section of the [Server-side Architecture document](Server-side-Architecture).
 
 You can register an operation class in the init function as follows:
 
