@@ -8,8 +8,8 @@
 
 ### Extensions
 * [Write an Extension](Write-an-extension)
-* [Sample Extension](http://code.google.com/p/google-refine/wiki/SampleExtension)
-* [Extension Points](http://code.google.com/p/google-refine/wiki/ExtensionPoints)
+* [Sample Extension](Sample-extension)
+* [Extension Points](Extension-points)
 
 ### Service Plug-ins
 * [Reconciliation Service API](http://code.google.com/p/google-refine/wiki/ReconciliationServiceApi)
