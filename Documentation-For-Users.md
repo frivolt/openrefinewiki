@@ -3,7 +3,7 @@
 * [How to use](http://code.google.com/p/google-refine/wiki/UserGuide)
 
 ### Love it so much?
-* [Join in](http://code.google.com/p/google-refine/wiki/HowToParticipate) with the development or help spread the meme about Google Refine.
+* [Join in](How-To-Participate) with the development or help spread the meme about Google Refine.
 * [Get the development version](http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion) so you can play with all the latest and greatest features, but if you are not afraid of bugs.
 
 ## Feature Areas
