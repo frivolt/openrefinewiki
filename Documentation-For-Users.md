@@ -1,5 +1,5 @@
 ### Where to start?
-* [How to install and run](http://code.google.com/p/google-refine/wiki/InstallationInstructions) ([upgrading instructions](Upgrading-To-2.1))
+* [How to install and run](Installation-Instructions) ([upgrading instructions](Upgrading-To-2.1))
 * [How to use](http://code.google.com/p/google-refine/wiki/UserGuide)
 
 ### Love it so much?
