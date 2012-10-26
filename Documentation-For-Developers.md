@@ -7,7 +7,7 @@
 * [Faceted Browsing](Faceted-Browsing-Architecture)
 
 ### Extensions
-* [Write an Extension](http://code.google.com/p/google-refine/wiki/WriteAnExtension)
+* [Write an Extension](Write-an-extension)
 * [Sample Extension](http://code.google.com/p/google-refine/wiki/SampleExtension)
 * [Extension Points](http://code.google.com/p/google-refine/wiki/ExtensionPoints)
 
