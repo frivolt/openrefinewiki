@@ -44,3 +44,6 @@ The file named controller.js is responsible for registering the extension's hook
 The build.xml file is an [Apache Ant](http://ant.apache.org/) build file. You can make a copy of the sample extension's build.xml file to get started. The important point here is that the Java classes should be built into the module/MOD-INF/classes sub-directory.
 
 Note that your extension's Java code would need to reference some libraries used in Google Refine and Refine's Java classes themselves. The libraries are in [master/main/webapp/WEB-INF/lib/](../tree/master/main/webapp/WEB-INF/lib/) and Refine's classes are in [master/main/webapp/modules/core/MOD-INF/classes/](../tree/master/main/webapp/modules/core/MOD-INF/classes/).
+
+
+*Check out* [Sample extension](Sample-extension).
