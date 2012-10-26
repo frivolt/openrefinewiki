@@ -1,12 +1,12 @@
 The sample extension is included in the code base so that you can copy it and get started on writing your own extension. After you copy it, make sure you change its name inside its module/MOD-INF/controller.js file.
 
-== Basic Structure ==
-The sample extension's code is in refine/extensions/sample/. In that directory, Java source code is contained under the src sub-directory, and webapp code is under the module sub-directory. Here is the full directory layout:
-
-  refine/extensions/sample/
+## Basic Structure
+The sample extension's code is in refine/extensions/sample/. In that directory, Java source code is contained under the src sub-directory, and webapp code is under the module sub-directory. Here is the full directory layout:  
+  
+    refine/extensions/sample/
       build.xml (ant build script)
       src/
-          com/google/refine/sampleExtension/
+        com/google/refine/sampleExtension/
               ... Java source code ...
       module/
           MOD-INF/
@@ -29,7 +29,7 @@ MOD-INF/controller.js lets you configure the extension's initialization and URL 
 
 The init() function in controller.js allows the extension to register various client-side handlers for augmenting pages served by Refine's core. These handlers are feature-specific. For example, here is where and how the jython extension adds its parser. As for the sample extension, it adds its script project-injection.js and style project-injection.less into the /project page. If you [view-source:http://localhost:3333/project view source the /project page], you'd see references to those two files.
 
-== Wiring Up the Extension ==
+## Wiring Up the Extension
 Butterfly is able to locate the sample extension because of the path provided in butterfly.properties. Butterfly simply descends into each of those paths and look for MOD-INF directories.
 
-For more information, see ExtensionPoints.
+For more information, see [Extension points](wiki/Extension-points).
