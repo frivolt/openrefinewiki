@@ -4,7 +4,7 @@
 
 ### Love it so much?
 * [Join in](How-To-Participate) with the development or help spread the meme about Google Refine.
-* [Get the development version](http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion) so you can play with all the latest and greatest features, but if you are not afraid of bugs.
+* [Get the development version](Get-Development-Version) so you can play with all the latest and greatest features, but if you are not afraid of bugs.
 
 ## Feature Areas
 **Essential**: These are the features you'd use 80% of the time when you use Refine. They help you clean up your data, extend it, and export it out for other tools to consume.
