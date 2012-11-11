@@ -12,7 +12,7 @@ _Note: we've just moved to our new home here.  If you can't find something or st
 * [FAQ](wiki/FAQ) Frequently Asked Questions
 
 #### Get help:
-* [Ask questions here](http://groups.google.com/group/google-refine/)
+* [Ask questions here](http://groups.google.com/group/openrefine/)
 * [File bugs and feature requests here](issues)
 
 #### Back for More?
