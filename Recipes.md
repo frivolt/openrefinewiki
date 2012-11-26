@@ -27,6 +27,13 @@ this instead:
     
       split(escape(value,'xml'),"&#160;")[0]
 
+### Titlecase that works on hyphenated names
+
+If you have a "name" column with values like "FOTHERINGTON-THOMAS", this will convert correctly to "Fotherington-Thomas" (fuller explanation here: [Fotherington-Thomas](fuller explanation: http://www.rmorrison.net/mnemozzyne/google-refine-and-fotherington-thomas-issue))
+    
+      replace(toTitlecase(replace(value,"-",".")),".","-")
+
+
 ### "someprefix_a2343" -> "a2343"
 
 You can use
