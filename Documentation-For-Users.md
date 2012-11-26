@@ -39,7 +39,7 @@
 ## Recipes
 For complicated tasks that are commonly done, just follow recipes that other folks have discovered and written up. A recipe is just a sequence of steps, and tips and tricks.
 
-There are [**Quick Recipes**](http://code.google.com/p/google-refine/wiki/Recipes) (like removing duplicate row values, etc.)
+There are quick [[Recipes]] (like removing duplicate row values, etc.)
 
 and there are full recipes:
 
