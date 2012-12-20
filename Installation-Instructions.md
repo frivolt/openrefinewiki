@@ -6,14 +6,14 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 1. [Download OpenRefine here](http://code.google.com/p/google-refine/wiki/Downloads?tm=2).
 2. Install it as detailed below for your operating system.
-3. As long as OpenRefine is running, you can point your browser at <http://127.0.0.1:3333/> to use it, and you can even use it in several browser tabs and windows.
-4. If your running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
+3. As long as OpenRefine is running, you can point your browser at <http://127.0.0.1:3333/> to use it; you can even use it in several browser tabs and windows.
+4. If you're running a proxy, you can change the IP configuration with -i; see **Running & Configuration** below, or use `refine -help` for options.
 
 ## Development Version
 
-**(Anyone wanting the latest trunk version with bug fixes, but some might still be lurking)**
+**(Anyone wanting the latest trunk version with bug fixes, but some might still be lurking.)**
 
-Don't be scared. Just follow the [step-by-step to get & build the development version](http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion)
+Don't be scared. Just follow the [step-by-step to get & build the development version](http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion).
 
 ## Install the Release Version on
 
@@ -23,15 +23,15 @@ Don't be scared. Just follow the [step-by-step to get & build the development ve
 
 **Run**: In that folder, run the .exe file in that folder. You should see the Command window in which Google Refine runs. By default, the Command window has a black background and text in monospace font in it.
 
-**Shut down**: When you need to shut down Google Refine, switch to that Command window, and press Ctrl-C. Wait until there's a message that says the shutdown is complete. That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.
+**Shut down**: When you need to shut down Google Refine, switch to that Command window and press Ctrl-C. Wait until there's a message that says the shutdown is complete. That window might close automatically or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.
 
 ### Mac OSX
 
-**Install**: once you have downloaded the .dmg file, open it, and drag the Google Refine icon into the Applications folder icon (just like you would normally install Mac applications).
+**Install**: Once you have downloaded the .dmg file, open it and drag the Google Refine icon into the Applications folder icon (just like you would normally install Mac applications).
 
-**Run**: to launch Google Refine, go to the Applications folder and double click the Google Refine app. You'll see the Google Refine app appear in your dock.
+**Run**: To launch Google Refine, go to the Applications folder and double click the Google Refine app. You'll see the Google Refine app appear in your dock.
 
-**Shut down**: You can switch to the Google Refine app (clicking on its icon in the dock) and invoke its Quit command.
+**Shut down**: You can switch to the Google Refine app (by clicking on its icon in the dock) and invoke its Quit command.
 
 ### Linux
 
@@ -40,11 +40,11 @@ Don't be scared. Just follow the [step-by-step to get & build the development ve
     tar xzf google-refine.tar.gz
     cd google-refine
     ./refine
-this will start Google Refine and open your browser to its starting page.
+This will start Google Refine and open your browser to its starting page.
 
 **Shut down**: Press Ctrl-C in the shell.
 
 ## Running & Configuration
-By default (and for security reasons) Refine only listens to TCP requests coming from localhost (127.0.0.1). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line
+By default (and for security reasons), Refine only listens to TCP requests coming from localhost (127.0.0.1). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line:
 
-`./refine -i 0.0.0.0`
+    ./refine -i 0.0.0.0
