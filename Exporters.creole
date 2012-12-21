@@ -20,13 +20,13 @@ If you pick `Templating...` from the Export menu, you can "roll your own" export
 These should be some good guides to getting started with exporting your data in different formats. You should look through the  exporting to YAML
 
 
-Format|=+|=Prefix|=+|=Row Template|=+|=Row Seperator|=+|=Suffix|
+|=Format|=Prefix|=Row Template|=Row Seperator|=Suffix|
 **!MediaWiki tables**|`{|`|`| {{cells[[*YAML*|`----`|`- {{cells["col1"|"col1"]}}`|`|-`|`|}`]]}}`||`...`
 
 <wiki:comment>
 I can't get this to render properly --Tim McNamara
 
-**Google Code wiki tables**|=+|=|=+|=`|=+|={{cells["col1"]}}|=+|=`|=+|=|=+|=|
+|=**Google Code wiki tables**|=|=`|={{cells["col1"]}}|=`|=|=|
 </wiki:comment>
 
 

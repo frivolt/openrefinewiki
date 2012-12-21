@@ -8,7 +8,7 @@ Google Refine supports "expressions" mostly to transform existing data or to cre
 
 Consider this sample data set
 
-|=+|=friend|=+|=age|
+|=|=friend|=age|
 1.|John Smith|28
 2.|Jane Doe|33
 
@@ -52,7 +52,7 @@ For that example the two languages are similar enough, but they don't have to be
 
 GREL is designed to resemble Javascript. So you can expect these basic things to work, and know how they would work:
 
-`value + " (approved)"`|=+|=concatenate two strings; whatever is in `value` gets converted to a string first|
+|=`value + " (approved)"`|=concatenate two strings; whatever is in `value` gets converted to a string first|
 `value + 2.239`|add two numbers; if `value` actually holds something other than a number, this becomes a string concatenation
 `value.trim().length()`|take the length of `value` after trimming its leading and trailing whitespace
 `value.substring(7, 10)`|take the substring of `value` from character index 7 up to and excluding character index 10
@@ -71,7 +71,7 @@ The second form above is a shortcut to make expressions easier to read.
 
 It's only syntactic sugar or shorthand, such as:
 
-dot shorthand notation|=+|=full notation|
+|=dot shorthand notation|=full notation|
 `value.trim().length()`|`length(trim(value))`
 `value.substring(7, 10)`|`substring(value, 7, 10)`
 `value.substring(13)`|`substring(value, 13)`
@@ -80,19 +80,19 @@ The first argument to a function can be swapped out in front of the function to 
 
 The dot notation can also be used to access member fields:
 
-`cell.value`|=+|=same as just `value` because `cell` stands for the current cell|
+|=`cell.value`|=same as just `value` because `cell` stands for the current cell|
 `row.index`|index of the current row
 
 For member fields whose names are not words (e.g., they contain spaces or other characters), use the bracket notation:
 
-`cells[[Name"|"First]]`|=+|=access the cell in the column called "First Name" of the current row|
+|=`cells[[Name"|"First]]`|=access the cell in the column called "First Name" of the current row|
 
 === [[Array syntax|GRELArrayFunctions]] ===
 
 Brackets can also be used to get substrings and sub-arrays, and their syntax resembles Python a bit more than Javascript:
 
-`value[[the substring of `value` starting from character index 1 up to but excluding character index 3|
-`"internationalization"[1,3|1,3]`|=+|=access]]`|return `nt`
+|=`value[[the substring of `value` starting from character index 1 up to but excluding character index 3|
+`"internationalization"[1,3|1,3]`|=access]]`|return `nt`
 `"internationalization"[[`nternationalizati` (negative indexes are counted from the end)
 
 
@@ -100,7 +100,7 @@ Brackets can also be used to get substrings and sub-arrays, and their syntax res
 
 GREL supports branching and looping (e.g., "if" and "for") slightly differently than Javascript. To do branching and looping, you use GREL "controls", or sometimes also called "constructs", and their syntax is more like Excel's IF:
 
-`if(value.length() > 10, "big string", "small string")`|=+|=if the length of what `value` stands for is great than 10 characters, then return "big string", otherwise, return "small string"|
+|=`if(value.length() > 10, "big string", "small string")`|=if the length of what `value` stands for is great than 10 characters, then return "big string", otherwise, return "small string"|
 `if(mod(row.index, 2) == 0, "even", "odd")`|if the 2 modulus of the row index is zero, then output "even", otherwise, output "odd"
 
 Thus, the `if` control has this syntax
@@ -111,7 +111,7 @@ The test_condition sub-expression is evaluated. If it yields true, then the true
 
 GREL doesn't support looping in the conventional meaning, as supported by `for` in Javascript. However, you can still process arrays of things using the various `for-` controls, e.g.,
 
-`forEach("Once upon a time in Mexico".split(" "), v, v.length())`|=+|=return array of lengths of words, `[ 4, 4, 1, 4, 2, 6 ]`|
+|=`forEach("Once upon a time in Mexico".split(" "), v, v.length())`|=return array of lengths of words, `[ 4, 4, 1, 4, 2, 6 ]`|
 
 The `forEach` control has this syntax
 

@@ -58,14 +58,14 @@ Returns an array of zero or more rows in the project `projectName` for which the
 
 **My Address Book**
 
-friend|=+|=address|
+|=friend|=address|
 john|120 Main St.
 mary|50 Broadway Ave.
 anne|17 Morning Crescent
 
 **Christmas Gifts**
 
-gift|=+|=recipient|
+|=gift|=recipient|
 lamp|mary
 clock|john
 
@@ -77,7 +77,7 @@ When that command is applied, the result is
 
 **Christmas Gifts**
 
-gift|=+|=recipient|=+|=address|
+|=gift|=recipient|=address|
 lamp|mary|50 Broadway Ave.
 clock|john|120 Main St.
 
@@ -86,7 +86,7 @@ clock|john|120 Main St.
 
 Returns the facet count corresponding to the given choice value
 
-gift|=+|=recipient|=+|=price|
+|=gift|=recipient|=price|
 lamp|mary|20
 clock|john|54
 watch|amit|80
@@ -98,7 +98,7 @@ If we wanted to show how many of each gift we had given, we could use the follow
 
 This would then complete the table as so:
 
-gift|=+|=recipient|=+|=price|=+|=count|
+|=gift|=recipient|=price|=count|
 lamp|mary|20|1
 clock|john|54|2
 watch|amit|80|1

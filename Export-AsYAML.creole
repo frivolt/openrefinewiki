@@ -4,7 +4,7 @@
 
 For this tutorial, we are going to be working with a small set of data that looks like this:
 
-**Name**|=+|=**Height (m)**|=+|=**Occupation**|
+|=**Name**|=**Height (m)**|=**Occupation**|
 Andy|1.73|Student
 Bernd|1.79|Zoologist
 Carol|1.65|Carpenter
