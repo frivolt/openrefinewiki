@@ -1,0 +1,9 @@
+# Plugin Interfaces
+
+== Introduction ==
+
+Google Refine 2.0 (November 2010) and later supports third-party extensions/plugins.
+
+See WriteAnExtension for more information on writing your own extension.
+
+ 

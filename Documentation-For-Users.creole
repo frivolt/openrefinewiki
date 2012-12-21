@@ -1,0 +1,82 @@
+# Documentation hub for users
+
+Where to start?
+
+** [[Installation Instructions|How to install and run]] ([[UpgradingTo2p0|upgrading instructions]])
+** [[User Guide|How to use]]
+
+Love it so much?
+
+** [[How To Participate|Join in]] with the development or help spread the meme about Google Refine.
+** [[Get Development Version|Get the development version]] so you can play with all the latest and greatest features, but if you are not afraid of bugs.
+
+=Feature Areas=
+
+**Essential:** These are the features you'd use 80% of the time when you use Refine. They help you clean up your data, extend it, and export it out for other tools to consume.
+
+** [[Importers|Importing]]
+** [[Faceting|Filtering / faceting]]
+** Editing:
+** [[Cell Editing|Editing cells]], editing cells by [[Clustering|Clustering]]
+** [[Column Editing|Editing columns]], creating columns by [[Extending Data|Extending data]]
+** [[Row Editing|Editing rows]]
+** [[Understanding Expressions|Understanding expressions]]
+** [[Understanding Regular Expressions|Understanding regular expressions]]
+** [[Exporters|Exporting]]
+** [[History|History]] (undo/redo)
+
+**Reconciliation:** You can use the "reconciliation" support in Refine to link text names in your data to database identifiers (also known as database keys, IDs). By connecting your data with other databases, you get more value out of your data.
+
+** [[Reconciliation]]
+** [[Reconcilable Data Sources|Data sources]]
+** [[Extending Data|Extending Data - Calling Web Services]]
+** [[Extending Data From Freebase|Extending Data - Using Freebase]]
+
+**Uploading to Freebase:**
+If you reconcile against [[http://www.freebase.com/|Freebase]], you can then align your data with Freebase's schemas using [[Schema Alignment|Schema Alignment dialogs]] and load your data into Freebase. For more information on Freebase data loading, see the [[http://wiki.freebase.com/wiki/Refinery|Refinery project]].
+* [[Schema Alignment|Schema Alignment]]
+
+**Extensions:** Add even more features to Refine by installing extensions.
+
+** [[Installing Extensions|Installing Extensions]]
+** [[Extensions|Extensions]] that we know about
+
+=Recipes=
+
+For complicated tasks that are commonly done, just follow recipes that other folks have discovered and written up.  A recipe is just a sequence of steps, and tips and tricks.
+
+There are **[[Recipes|Quick Recipes]]**  (like removing duplicate row values, etc.)
+
+and there are full recipes:
+
+** [[Geocoding|Geocoding]] - translating street addresses to lat/lng coordinates
+** [[FetchingURLsFromWebServices|Fetching URLs From Web Services]] - grabbing from the Web more data related to the data you already have
+** [[StrippingHTML|Web Scraping & Extracting items from HTML pages]]
+** [[Recipe Apache Logs|Analyzing Apache Logs]]
+
+
+=Reference=
+
+==Expressions==
+
+** [[Variables|Variables]]
+** Google Refine Expression Language (GREL)
+** [[GRELControls|Controls]]
+** [[GRELFunctions|Functions]]
+** [[GRELBooleanFunctions|Boolean functions]]
+** [[GRELStringFunctions|String functions]]
+** [[GRELArrayFunctions|Array functions]]
+** [[GRELMathFunctions|Math functions]]
+** [[GRELDateFunctions|Date functions]]
+** [[GRELOtherFunctions|Other functions]]
+** [[Jython|Jython]]
+
+=External Sites=
+
+While there's a lot of information in this wiki, there's plenty more online too. Here are some notable sites,
+
+** [[http://blog.ouseful.info/tag/google-refine/|Tony Hirst's blog]]
+** [[http://googlerefine.blogspot.ca/|Martin Magdinier's blog]]
+** Yours? [[http://groups.google.com/group/google-refine/|Let us know!]]
+
+And of course [[https://www.google.com/search?q=%22google+refine%22|searching online]].

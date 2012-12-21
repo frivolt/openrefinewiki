@@ -1,0 +1,3 @@
+Any help at all is appreciated.
+
+Visit us on [[https://github.com/OpenRefine/OpenRefine/wiki/How-To-Participate|Github]] to learn more.
