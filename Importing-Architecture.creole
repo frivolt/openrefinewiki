@@ -61,8 +61,8 @@ Extensions can also add their own data source UIs. A data source selection UI ob
 
 `theDataSourceSelectionUIObject` is an object that has the following member methods:
 
-** `attachUI(bodyDiv)`
-** `focus()`
+  ** `attachUI(bodyDiv)`
+  ** `focus()`
 
 If you want to install a data source selection UI that is managed by the default importing controller, then register its UI class with the default importing controller, like so (refine/main/webapp/modules/core/scripts/index/default-importing-sources/sources.js):
 

@@ -12,10 +12,10 @@ So that it will be easy for users to plug in a variety of interchangeable reconc
 
 A standard reconciliation service is a HTTP-based RESTful JSON-formatted API. It operates in 2 modes: single query mode and multiple query mode. The second is for optimization (reducing number of HTTP calls).  Reconciliation services must implement support for both query modes as well as implementing the metadata query.
 
-(Much of this standard is based on the [[http://api.freebase.com/api/service/search?help|Freebase relevance service]] and the [[http://data.labs.freebase.com/recon/|Freebase experimental recon service]].)
+(Much of this standard is based on the [[Freebase relevance service|http://api.freebase.com/api/service/search?help]] and the [[Freebase experimental recon service|http://data.labs.freebase.com/recon/]].)
 
 ===BEFORE YOU BEGIN WITH BELOW ===
-View our [[http://groups.google.com/group/google-refine/browse_thread/thread/b47758b5e9002149|mailing list thread HERE]] where Tom Morris gives a helpful basic Reconciliation layout.
+View our [[mailing list thread HERE|http://groups.google.com/group/google-refine/browse_thread/thread/b47758b5e9002149]] where Tom Morris gives a helpful basic Reconciliation layout.
 
 =Query Request=
 
@@ -33,7 +33,7 @@ If the query parameter is a string, then it's an abbreviation of `query={"query"
 
 The query json object literal has a few fields
 
-"query"|=a string to search fo
+"query"|=+|=a string to search for|
 "limit"|optional, an integer to specify how many results to return
 "type"|optional, a single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/politician" as a Freebase type)
 "type_strict"|optional, a string, one of "any", "all", "should"
@@ -150,9 +150,9 @@ Here are two live examples:
 
 Note that Freebase itself supports at least 3 identifier spaces:
 
-** human-friendly IDs such as /en/apple_inc and /government/politician
-** machine ID (mid) such as /m/0k8z
-** GUID such as #9202a8c04000641f800000000000451e (deprecated)
+  ** human-friendly IDs such as /en/apple_inc and /government/politician
+  ** machine ID (mid) such as /m/0k8z
+  ** GUID such as #9202a8c04000641f800000000000451e (deprecated)
 
 Thus, it's not enough to say that the identifier space is http://www.freebase.com/; we have to use the URI of the specific property (in this case, mid).
 
@@ -160,9 +160,9 @@ The schema space is the identifier space for types and properties. It might be d
 
 The other fields are for
 
-** formulating URLs to a full topic page or to a small preview page for a given entity
-** customizing the suggest widgets used in various places in the reconciliation UI
-** default types for reconciliation - TODO needs more documentation
+  ** formulating URLs to a full topic page or to a small preview page for a given entity
+  ** customizing the suggest widgets used in various places in the reconciliation UI
+  ** default types for reconciliation - TODO needs more documentation
 
 ==Preview API==
 
@@ -181,10 +181,10 @@ In the same dialog box, you can specify that other columns should be used to pro
 
 There is also a need for a suggest service for entities rather than just for types and properties. When a cell has no good candidate, then you would want to perform a search yourself (by clicking on "search for match" in that cell).
 
-These suggest APIs are required to work with a modified version of the [[http://code.google.com/p/freebase-suggest/|Freebase Suggest widget]]. As illustrated on that site, each suggest API has 2 jobs to do:
+These suggest APIs are required to work with a modified version of the [[Freebase Suggest widget|http://code.google.com/p/freebase-suggest/]]. As illustrated on that site, each suggest API has 2 jobs to do:
 
-** translate what the user type into a ranked list of entities (and this is similar to the core reconciliation service and might share the same implementation)
-** render a flyout when an entity is moused over or highlighted using arrow keys (and this is similar to the preview API and might share the same implementation)
+  ** translate what the user type into a ranked list of entities (and this is similar to the core reconciliation service and might share the same implementation)
+  ** render a flyout when an entity is moused over or highlighted using arrow keys (and this is similar to the preview API and might share the same implementation)
 
 The metadata for each suggest API (type, property, or entity) is as follows:
 
@@ -197,9 +197,9 @@ The metadata for each suggest API (type, property, or entity) is as follows:
 
 The `service_url` field is required and it should look like this: `http://foo.com`. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
 
-** `service_path` defaults to `/private/suggest`
-** `flyout_service_url` defaults to the provided `service_url` field
-* `flyout_service_path` defaults to `/private/flyout`
+  ** `service_path` defaults to `/private/suggest`
+  ** `flyout_service_url` defaults to the provided `service_url` field
+  * `flyout_service_path` defaults to `/private/flyout`
 
 The Freebase Suggest widgets embedded in Google Refine will concatenate `_url` and `_path` to make the full URL. Refer to [[Suggest Api|the specification for a Suggest API]] for details.
 

@@ -2,8 +2,8 @@
 
 A Suggest API that's compatible with the Freebase Suggest widget should have 2 entry points:
 
-** `suggest`: translates some text that the user has typed, optionally constrained in some ways, to a ranked list of entities (this is very similar to a [[Reconciliation Service Api|reconciliation service API]] and can share the same implementation)
-** `flyout` : renders a small view of an entity
+  ** `suggest`: translates some text that the user has typed, optionally constrained in some ways, to a ranked list of entities (this is very similar to a [[Reconciliation Service Api|reconciliation service API]] and can share the same implementation)
+  ** `flyout` : renders a small view of an entity
 
 See http://code.google.com/p/freebase-suggest/ for an illustration of these two entry points. The dropdown list on the left is populated by the data returned from the `suggest` entry point, and the block on the right is rendered from the HTML returned by a call to the `flyout` entry point given the identifier corresponding to Francis Ford Coppola.
 
@@ -15,7 +15,7 @@ Similarly, for the `flyout` entry point, it is important to respond quickly whil
 
 The `suggest` entry point takes the following URL parameters
 
-"prefix"|=a string the user has type
+"prefix"|=+|=a string the user has typed|
 "type"|optional, a single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/policician" as a Freebase type)
 "type_strict"|optional, a string, one of "any", "all", "should"
 "limit"|optional, an integer to specify how many results to return
@@ -45,9 +45,9 @@ The response is in JSON, and JSONP must be supported.
         ... potentially some useful envelope data, such as timing stats ...
       }
 
-##{{{status` should correspond to the HTTP response code. `code` is the error/success state of the API above the level of HTTP. Use "/api/status/error" ([[http://www.freebase.com/private/suggest?prefix=love&type=/|example]]) if there's an error.
+##{{{status` should correspond to the HTTP response code. `code` is the error/success state of the API above the level of HTTP. Use "/api/status/error" ([[example|http://www.freebase.com/private/suggest?prefix=love&type=/]]) if there's an error.
 
-}}}##n:type` is a whole JSON object literal that describes the most notable type of the entity. It is rendered in addition to the entity's name to provide more disambiguation details. In [[http://code.google.com/p/freebase-suggest/|the screenshot here]], the notable types are Film director, Film producer, and Film actor.
+}}}##n:type` is a whole JSON object literal that describes the most notable type of the entity. It is rendered in addition to the entity's name to provide more disambiguation details. In [[the screenshot here|http://code.google.com/p/freebase-suggest/]], the notable types are Film director, Film producer, and Film actor.
 
 =flyout Entry Point=
 

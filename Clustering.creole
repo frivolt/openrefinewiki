@@ -2,7 +2,7 @@
 
 Google Refine's text facets are a great mechanism for surfacing patterns from your data. Consider a data set that contains people's names entered in two different ways: "first_name middle_initial last_name", and "last_name, first_name". A text facet on that column might reveal
 
-choice|=coun
+choice|=+|=count|
 Andy Anderson|79
 Andy R. Anderson|9
 Anderson, Andy|57
@@ -17,14 +17,14 @@ The Clustering feature can be accessed in 2 different ways. If you have already 
 
 The clustering feature works by trying to group the choices in the text facet, so that choices that "look similar" get grouped together. For instance, operating on our example data above, the clustering feature would generate the group
 
-** Andy Anderson (79)
-** Andy R. Anderson (9)
-** Anderson, Andy (57)
+  ** Andy Anderson (79)
+  ** Andy R. Anderson (9)
+  ** Anderson, Andy (57)
 
 and the group
 
-** Beatrice Beaufort (28)
-* Beaufort, Beatrice (19)
+  ** Beatrice Beaufort (28)
+  * Beaufort, Beatrice (19)
 
 and so forth. You can select each group whose choices you want to "merge" and enter the text that all choices in that group will be replaced with. If we select the first group to be merged into "Andy Anderson", then 79 + 9 + 57 = 145 cells will contain the text "Andy Anderson".
 

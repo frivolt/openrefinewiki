@@ -1,6 +1,6 @@
 # Boolean functions supported by Google Refine Expression Language (GREL)
 
-See also: [[GRELFunctions|All GREL functions]].
+See also: [[All GREL functions|GRELFunctions]].
 
 ===`and(boolean b1, boolean b2, ...)`===
 

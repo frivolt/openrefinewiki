@@ -1,6 +1,6 @@
 # Array functions supported by the Google Refine Expression Language (GREL)
 
-See also: [[GRELFunctions|All GREL functions]].
+See also: [[All GREL functions|GRELFunctions]].
 
 ===`length(array a)`===
 

@@ -6,7 +6,7 @@ At some point you may have a dataset where one or more of the columns contain HT
 
 It's very easy to create a new column with the HTML tags removed using Google Refine's support for regular expressions.
 
-*Attribution note: the regular expression below comes from [[http://haacked.com/archive/2004/10/25/usingregularexpressionstomatchhtml.aspx|Phil Haack's blog]].*
+*Attribution note: the regular expression below comes from [[Phil Haack's blog|http://haacked.com/archive/2004/10/25/usingregularexpressionstomatchhtml.aspx]].*
 
 
 = Details =
@@ -21,7 +21,7 @@ Press OK, and you'll soon have a new column with the plain text extracted from *
 
 **WARNING**: Make sure to use .toString() suffixes when needed to output strings into Refine cells while working with the built-in HTML GREL commands (the default output is org.jsoup.nodes objects).  Otherwise you'll get a preview just fine in the Expression Editor, BUT no data shown in the Refine cells when you apply it!
 
-**Note**: Now included in 2.1 version are HTML functions (Thanks Iain Sproat!) built upon [[http://jsoup.org|jsoup.org]] which is a Java library built on [[http://www.crummy.com/software/BeautifulSoup/|BeautifulSoup]].
+**Note**: Now included in 2.1 version are HTML functions (Thanks Iain Sproat!) built upon [[jsoup.org|http://jsoup.org]] which is a Java library built on [[BeautifulSoup|http://www.crummy.com/software/BeautifulSoup/]].
 
 **IMPORTANT TIP** For full documentation on using the integrated jsoup commands, you will probably want to refer back to jsoup's selector syntax itself http://jsoup.org/cookbook/extracting-data/selector-syntax . 
 
@@ -44,7 +44,7 @@ After the Split multi-valued cells operation finishes, you should be left in rec
 
 BeautifulSoup is a python library that offers powerful HTML parsing and operates very similarly to GREL syntax.
 
-[[http://www.crummy.com/software/BeautifulSoup/documentation.html|Full documentation on BeautifulSoup website]]
+[[Full documentation on BeautifulSoup website|http://www.crummy.com/software/BeautifulSoup/documentation.html]]
 
 The following will strip out only the 4th table row text found on the first table in an HTML document using Jython as the expression language in Refine:
 

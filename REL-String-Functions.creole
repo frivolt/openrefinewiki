@@ -1,6 +1,6 @@
 # String functions supported by Google Refine Expression Language (GREL)
 
-See also: [[GRELFunctions|All GREL functions]].
+See also: [[All GREL functions|GRELFunctions]].
 
 =Basic=
 
@@ -112,13 +112,13 @@ Returns an array of strings obtained by splitting `s` into groups of consecutive
 
 ===`partition(string s, string or regex frag, optional boolean omitFragment)`===
 
-Returns an array of strings `[[`|`a`, `frag`, `b` `]]` where `a` is the substring within `s` before the first occurrence of `frag` in `s`, and `b` is the substring after `frag` in `s`. For example, `partition("internationalization", "nation")` returns 3 strings: `inter`, `nation`, and `alization`. If `s` does not contain `frag`, it returns an array of `[[`|`s`, "", "" `]]` (the first string is the original `s` and the second and third strings are empty).
+Returns an array of strings `[[`a`, `frag`, `b` `|`]]` where `a` is the substring within `s` before the first occurrence of `frag` in `s`, and `b` is the substring after `frag` in `s`. For example, `partition("internationalization", "nation")` returns 3 strings: `inter`, `nation`, and `alization`. If `s` does not contain `frag`, it returns an array of `[[`s`, "", "" `|`]]` (the first string is the original `s` and the second and third strings are empty).
 
 If `omitFragment` is `true`, `frag` is not returned. That is, the result is an array of only 2 elements.
 
 ===`rpartition(string s, string or regex frag, optional boolean omitFragment)`===
 
-Returns an array of strings `[[`|`a`, `frag`, `b` `]]` where `a` is the substring within `s` before the **last** occurrence of `frag` in `s`, and `b` is the substring after `frag` in `s`. For example, `partition("parallel", "a")` returns 3 strings: `par`, `a`, and `llel`. If `s` does not contain `frag`, it returns an array of `[[`|`s`, "", "" `]]` (the first string is the original `s` and the second and third strings are empty).
+Returns an array of strings `[[`a`, `frag`, `b` `|`]]` where `a` is the substring within `s` before the **last** occurrence of `frag` in `s`, and `b` is the substring after `frag` in `s`. For example, `partition("parallel", "a")` returns 3 strings: `par`, `a`, and `llel`. If `s` does not contain `frag`, it returns an array of `[[`s`, "", "" `|`]]` (the first string is the original `s` and the second and third strings are empty).
 
 
 =Encoding and Hashing=
@@ -150,7 +150,7 @@ Returns the a phonetic encoding of `s`, optionally indicating which encoding to 
 
 ===`reinterpret(string s, string encoder)`===
 
-Returns `s` reinterpreted thru the given encoder.  Supported encodings [[http://java.sun.com/j2se/1.5.0/docs/guide/intl/encoding.doc.html|here]].
+Returns `s` reinterpreted thru the given encoder.  Supported encodings [[here|http://java.sun.com/j2se/1.5.0/docs/guide/intl/encoding.doc.html]].
 
 ===`fingerprint(string s)`===
 
@@ -177,8 +177,8 @@ Returns an array of strings describing each character of `s` in their full unico
 
 ===`mqlKeyQuote(string s)`===
 
-Quotes `s` so that it can be used as a Freebase key. More info: [[http://wiki.freebase.com/wiki/MQL_key_escaping|MQL key escaping]]
+Quotes `s` so that it can be used as a Freebase key. More info: [[MQL key escaping|http://wiki.freebase.com/wiki/MQL_key_escaping]]
 
 ===`mqlKeyUnquote(string key)`===
 
-Unquotes the MQL quoted string `key` back to its original form. More info: [[http://wiki.freebase.com/wiki/MQL_key_escaping|MQL key escaping]]
+Unquotes the MQL quoted string `key` back to its original form. More info: [[MQL key escaping|http://wiki.freebase.com/wiki/MQL_key_escaping]]

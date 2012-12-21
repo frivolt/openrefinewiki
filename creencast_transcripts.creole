@@ -64,7 +64,7 @@ We can use a custom textual facet and process the cells of a column thru an expr
 
 Here, we want the string before the first comma, which can be obtained by splitting by ',' and then taking the first value of the resulting array.
 
-    (create a new custom text facet with value.split(",")[[0])|This dialog is interactive
+    (create a new custom text facet with value.split(",")[[This dialog is interactive
 
 and it's useful to experiment in real time with the Gridworks expression language
 
@@ -91,7 +91,7 @@ By inspecting the grid, we note that the description contains the cereal brand a
 
 We can use again the custom textual facet for this task.
 
-    (create a new custom facet with value.split(',')[1]])
+    (create a new custom facet with value.split(',')[1|0])]])
 
 And see a breakdown of all brands of cereals included in the dataset.
 

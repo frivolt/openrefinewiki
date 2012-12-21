@@ -2,9 +2,9 @@
 
 ==Calling Web Services==
 
-* **NOTE:** For a walkthrough tutorial of this, see [[FetchingURLsFromWebServices|Fetching URLs From Web Services]]
+  * **NOTE:** For a walkthrough tutorial of this, see [[Fetching URLs From Web Services|FetchingURLsFromWebServices]]
 
-You can construct a new column by calling a web service, passing it data from existing columns. For example, if you have a column containing street addresses, you can create a new column containing their corresponding latitude/longitude pairs by calling a geocoding service, such as Google's [[http://code.google.com/apis/maps/documentation/geocoding/|Geocoding service]]. Invoke the column's drop-down menu and pick Edit column > Add column by fetching URLs... The expression you enter formulates the URL to fetch for each row. For example, this expression should work on Google's Geocoding service:
+You can construct a new column by calling a web service, passing it data from existing columns. For example, if you have a column containing street addresses, you can create a new column containing their corresponding latitude/longitude pairs by calling a geocoding service, such as Google's [[Geocoding service|http://code.google.com/apis/maps/documentation/geocoding/]]. Invoke the column's drop-down menu and pick Edit column > Add column by fetching URLs... The expression you enter formulates the URL to fetch for each row. For example, this expression should work on Google's Geocoding service:
 
       "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=" + escape(value)
 
@@ -54,5 +54,5 @@ Since it's just JSON, we can parse it out using the parseJSON expression, and th
 
 ==Querying Databases==
 
-You can also extend your data using queryable web databases such as [[http://www.freebase.com/|Freebase]].
-* See [[Extending Data From Freebase|Extending Data - Using Freebase]] for more details.
+You can also extend your data using queryable web databases such as [[Freebase|http://www.freebase.com/]].
+  * See [[Extending Data From Freebase|Extending Data - Using Freebase]] for more details.

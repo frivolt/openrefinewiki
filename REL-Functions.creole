@@ -4,16 +4,16 @@
 
 Function invocation in Google Refine expression language has 2 forms:
 
-** `functionName(arg0, arg1, ...)`
-** `arg0.functionName(arg1, ...)`
+  ** `functionName(arg0, arg1, ...)`
+  ** `arg0.functionName(arg1, ...)`
 
 The second is a shortcut to make expressions easier to read. It's only syntactic sugar.
 
 ===Functions by Type===
 
-** [[GRELBooleanFunctions|GREL Boolean Functions]]
-** [[GRELStringFunctions|GREL String Functions]]
-** [[GRELArrayFunctions|GREL Array Functions]]
-** [[GRELMathFunctions|GREL Math Functions]]
-** [[GRELDateFunctions|GREL Date Functions]]
-** [[GRELOtherFunctions|GREL Other Functions]]
+  ** [[GREL Boolean Functions|GRELBooleanFunctions]]
+  ** [[GREL String Functions|GRELStringFunctions]]
+  ** [[GREL Array Functions|GRELArrayFunctions]]
+  ** [[GREL Math Functions|GRELMathFunctions]]
+  ** [[GREL Date Functions|GRELDateFunctions]]
+  ** [[GREL Other Functions|GRELOtherFunctions]]

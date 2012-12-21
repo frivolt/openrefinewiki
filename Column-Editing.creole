@@ -8,10 +8,10 @@ A column can be removed entirely by invoking its drop-down menu and picking Edit
 
 A column can be moved. The simple ways to move a column is available in its drop-down menu under the Edit column submenu:
 
-** Move column to beginning
-** Move column to end
-** Move column left
-** Move column right
+  ** Move column to beginning
+  ** Move column to end
+  ** Move column left
+  ** Move column right
 
 For more elaborate rearrangement of columns, invoke the left-most drop-down menu in front of "All" and pick Edit columns > Reorder columns... This command also lets you remove several columns in one operation. Moving and removing columns are considered to change the data, and are thus tracked in the undo/redo history.
 
@@ -24,7 +24,7 @@ A new column can be created based on zero, one, or more existing columns. Typica
 
 The command "Add column based on this column..." will open up a dialog box similar to the (Cell) Transform dialog box (see [[Cell Editing|Cell Editing]]). Enter an expression that specifies, for each row, how to generate the cell in that new column. For example, consider this data set:
 
-name|=ag
+name|=+|=age|
 John Smith|28
 Jane Doe|33
 
@@ -34,7 +34,7 @@ Say we invoke the command "Add column based on this column..." on the column "na
 
 and name that new column "last name", then after that command executes, the data set will look like
 
-name|=last name|=ag
+name|=+|=last name|=+|=age|
 John Smith|Smith|28
 Jane Doe|Doe|33
 
@@ -49,13 +49,13 @@ Several columns can be created in one shot by splitting one existing column. For
 
 A column can be split by a separator substring or regular expression pattern, or by a list of field lengths. For example, consider 
 
-addres
+address|
 100 Main St., San Francisco, CA
 200 Broadway Blvd, Boston MA
 
 Splitting by the substring ", " (note the space following the comma yields 3 columns
 
-address 1|=address 2|=address 
+address 1|=+|=address 2|=+|=address 3|
 100 Main St.|San Francisco|CA
 200 Broadway Blvd|Boston MA|
 
@@ -63,7 +63,7 @@ Note that the second row has only 1 comma.
 
 You could set the maximum number of new columns, say, to 2, and get
 
-address 1|=address 
+address 1|=+|=address 2|
 100 Main St.|San Francisco, CA
 200 Broadway Blvd|Boston MA
 
@@ -79,7 +79,7 @@ You could also specify a regular expression as the separator. This is useful if 
 
       \s+
 
-For more information on regular expressions, see [[GRELRegex|this page]]. But note that whereas regular expressions within a GREL expression must start and end with a slash character /, the regular expressions you enter anywhere in Google Refine outside a GREL expression must **not** start end with slashes.
+For more information on regular expressions, see [[this page|GRELRegex]]. But note that whereas regular expressions within a GREL expression must start and end with a slash character /, the regular expressions you enter anywhere in Google Refine outside a GREL expression must **not** start end with slashes.
 
 ===By Field Lengths===
 

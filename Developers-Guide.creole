@@ -1,7 +1,7 @@
 # Google Refine Developer's Guide
 
 ----
-**NOTE:** The project is moving to [[https://github.com/OpenRefine/OpenRefine|Github]] and the [[https://github.com/OpenRefine/OpenRefine/wiki/DevelopersGuide|Developer's Guide]] now lives there.  This page refers to the old SVN-based source control.
+**NOTE:** The project is moving to [[Github|https://github.com/OpenRefine/OpenRefine]] and the [[Developer's Guide|https://github.com/OpenRefine/OpenRefine/wiki/DevelopersGuide]] now lives there.  This page refers to the old SVN-based source control.
 ----
 
 
@@ -9,7 +9,7 @@
 
 == Build and Run Google Refine from an IDE (easier) ==
 
-Google Refine' source comes with [[http://www.eclipse.org/|Eclipse]] project files (which can also be imported into [[http://netbeans.org/|NetBeans]]). 
+Google Refine' source comes with [[Eclipse|http://www.eclipse.org/]] project files (which can also be imported into [[NetBeans|http://netbeans.org/]]). 
 
 === Eclipse ===
 
@@ -19,29 +19,29 @@ At the command line, go to a directory **not** under your Eclipse workspace dire
 
 Then in Eclipse, invoke the Import ... command
 
-  [[http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png]|Pick Existing Projects into Workspace
+  [[Pick Existing Projects into Workspace
 
-  [http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png]]
+  [http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png|http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png]]]
 
 Locate the directory where you've checked out Google Refine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
 
-  [[http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects3.png]|Note that the above steps are already packaged for you if you look for the `Refine.launch` file in the `server/IDEs/eclipse` folder inside the Google Refine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run Google Refine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
+  [[Note that the above steps are already packaged for you if you look for the `Refine.launch` file in the `server/IDEs/eclipse` folder inside the Google Refine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run Google Refine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
 
 === Netbeans ===
 
 1. make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
 1. in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
-    -Drefine.autoreloading=true  -Drefine.webapp=src/main/webapp
+db2ea557fcef163860eda0c297d77fca
 1. apply, close the dialog and then click the green run button and voila', you should see it run and open your default browser.
 
 If you want Google Refine logs to be more verbose, append this to the line above
 
-     -Drefine.verbosity=TRACE
+49e395b08701797bcd5bcc5b6d62232f
 
 
 == Build and Run Google Refine from the command line using Apache Ant (Fairly Easy and recommended for Windows users) ==
 
-[http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion Step by step to Get Development Version]]
+[http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion Step by step to Get Development Version|http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects3.png]]]
 
 == Build and Run Google Refine from the command line (harder but more comprehensive) ==
 
@@ -69,14 +69,14 @@ to get a list of them.
 
 Since Google Refine is composed of two parts, a server and a in-browser UI, the testing system reflects that:
 
-** on the server side, it's powered by [[http://testng.org/|TestNG]] and the unit tests are written in Java;
-** on the client side, it's powered by [[http://www.getwindmill.com/|Windmill]] and the [[http://wiki.github.com/windmill/windmill/javascript-tests|functional tests are written in Javascript]];
+  ** on the server side, it's powered by [[TestNG|http://testng.org/]] and the unit tests are written in Java;
+  ** on the client side, it's powered by [[Windmill|http://www.getwindmill.com/]] and the [[functional tests are written in Javascript|http://wiki.github.com/windmill/windmill/javascript-tests]];
 
 To run the complete testing harness, simply type
 
       ./refine test
 
-The above command requires you to have [[http://www.python.org/|Python]] and [[http://curl.haxx.se/|Curl]] installed on your machine and available in the path (you might already do, even if you don't know about it so just try it once and see what errors you get). Note that you don't need to have Windmill installed, the script will install it for you and build a proper Python [[http://pypi.python.org/pypi/virtualenv|virtualenv]] so that you don't have to worry about version collisions or polluting your existing Python installation.
+The above command requires you to have [[Python|http://www.python.org/]] and [[Curl|http://curl.haxx.se/]] installed on your machine and available in the path (you might already do, even if you don't know about it so just try it once and see what errors you get). Note that you don't need to have Windmill installed, the script will install it for you and build a proper Python [[virtualenv|http://pypi.python.org/pypi/virtualenv]] so that you don't have to worry about version collisions or polluting your existing Python installation.
 
 If you want to run only the server side portion of the tests run
 
@@ -88,7 +88,7 @@ or, if you want to run only the client side portion of the tests run
 
 ==== Testing in Eclipse ====
 
-You can also run the server-side part of the tests directly from Eclipse. To do that you need to have the TestNG launcher plugin installed. If you don't have it, you can get it by [[http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm|installing new software]] from this update URL
+You can also run the server-side part of the tests directly from Eclipse. To do that you need to have the TestNG launcher plugin installed. If you don't have it, you can get it by [[installing new software|http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm]] from this update URL
 
      http://beust.com/eclipse
 
@@ -96,7 +96,7 @@ Once the TestNG launching plugin is installed in your Eclipse, look for the `Goo
 
 ==== Testing on Windows ====
 
-In addition to Python, the [[http://sourceforge.net/projects/pywin32/|Python for Windows extensions]] are required to run Windmill on Windows. Without it Windmill fails to respond and/or gives an `ImportError?: No module named win32api`
+In addition to Python, the [[Python for Windows extensions|http://sourceforge.net/projects/pywin32/]] are required to run Windmill on Windows. Without it Windmill fails to respond and/or gives an `ImportError?: No module named win32api`
 
 Curl is also required, but you can install it when you install Cygwin (there is a module for it).
 
@@ -114,7 +114,7 @@ where 'version' is the release version (for example, 1.3b3).
 
 === Windows ===
 
-On Windows, Google Refine requires the [[http://java.sun.com/javase/downloads/index.jsp|Java JDK]] to be installed. Once these are installed you then need to [[http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows|Set the `JAVA_HOME` environment variable]] (please ensure it points to the JDK, and not the JRE) and the ANT_HOME environment variable (this is set up in a similar way to JAVA_HOME, but should point to the `Tools/Ant` directory in Google Refine's source code). You may need to reboot your machine after setting these environment variables.
+On Windows, Google Refine requires the [[Java JDK|http://java.sun.com/javase/downloads/index.jsp]] to be installed. Once these are installed you then need to [[Set the `JAVA_HOME` environment variable|http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows]] (please ensure it points to the JDK, and not the JRE) and the ANT_HOME environment variable (this is set up in a similar way to JAVA_HOME, but should point to the `Tools/Ant` directory in Google Refine's source code). You may need to reboot your machine after setting these environment variables.
 
 Open the Windows command line. Navigate to your installation directory, then run Google Refine (the `./` should be omitted when running any of the Refine commands from the Windows command line)
 
@@ -127,4 +127,4 @@ If you receive a message `Could not find the main class: com.google.refine.Refin
 
 ==== Installing Java ====
 
-If your linux distro doesn't have Java installed and you have support for `apt-get` (say, Debian or Ubuntu) you can read [[http://www.cyberciti.biz/faq/howto-ubuntu-linux-install-configure-jdk-jre/|this helpful page]]. Make sure that JAVA_HOME points to your JDK (Java developer kit), the one that contains the compiler, and not the JRE (Java runtime environment) which is what you need to actually run a Java program.
+If your linux distro doesn't have Java installed and you have support for `apt-get` (say, Debian or Ubuntu) you can read [[this helpful page|http://www.cyberciti.biz/faq/howto-ubuntu-linux-install-configure-jdk-jre/]]. Make sure that JAVA_HOME points to your JDK (Java developer kit), the one that contains the compiler, and not the JRE (Java runtime environment) which is what you need to actually run a Java program.

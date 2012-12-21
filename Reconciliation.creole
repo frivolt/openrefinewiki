@@ -1,11 +1,11 @@
 Reconciliation is a semi-automated process of matching text names to database IDs (keys). This is semi-automated because in some cases, machine along is not sufficient and human judgement is essential. For example, given "Ocean's Eleven" as the name of a film, should it be matched to
 
-** the original 1960 "Ocean's Eleven" ([[http://www.freebase.com/view/en/oceans_eleven_1960|Freebase entry]]), or
-** the 2001 remake "Ocean's Eleven" starring George Clooney ([[http://www.freebase.com/view/en/oceans_eleven|Freebase entry]])?
+  ** the original 1960 "Ocean's Eleven" ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven_1960]]), or
+  ** the 2001 remake "Ocean's Eleven" starring George Clooney ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven]])?
 
 While we talk about "databases" here, perhaps a more accurate term would be "name registries". And conceptually, "reconciliation" isn't a new concept. In some fields, it's being done all the time. For example, when the police gets a name of a suspect, they run the name through their databases of known felons. More details about the suspect (e.g., race, height, last known address) would help the police narrow down the suspect among several database matches.
 
-You can use Google Refine to perform reconciliation of names in your data against any database that exposes a web service following this [[Reconciliation Service Api|Reconciliation Service API]] specification. One such database is [[http://www.freebase.com/|Freebase]], and in this document we will use it as our example service.
+You can use Google Refine to perform reconciliation of names in your data against any database that exposes a web service following this [[Reconciliation Service Api|Reconciliation Service API]] specification. One such database is [[Freebase|http://www.freebase.com/]], and in this document we will use it as our example service.
 
 
 ==Basics==
@@ -37,7 +37,7 @@ As a degenerate form of "reconciliation", you can get a column of database IDs t
 
 Right now Google Refine only supports this kind of "query-based reconciliation" against Freebase. In the Reconcile dialog box, pick Freebase Query-based Reconciliation on the left. Your data can contain Freebase IDs, GUIDs, Wikipedia IDs, or keys in certain namespaces. For example, if you have country 2-letter ISO codes, you can reconcile against the namespace ISO 3166-1.
 
-Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [[GRELStringFunctions|here]].
+Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [[here|GRELStringFunctions]].
 
 == Additional Recon variables and functions that can be used ==
 See also: [Variables#Recon]

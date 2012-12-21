@@ -1,6 +1,6 @@
 # Other functions supported by the Google Refine Expression Language (GREL)
 
-See also: [[GRELFunctions|All GREL functions]].
+See also: [[All GREL functions|GRELFunctions]].
 
 ===`type(o)`===
 
@@ -58,14 +58,14 @@ Returns an array of zero or more rows in the project `projectName` for which the
 
 **My Address Book**
 
-friend|=addres
+friend|=+|=address|
 john|120 Main St.
 mary|50 Broadway Ave.
 anne|17 Morning Crescent
 
 **Christmas Gifts**
 
-gift|=recipien
+gift|=+|=recipient|
 lamp|mary
 clock|john
 
@@ -77,7 +77,7 @@ When that command is applied, the result is
 
 **Christmas Gifts**
 
-gift|=recipient|=addres
+gift|=+|=recipient|=+|=address|
 lamp|mary|50 Broadway Ave.
 clock|john|120 Main St.
 
@@ -86,7 +86,7 @@ clock|john|120 Main St.
 
 Returns the facet count corresponding to the given choice value
 
-gift|=recipient|=pric
+gift|=+|=recipient|=+|=price|
 lamp|mary|20
 clock|john|54
 watch|amit|80
@@ -98,7 +98,7 @@ If we wanted to show how many of each gift we had given, we could use the follow
 
 This would then complete the table as so:
 
-gift|=recipient|=price|=coun
+gift|=+|=recipient|=+|=price|=+|=count|
 lamp|mary|20|1
 clock|john|54|2
 watch|amit|80|1
@@ -106,7 +106,7 @@ clock|claire|62|2
 
 == Jsoup HTML parsing functions ==
 ----
-[[StrippingHTML|Example usage of these functions is shown here]]
+[[Example usage of these functions is shown here|StrippingHTML]]
 
 ===`parseHtml(string s)`===
 
@@ -114,7 +114,7 @@ returns a full HTML document and adds any missing closing tags.
 
 You can then extract or .select() which portions of the HTML document you need for further splitting, partitioning, etc.
 
-An example of extracting all table rows `<tr>` from a `<div>` using parseHtml().select() together is described more [[StrippingHTML#Extract_HTML_attributes,_text,_links_with_integrated_GREL_comman|here]]
+An example of extracting all table rows `<tr>` from a `<div>` using parseHtml().select() together is described more [[here|StrippingHTML#Extract_HTML_attributes,_text,_links_with_integrated_GREL_comman]]
 
 ===`select(Element e, String s)`===
 

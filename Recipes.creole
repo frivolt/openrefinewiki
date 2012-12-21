@@ -4,7 +4,7 @@ This page collects Google Refine recipes, small workflows and code fragments tha
 
 == String Manipulation ==
 
-Here are some examples of possible types of common string manipulation operations that you might encounter and how they can be achieved with the [[GRELFunctions|Google Refine Expression Language (GREL)]]. See also [[GRELStringFunctions|GREL String Functions]].
+Here are some examples of possible types of common string manipulation operations that you might encounter and how they can be achieved with the [[Google Refine Expression Language (GREL)|GRELFunctions]]. See also [[GREL String Functions|GRELStringFunctions]].
 
 === Change `2010-05-31T01:10:05Z` to `05/31/2010` ===
 
@@ -38,7 +38,7 @@ that will chop the value in an array of three strings
 
        ["", "blah_", "2342_blah_1232" ]
 
-and we get the 3rd value (remember that the arrays in Google Refine, like in most programming languages start from 0, so `[[2]`|is actually the third value).
+and we get the 3rd value (remember that the arrays in Google Refine, like in most programming languages start from 0, so `[[is actually the third value).
 
 === "a:b:c:d:e" -> "b:c:d" ===
 
@@ -62,7 +62,7 @@ If you need to fill out a number with for example leading zeroes up to four char
 
 4f0c516b9378cb9d87817cfd614ebc9d
 
-This provides a string of zeroes from which we ask for the first 4-length(value) characters using the string slicing action of [start, offset]]. 
+This provides a string of zeroes from which we ask for the first 4-length(value) characters using the string slicing action of [start, offset|2]`]]. 
 
 ===Parse JSON and Create Custom Arrays using forEach()===
 
@@ -109,10 +109,10 @@ Here you have to wrap with `get()` in order to ask if it `endsWith` the string v
 
 ===Remove the last word in a string===
 
-This uses `smartSplit` to find the last word `[[-1]`|and then wraps `partition` to keep only the first phrase or part of the string remaining with `[0]]`.
+This uses `smartSplit` to find the last word `[[and then wraps `partition` to keep only the first phrase or part of the string remaining with `[0|-1]`]]`.
     value.partition(smartSplit(value," ")[-1])[0]
 
-=== "00003400340300004" -> [["000034","0034","03","00004"]|===
+=== "00003400340300004" -> [[===
 
 Sometimes your content has no char separator because the separation is performed by alignment (in the case of non-delimited files) and padded to certain sizes. In that case you can use
 
@@ -200,7 +200,7 @@ Sometimes content is aggregated from various sources and some where improperly d
 
 that does exactly that.
 
-As a tip, if you see two weird characters where you think there should be one, try reinterpreting with "utf-8" which normally solves it. Other encoding values that are useful to try are "latin-1" (for european content), "Big5" (for chinese content"), etc. You can get a list of all the supported encodings [http://java.sun.com/j2se/1.5.0/docs/guide/intl/encoding.doc.html here]].  Re-encoding can also be done outside of Google Refine with text tools such as PSPad, Notepad++, etc.
+As a tip, if you see two weird characters where you think there should be one, try reinterpreting with "utf-8" which normally solves it. Other encoding values that are useful to try are "latin-1" (for european content), "Big5" (for chinese content"), etc. You can get a list of all the supported encodings [http://java.sun.com/j2se/1.5.0/docs/guide/intl/encoding.doc.html here|"000034","0034","03","00004"]]].  Re-encoding can also be done outside of Google Refine with text tools such as PSPad, Notepad++, etc.
 
 === Question Marks � showing in your data ===
 
@@ -209,7 +209,7 @@ This is the "Replacement Character - used to replace an incoming character whose
 You can also try this quick fix to remove non-breaking spaces on both ends of your string:
       split(escape(value,'xml'),"&#160;")[0]
 
-**NOTE** To access and use the Non-breaking space character itself such as `&nbsp` or `\u00A0` or `[[160]`|in GREL expressions on Windows systems type on the numeric keypad:  ALT 2 5 5 ,which will still display as a regular space in the expression window, but will actually be a non-breaking space character.  Example:  `value.replaceChars(" ", " ")`
+**NOTE** To access and use the Non-breaking space character itself such as `&nbsp` or `\u00A0` or `[[in GREL expressions on Windows systems type on the numeric keypad:  ALT 2 5 5 ,which will still display as a regular space in the expression window, but will actually be a non-breaking space character.  Example:  `value.replaceChars(" ", " ")`
 
 == Numerical Conversions ==
 
@@ -252,10 +252,10 @@ Another useful numeric facet is the "Text Length Facet" which builds a distribut
 
 == ISBN Calculations & Manipulations ==
 ===ISBN-10===
-Compute ISBN-10 check digit:`grel:sum(forRange(1,10,1,i,toNumber(value[i]])**i))%11`
+Compute ISBN-10 check digit:`grel:sum(forRange(1,10,1,i,toNumber(value[i|160]`]])**i))%11`
 
-Check computed value against check digit: {{{grel:if(value==10,'X',toString(round(value)))==cells[['ISBN10'].value[10]}}}|Convert ISBN-10 check digit to number ('X' == 10) {{{grel:if(toLowercase(value[10]])=='x',10,toNumber(value[[10]))}}}|===Convert an ISBN-10 to ISBN-13===
-Take the first 9 digits and prepend 978: {{{grel:'978'+value[1,10]]}}}
+Check computed value against check digit: {{{grel:if(value==10,'X',toString(round(value)))==cells[[Convert ISBN-10 check digit to number ('X' == 10) {{{grel:if(toLowercase(value[10|'ISBN10'].value[10]}}}]])=='x',10,toNumber(value[[===Convert an ISBN-10 to ISBN-13===
+Take the first 9 digits and prepend 978: {{{grel:'978'+value[1,10|10]))}}}]]}}}
 
 Compute the ISBN-13 check digit: {{{grel:(10-(sum(forRange(0,12,1,i,toNumber(value[i])**(1+((i)%2*2)))) %10))%10}}}
 

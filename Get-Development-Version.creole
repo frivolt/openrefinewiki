@@ -8,9 +8,9 @@ The trunk version supposedly offers certain features that you want. You probably
 
 =What You Need=
 
-To get the trunk version, you first need [[http://subversion.apache.org/|Subversion]]. If all the download options bewilder you, we would recommend just the "Command-Line Client" hosted on [[http://www.collab.net/downloads/subversion/|CollabNet]]. 
+To get the trunk version, you first need [[Subversion|http://subversion.apache.org/]]. If all the download options bewilder you, we would recommend just the "Command-Line Client" hosted on [[CollabNet|http://www.collab.net/downloads/subversion/]]. 
 
-You will also need [[http://ant.apache.org/|Apache Ant]] to build the source code. [[http://ant.apache.org/bindownload.cgi|Download]], unzip, and point your path to it. Or you can try [[http://wiki.apache.org/ant/AntOnWindows|the Windows installer]], too.
+You will also need [[Apache Ant|http://ant.apache.org/]] to build the source code. [[Download|http://ant.apache.org/bindownload.cgi]], unzip, and point your path to it. Or you can try [[the Windows installer|http://wiki.apache.org/ant/AntOnWindows]], too.
 
 On Windows, after installing Subversion and Ant, you may need to logoff, then logon for your user environment variables to take effect.
 
@@ -18,10 +18,10 @@ On Windows, after installing Subversion and Ant, you may need to logoff, then lo
 
 Open a Terminal window. On Windows, this is done by
 
-** invoking the Start menu
-** picking "Run ..."
-** typing in: `command`
-** pressing Enter
+  ** invoking the Start menu
+  ** picking "Run ..."
+  ** typing in: `command`
+  ** pressing Enter
 
 On MacOSX, use Spotlight to find "Terminal".
 
@@ -41,15 +41,15 @@ Change into the `grefine` directory by typing into the Terminal window
 
 Then build the source code:
 
-** on Windows, type: `refine build`
-** on MacOSX or `**`nix, type: `./refine build`
+  ** on Windows, type: `refine build`
+  ** on MacOSX or `**`nix, type: `./refine build`
 
 =Running=
 
 To run, in the Terminal window
 
-** on Windows, type: `refine`
-** on MacOSX or `**`nix, type: `./refine`
+  ** on Windows, type: `refine`
+  ** on MacOSX or `**`nix, type: `./refine`
 
 =Shutting Down=
 
