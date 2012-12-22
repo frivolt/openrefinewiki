@@ -1,8 +1,14 @@
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/HowToParticipate]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/HowToParticipate]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 Any help at all is appreciated.
 
-Visit us on [https://github.com/OpenRefine/OpenRefine/wiki/How-To-Participate Github] to learn more.
+* Help us find bugs and file issues for them at [[https://github.com/OpenRefine/OpenRefine/issues|https://github.com/OpenRefine/OpenRefine/issues]].
+* Help other users if you know the answers to their questions on [[http://groups.google.com/group/openrefine/|http://groups.google.com/group/openrefine/]].
+* Check out the source code and submit patches at [[https://github.com/OpenRefine/OpenRefine|https://github.com/OpenRefine/OpenRefine]].
+
+And of course, tell other people about OpenRefine, at work, at conferences, etc. and
+
+* on Twitter (using the tag [#grefine|https://twitter.com/search?q=%23grefine]
+* in blog posts--write about what you use OpenRefine for and how, give other people tips and tricks
+
+The more OpenRefine gets used, the more developers will be interested in contributing to it. Finding bugs is very helpful and contributes to more knowledge accumulated about how to use it. Etc. etc.
+
+The IRC channel in the past was [irc://irc.freenode.net/#grefine|irc://irc.freenode.net/#grefine].
