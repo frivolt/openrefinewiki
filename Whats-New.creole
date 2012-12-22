@@ -1,21 +1,20 @@
 //Announcements of the latest features//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/WhatsNew]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/WhatsNew]] , correct any errors or omissions, then remove this warning block.
-----
+==October 2012==
 
+Project renamed to OpenRefine and moved to Github
 
 ==December 2011==
 
-OpenRefine 2.5 is released ([ChangesFor2p5 change list])
+Google Refine 2.5 is released ([ChangesFor2p5 change list])
 
 ==June 2011==
 
-OpenRefine 2.1 is released([ChangesFor2p1 change list])
+Google Refine 2.1 is released([ChangesFor2p1 change list])
 
 ==November 2010==
 
-OpenRefine 2.0 is released ([ChangesFor2p0 change list]).
+Google Refine 2.0 is released ([ChangesFor2p0 change list]).
 
 ==May 2010==
 ===May 28th, 2010===
