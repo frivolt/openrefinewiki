@@ -1,7 +1,7 @@
 //Understanding expressions.//
 
 ----
-NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UnderstandingExpressions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UnderstandingExpressions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/UnderstandingExpressions]] , correct any errors or omissions, then remove this warning block.
 ----
 
 
