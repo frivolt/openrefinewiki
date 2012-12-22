@@ -1,8 +1,4 @@
-//How to install and run OpenRefine//
-
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/InstallationInstructions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/InstallationInstructions]] , correct any errors or omissions, then remove this warning block.
-----
+//How to install and run Refine//
 
 
 (If you have been using Freebase Gridworks 1.1, here are the [UpgradingTo2p0 upgrading instructions].)
@@ -14,13 +10,13 @@ OpenRefine is a desktop application in that you download it, install it, and run
 1. [[Download OpenRefine here|http://code.google.com/p/google-refine/wiki/Downloads?tm=2]].
 1. Install it as detailed below for your operating system.
 1. As long as OpenRefine is running, you can point your browser at http://127.0.0.1:3333/ to use it, and you can even use it in several browser tabs and windows.
-1. If your running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
+1. If you're running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
 
 ===Development Version===
 ----
-====(Anyone wanting the latest trunk version with bug fixes, but some might still be lurking)====
+(Anyone wanting the latest trunk version with bug fixes, but some might still be lurking)
 
-====It's easy, Don't be scared...Follow our step-by-step instructions to get & build the development version:====
+Don't be scared...Follow our step-by-step instructions to get & build the development version:
 
 1. [[Step-by-step to get & build the development version|Get Development Version]].
 
