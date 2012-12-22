@@ -1,9 +1,4 @@
-//Change list for version 2.0//
-
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ChangesFor2p0]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/ChangesFor2p0]] , correct any errors or omissions, then remove this warning block.
-----
-
+//Change list for Google Refine 2.0//
 
 ==Major Changes==
 
@@ -25,7 +20,7 @@
 * Clear recon data for one cell
 * Clear recon data for similar cells
 * Copy recon judgments across columns
-* OpenRefine Expression Language (GREL):
+* Google Refine Expression Language (GREL):
 * JSON support
 * New functions: smartSplit, escape, parseJson, hasField, uniques
 * New controls: forEachIndex, forRange, filter
