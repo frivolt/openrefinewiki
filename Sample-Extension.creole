@@ -1,10 +1,5 @@
 //Explains the sample extension.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/SampleExtension]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/SampleExtension]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 The sample extension is included in the code base so that you can copy it and get started on writing your own extension. After you copy it, make sure you change its name inside its {{{module/MOD-INF/controller.js}}} file.
 
 =Basic Structure=
@@ -38,11 +33,10 @@ Client-side code is in the inner {{{module}}} sub-directory. They can be plain o
 
 {{{MOD-INF/controller.js}}} lets you configure the extension's initialization and URL routing in Javascript rather than in Java. For example, when the requested URL path is either {{{/}}} or an empty string, we process and return {{{MOD-INF/index.vt}}} ([[see http://localhost:3333/extension/sample/|http://localhost:3333/extension/sample/]] if OpenRefine is running).
 
-The {{{init()}}} function in {{{controller.js}}} allows the extension to register various client-side handlers for augmenting pages served by Refine's core. These handlers are feature-specific. For example, [[here is where and how|http://github.com/OpenRefine/OpenRefine/blob/master/extensions/jython/module/MOD-INF/controller.js?r=965#4]] the jython extension adds its parser. As for the sample extension, it adds its script {{{project-injection.js}}} and style {{{project-injection.less}}} into the {{{/project}}} page. If you [view-source:http://localhost:3333/project view source the /project page], you'd see references to those two files.
-
+The {{{init()}}} function in {{{controller.js}}} allows the extension to register various client-side handlers for augmenting pages served by Refine's core. These handlers are feature-specific. For example, [[here is where and how|https://github.com/OpenRefine/OpenRefine/blob/master/extensions/jython/module/MOD-INF/controller.js#L46]] the jython extension adds its parser. As for the sample extension, it adds its script {{{project-injection.js}}} and style {{{project-injection.less}}} into the {{{/project}}} page. If you [view-source:http://localhost:3333/project view source the /project page], you'd see references to those two files.
 
 =Wiring Up the Extension=
 
-Butterfly is able to locate the sample extension because of [[the path provided in butterfly.properties|http://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties?r=984#23]]. Butterfly simply descends into each of those paths and look for {{{MOD-INF}}} directories.
+Butterfly is able to locate the sample extension because of [[the path provided in butterfly.properties|https://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties#L27]]. Butterfly simply descends into each of those paths and look for {{{MOD-INF}}} directories.
 
 For more information, see [[Extension Points]].
