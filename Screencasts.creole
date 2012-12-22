@@ -1,11 +1,11 @@
 //Screencasts about Refine//
 
-**NOTE**: These were done by Google when the product was named Google Refine,
+These three screencasts give a great overview of the product in just a few minutes.  Highly recommended!
+
+* [[Introduction|http://www.youtube.com/watch?v=B70J_H_zAWM]] (6:48)
+* [[Data Transformation|http://www.youtube.com/watch?v=cO8NVCs_Ba0]] (8:33)
+* [[Data Augmentation|http://www.youtube.com/watch?v=5tsyz3ibYzk]] (6:10)
+
+//NOTE: These were done by Google when the product was named Google Refine,
 but they still provide a great introduction and not much has changed except
-the name
-
-- [Introduction - Screencast 1/3|http://www.youtube.com/watch?v=B70J_H_zAWM]
-
-- [Data Transformation - Screencast 2/3|http://www.youtube.com/watch?v=cO8NVCs_Ba0]
-
-- [Data Augmentation - Screencast 3/3|http://www.youtube.com/watch?v=5tsyz3ibYzk]
+the name.//
