@@ -1,30 +1,32 @@
 //How to install and run Refine//
 
-
-(If you have been using Freebase Gridworks 1.1, here are the [UpgradingTo2p0 upgrading instructions].)
+//If you have been using Freebase Gridworks 1.1, here are the [[upgrading instructions|UpgradingTo2p0]].//
 
 OpenRefine is a desktop application in that you download it, install it, and run it on your own computer. However, unlike most other desktop applications, it runs as a small web server on your own computer and you point your web browser at that web server in order to use Refine. So, think of Refine as a personal and private web application.
 
-===Release Version===
+==Release Version==
+----
 **NOTE**: The current release version is called Google Refine.  This page
 uses the new name, OpenRefine, in anticipation of the next release.
 ----
-1. [[Download OpenRefine here|http://code.google.com/p/google-refine/wiki/Downloads?tm=2]].
-1. Install it as detailed below for your operating system.
-1. As long as OpenRefine is running, you can point your browser at http://127.0.0.1:3333/ to use it, and you can even use it in several browser tabs and windows.
-1. If you're running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
+# [[Download OpenRefine here|http://code.google.com/p/google-refine/wiki/Downloads?tm=2]].
+# Install it as detailed below for your operating system.
+# As long as OpenRefine is running, you can point your browser at http://127.0.0.1:3333/ to use it, and you can even use it in several browser tabs and windows.
+# If you're running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
 
-===Development Version===
-----
-(Anyone wanting the latest trunk version with bug fixes, but some might still be lurking)
+==Development Version==
 
-Don't be scared...Follow our step-by-step instructions to get & build the development version:
+The development version hasn't had the same level of testing that the release
+version has, but we generally try to keep it in good shape.  It will have bug
+fixes which are not yet available in the release version, but may also have
+new bugs as well.
 
-1. [[Step-by-step to get & build the development version|Get Development Version]].
+Here are step-by-step instructions to get & build the development version:
+
+# [[Step-by-step to get & build the development version|Get Development Version]].
 
 
 ===Install the Release Version on===
-----
 
 ===Windows===
 
