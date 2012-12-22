@@ -1,9 +1,8 @@
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Downloads]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Downloads]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 For all downloads, see [[this list|http://code.google.com/p/google-refine/downloads/list?can=1]].
+
+**NOTE**: This Google Code gadget doesn't work on Github.  Until we migrate it,
+please go directly to [[the original|http://code.google.com/p/google-refine/wiki/Downloads]]
+
 <wiki:gadget url="http://refine-gadgets.freebaseapps.com/gadget/downloads" width="600" height="500" border="0" />
 
 Here are [UpgradingTo2p0 instructions for upgrading from 1.1 to 2.x].

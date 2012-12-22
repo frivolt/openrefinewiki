@@ -1,5 +1,5 @@
 ----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/SiteNav]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/SiteNav]] , correct any errors or omissions, then remove this warning block.
+**NOTE**: This is the Google Code site nav sidebar.  Not sure it has an equivalent on Github
 ----
 
 
