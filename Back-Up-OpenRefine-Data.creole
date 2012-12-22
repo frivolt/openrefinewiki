@@ -1,13 +1,9 @@
-//How to back up all OpenRefine's data//
-
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/BackUpGoogleRefineData]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/BackUpGoogleRefineData]] , correct any errors or omissions, then remove this warning block.
-----
-
+//How to back up all Google Refine / OpenRefine's data//
 
 You may wish a quick way to quickly backup all your projects, particularly if you are upgrading to a new version of OpenRefine.  It is possible to backup each project individually by opening the project, then going to the {{{export}}} dropdown menu and selecting {{{export project}}}.  However, there is a faster way to back up all your data.
+You may wish a quick way to quickly backup all your projects, particularly if you are upgrading to a new version of OpenRefine.  It is possible to backup each project individually by opening the project, then going to the {{{export}}} dropdown menu and selecting {{{export project}}}.  However, there is a faster way to back up all your data.
 
-This can be done by manually **making a copy** of the OpenRefine workspace directory. **Do not move** that directory, just copy.  The location of the OpenRefine workspace directory varies between operating systems, and these are listed below:
+This can be done by manually **making a copy** of the Refine workspace directory. **Do not move** that directory, just copy.  The location of the OpenRefine workspace directory varies between operating systems, and these are listed below:
 
 * MacOSX: {{{~/Library/Application Support/Google/Refine/}}}
 * Windows: depending on the Windows version, the data is in one of these directories
