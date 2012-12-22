@@ -1,5 +1,10 @@
 //Frequently Asked Questions//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FAQ]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 This is a collection of frequently asked questions on OpenRefine. Feel free to ask your own question on [[the OpenRefine mailing list|http://groups.google.com/group/openrefine/]] and we'll try to answer to the best of our abilities and add them to this list.
 
 ==Questions with Long Answers==
@@ -21,8 +26,9 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
   If you run Refine from the terminal, you can point to the workspace directory through the -d parameter, e.g.,
 
-    
-      ./refine -p 3333 -i 0.0.0.0 -m 6000M -d /where/you/want/the/workspace
+{{{
+  ./refine -p 3333 -i 0.0.0.0 -m 6000M -d /where/you/want/the/workspace
+}}}
 
 ** OpenRefine opens my browser then waits a long time trying to connect to the server at 165.135.222.96 or another address I don't recognize. **
 
@@ -42,11 +48,13 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
   A good practice is to use {{{'}}} single quotes for your Refine Expression syntax and reserve {{{"}}} double quotes for the URL syntax parts.  Also make sure to escape() your cell values used, where necessary.
 
   EXAMPLES:
-    
-    'https://www.googleapis.com/freebase/v1/mqlread?query={"mid":null,"/type/object/key":{"namespace":"/authority/fmd/model","value":"'+escape(cells.ModelName.value, "url")+'"}}'
+{{{
+'https://www.googleapis.com/freebase/v1/mqlread?query={"mid":null,"/type/object/key":{"namespace":"/authority/fmd/model","value":"'+escape(cells.ModelName.value, "url")+'"}}'
+}}}
 
-    
-    '=HYPERLINK("http://listings.listhub.net/pages/BHAMMLSAL/' + value + '",' + value + ')'
+{{{
+'=HYPERLINK("http://listings.listhub.net/pages/BHAMMLSAL/' + value + '",' + value + ')'
+}}}
 
 ** When is it going to be possible to load things into the Freebase main graph, directly or indirectly? **
 

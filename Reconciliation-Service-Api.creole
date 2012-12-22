@@ -1,5 +1,10 @@
 //Specification for a standard reconciliation service API.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ReconciliationServiceApi]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 =Introduction=
 
 A reconciliation service is a web service that, given some text which is a name or label for something, and optionally some additional details, returns a ranked list of potential entities matching the criteria. The candidate text does not have to match each entity's official name perfectly, and that's the whole point of reconciliation--to get from ambiguous text name to precisely identified entities. For instance, given the text "apple", a reconciliation service probably should return the Apple Inc. company, the apple fruit, and New York city (also known as the Big Apple).
@@ -23,9 +28,10 @@ View our [[mailing list thread HERE|http://groups.google.com/group/openrefine/br
 
 A call to a reconciliation service API for a single query looks like either of these:
 
-    
-      http://foo.com/bar/reconcile?query=...string...
-      http://foo.com/bar/reconcile?query={...json object literal...}
+{{{
+  http://foo.com/bar/reconcile?query=...string...
+  http://foo.com/bar/reconcile?query={...json object literal...}
+}}}
 
 If the query parameter is a string, then it's an abbreviation of {{{query={"query":...string...}}}}. Here are two live examples:
 
@@ -42,40 +48,44 @@ The query json object literal has a few fields
 
 Each json object literal of the "properties" array is of this form
 
-    
-      {
-        "p" : string, property name, e.g., "country", or
-        "pid" : string, property ID, e.g., "/people/person/nationality" in the Freebase ID space
-        "v" : a single, or an array of, string or number or object literal, e.g., "Japan"
-      }
+{{{
+  {
+    "p" : string, property name, e.g., "country", or
+    "pid" : string, property ID, e.g., "/people/person/nationality" in the Freebase ID space
+    "v" : a single, or an array of, string or number or object literal, e.g., "Japan"
+  }
+}}}
 
 A "v" object literal would have a single key "id" whose value is an identifier resolved previously to the same identity space.
 
 Here is an example of a full query parameter:
 
-    
-      {
-        "query" : "Ford Taurus",
-        "limit" : 3,
-        "type" : "/automotive/model",
-        "type_strict" : "any",
-        "properties" : [
-          { "p" : "year", "v" : 2009 },
-          { "pid" : "/automotive/model/make" , "v" : { "id" : "/en/ford" } }
-        ]
-      }
+{{{
+  {
+    "query" : "Ford Taurus",
+    "limit" : 3,
+    "type" : "/automotive/model",
+    "type_strict" : "any",
+    "properties" : [
+      { "p" : "year", "v" : 2009 },
+      { "pid" : "/automotive/model/make" , "v" : { "id" : "/en/ford" } }
+    ]
+  }
+}}}
 
 ==Multiple Query Mode==
 
 A call to a standard reconciliation service API for multiple queries looks like this:
 
-    
-      http://foo.com/bar/reconcile?queries={...json object literal...}
+{{{
+  http://foo.com/bar/reconcile?queries={...json object literal...}
+}}}
 
 The json object literal has zero or more arbitrary key, each of which has a value in the same format as a single query, e.g.
 
-    
-      http://foo.com/bar/reconcile?queries={ "q0" : { "query" : "foo" }, "q1" : { "query" : "bar" } }
+{{{
+  http://foo.com/bar/reconcile?queries={ "q0" : { "query" : "foo" }, "q1" : { "query" : "bar" } }
+}}}
 
 "q0" and "q1" can be arbitrary strings. Note that the query counter starts at zero.  Here is a live example:
 
@@ -86,32 +96,34 @@ The json object literal has zero or more arbitrary key, each of which has a valu
 
 The response for a single query is a JSON literal object
 
-    
+{{{
+  {
+    "result" : [
       {
-        "result" : [
-          {
-            "id" : ... string, database ID ...
-            "name" : ... string ...
-            "type" : ... array of strings ...
-            "score" : ... double ...
-            "match" : ... boolean, true if the service is quite confident about the match ...
-          },
-          ... more results ...
-        ],
-        ... potentially some useful envelope data, such as timing stats ...
-      }
+        "id" : ... string, database ID ...
+        "name" : ... string ...
+        "type" : ... array of strings ...
+        "score" : ... double ...
+        "match" : ... boolean, true if the service is quite confident about the match ...
+      },
+      ... more results ...
+    ],
+    ... potentially some useful envelope data, such as timing stats ...
+  }
+}}}
 
 For multiple queries, the response is a JSON literal object with the same keys as in the request
 
-    
-      {
-        "q0" : {
-          "result" : { ... }
-        },
-        "q1" : {
-          "result" : { ... }
-        }
-      }
+{{{
+  {
+    "q0" : {
+      "result" : { ... }
+    },
+    "q1" : {
+      "result" : { ... }
+    }
+  }
+}}}
 
 The service must also support JSONP through a callback parameter.
 
@@ -123,38 +135,39 @@ Here are two live examples:
 1. http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
 1. http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
 
-    
-    {
-      "name" : "Netflix Reconciliation through Freebase",
-      "identifierSpace" : "http://rdf.freebase.com/ns/authority.netflix.movie",
-      "schemaSpace" : "http://rdf.freebase.com/ns/type.object.id",
-      "view" : {
-        "url" : "http://www.netflix.com/WiMovie//{{id}}"
-      },
-      "preview" : {
-        "url" : "http://netflix-reconcile.freebaseapps.com/preview/{{id}}",
-        "width" : 430,
-        "height" : 300
-      },
-      "suggest" : {
-        "type" : {
-          "service_url" : "http://netflix-reconcile.freebaseapps.com",
-          "service_path" : "/suggest_type",
-          "flyout_service_url" : "http://www.freebase.com"
-        },
-        "property" : {
-          "service_url" : "http://netflix-reconcile.freebaseapps.com",
-          "service_path" : "/suggest_property",
-          "flyout_service_url" : "http://www.freebase.com"
-        },
-        "entity" : {
-          "service_url" : "http://netflix-reconcile.freebaseapps.com",
-          "service_path" : "/suggest",
-          "flyout_service_path" : "/flyout"
-        }
-      },
-      "defaultTypes" : []
+{{{
+{
+  "name" : "Netflix Reconciliation through Freebase",
+  "identifierSpace" : "http://rdf.freebase.com/ns/authority.netflix.movie",
+  "schemaSpace" : "http://rdf.freebase.com/ns/type.object.id",
+  "view" : {
+    "url" : "http://www.netflix.com/WiMovie//{{id}}"
+  },
+  "preview" : {
+    "url" : "http://netflix-reconcile.freebaseapps.com/preview/{{id}}",
+    "width" : 430,
+    "height" : 300
+  },
+  "suggest" : {
+    "type" : {
+      "service_url" : "http://netflix-reconcile.freebaseapps.com",
+      "service_path" : "/suggest_type",
+      "flyout_service_url" : "http://www.freebase.com"
+    },
+    "property" : {
+      "service_url" : "http://netflix-reconcile.freebaseapps.com",
+      "service_path" : "/suggest_property",
+      "flyout_service_url" : "http://www.freebase.com"
+    },
+    "entity" : {
+      "service_url" : "http://netflix-reconcile.freebaseapps.com",
+      "service_path" : "/suggest",
+      "flyout_service_path" : "/flyout"
     }
+  },
+  "defaultTypes" : []
+}
+}}}
 
 Note that Freebase itself supports at least 3 identifier spaces:
 
@@ -196,13 +209,14 @@ These suggest APIs are required to work with a modified version of the [[Freebas
 
 The metadata for each suggest API (type, property, or entity) is as follows:
 
-    
-    {
-      "service_url" : "... url including only the domain ...",
-      "service_path" : "... optional relative path ...",
-      "flyout_service_url" : "... optional url including only the domain ...",
-      "flyout_service_path" : "... optional relative path ..."
-    }
+{{{
+{
+  "service_url" : "... url including only the domain ...",
+  "service_path" : "... optional relative path ...",
+  "flyout_service_url" : "... optional url including only the domain ...",
+  "flyout_service_path" : "... optional relative path ..."
+}
+}}}
 
 The {{{service_url}}} field is required and it should look like this: {{{http://foo.com}}}. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
 

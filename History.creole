@@ -1,16 +1,22 @@
 //How to use the undo/redo change history//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/History]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 ==Basics==
 
 Any operation in OpenRefine that changes the data can be undone. Changes are tracked from the very beginning when a project is just created. The undo/redo change history of each project is saved together with the project's data, so closing down your browser and quitting OpenRefine does not disturb the history. When you restart OpenRefine, you can still undo changes that you had made before you closed down your browser and/or quit OpenRefine.
 
 The history is shown as a list of indexed changes, with the first "change" being the action of creating the project itself. (That first change, indexed zero, cannot be undone.) Here is a sample history with 3 changes
 
-    
-      0. Create project
-      1. Remove 7 rows
-      2. Create new column Last Name based on column Name by filling 67 rows with grel:value.split(" ")[1] 
-      3. Split 230 cell(s) in column Address into several columns by separator
+{{{
+  0. Create project
+  1. Remove 7 rows
+  2. Create new column Last Name based on column Name by filling 67 rows with grel:value.split(" ")[1] 
+  3. Split 230 cell(s) in column Address into several columns by separator
+}}}
 
 There should be exactly one change with a blue background. That is the last performed change. The state of the project is when that change has just been performed.
 

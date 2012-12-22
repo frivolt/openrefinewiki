@@ -1,5 +1,10 @@
 //Server-side architecture.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ServerSideArchitecture]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 OpenRefine's server-side is written entirely in Java ({{{main/src/}}}) and its entry point is the Java servlet {{{com.google.refine.RefineServlet}}}. By default, the servlet is hosted in the lightweight Jetty web server instantiated by {{{server/src/com.google.refine.Refine}}}. Note that the server class itself is under {{{server/src/}}}, not {{{main/src/}}}; this separation leaves the possibility of hosting {{{RefineServlet}}} in a different servlet container.
 
 The web server configuration is in {{{main/webapp/WEB-INF/web.xml}}}; that's where {{{RefineServlet}}} is hooked up. {{{RefineServlet}}} itself is simple: it just reacts to requests from the client-side by routing them to the right {{{Command}}} class in the packages {{{com.google.refine.commands.**}}}.

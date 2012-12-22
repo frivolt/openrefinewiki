@@ -1,4 +1,9 @@
 //Extensions//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Extensions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 * [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune
 * [[RDF extension|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]] - by DERI

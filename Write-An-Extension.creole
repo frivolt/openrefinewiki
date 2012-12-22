@@ -1,5 +1,10 @@
 //How to start writing an extension//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/WriteAnExtension]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 (This document is for the version 2.0 and later only. This is still in flux.)
 
 OpenRefine makes use of the [[Butterfly framework|http://code.google.com/p/simile-butterfly/]] to provide an extension architecture. OpenRefine extensions are Butterfly modules. You don't really need to know about Butterfly itself, but you might encounter "butterfly" here and there in the code base.
@@ -19,32 +24,35 @@ Extensions that come with the code base are located under [[the extensions subdi
 
 A OpenRefine extension (implemented as a Butterfly module) sits in a file directory that contains the following files and sub-directories:
 
-    
-      build.xml
-      src/
-          com/foo/bar/... *.java source files
-      module/
-          *.html, *.vt files
-          scripts/... *.js files
-          styles/... *.css and *.less files
-          images/... image files
-          MOD-INF/
-              lib/*.jar files
-              classes/... java class files
-              module.properties
-              controller.js
+{{{
+  build.xml
+  src/
+      com/foo/bar/... *.java source files
+  module/
+      *.html, *.vt files
+      scripts/... *.js files
+      styles/... *.css and *.less files
+      images/... image files
+      MOD-INF/
+          lib/*.jar files
+          classes/... java class files
+          module.properties
+          controller.js
+}}}
 
 The file named module.properties (see [[example|http://github.com/OpenRefine/OpenRefine/blob/master/extensions/sample-extension/module/MOD-INF/module.properties]]) contains the extension's metadata. Of importance is the name field, which gives the extension a name that's used in many other places to refer to it. This can be different from the extension's directory name.
 
-    
-      name = my-extension-name
+{{{
+  name = my-extension-name
+}}}
 
 Your extension's client-side resources (.html, .js, .css files) stored in the module/ subdirectory will be accessible from http://127.0.0.1:3333/extension/my-extension-name/. 
 
 Also of importance is the dependency
 
-    
-      requires = core
+{{{
+  requires = core
+}}}
 
 which makes sure that the core module of OpenRefine is loaded before the extension attempts to hook into it.
 

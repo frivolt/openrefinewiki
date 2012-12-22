@@ -1,6 +1,11 @@
 //OpenRefine Developer's Guide//
 
 ----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/DevelopersGuide]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
+----
 **NOTE:** The project is moving to [https://github.com/OpenRefine/OpenRefine Github] and the [https://github.com/OpenRefine/OpenRefine/wiki/DevelopersGuide Developer's Guide] now lives there.  This page refers to the old SVN-based source control.
 ----
 
@@ -15,8 +20,9 @@ OpenRefine' source comes with [[Eclipse|http://www.eclipse.org/]] project files 
 
 At the command line, go to a directory **not** under your Eclipse workspace directory and check out the source:
 
-    
-    svn co https://google-refine.googlecode.com/svn/trunk grefine
+{{{
+svn co https://google-refine.googlecode.com/svn/trunk grefine
+}}}
 
 Then in Eclipse, invoke the Import ... command
 
@@ -50,25 +56,29 @@ On Mac OS X and Linux the OpenRefine build system requires you to have a Unix sh
 
 To see what functions are supported by OpenRefine's build system, type
 
-    
-       ./refine -h
+{{{
+   ./refine -h
+}}}
 
 to get a list of them.
 
 **NOTE:** When running from the Windows command line, you should omit the {{{./}}}
 
-    
-       refine -h
+{{{
+   refine -h
+}}}
 
 === Building ===
 
-    
-      ./refine build
+{{{
+  ./refine build
+}}}
 
 === Running ===
 
-    
-      ./refine
+{{{
+  ./refine
+}}}
 
 === Testing === 
 
@@ -79,27 +89,31 @@ Since OpenRefine is composed of two parts, a server and a in-browser UI, the tes
 
 To run the complete testing harness, simply type
 
-    
-      ./refine test
+{{{
+  ./refine test
+}}}
 
 The above command requires you to have [[Python|http://www.python.org/]] and [[Curl|http://curl.haxx.se/]] installed on your machine and available in the path (you might already do, even if you don't know about it so just try it once and see what errors you get). Note that you don't need to have Windmill installed, the script will install it for you and build a proper Python [[virtualenv|http://pypi.python.org/pypi/virtualenv]] so that you don't have to worry about version collisions or polluting your existing Python installation.
 
 If you want to run only the server side portion of the tests run
 
-    
-      ./refine server_test
+{{{
+  ./refine server_test
+}}}
 
 or, if you want to run only the client side portion of the tests run
 
-    
-      ./refine ui_test
+{{{
+  ./refine ui_test
+}}}
 
 ==== Testing in Eclipse ====
 
 You can also run the server-side part of the tests directly from Eclipse. To do that you need to have the TestNG launcher plugin installed. If you don't have it, you can get it by [[installing new software|http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm]] from this update URL
 
-    
-     http://beust.com/eclipse
+{{{
+ http://beust.com/eclipse
+}}}
 
 Once the TestNG launching plugin is installed in your Eclipse, look for the {{{GoogleRefineTests.launch}}} file in the {{{main/IDEs/eclipse}}} folder inside the OpenRefine source code, right click on it, select "Run As..." then "GoogleRefineTests". This should open a new tab with the TestNG launcher running the OpenRefine tests.
 
@@ -115,8 +129,9 @@ The OpenRefine build system uses Apache Ant to automate the creation of the inst
 
 To build the distributions type
 
-    
-      ./refine dist <version>
+{{{
+  ./refine dist <version>
+}}}
 
 where 'version' is the release version (for example, 1.3b3).
 
@@ -128,9 +143,10 @@ On Windows, OpenRefine requires the [[Java JDK|http://java.sun.com/javase/downlo
 
 Open the Windows command line. Navigate to your installation directory, then run OpenRefine (the {{{./}}} should be omitted when running any of the Refine commands from the Windows command line)
 
-    
-       # cd 'C:\\path_to_installation_directory'
-       # refine
+{{{
+   # cd 'C:\\path_to_installation_directory'
+   # refine
+}}}
 
 If you receive a message {{{Could not find the main class: com.google.refine.Refine. Program will exit.}}} this means that the {{{JAVA_HOME}}} variable is likely not set correctly.
 

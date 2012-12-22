@@ -1,3 +1,8 @@
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/SiteNav]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 * [[Getting Started|Getting Started]] - [FAQ FAQ]
 * [[Documentation for Users|Documentation For Users]]
 * [[Documentation for Developers|Documentation For Developers]]

@@ -1,5 +1,10 @@
 //Editing columns.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ColumnEditing]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 ==Basics==
 
 A column can be renamed by invoking its drop-down menu and picking Edit column > Rename this column. You cannot pick a name that is already taken by another column. Renaming a column changes the data and is thus tracked in the undo/redo history.
@@ -30,8 +35,9 @@ The command "Add column based on this column..." will open up a dialog box simil
 
 Say we invoke the command "Add column based on this column..." on the column "name" and enter the expression
 
-    
-      value.split(" ")[1]
+{{{
+  value.split(" ")[1]
+}}}
 
 and name that new column "last name", then after that command executes, the data set will look like
 
@@ -74,13 +80,15 @@ Note that the comma in the first row no longer causes any split.
 
 You could also specify a regular expression as the separator. This is useful if what separates the cells is not fixed or incorporates a special character like a tab. For example, this regular expression matches any sequence of tab or space:
 
-    
-      [\t ]+
+{{{
+  [\t ]+
+}}}
 
 \t matches a tab character. Of course that could even be simplified to use the whitespace character class \s
 
-    
-      \s+
+{{{
+  \s+
+}}}
 
 For more information on regular expressions, see [GRELRegex this page]. But note that whereas regular expressions within a GREL expression must start and end with a slash character /, the regular expressions you enter anywhere in OpenRefine outside a GREL expression must **not** start end with slashes.
 
@@ -88,9 +96,10 @@ For more information on regular expressions, see [GRELRegex this page]. But note
 
 Say your data is field-length encoded, such as below
 
-    
-      John     Smith      26
-      Peter    Pan        13
+{{{
+  John     Smith      26
+  Peter    Pan        13
+}}}
 
 There are nothing to separate the columns, but we can count the characters and determine that the first column is 9 character wide, the second 11 character wide, and the third 2. Then we can split that existing column by lengths: 9, 11, 2.
 

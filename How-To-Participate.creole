@@ -1,3 +1,8 @@
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/HowToParticipate]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 Any help at all is appreciated.
 
 Visit us on [https://github.com/OpenRefine/OpenRefine/wiki/How-To-Participate Github] to learn more.

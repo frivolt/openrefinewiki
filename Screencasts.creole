@@ -1,5 +1,10 @@
 //Screencasts about OpenRefine//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Screencasts]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 <wiki:video url="http://www.youtube.com/watch?v=B70J_H_zAWM" width="720" height="500" />
 
 <wiki:video url="http://www.youtube.com/watch?v=cO8NVCs_Ba0" width="720" height="500" />

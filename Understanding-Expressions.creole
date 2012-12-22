@@ -1,5 +1,10 @@
 //Understanding expressions.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UnderstandingExpressions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 ==Introduction==
 
 OpenRefine supports "expressions" mostly to transform existing data or to create new data based on existing data, much like how spreadsheet software supports "formulas". There are, however, significant differences between [DocumentationForUsers#Expressions OpenRefine's expressions] and typical spreadsheet formulas.
@@ -16,8 +21,9 @@ When you invoke the Transform command on, say, column "friend" and enter an expr
 
 When evaluated on a row in the example above, the expression can access that row and the cell in the column "friend" of that row through [[Variables]]. Think of a variable as a placeholder for something else. For example, there is a variable named "value" that is the placeholder for the cell's content. When the expression is evaluated on row 1, the variable "value" will stand for "John Smith"; when evaluated on row 2, it will stand for "Jane Doe". So, if the expression is
 
-    
-      value.split(" ")[1]
+{{{
+  value.split(" ")[1]
+}}}
 
 then for row 1, it will yield "Smith" and for row 2, "Doe".   That expression splits against the space char found and takes the 2nd part. 
 
@@ -38,13 +44,15 @@ Whereas each spreadsheet software has its own formula language, and only one lan
 
 Where in GREL you write
 
-    
-      value.split(" ")[1]
+{{{
+  value.split(" ")[1]
+}}}
 
 in [[Jython]] you would write
 
-    
-      return value.split(" ")[1]
+{{{
+  return value.split(" ")[1]
+}}}
 
 For that example the two languages are similar enough, but they don't have to be. On this documentation wiki, we will focus mostly on GREL. If you use another language, like [[Jython]], please refer to its own documentation.
 
@@ -124,13 +132,15 @@ The array_subexpr sub-expression is evaluated to an array. For each element in t
 
 Another useful control is {{{with}}} that can be used to define a new variable. For instance, if we want to compute the average word length for the string "Once upon a time in Mexico", then we might start with
 
-    
-      forEach("Once upon a time in Mexico".split(" "), v, v.length()).sum() / "Once upon a time in Mexico".split(" ").length()
+{{{
+  forEach("Once upon a time in Mexico".split(" "), v, v.length()).sum() / "Once upon a time in Mexico".split(" ").length()
+}}}
 
 We have {{{"Once upon a time in Mexico".split(" ")}}} repeated twice. To shorten that expression, we can define a variable to stand in that sub-expression's place:
 
-    
-      with("Once upon a time in Mexico".split(" "), a, forEach(a, v, v.length()).sum() / a.length())
+{{{
+  with("Once upon a time in Mexico".split(" "), a, forEach(a, v, v.length()).sum() / a.length())
+}}}
 
 Thus, the {{{with}}} control has this syntax
 

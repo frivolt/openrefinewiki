@@ -1,5 +1,10 @@
 //Controls supported by the OpenRefine Expression Language (GREL)//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELControls]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 There are inline controls to support branching and essentially looping. They look like [GRELFunctions functions], but unlike functions, their arguments don't all get evaluated down to value before they get run. A control can decide which part of the code to execute and can affect the environment bindings.  Functions, on the other hand, can't do either.  Each control decides which of their arguments to evaluate to value, and how.
 
 ==={{{if(expression o, expression eTrue, expression eFalse)}}}===

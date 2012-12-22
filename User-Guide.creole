@@ -1,5 +1,10 @@
 //How to use OpenRefine//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UserGuide]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 If you haven't done so already, we strongly suggest you to watch the [[screencasts|Screencasts]] first as they will give you an idea of how to use OpenRefine.
 
 ==The Basics==
@@ -23,20 +28,23 @@ To edit data, think
 
 To specify patterns, use filters and facets. Typically, you create a filter or facet on a particular column. For example, you can create a numeric facet on the "contract fee" column and adjust its range selector to select values less than 1. If the default facet doesn't do what you want, you can configure it (by clicking "change" on the facet's header). For example, you can create a text facet with on the same "contract fee" column with this expression:
 
-    
-      value < 1
+{{{
+  value < 1
+}}}
 
 It will show 2 choices: true and false. Just select true. Then, invoke the Transform command on that same column and enter the expression
 
-    
-      value * 1000
+{{{
+  value * 1000
+}}}
 
 That Transform command affects only rows where the "contract fee" cell contains a value less than 1.
 
 You can use several filters and facets together. Only rows that are selected by all facets and filters will be shown in the data table. For example, say you have two text facets, one on the "contract fee" column with the expression
 
-    
-      value < 1
+{{{
+  value < 1
+}}}
 
 and another on the "state" column (with the default expression). If you select "true" in the first facet and "Nevada" in the second, then you will only see rows for contracts in Nevada with fees less than 1.
 
@@ -47,15 +55,17 @@ and another on the "state" column (with the default expression). If you select "
 
 If you have programmed databases before (performing SQL queries), then what OpenRefine works should be quite familiar to you. Creating filters and facets and selecting something in them is like performing this SELECT statement:
 
-    
-      SELECT *
-      WHERE ... constraints determined by selection in facets and filters ...
+{{{
+  SELECT *
+  WHERE ... constraints determined by selection in facets and filters ...
+}}}
 
 And invoking the Transform command on a column while having some filters and facets selected is like performing this UPDATE statement
 
-    
-      UPDATE whole_table SET column_X = ... expression ...
-      WHERE ... constraints determined by selection in facets and filters ...
+{{{
+  UPDATE whole_table SET column_X = ... expression ...
+  WHERE ... constraints determined by selection in facets and filters ...
+}}}
 
 The difference between OpenRefine and databases is that the facets show you choices that you can select, whereas databases assume that you already know what's in the data.
 

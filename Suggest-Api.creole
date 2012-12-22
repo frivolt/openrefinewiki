@@ -1,5 +1,10 @@
 //Specification for a Suggest API that's compatible with the Freebase Suggest widget//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/SuggestApi]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 A Suggest API that's compatible with the Freebase Suggest widget should have 2 entry points:
 
 * {{{suggest}}}: translates some text that the user has typed, optionally constrained in some ways, to a ranked list of entities (this is very similar to a [[reconciliation service API|Reconciliation Service Api]] and can share the same implementation)
@@ -27,24 +32,25 @@ Here is a live example
 
 The response is in JSON, and JSONP must be supported.
 
-    
+{{{
+  {
+    "code" : "/api/status/ok",
+    "status" : "200 OK",
+    "prefix" : ... string, the prefix URL parameter echoed back ...
+    "result" : [
       {
-        "code" : "/api/status/ok",
-        "status" : "200 OK",
-        "prefix" : ... string, the prefix URL parameter echoed back ...
-        "result" : [
-          {
-            "id" : ... string, identifier of entity ...
-            "name" : ... string, nameof entity ...
-            "n:type" : {
-              "id" : ... string, identifier of type ...
-              "name" : ... string, name of type ...
-            }
-          },
-          ... more results ...
-        ],
-        ... potentially some useful envelope data, such as timing stats ...
-      }
+        "id" : ... string, identifier of entity ...
+        "name" : ... string, nameof entity ...
+        "n:type" : {
+          "id" : ... string, identifier of type ...
+          "name" : ... string, name of type ...
+        }
+      },
+      ... more results ...
+    ],
+    ... potentially some useful envelope data, such as timing stats ...
+  }
+}}}
 
 {{{status}}} should correspond to the HTTP response code. {{{code}}} is the error/success state of the API above the level of HTTP. Use "/api/status/error" ([[example|http://www.freebase.com/private/suggest?prefix=love&type=/]]) if there's an error.
 

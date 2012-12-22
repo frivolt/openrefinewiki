@@ -1,3 +1,8 @@
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Jython]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 == Using Jython as your Expression Language ==
 
 Full docs on the Jython language are at the official site [[http://www.jython.org|http://www.jython.org]].
@@ -28,24 +33,29 @@ A few XML parsing Python libraries:
 
 Expressions in jython must have a {{{return}}} statement, e.g.,
 
-    
-      return value[1:-1]
-    
-      return rowIndex%2
+{{{
+  return value[1:-1]
+}}}
+{{{
+  return rowIndex%2
+}}}
 Fields have to be accessed using the bracket operator rather than the dot operator
 
-    
-      return cells["col1"]["value"]
+{{{
+  return cells["col1"]["value"]
+}}}
 
 Accesing the Levenshtein distance between the reconciled value and the cell value (?):
 
-    
-      return cell["recon"]["features"]["nameLevenshtein"]
+{{{
+  return cell["recon"]["features"]["nameLevenshtein"]
+}}}
 
 It seems as though you can make use of a wide range of Jython structures.  To return the lower case of value (if the value is not null):
 
-    
-      if value is not None:
-        return value.lower()
-      else:
-        return None 
+{{{
+  if value is not None:
+    return value.lower()
+  else:
+    return None
+}}} 

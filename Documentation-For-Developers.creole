@@ -1,6 +1,11 @@
 //Documentation hub for developers//
 
 ----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/DocumentationForDevelopers]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
+----
 **NOTE:** The project & documentation is in the process of moving to [https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers Github].  Please check [https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers there] first for the latest information.
 ----
 [[Developer's Guide|Developers Guide]] - how to check out the code, build, run, and test

@@ -1,5 +1,10 @@
 //Issues Tracking//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Issues]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 Issue Tracking is only for reporting specific bugs and requesting specific features. If you just don't know how to do something using OpenRefine, or want to discuss some ideas, please
 
 * try the [[documentation wiki|http://code.google.com/p/google-refine/wiki/GettingStarted?tm=6]]

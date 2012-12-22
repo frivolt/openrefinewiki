@@ -1,5 +1,10 @@
 //Editing cells.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/CellEditing]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 ==Editing One Cell at A Time==
 
 To edit a cell, hover your mouse over that cell. You should see a tiny blue button labeled "edit". Click it to edit the cell. That pops up a window with a bigger text field for you to edit.
@@ -39,8 +44,9 @@ The most common way to edit cells in a column in OpenRefine is by invoking the T
 
 Say we invoke the Transform command on the name column and enter the expression
 
-    
-      value.split(" ").reverse().join(", ")
+{{{
+  value.split(" ").reverse().join(", ")
+}}}
 
 This causes OpenRefine to iterate through each of the 2 rows, and for each row, set the variable {{{value}}} to the row's cell in column "name", evaluate the expression, and put the result back into that cell. More specifically,
 

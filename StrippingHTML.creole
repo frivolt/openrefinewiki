@@ -1,5 +1,10 @@
 //Extracting & Converting HTML markup//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/StrippingHTML]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 = Introduction =
 
 At some point you may have a dataset where one or more of the columns contain HTML markup.  The markup tags may interfere with data extraction/cleansing, word counts, etc.
@@ -13,8 +18,9 @@ It's very easy to create a new column with the HTML tags removed using OpenRefin
 
 Assume you have a column **Col1** containing HTML markup.  Click on the dropdown next to **Col1** and choose "Edit Column > Add Column Based On This Column...".  Pick a name for the new column, and use the following expression:
 
-    
-    replace(value,/<\/?\w+((\s+\w+(\s*=\s*(?:".*?"|'.*?'|[^'">\s]+))?)+\s*|\s*)\/?>/,'')
+{{{
+replace(value,/<\/?\w+((\s+\w+(\s*=\s*(?:".*?"|'.*?'|[^'">\s]+))?)+\s*|\s*)\/?>/,'')
+}}}
 
 Press OK, and you'll soon have a new column with the plain text extracted from **Col1**.
 ----
@@ -29,12 +35,14 @@ Press OK, and you'll soon have a new column with the plain text extracted from *
 Useful Common Examples:
 
   Extract all the {{{<table>}}} rows from a {{{<div ID=content>}}}:
-    
-    value.parseHtml().select("div#content")[0].select("tr").toString()
+{{{
+value.parseHtml().select("div#content")[0].select("tr").toString()
+}}}
 
   Simple Web Scraping (Web Scraper) can be made in OpenRefine with a pattern.  For example, you can add a new column based on an HTML page that has a bunch of links, where you need to Loop and Extract (using {{{forEach()}}}) all the {{{<a href=>}}} links based upon a regex pattern (such as those links containing a number digit \\d+) and join the array so that you can split and Fetch URLs on all those extracted links to scrape even more data off each HTML link with another Fetch URLs pass. :
-    
-    forEach(value.parseHtml().select("a[href~=\\d+]"),e,e.htmlAttr("href")).join("SplitCharsGoHere")
+{{{
+forEach(value.parseHtml().select("a[href~=\\d+]"),e,e.htmlAttr("href")).join("SplitCharsGoHere")
+}}}
 
 After adding that new column with the above GREL snippet, you can then do Edit Cells -> Split multi-valued cells... and use your separator chars phrase, such as {{{"SplitCharsGoHere"}}} or {{{"--SPLITME--"}}} or {{{"|||||"}}} ; Whatever chars you choose to do your {{{join()}}}.
 
@@ -53,21 +61,23 @@ The following will strip out only the 4th table row text found on the first tabl
 
 [http://google-refine.googlecode.com/issues/attachment?aid=3743089648310961680&name=ParseHTML_BeautifulSoup.png&token=31499509f849f514f584519cd59cd4fa&inline=1]
 
-    
-    from BeautifulSoup import BeautifulSoup
-    
-    soup = BeautifulSoup(value)
-    
-    gettablerow4 = soup.tr(text=True)[4]
-    
-    return gettablerow4
+{{{
+from BeautifulSoup import BeautifulSoup
+
+soup = BeautifulSoup(value)
+
+gettablerow4 = soup.tr(text=True)[4]
+
+return gettablerow4
+}}}
 
 These 4 lines can easily strip tables from an HTML page:
 
-    
-    from BeautifulSoup import BeautifulSoup
-    
-    soup = BeautifulSoup(value)
-    text = soup.table.findAllNext(text=True)
-    
-    return text
+{{{
+from BeautifulSoup import BeautifulSoup
+
+soup = BeautifulSoup(value)
+text = soup.table.findAllNext(text=True)
+
+return text
+}}}

@@ -1,5 +1,10 @@
 //Examples of fetching URLs from web services and processing them within OpenRefine//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FetchingURLsFromWebServices]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 = Introduction =
 
 OpenRefine supports the ability to fetch JSON from any web service based on values in a OpenRefine project and create a new column out of it.  Once you have the JSON, you can use the parseJson() function to create new columns, transform cell values, or even create new facets.
@@ -26,8 +31,9 @@ When it's done, it will look something like this:
 
 There is a lot of information in the JSON you might be interested in, but let's extract the information from the "link" element and the "plot_outline" element.  To do this, click on the dropdown menu for **Graph JSON** and use the "Edit Column > Add Column Based on This Column..." command.  Use the following expression:
 
-    
-    value.parseJson()["link"]
+{{{
+value.parseJson()["link"]
+}}}
 
 When it's done, there will be a new column with the contents of the "link" element extracted from the JSON returned from the Graph API:
 
@@ -41,8 +47,9 @@ Note that OpenRefine has taken care of any text encoding during the parsing/extr
 
 The RESTful URL syntax for the Google Language APIs isn't as [[well documented|http://code.google.com/apis/ajaxlanguage/documentation/]] as it is for using it in languages such as Javascript, but it's not too hard to figure out.  The URL syntax for the Google Language Detection API looks like this:
 
-    
-    http://ajax.googleapis.com/ajax/services/language/detect?v=1.0&key=<api_key>&q=<text>
+{{{
+http://ajax.googleapis.com/ajax/services/language/detect?v=1.0&key=<api_key>&q=<text>
+}}}
 
 That looks easy enough, but there are some things to keep in mind:
 
@@ -51,15 +58,17 @@ That looks easy enough, but there are some things to keep in mind:
 
 Use the following expression for the "Add Column By Fetching URLs..." command on the **Plot Outline** column, replacing your own API key for {{{<api_key>}}} and using a throttle delay of 200 ms:
 
-    
-    "http://ajax.googleapis.com/ajax/services/language/detect?v=1.0&key=<api_key>&q=" + escape(value.substring(0,128),"url")
+{{{
+"http://ajax.googleapis.com/ajax/services/language/detect?v=1.0&key=<api_key>&q=" + escape(value.substring(0,128),"url")
+}}}
 
 After OpenRefine calls the URL for each row, it should look something like this:
 
 [[Note that the information we really want is inside the responseData "envelope" so let's extract it using the following expression with the "Edit Cells > Transform..." command on the **Lang Detect** column:
 
-    
-    value.parseJson()["responseData"]
+{{{
+value.parseJson()["responseData"]
+}}}
 
 [http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/StripEnvelope.png|http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/GoogleTranslate.png]]]
 

@@ -1,5 +1,10 @@
 //The protocol OpenRefine instances use to communicate with a Broker.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/BrokerProtocol]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 NOTE: this is still work in progress and not currently implemented in OpenRefine.
 
 = Introduction =
@@ -51,14 +56,15 @@ In order to modify a project, a OpenRefine instance needs to call the 'transform
 
 where transformation is a JSON serialization of an array of objects that describe the transformations. Note that each transformation object is described like this
 
-    
-      {
-        "op_type" : <number>,
-        "op_value" : <string>,
-        "value" : {
-           ....
-        }
-      }
+{{{
+  {
+    "op_type" : <number>,
+    "op_value" : <string>,
+    "value" : {
+       ....
+    }
+  }
+}}}
 
 where "op_type" indicates the type of lock required to perform such operation, "op_value" indicates the value of the lock and 'value' is the actual JSON object that describes the operation.
 

@@ -1,5 +1,10 @@
 //Other functions supported by the OpenRefine Expression Language (GREL)//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELOtherFunctions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 See also: [GRELFunctions All GREL functions].
 
 ==={{{type(o)}}}===
@@ -18,38 +23,41 @@ Quotes a value as a JSON literal value.
 
 Parses {{{s}}} as JSON. {{{get}}} can then be used with {{{parseJson}}}, e.g.,
 
-    
-    parseJson(" { 'a' : 1 } ").get("a")
+{{{
+parseJson(" { 'a' : 1 } ").get("a")
+}}}
 
 returns 1.
 
 To get all instances from a JSON array called "keywords" having the same object string name of "text", combine with the forEach() function to iterate over the array, e.g.,
 
 JSON:
-    
-    {
-       "status":"OK",
-       "url":"",
-       "language":"english",
-       "keywords":[
-          {
-             "text":"York en route",
-             "relevance":"0.974363"
-          },
-          {
-             "text":"Anthony Eden",
-             "relevance":"0.814394"
-          },
-          {
-             "text":"President Eisenhower",
-             "relevance":"0.700189"
-          }
-       ]
-    }
+{{{
+{
+   "status":"OK",
+   "url":"",
+   "language":"english",
+   "keywords":[
+      {
+         "text":"York en route",
+         "relevance":"0.974363"
+      },
+      {
+         "text":"Anthony Eden",
+         "relevance":"0.814394"
+      },
+      {
+         "text":"President Eisenhower",
+         "relevance":"0.700189"
+      }
+   ]
+}
+}}}
 
 GREL expression:
-    
-    forEach(value.parseJson().keywords,v,v.text).join(":::")
+{{{
+forEach(value.parseJson().keywords,v,v.text).join(":::")
+}}}
 
 will output like this:
 
@@ -74,8 +82,9 @@ Returns an array of zero or more rows in the project {{{projectName}}} for which
 
 Now in the project "Christmas Gifts", we want to add a column containing the addresses of the recipients, which are in project "My Address Book". So we can invoke the command "Add column based on this column" on the "recipient" column in "Christmas Gifts" and enter this expression
 
-    
-      cell.cross("My Address Book", "friend").cells["address"].value[0]
+{{{
+  cell.cross("My Address Book", "friend").cells["address"].value[0]
+}}}
 
 When that command is applied, the result is
 
@@ -98,8 +107,9 @@ Returns the facet count corresponding to the given choice value
 
 If we wanted to show how many of each gift we had given, we could use the following expression:
 
-    
-      facetCount(value, "value", "gift")
+{{{
+  facetCount(value, "value", "gift")
+}}}
 
 This would then complete the table as so:
 

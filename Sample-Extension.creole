@@ -1,28 +1,34 @@
 //Explains the sample extension.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/SampleExtension]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 The sample extension is included in the code base so that you can copy it and get started on writing your own extension. After you copy it, make sure you change its name inside its {{{module/MOD-INF/controller.js}}} file.
 
 =Basic Structure=
 
 The sample extension's code is in {{{refine/extensions/sample/}}}. In that directory, Java source code is contained under the {{{src}}} sub-directory, and webapp code is under the {{{module}}} sub-directory. Here is the full directory layout:
 
-    
-      refine/extensions/sample/
-          build.xml (ant build script)
-          src/
-              com/google/refine/sampleExtension/
-                  ... Java source code ...
-          module/
-              MOD-INF/
-                  module.properties (module settings)
-                  controller.js (module init and routing logic in Javascript)
-              classes/
-                  ... compiled Java classes ...
-              lib/
-                  ... Java jars ...
-              ... velocity templates (.vt) ...
-              ... LESS css files ...
-              ... client-side files (.html, .css, .js, image files) ...
+{{{
+  refine/extensions/sample/
+      build.xml (ant build script)
+      src/
+          com/google/refine/sampleExtension/
+              ... Java source code ...
+      module/
+          MOD-INF/
+              module.properties (module settings)
+              controller.js (module init and routing logic in Javascript)
+          classes/
+              ... compiled Java classes ...
+          lib/
+              ... Java jars ...
+          ... velocity templates (.vt) ...
+          ... LESS css files ...
+          ... client-side files (.html, .css, .js, image files) ...
+}}}
 
 The sub-directory {{{MOD-INF}}} contains the Butterfly module's metadata and is what Butterfly looks for when it scans directories for modules. {{{MOD-INF}}} serves similar functions as {{{WEB-INF}}} in other web frameworks.
 

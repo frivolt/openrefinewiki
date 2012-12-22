@@ -1,5 +1,10 @@
 //OpenRefine's architecture.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Architecture]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 OpenRefine is a web application, but unlike 99% of web applications, it is intended to be run on one's own machine and used by oneself. The server-side maintains states of the data (undo/redo history, long-running processes, etc.) while the client-side maintains states of the user interface (facets and their selections, view pagination, etc.). The client-side makes GET and POST ajax calls to cause changes to the data and to fetch data and data-related states from the server-side.
 
 This architecture has emerged from our experience building similar systems such as Simile Longwell CSI, a faceted browser for RDF data. It provides a good separation of concerns (data vs. UI) and also makes it quick and easy to implement user interface features using familiar web technologies. It leaves doors open for collaborative editing support in the future. And it's possible to make the server-side scriptable from the command line.

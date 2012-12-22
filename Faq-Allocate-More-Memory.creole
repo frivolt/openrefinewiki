@@ -1,5 +1,10 @@
 //FAQ: How to allocate more memory?//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FaqAllocateMoreMemory]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 If you are working with large data sets, you'll probably want to allow OpenRefine to allocate more memory than the default.  If you get OutOfMemoryError reported or if your operations are taking a very long time to run, you should allocate more memory if possible. You will, however, need to balance that allocation with the needs of your operating system.
 
 Even if you don't get OutOfMemoryError, when you are getting close to running out of heap space (memory), the system will spend more and more time managing the heap (ie garbage collecting) and less time doing useful work on your operations.
@@ -21,20 +26,21 @@ Open a "command prompt", 'cd' to the folder where OpenRefine is installed, then 
 where "2048m" is the maximum amount of memory (in Mb) that you want OpenRefine to use.  To change your default, you can edit refine.ini to specify the memory.  Note that this file is only read, if you use refine.bat, not google-refine.exe directly.
 
 If you decide to use the google-refine.exe directly, then set your parameters in the google-refine.l4j.ini file found in the same folder.
-    
-    # Launch4j runtime config
-    
-    # initial memory heap size
-    
-    -Xms256M
-    
-    # max memory memory heap size
-    
-    -Xmx2048M
-    
-    # -XX:+UseLargePages
-    
-    # -Dsomevar="%SOMEVAR%"
+{{{
+# Launch4j runtime config
+
+# initial memory heap size
+
+-Xms256M
+
+# max memory memory heap size
+
+-Xmx2048M
+
+# -XX:+UseLargePages
+
+# -Dsomevar="%SOMEVAR%"
+}}}
 
 Also, in order to use more than 3.5 Gigs RAM you need to download and install Java 64bit and set it as your default {{{JAVA_HOME}}}.  As in this screenshot (notice {{{C:\Program Files\}}} and NOT the {{{C:\Program Files (x86)\}}} folder):
 

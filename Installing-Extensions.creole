@@ -1,5 +1,10 @@
 //How to install extensions.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/InstallingExtensions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 This is applicable to version 2.0 and later only.
 
 Step 1. In OpenRefine's front page (http://127.0.0.1:3333/), click Browse workspace directory at the bottom of the project list. This should open up the workspace directory in your system's file browser.

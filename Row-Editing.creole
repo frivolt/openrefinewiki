@@ -1,5 +1,10 @@
 //Editing rows is done by creating a unique facet, then using the "All" button on the top left.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/RowEditing]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 Rows can be **removed**, and **starred** or **flagged**.
 
 To star or flag a single row, click on the star button or the flag button to the left of that row. You can also star or flag several rows at once by first using filters and facets to show only those rows. Then invoke the left-most drop-down menu in front of "All" and pick Edit rows > Star rows or Edit rows > Flag rows.

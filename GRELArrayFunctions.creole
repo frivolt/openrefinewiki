@@ -1,5 +1,10 @@
 //Array functions supported by the OpenRefine Expression Language (GREL)//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELArrayFunctions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 See also: [GRELFunctions All GREL functions].
 
 ==={{{length(array a)}}}===

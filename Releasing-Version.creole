@@ -1,5 +1,10 @@
 //Releasing a new version of Refine//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ReleasingVersion]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 = Introduction =
 
 When releasing a new version of refine, the following steps should be followed:

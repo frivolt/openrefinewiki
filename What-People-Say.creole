@@ -1,5 +1,10 @@
 //Curated list of quotes, references, uses and extensions about OpenRefine (previously called Freebase Gridworks) in the wild//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/WhatPeopleSay]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 =About the Latest Version=
 
 ===Tweets===

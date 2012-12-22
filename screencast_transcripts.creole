@@ -1,5 +1,10 @@
 //Textual transcripts for the speech over the screencasts//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/screencast_transcripts]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 = Screencast 1 - Introduction to Gridworks =
 
 (coming soon)

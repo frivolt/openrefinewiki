@@ -1,5 +1,10 @@
 //Variables available in expressions//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Variables]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 ==Variables==
 
 |=variable name|=meaning|
@@ -26,12 +31,14 @@ A {{{row}}} object has a few fields, which can be accessed with a dot operator o
 The {{{cells}}} object, which can also be accessed as {{{row.cells}}}, has fields that correspond to the data column names. For example, {{{cells.Foo}}} returns a {{{cell}}} object representing the cell in the column named Foo of the current row. If the column name has spaces, use the square bracket method, e.g., {{{cells["Postal Code"]}}}.
 
 When you need to get the value of the cells variable itself, you need .value at the end, e.g.,
-    
-    cells["column name"].value
+{{{
+cells["column name"].value
+}}}
 
 When you need to set or mass edit the values of the columns cells, then you can simply use a GREL expression within quotes, such as just
-    
-    "San Francisco Bay"
+{{{
+"San Francisco Bay"
+}}}
 Alternatively, you can use a [[Facet|Faceting]] which has a built-in edit link next to each value in the Facet panel that allows you to replace large quantities of cell values in one shot.
 
 ===Cell===
@@ -55,8 +62,9 @@ A {{{recon}}} object has a few fields
 || {{{recon.candidates}}} || an object encapsulating the default 3 candidates|| {{{.id}}} {{{.name}}} {{{.type}}} {{{.score}}} ||
 
 {{{recon.candidates}}} array can be accessed with something like:
-    
-    forEach(cell.recon.candidates,v,v.id).join(",")
+{{{
+forEach(cell.recon.candidates,v,v.id).join(",")
+}}}
 A recon candidate object has a few deeper fields: {{{id}}}, {{{name}}}, {{{type}}}, and {{{score}}}, whose meanings are obvious. {{{type}}} is an array of type IDs. So, the id of the best candidate can be accessed as any one of
 
 * {{{recon.best.id}}}

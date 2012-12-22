@@ -1,5 +1,10 @@
 //How to get the super latest development version.//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 If you're a user who just wants the latest features even if they have not been released yet, you can get the development "trunk" version. Beware that by its very nature that version can be unstable. Use it at your own risk.
 
 =Precautions=
@@ -29,8 +34,9 @@ In the Terminal window, change directory to wherever you want to put the OpenRef
 
 Then in the Terminal window, type
 
-    
-      svn co https://google-refine.googlecode.com/svn/trunk grefine
+{{{
+  svn co https://google-refine.googlecode.com/svn/trunk grefine
+}}}
 
 You would see a lot of lines scroll past as the source is getting downloaded.
 
@@ -38,8 +44,9 @@ You would see a lot of lines scroll past as the source is getting downloaded.
 
 Change into the {{{grefine}}} directory by typing into the Terminal window
 
-    
-      cd grefine
+{{{
+  cd grefine
+}}}
 
 Then build the source code:
 
@@ -63,14 +70,16 @@ You can shut down OpenRefine at any time. You can even close the Terminal window
 
 The trunk version will get updated as we work on it. To get the latest updates, shut down OpenRefine if it's running. Then in a Terminal window, already changed to the {{{grefine}}} directory, type
 
-    
-      svn up
+{{{
+  svn up
+}}}
 
 Then follow the instructions to build and then to run.
 
 Note: if you run into issues, the first thing to do is to clean your local copy with this command
 
-    
-      ./refine clean
+{{{
+  ./refine clean
+}}}
 
 and then build again.

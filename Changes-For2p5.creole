@@ -1,5 +1,10 @@
 //Changes for v2.5 release//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ChangesFor2p5]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 =New Features=
 
 * Completely new user interface for project creation, including:

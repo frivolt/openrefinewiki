@@ -1,5 +1,10 @@
 //OpenRefine Roadmap//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Roadmap]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 This is a very rough outline of the future of this project.
 
 Please be aware that none of this is carved in stone and can change any time, so check back regularly.

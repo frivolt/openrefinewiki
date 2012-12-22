@@ -1,5 +1,10 @@
 //String functions supported by OpenRefine Expression Language (GREL)//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELStringFunctions]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 See also: [GRELFunctions All GREL functions].
 
 =Basic=
@@ -101,8 +106,9 @@ Returns the array of strings obtained by splitting s into substrings with the gi
 ==={{{smartSplit(string s, optional string sep)}}}===
 
 Returns the array of strings obtained by splitting {{{s}}} by the separator {{{sep}}}. Handles quotes properly. Guesses tab or comma separator if {{{sep}}} is not given.  Also, {{{value.escape('javascript')}}} is useful for previewing unprintable chars prior to using smartSplit.
-    
-    smartSplit(value,"\n")  //split cell at Carriage Return or New Line char
+{{{
+smartSplit(value,"\n")  //split cell at Carriage Return or New Line char
+}}}
 
 
 

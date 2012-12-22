@@ -1,5 +1,10 @@
 //Notes on upgrading to version 2.1//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UpgradingTo2p0]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 If you have been using Freebase Gridworks 1.1 or earlier and you are now going to download and install OpenRefine 2.1, you might want to take some precaution to protect your existing Gridworks projects. We have tried to ensure that the upgrade goes smoothly, but it's possible that we have not covered all cases. If you value your current Gridworks projects, then it is safest to back up your existing projects first.
 
 ==Backward Compatibility Issues==

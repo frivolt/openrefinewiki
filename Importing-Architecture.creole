@@ -1,5 +1,10 @@
 //Importing architecture//
 
+----
+NOTE: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ImportingArchitecture]]  at Google Code and has not been manually reviewed.  Please compare it to the original,correct any errors or omissions, then remove this warning block.
+----
+
+
 This is currently applicable only to the code in trunk/.
 
 = Introduction =
@@ -12,12 +17,13 @@ The opening screen of OpenRefine is implemented by the file refine/main/webapp/m
 
 Extensions can add more action areas in Javascript. For example, this is how the Create Project action area is added (refine/main/webapp/modules/core/scripts/index/create-project-ui.js):
 
-    
-    Refine.actionAreas.push({
-      id: "create-project",
-      label: "Create Project",
-      uiClass: Refine.CreateProjectUI
-    });
+{{{
+Refine.actionAreas.push({
+  id: "create-project",
+  label: "Create Project",
+  uiClass: Refine.CreateProjectUI
+});
+}}}
 
 The UI class is a constructor function that takes one argument, a jQuery-wrapped HTML element where the tab body of the action area should be rendered.
 
@@ -37,15 +43,16 @@ An importing controller is just programming logic, but it can manifest itself vi
 
 An extension can register any number of importing controller. Each controller has a client-side part and a server-side part. Its client-side part is just a constructor function that takes an object representing the Create Project action area (usually named {{{createProjectUI}}}). The controller (client-side) is expected to use that object to register data source UIs and/or create custom panels. The controller is not expected to have any particular interface method. The default importing controller's client-side code looks like this (refine/main/webapp/modules/core/scripts/index/default-importing-controller/controller.js):
 
-    
-    Refine.DefaultImportingController = function(createProjectUI) {
-      this._createProjectUI = createProjectUI; // save a reference to the create project action area
-    
-      this._progressPanel = createProjectUI.addCustomPanel(); // create a custom panel
-      this._progressPanel.html('...'); // render the custom panel
-      ... do other stuff ...
-    };
-    Refine.CreateProjectUI.controllers.push(Refine.DefaultImportingController); // register the controller
+{{{
+Refine.DefaultImportingController = function(createProjectUI) {
+  this._createProjectUI = createProjectUI; // save a reference to the create project action area
+
+  this._progressPanel = createProjectUI.addCustomPanel(); // create a custom panel
+  this._progressPanel.html('...'); // render the custom panel
+  ... do other stuff ...
+};
+Refine.CreateProjectUI.controllers.push(Refine.DefaultImportingController); // register the controller
+}}}
 
 We will cover the server-side code below.
 
@@ -55,12 +62,13 @@ Data source selection UIs are another point of extensibility in the Create Proje
 
 Extensions can also add their own data source UIs. A data source selection UI object can be registered like so
 
-    
-    createProjectUI.addSourceSelectionUI({
-      label: "This Computer",
-      id: "local-computer-source",
-      ui: theDataSourceSelectionUIObject
-    });
+{{{
+createProjectUI.addSourceSelectionUI({
+  label: "This Computer",
+  id: "local-computer-source",
+  ui: theDataSourceSelectionUIObject
+});
+}}}
 
 {{{theDataSourceSelectionUIObject}}} is an object that has the following member methods:
 
@@ -69,17 +77,19 @@ Extensions can also add their own data source UIs. A data source selection UI ob
 
 If you want to install a data source selection UI that is managed by the default importing controller, then register its UI class with the default importing controller, like so (refine/main/webapp/modules/core/scripts/index/default-importing-sources/sources.js):
 
-    
-    Refine.DefaultImportingController.sources.push({
-        "label": "This Computer",
-        "id": "upload",
-        "uiClass": ThisComputerImportingSourceUI
-    });
+{{{
+Refine.DefaultImportingController.sources.push({
+    "label": "This Computer",
+    "id": "upload",
+    "uiClass": ThisComputerImportingSourceUI
+});
+}}}
 
 The default importing controller will assume that the {{{uiClass}}} field is a constructor function and call it with one argument--the controller object itself. That constructor function should save the controller object for later use. More specifically, for data source UIs that use the default importing controller, they can call the controller to kickstart the process that retrieves and caches the data to import:
 
-    
-    controller.startImportJob(form, "... status message ...");
+{{{
+controller.startImportJob(form, "... status message ...");
+}}}
 
 The argument {{{form}}} is a jQuery-wrapped FORM element that will get submitted to the server side at the command /command/core/create-importing-job. That command and the default importing controller will take care of uploading or downloading the data, caching it, updating the client side's progress display, and then showing the next importing step when the data is fully cached.
 
