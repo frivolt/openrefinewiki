@@ -11,7 +11,7 @@ Note that Butterfly was chosen over OSGi because
 
 Extensions that come with the code base are located under [[the extensions subdirectory|http://code.google.com/p/google-refine/source/browse/#svn/trunk/extensions]], but when you develop your own extension, you can put its code anywhere as long as you point Butterfly to it. That is done by any one of the following methods
 
-* refer to your extension's directory in [[the butterfly.properites file|http://code.google.com/p/google-refine/source/browse/trunk/main/webapp/WEB-INF/butterfly.properties]] through a ##{{{butterfly.modules.path}}}## setting.
+* refer to your extension's directory in [[the butterfly.properites file|http://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties]] through a ##{{{butterfly.modules.path}}}## setting.
 * specify the butterfly.modules.path property on the command line when you run OpenRefine.  This overrides the values in the property file, so you need to include the default values first e.g. ##{{{-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension}}}##
 
 
@@ -34,7 +34,7 @@ A OpenRefine extension (implemented as a Butterfly module) sits in a file direct
               module.properties
               controller.js
 
-The file named module.properties (see [[example|http://code.google.com/p/google-refine/source/browse/trunk/extensions/sample-extension/module/MOD-INF/module.properties]]) contains the extension's metadata. Of importance is the name field, which gives the extension a name that's used in many other places to refer to it. This can be different from the extension's directory name.
+The file named module.properties (see [[example|http://github.com/OpenRefine/OpenRefine/blob/master/extensions/sample-extension/module/MOD-INF/module.properties]]) contains the extension's metadata. Of importance is the name field, which gives the extension a name that's used in many other places to refer to it. This can be different from the extension's directory name.
 
     
       name = my-extension-name
@@ -48,7 +48,7 @@ Also of importance is the dependency
 
 which makes sure that the core module of OpenRefine is loaded before the extension attempts to hook into it.
 
-The file named controller.js is responsible for registering the extension's hooks into OpenRefine. Look at the sample-extension extension's [[controller.js|http://code.google.com/p/google-refine/source/browse/trunk/extensions/sample/module/MOD-INF/controller.js]] file for an example. It should have a function called init() that does the hook registrations.
+The file named controller.js is responsible for registering the extension's hooks into OpenRefine. Look at the sample-extension extension's [[controller.js|http://github.com/OpenRefine/OpenRefine/blob/master/extensions/sample/module/MOD-INF/controller.js]] file for an example. It should have a function called init() that does the hook registrations.
 
 The ##{{{build.xml}}}## file is an [[Apache Ant|http://ant.apache.org/]] build file. You can make a copy of the sample extension's ##{{{build.xml}}}## file to get started. The important point here is that the Java classes should be built into the ##{{{module/MOD-INF/classes}}}## sub-directory.
 

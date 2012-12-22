@@ -30,7 +30,7 @@ The process that generates the key from a string value is the following (note th
 * join the tokens back together
 * normalize extended western characters to their ASCII representation (for example "gödel" → "godel")
 
-If you're curious, the code that performs this is [[here|http://code.google.com/p/google-refine/source/browse/trunk/main/src/com/google/refine/clustering/binning/FingerprintKeyer.java]].
+If you're curious, the code that performs this is [[here|http://github.com/OpenRefine/OpenRefine/blob/master/main/src/com/google/refine/clustering/binning/FingerprintKeyer.java]].
 
 There are several factors that play a role in this fingerprint:
 
@@ -42,7 +42,7 @@ There are several factors that play a role in this fingerprint:
 
 The [[n-gram|http://en.wikipedia.org/wiki/N-gram]] fingerprint method is similar to the fingerprint method described above but instead of using whitespace separated tokens, it uses n-grams, where the ##{{{n}}}## (or the size in chars of the token) can be specified by the user.
 
-Here is what it does (or [[check the code|http://code.google.com/p/google-refine/source/browse/trunk/main/src/com/google/refine/clustering/binning/NGramFingerprintKeyer.java]] if you're curious about the details, again the order is significant):
+Here is what it does (or [[check the code|http://github.com/OpenRefine/OpenRefine/blob/master/main/src/com/google/refine/clustering/binning/NGramFingerprintKeyer.java]] if you're curious about the details, again the order is significant):
 
 * change all characters to their lowercase representation
 * remove all punctuation, whitespace, and control characters
