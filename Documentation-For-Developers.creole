@@ -11,9 +11,9 @@
 
 ==Extensions==
 
-* [[Write an Extension|Write An Extension]]
-* [[Sample Extension|Sample Extension]]
-* [[Extension Points|Extension Points]]
+* [[Write an Extension]]
+* [[Sample Extension]]
+* [[Extension Points]]
 
 ==Service Plug-ins==
 
@@ -28,6 +28,6 @@
 
 ==Miscellaneous==
 
-* [FAQ FAQ] - covers running a Refine server programmatically
-* [[Roadmap|Roadmap]]
+* [[FAQ]] - covers running a Refine server programmatically
+* [[Roadmap]]
 * [[Releasing a new Version|Releasing Version]]
