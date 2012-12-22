@@ -21,7 +21,7 @@ These should be some good guides to getting started with exporting your data in 
 
 
 |=Format|=Prefix|=Row Template|=Row Seperator|=Suffix|
-**!MediaWiki tables**|`{|`|`| {{cells[[*YAML*|`----`|`- {{cells["col1"|"col1"]}}`|`|-`|`|}`]]}}`||`...`
+|**!MediaWiki tables**|`{|`|`| {{cells[[|*YAML*|`----`|`- {{cells["col1"|"col1"]}}`|`|-`|`|}`|]]}}`||`...`|
 
 <wiki:comment>
 I can't get this to render properly --Tim McNamara

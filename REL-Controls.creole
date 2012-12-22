@@ -9,8 +9,8 @@ Expression `o` is evaluated to a value. If that value is true, then expression `
 Examples:
 
 |=expression|=result|
-`if("internationalization".length() > 10, "big string", "small string")`|`big string`
-`if(mod(37, 2) == 0, "even", "odd")`|`odd`
+|`if("internationalization".length() > 10, "big string", "small string")`|`big string`|
+|`if(mod(37, 2) == 0, "even", "odd")`|`odd`|
 
 
 ===`with(expression o, variable v, expression e)`===
@@ -18,9 +18,9 @@ Examples:
 Evaluates expression `o` and binds its value to variable name `v`. Then evaluates expression `e` and returns that result.
 
 |=expression|=result|
-`with("european union".split(" "), a, a.length)`|`2`
-`with("european union".split(" "), a, forEach(a, v, v.length()))`|`[ 8, 5 ]`
-`with("european union".split(" "), a, forEach(a, v, v.length()).sum() / a.length())`|`6.5`
+|`with("european union".split(" "), a, a.length)`|`2`|
+|`with("european union".split(" "), a, forEach(a, v, v.length()))`|`[ 8, 5 ]`|
+|`with("european union".split(" "), a, forEach(a, v, v.length()).sum() / a.length())`|`6.5`|
 
 
 ===`filter(expression a, variable v, expression test)`===
@@ -28,7 +28,7 @@ Evaluates expression `o` and binds its value to variable name `v`. Then evaluate
 Evaluates expression `a` to an array. Then for each array element, binds its value to variable name `v`, evaluates expression `test` which should return a boolean. If the boolean is true, pushes `v` onto the result array.
 
 |=expression|=result|
-`filter([ 3, 4, 8, 7, 9 ], v, mod(v, 2) == 1)`|`[ 3, 7, 9 ]`
+|`filter([ 3, 4, 8, 7, 9 ], v, mod(v, 2) == 1)`|`[ 3, 7, 9 ]`|
 
 
 ===`forEach(expression a, variable v, expression e)`===
@@ -36,7 +36,7 @@ Evaluates expression `a` to an array. Then for each array element, binds its val
 Evaluates expression `a` to an array. Then for each array element, binds its value to variable name `v`, evaluates expression `e`, and pushes the result onto the result array.
 
 |=expression|=result|
-`forEach([ 3, 4, 8, 7, 9 ], n, mod(n, 2))`|`[ 1, 0, 0, 1, 1 ]`
+|`forEach([ 3, 4, 8, 7, 9 ], n, mod(n, 2))`|`[ 1, 0, 0, 1, 1 ]`|
 
 
 ===`forEachIndex(expression a, variable i, variable v, expression e)`===
@@ -44,7 +44,7 @@ Evaluates expression `a` to an array. Then for each array element, binds its val
 Evaluates expression `a` to an array. Then for each array element, binds its index to variable `i` and its value to variable name `v`, evaluates expression `e`, and pushes the result onto the result array.
 
 |=expression|=result|
-`forEachIndex([ "anne", "ben", "cindy" ], j, name, (j + 1) + ". " + name).join(", ")`|`1. anne, 2. ben, 3. cindy`
+|`forEachIndex([ "anne", "ben", "cindy" ], j, name, (j + 1) + ". " + name).join(", ")`|`1. anne, 2. ben, 3. cindy`|
 
 
 ===`forRange(number from, number to, number step, variable v, expression e)`===
@@ -64,10 +64,10 @@ Evaluates expression `o`. If it is non-blank, binds its value to variable name `
 Examples:
 
 |=expression|=result|
-`isBlank("abc")`|`false`
-`isNonBlank("abc")`|`true`
-`isNull("abc")`|`false`
-`isNumeric(2)`|`true`
-`isError(1)`|`false`
-`isError("abc")`|`false`
-`isError(1 / 0)`|`true`
+|`isBlank("abc")`|`false`|
+|`isNonBlank("abc")`|`true`|
+|`isNull("abc")`|`false`|
+|`isNumeric(2)`|`true`|
+|`isError(1)`|`false`|
+|`isError("abc")`|`false`|
+|`isError(1 / 0)`|`true`|

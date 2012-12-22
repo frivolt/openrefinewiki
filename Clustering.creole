@@ -3,13 +3,13 @@
 Google Refine's text facets are a great mechanism for surfacing patterns from your data. Consider a data set that contains people's names entered in two different ways: "first_name middle_initial last_name", and "last_name, first_name". A text facet on that column might reveal
 
 |=choice|=count|
-Andy Anderson|79
-Andy R. Anderson|9
-Anderson, Andy|57
-Beatrice Beaufort|28
-Beatrice Mansfield|67
-Beaufort, Beatrice|19
-...|...
+|Andy Anderson|79|
+|Andy R. Anderson|9|
+|Anderson, Andy|57|
+|Beatrice Beaufort|28|
+|Beatrice Mansfield|67|
+|Beaufort, Beatrice|19|
+|...|...|
 
 Say you want to change every name to "first_name last_name", then using that facet, you would need to edit "Anderson, Andy" to "Andy Anderson", "Beaufort, Beatrice" to "Beatrice Beaufort", and so forth. And of course there are the occasional middle initials to worry about. While editing through the text facet is already orders of magnitude easier than editing the same data in a spreadsheet, there is a more automated way to do this: the Clustering feature.
 

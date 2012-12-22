@@ -5,9 +5,9 @@
 For this tutorial, we are going to be working with a small set of data that looks like this:
 
 |=**Name**|=**Height (m)**|=**Occupation**|
-Andy|1.73|Student
-Bernd|1.79|Zoologist
-Carol|1.65|Carpenter
+|Andy|1.73|Student|
+|Bernd|1.79|Zoologist|
+|Carol|1.65|Carpenter|
 
 By default, Google Refine exports JSON. JSON is a very effective way to transport data, but it can sometimes be difficult to read. Consider the difference between these two presentations of the same data:
 

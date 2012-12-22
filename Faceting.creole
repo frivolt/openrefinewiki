@@ -10,28 +10,28 @@ Typically, you create a facet on a particular column. The facet summarizes the c
 Consider a data set like this
 
 |=president|=died in office|=party|
-Abraham Lincoln|yes|Republican
-Andrew Johnson|no|Democratic
-Ulysses Grant|no|Republican
-Rutherford Hayes|no|Republican
-James Garfield|yes|Republican
-Chester Arthur|no|Republican
-Grover Cleveland|no|Democratic
-Benjamin Harrison|no|Republican
-William McKinley|yes|Republican
-Theodore Roosevelt|no|Republican
-William Taft|no|Republican
-Woodrow Wilson|no|Democratic
-Warren Harding|yes|Republican
-Calvin Coolidge|no|Republican
-...|...|...
+|Abraham Lincoln|yes|Republican|
+|Andrew Johnson|no|Democratic|
+|Ulysses Grant|no|Republican|
+|Rutherford Hayes|no|Republican|
+|James Garfield|yes|Republican|
+|Chester Arthur|no|Republican|
+|Grover Cleveland|no|Democratic|
+|Benjamin Harrison|no|Republican|
+|William McKinley|yes|Republican|
+|Theodore Roosevelt|no|Republican|
+|William Taft|no|Republican|
+|Woodrow Wilson|no|Democratic|
+|Warren Harding|yes|Republican|
+|Calvin Coolidge|no|Republican|
+|...|...|...|
 
 Let's create a text facet on the "party" column (by clicking on that column's drop-down menu and invoke Facet > Text facet). It will show something like this
 
 |=choice|=count|
-Democratic|15
-Republican|18
-...|...
+|Democratic|15|
+|Republican|18|
+|...|...|
 
 What it is telling you is that there are 15 rows in which the "party" cells contain "Democratic", 18 rows in which the "party" cells contain "Republican", etc. And you, understanding the meaning of this data, might phrase that as: there are 15 democrat presidents, 18 republican presidents, etc. In this way, the facet gives you a big picture of your data, saving you the effort of counting the presidents by their parties yourself.
 
@@ -42,15 +42,15 @@ Now if you click on "Democratic" in the facet, then the data table on the right 
 In addition to the "party" facet, let's create a text facet on the column "died in office". It might show something like this
 
 |=choice|=count|
-yes|6
-no|37
+|yes|6|
+|no|37|
 
 Selecting something in one facet affects the choices in the other(s). For example, if you select "yes" in the facet "died in office", then that filters the data table to only the 6 
 rows where the cells "died in office" contain "yes". Now, the other facet--the facet "party"--will operate only on those 6 rows. And it might now show something like this
 
 |=choice|=count|
-Democratic|2
-Republican|4
+|Democratic|2|
+|Republican|4|
 
 You might phrase that as, "among those presidents who died while in office, 2 were democrats and 4 were republicans."
 
@@ -69,14 +69,14 @@ That facet splits against the 1st space char found and returns the 1st part of t
 **IMPORTANT TIP:**  `[[is equivalent to saying "The 2nd part of an array or list" in GREL since indexing of arrays or lists in Refine actually begins with `[0|1]`]]` or "The 1st part of an array or list".
 
 |=choice|=count|
-James|5
-John|4
-William|4
-George|3
-Andrew|2
-Thomas|1
-Franklin|2
-...|...
+|James|5|
+|John|4|
+|William|4|
+|George|3|
+|Andrew|2|
+|Thomas|1|
+|Franklin|2|
+|...|...|
 
 ==Row-based Text Facets==
 

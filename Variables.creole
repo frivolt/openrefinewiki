@@ -3,23 +3,23 @@
 ==Variables==
 
 |=variable name|=meaning|
-`value`|the value of the cell in the base column of the current row; can be `null`
-`row`|the current row; an object with more fields, with details below
-`cells`|the cells of the current row, with fields that correspond to the column names; more details below
-`cell`|the cell in the base column of the current row; an object with more fields, with details below
-`recon`|the recon object of a cell returned from a reconciliation service or provider; an object with more fields, with details below
-`record`|one or more rows grouped together to form a record; an object with more fields, with details below
+|`value`|the value of the cell in the base column of the current row; can be `null`|
+|`row`|the current row; an object with more fields, with details below|
+|`cells`|the cells of the current row, with fields that correspond to the column names; more details below|
+|`cell`|the cell in the base column of the current row; an object with more fields, with details below|
+|`recon`|the recon object of a cell returned from a reconciliation service or provider; an object with more fields, with details below|
+|`record`|one or more rows grouped together to form a record; an object with more fields, with details below|
 
 ===Row===
 
 A `row` object has a few fields, which can be accessed with a dot operator or with square brackets: `row.index`, `row[[much like in Javascript.
 
 |=field name|=meaning|
-`row.index`|zero-based index of the current row
-`row.cells`|the cells of the row, same as the "cells" variable above
-`row.starred`|boolean, indicating if the row is starred
-`row.flagged`|boolean, indicating if the row is flagged
-`row.record`|the Record object containing the current row, same as the `record` variable above
+|`row.index`|zero-based index of the current row|
+|`row.cells`|the cells of the row, same as the "cells" variable above|
+|`row.starred`|boolean, indicating if the row is starred|
+|`row.flagged`|boolean, indicating if the row is flagged|
+|`row.record`|the Record object containing the current row, same as the `record` variable above|
 
 ===Cells===
 
@@ -37,8 +37,8 @@ Alternatively, you can use a [[Faceting|Facet]] which has a built-in edit link n
 A `cell` object has two fields
 
 |=field name|=meaning|
-`cell.value`|the value in the cell, which can be null, a string, a number, a boolean, or an error
-`cell.recon`|an object encapsulating the reconciliation results for that cell
+|`cell.value`|the value in the cell, which can be null, a string, a number, a boolean, or an error|
+|`cell.recon`|an object encapsulating the reconciliation results for that cell|
 
 ===Recon===
 
@@ -72,7 +72,7 @@ A `features` object has the following fields:
 A `record` object encapsulates one or more rows that are grouped together. For example, the following data set has 2 records, the first grouping 2 rows and the second grouping 3 rows:
 
 |=row|=author|=book|=date|
-1.|Neal Stephenson|Anathem|2009
+|1.|Neal Stephenson|Anathem|2009|
 || 2. || || Snow Crash || 2000 ||  
 || 3. || J.K. Rowlings || Harry Potter and the Half-Blood Prince || 2006 ||
 || 4. || || Harry Potter and the Order of the Phoenix (Book 5) || 2005 ||

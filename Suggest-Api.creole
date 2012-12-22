@@ -16,10 +16,10 @@ Similarly, for the `flyout` entry point, it is important to respond quickly whil
 The `suggest` entry point takes the following URL parameters
 
 |="prefix"|=a string the user has typed|
-"type"|optional, a single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/policician" as a Freebase type)
-"type_strict"|optional, a string, one of "any", "all", "should"
-"limit"|optional, an integer to specify how many results to return
-"start"|optional, an integer to specify the first result to return (thus in conjunction with `limit`, support pagination)
+|"type"|optional, a single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/policician" as a Freebase type)|
+|"type_strict"|optional, a string, one of "any", "all", "should"|
+|"limit"|optional, an integer to specify how many results to return|
+|"start"|optional, an integer to specify the first result to return (thus in conjunction with `limit`, support pagination)|
 
 Here is a live example
 
