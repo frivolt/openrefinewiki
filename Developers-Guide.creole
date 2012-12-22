@@ -1,14 +1,8 @@
 //OpenRefine Developer's Guide//
 
 ----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/DevelopersGuide]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/DevelopersGuide]] , correct any errors or omissions, then remove this warning block.
+**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/DevelopersGuide]]  at Google Code and has not been fully reviewed.
 ----
-
-
-----
-**NOTE:** The project is moving to [https://github.com/OpenRefine/OpenRefine Github] and the [https://github.com/OpenRefine/OpenRefine/wiki/DevelopersGuide Developer's Guide] now lives there.  This page refers to the old SVN-based source control.
-----
-
 
 = Guide for OpenRefine Developers =
 
@@ -21,34 +15,40 @@ OpenRefine' source comes with [[Eclipse|http://www.eclipse.org/]] project files 
 At the command line, go to a directory **not** under your Eclipse workspace directory and check out the source:
 
 {{{
-svn co https://google-refine.googlecode.com/svn/trunk grefine
+git clone https://github.com/OpenRefine/OpenRefine.git
 }}}
 
 Then in Eclipse, invoke the Import ... command
 
-  [[Pick Existing Projects into Workspace
+----
+**TODO**: These broken image links need to be rehosted somewhere
+----
+{{http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png|Pick Existing Projects into Workspace}}
 
-  [http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png|http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png]]]
+{{http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png}}
 
 Locate the directory where you've checked out OpenRefine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
 
-  [[Note that the above steps are already packaged for you if you look for the {{{Refine.launch}}} file in the {{{server/IDEs/eclipse}}} folder inside the OpenRefine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run OpenRefine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
+  Note that the above steps are already packaged for you if you look for the {{{Refine.launch}}} file in the {{{server/IDEs/eclipse}}} folder inside the OpenRefine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run OpenRefine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
 
 === Netbeans ===
 
 1. make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
 1. in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
-fc096890875113e52dbfe1b5d645bc6f
+{{{
+-Drefine.autoreloading=true  -Drefine.webapp=src/main/webapp
+}}}
 1. apply, close the dialog and then click the green run button and voila', you should see it run and open your default browser.
 
 If you want OpenRefine logs to be more verbose, append this to the line above
 
-fe8984c305c1725d831a709e54dd1d25
-
+{{{
+-Drefine.verbosity=TRACE
+}}}
 
 == Build and Run OpenRefine from the command line using Apache Ant (Fairly Easy and recommended for Windows users) ==
 
-[http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion Step by step to Get Development Version|http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects3.png]]]
+[[Step by step to Get Development Version|Get Development Version]] 
 
 == Build and Run OpenRefine from the command line (harder but more comprehensive) ==
 
@@ -154,4 +154,4 @@ If you receive a message {{{Could not find the main class: com.google.refine.Ref
 
 ==== Installing Java ====
 
-If your linux distro doesn't have Java installed and you have support for {{{apt-get}}} (say, Debian or Ubuntu) you can read [[this helpful page|http://www.cyberciti.biz/faq/howto-ubuntu-linux-install-configure-jdk-jre/]]. Make sure that JAVA_HOME points to your JDK (Java developer kit), the one that contains the compiler, and not the JRE (Java runtime environment) which is what you need to actually run a Java program.
+If your Linux distro doesn't have Java installed and you have support for {{{apt-get}}} (say, Debian or Ubuntu) you can read [[this helpful page|http://www.cyberciti.biz/faq/howto-ubuntu-linux-install-configure-jdk-jre/]]. Make sure that JAVA_HOME points to your JDK (Java developer kit), the one that contains the compiler, and not the JRE (Java runtime environment) which is what you need to actually run a Java program.
