@@ -27,7 +27,7 @@ A call to a reconciliation service API for a single query looks like either of t
       http://foo.com/bar/reconcile?query=...string...
       http://foo.com/bar/reconcile?query={...json object literal...}
 
-If the query parameter is a string, then it's an abbreviation of ##{{{query={"query":...string...}}}}##. Here are two live examples:
+If the query parameter is a string, then it's an abbreviation of {{{query={"query":...string...}}}}. Here are two live examples:
 
 1. http://standard-reconcile.freebaseapps.com/reconcile?query=boston
 1. http://standard-reconcile.freebaseapps.com/reconcile?query={%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22}
@@ -204,13 +204,13 @@ The metadata for each suggest API (type, property, or entity) is as follows:
       "flyout_service_path" : "... optional relative path ..."
     }
 
-The ##{{{service_url}}}## field is required and it should look like this: ##{{{http://foo.com}}}##. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
+The {{{service_url}}} field is required and it should look like this: {{{http://foo.com}}}. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
 
-* ##{{{service_path}}}## defaults to ##{{{/private/suggest}}}##
-* ##{{{flyout_service_url}}}## defaults to the provided ##{{{service_url}}}## field
-* ##{{{flyout_service_path}}}## defaults to ##{{{/private/flyout}}}##
+* {{{service_path}}} defaults to {{{/private/suggest}}}
+* {{{flyout_service_url}}} defaults to the provided {{{service_url}}} field
+* {{{flyout_service_path}}} defaults to {{{/private/flyout}}}
 
-The Freebase Suggest widgets embedded in OpenRefine will concatenate ##{{{_url}}}## and ##{{{_path}}}## to make the full URL. Refer to [[Suggest Api|the specification for a Suggest API]] for details.
+The Freebase Suggest widgets embedded in OpenRefine will concatenate {{{_url}}} and {{{_path}}} to make the full URL. Refer to [[the specification for a Suggest API|Suggest Api]] for details.
 
 
 =OpenRefine Integration & Testing=

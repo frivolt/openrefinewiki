@@ -1,6 +1,6 @@
 //Listing of Reconcilable Data Sources//
 
-With OpenRefine you can perform reconciliation against any web service supporting the [[Reconciliation Service Api|Reconciliation Service API]].
+With OpenRefine you can perform reconciliation against any web service supporting the [[Reconciliation Service API|Reconciliation Service Api]].
 Reconciliation against Freebase is built in, but there are several other
 reconciliation services available, including:
 

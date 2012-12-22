@@ -28,22 +28,22 @@ Press OK, and you'll soon have a new column with the plain text extracted from *
 
 Useful Common Examples:
 
-  Extract all the ##{{{<table>}}}## rows from a ##{{{<div ID=content>}}}##:
+  Extract all the {{{<table>}}} rows from a {{{<div ID=content>}}}:
     
     value.parseHtml().select("div#content")[0].select("tr").toString()
 
-  Simple Web Scraping (Web Scraper) can be made in OpenRefine with a pattern.  For example, you can add a new column based on an HTML page that has a bunch of links, where you need to Loop and Extract (using ##{{{forEach()}}}##) all the ##{{{<a href=>}}}## links based upon a regex pattern (such as those links containing a number digit \\d+) and join the array so that you can split and Fetch URLs on all those extracted links to scrape even more data off each HTML link with another Fetch URLs pass. :
+  Simple Web Scraping (Web Scraper) can be made in OpenRefine with a pattern.  For example, you can add a new column based on an HTML page that has a bunch of links, where you need to Loop and Extract (using {{{forEach()}}}) all the {{{<a href=>}}} links based upon a regex pattern (such as those links containing a number digit \\d+) and join the array so that you can split and Fetch URLs on all those extracted links to scrape even more data off each HTML link with another Fetch URLs pass. :
     
     forEach(value.parseHtml().select("a[href~=\\d+]"),e,e.htmlAttr("href")).join("SplitCharsGoHere")
 
-After adding that new column with the above GREL snippet, you can then do Edit Cells -> Split multi-valued cells... and use your separator chars phrase, such as ##{{{"SplitCharsGoHere"}}}## or ##{{{"--SPLITME--"}}}## or ##{{{"|||||"}}}## ; Whatever chars you choose to do your ##{{{join()}}}##.
+After adding that new column with the above GREL snippet, you can then do Edit Cells -> Split multi-valued cells... and use your separator chars phrase, such as {{{"SplitCharsGoHere"}}} or {{{"--SPLITME--"}}} or {{{"|||||"}}} ; Whatever chars you choose to do your {{{join()}}}.
 
 After the Split multi-valued cells operation finishes, you should be left in records mode view (rather than row mode view) and you now have a bunch of URLs extracted from EACH original HTML record where you can perform another Fetch URLs operation on all of them.
 
 ----
 = Using Jython and BeautifulSoup to handle Entity Extraction and HTML markup removal =
 
-**Note:** For more on using Jython in expressions and other HTML/XML parsing utilities & recipes visit [[Jython|Using Jython as your Expression Language]]
+**Note:** For more on using Jython in expressions and other HTML/XML parsing utilities & recipes visit [[Using Jython as your Expression Language|Jython]]
 
 BeautifulSoup is a python library that offers powerful HTML parsing and operates very similarly to GREL syntax.
 

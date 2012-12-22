@@ -42,10 +42,10 @@ Say we invoke the Transform command on the name column and enter the expression
     
       value.split(" ").reverse().join(", ")
 
-This causes OpenRefine to iterate through each of the 2 rows, and for each row, set the variable ##{{{value}}}## to the row's cell in column "name", evaluate the expression, and put the result back into that cell. More specifically,
+This causes OpenRefine to iterate through each of the 2 rows, and for each row, set the variable {{{value}}} to the row's cell in column "name", evaluate the expression, and put the result back into that cell. More specifically,
 
-* when OpenRefine processes row 1, it sets ##{{{value}}}## to the string ##{{{John Smith}}}##, splits that string into 2 strings (##{{{John}}}## and ##{{{Smith}}}##), reverses those two strings (##{{{Smith}}}## and ##{{{John}}}##), joins them back to yield ##{{{Smith, John}}}##, and puts that string into that cell.
-* when OpenRefine processes row 2, it sets ##{{{value}}}## to the string ##{{{Jane Doe}}}##, splits that string into 2 strings (##{{{Jane}}}## and ##{{{Doe}}}##), reverses those two strings (##{{{Doe}}}## and ##{{{Jane}}}##), joins them back to yield ##{{{Doe, Jane}}}##, and puts that string into that cell.
+* when OpenRefine processes row 1, it sets {{{value}}} to the string {{{John Smith}}}, splits that string into 2 strings ({{{John}}} and {{{Smith}}}), reverses those two strings ({{{Smith}}} and {{{John}}}), joins them back to yield {{{Smith, John}}}, and puts that string into that cell.
+* when OpenRefine processes row 2, it sets {{{value}}} to the string {{{Jane Doe}}}, splits that string into 2 strings ({{{Jane}}} and {{{Doe}}}), reverses those two strings ({{{Doe}}} and {{{Jane}}}), joins them back to yield {{{Doe, Jane}}}, and puts that string into that cell.
 
 When you click OK, the data set will become
 
@@ -63,7 +63,7 @@ Refine has a feature called **Split multi-valued cells** that can essentially cr
 |Kate Moss|Person|profession:Model,href:"/0122-kate-moss",title="Kate Moss",hair:brown|
 |Marilyn Monroe|Person|profession:Actor,href:"/1488-marilyn-monroe",title="Marilyn Monroe",hair:blond|
 
-The 'data record' column has several fields that need to be split, but we do not necessarily want to create additional columns, instead we want those individual 'fields' for each Person record, since that seems to be how this dataset is arranged.  We can use ##{{{Edit Cells -> Split multi-valued cells...}}}## on the 'data record' column using the comma ##{{{,}}}## separator character.  After applying, our table in Refine now looks like this and you are taken from **rows** mode into **records** mode which is shown just above the **All** column,
+The 'data record' column has several fields that need to be split, but we do not necessarily want to create additional columns, instead we want those individual 'fields' for each Person record, since that seems to be how this dataset is arranged.  We can use {{{Edit Cells -> Split multi-valued cells...}}} on the 'data record' column using the comma {{{,}}} separator character.  After applying, our table in Refine now looks like this and you are taken from **rows** mode into **records** mode which is shown just above the **All** column,
 ----
 Show as: rows **records**  Show: 5 **10** 25 50 records
 || All || name || data type || data record ||
@@ -81,11 +81,11 @@ Show as: rows **records**  Show: 5 **10** 25 50 records
  
 ===Comparison with Spreadsheets Software===
 
-[[Understanding Expressions|Expressions]] in OpenRefine differ from formulas in popular spreadsheet software. In spreadsheets, formulas are entered into cells. That is, a cell can contain a formula (the formula is computed and its result is displayed in the cell). In OpenRefine, cells do **not** contain expressions. Rather, any expression you specify is evaluated to compute a value that is then stored into the cell. If the expression depends on other cells, and the other cells get changed later on, the expression is **not** evaluated again. Each transformation is done only once, **not** updated constantly.
+[[Expressions|Understanding Expressions]] in OpenRefine differ from formulas in popular spreadsheet software. In spreadsheets, formulas are entered into cells. That is, a cell can contain a formula (the formula is computed and its result is displayed in the cell). In OpenRefine, cells do **not** contain expressions. Rather, any expression you specify is evaluated to compute a value that is then stored into the cell. If the expression depends on other cells, and the other cells get changed later on, the expression is **not** evaluated again. Each transformation is done only once, **not** updated constantly.
 
-Also, in spreadsheets, you have to copy formulas from one cell to other cells (typically using the Fill Down command or dragging down the selection rectangle from its bottom right corner). In OpenRefine, there is no copying of expressions. Rather, an [[Understanding Expressions|expression]] is applied to rows that are currently shown, as determined by constraints in facets and filters.
+Also, in spreadsheets, you have to copy formulas from one cell to other cells (typically using the Fill Down command or dragging down the selection rectangle from its bottom right corner). In OpenRefine, there is no copying of expressions. Rather, an [[expression|Understanding Expressions]] is applied to rows that are currently shown, as determined by constraints in facets and filters.
 
 
 ==Editing by Clustering==
 
-Perhaps the most powerful way to edit cells is through the Clustering feature, but that deserves [[Clustering|a whole page of its own]].
+Perhaps the most powerful way to edit cells is through the Clustering feature, but that deserves [[a whole page of its own|Clustering]].

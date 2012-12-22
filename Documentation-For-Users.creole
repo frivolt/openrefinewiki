@@ -2,38 +2,38 @@
 
 Where to start?
 
-* [[Installation Instructions|How to install and run]] ([UpgradingTo2p0 upgrading instructions])
-* [[User Guide|How to use]]
+* [[How to install and run|Installation Instructions]] ([UpgradingTo2p0 upgrading instructions])
+* [[How to use|User Guide]]
 
 Love it so much?
 
-* [[How To Participate|Join in]] with the development or help spread the meme about OpenRefine.
-* [[Get Development Version|Get the development version]] so you can play with all the latest and greatest features, but if you are not afraid of bugs.
+* [[Join in|How To Participate]] with the development or help spread the meme about OpenRefine.
+* [[Get the development version|Get Development Version]] so you can play with all the latest and greatest features, but if you are not afraid of bugs.
 
 =Feature Areas=
 
 **Essential:** These are the features you'd use 80% of the time when you use Refine. They help you clean up your data, extend it, and export it out for other tools to consume.
 
-* [[Importers|Importing]]
-* [[Faceting|Filtering / faceting]]
+* [[Importing|Importers]]
+* [[Filtering / faceting|Faceting]]
 * Editing:
-* [[Cell Editing|Editing cells]], editing cells by [[Clustering|Clustering]]
-* [[Column Editing|Editing columns]], creating columns by [[Extending Data|Extending data]]
-* [[Row Editing|Editing rows]]
-* [[Understanding Expressions|Understanding expressions]]
-* [[Understanding Regular Expressions|Understanding regular expressions]]
-* [[Exporters|Exporting]]
+* [[Editing cells|Cell Editing]], editing cells by [[Clustering|Clustering]]
+* [[Editing columns|Column Editing]], creating columns by [[Extending data|Extending Data]]
+* [[Editing rows|Row Editing]]
+* [[Understanding expressions|Understanding Expressions]]
+* [[Understanding regular expressions|Understanding Regular Expressions]]
+* [[Exporting|Exporters]]
 * [[History|History]] (undo/redo)
 
 **Reconciliation:** You can use the "reconciliation" support in Refine to link text names in your data to database identifiers (also known as database keys, IDs). By connecting your data with other databases, you get more value out of your data.
 
 * [[Reconciliation]]
-* [[Reconcilable Data Sources|Data sources]]
-* [[Extending Data|Extending Data - Calling Web Services]]
-* [[Extending Data From Freebase|Extending Data - Using Freebase]]
+* [[Data sources|Reconcilable Data Sources]]
+* [[Extending Data - Calling Web Services|Extending Data]]
+* [[Extending Data - Using Freebase|Extending Data From Freebase]]
 
 **Uploading to Freebase:**
-If you reconcile against [[Freebase|http://www.freebase.com/]], you can then align your data with Freebase's schemas using [[Schema Alignment|Schema Alignment dialogs]] and load your data into Freebase. For more information on Freebase data loading, see the [[Refinery project|http://wiki.freebase.com/wiki/Refinery]].
+If you reconcile against [[Freebase|http://www.freebase.com/]], you can then align your data with Freebase's schemas using [[Schema Alignment dialogs|Schema Alignment]] and load your data into Freebase. For more information on Freebase data loading, see the [[Refinery project|http://wiki.freebase.com/wiki/Refinery]].
 * [[Schema Alignment|Schema Alignment]]
 
 **Extensions:** Add even more features to Refine by installing extensions.
@@ -45,14 +45,14 @@ If you reconcile against [[Freebase|http://www.freebase.com/]], you can then ali
 
 For complicated tasks that are commonly done, just follow recipes that other folks have discovered and written up.  A recipe is just a sequence of steps, and tips and tricks.
 
-There are **[[Recipes|Quick Recipes]]**  (like removing duplicate row values, etc.)
+There are **[[Quick Recipes|Recipes]]**  (like removing duplicate row values, etc.)
 
 and there are full recipes:
 
 * [[Geocoding|Geocoding]] - translating street addresses to lat/lng coordinates
 * [FetchingURLsFromWebServices Fetching URLs From Web Services] - grabbing from the Web more data related to the data you already have
 * [StrippingHTML Web Scraping & Extracting items from HTML pages]
-* [[Recipe Apache Logs|Analyzing Apache Logs]]
+* [[Analyzing Apache Logs|Recipe Apache Logs]]
 
 
 =Reference=

@@ -11,8 +11,8 @@ Note that Butterfly was chosen over OSGi because
 
 Extensions that come with the code base are located under [[the extensions subdirectory|http://code.google.com/p/google-refine/source/browse/#svn/trunk/extensions]], but when you develop your own extension, you can put its code anywhere as long as you point Butterfly to it. That is done by any one of the following methods
 
-* refer to your extension's directory in [[the butterfly.properites file|http://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties]] through a ##{{{butterfly.modules.path}}}## setting.
-* specify the butterfly.modules.path property on the command line when you run OpenRefine.  This overrides the values in the property file, so you need to include the default values first e.g. ##{{{-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension}}}##
+* refer to your extension's directory in [[the butterfly.properites file|http://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties]] through a {{{butterfly.modules.path}}} setting.
+* specify the butterfly.modules.path property on the command line when you run OpenRefine.  This overrides the values in the property file, so you need to include the default values first e.g. {{{-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension}}}
 
 
 =Directory Layout=
@@ -50,6 +50,6 @@ which makes sure that the core module of OpenRefine is loaded before the extensi
 
 The file named controller.js is responsible for registering the extension's hooks into OpenRefine. Look at the sample-extension extension's [[controller.js|http://github.com/OpenRefine/OpenRefine/blob/master/extensions/sample/module/MOD-INF/controller.js]] file for an example. It should have a function called init() that does the hook registrations.
 
-The ##{{{build.xml}}}## file is an [[Apache Ant|http://ant.apache.org/]] build file. You can make a copy of the sample extension's ##{{{build.xml}}}## file to get started. The important point here is that the Java classes should be built into the ##{{{module/MOD-INF/classes}}}## sub-directory.
+The {{{build.xml}}} file is an [[Apache Ant|http://ant.apache.org/]] build file. You can make a copy of the sample extension's {{{build.xml}}} file to get started. The important point here is that the Java classes should be built into the {{{module/MOD-INF/classes}}} sub-directory.
 
 Note that your extension's Java code would need to reference some libraries used in OpenRefine and Refine's Java classes themselves. The libraries are in [[trunk/main/webapp/WEB-INF/lib/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/WEB-INF/lib]] and Refine's classes are in [[trunk/main/webapp/modules/core/MOD-INF/classes/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/modules/core/MOD-INF/classes]]. 

@@ -4,8 +4,8 @@
 
 Function invocation in OpenRefine expression language has 2 forms:
 
-* ##{{{functionName(arg0, arg1, ...)}}}##
-* ##{{{arg0.functionName(arg1, ...)}}}##
+* {{{functionName(arg0, arg1, ...)}}}
+* {{{arg0.functionName(arg1, ...)}}}
 
 The second is a shortcut to make expressions easier to read. It's only syntactic sugar.
 

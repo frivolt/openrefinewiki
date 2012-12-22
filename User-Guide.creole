@@ -1,6 +1,6 @@
 //How to use OpenRefine//
 
-If you haven't done so already, we strongly suggest you to watch the [[Screencasts|screencasts]] first as they will give you an idea of how to use OpenRefine.
+If you haven't done so already, we strongly suggest you to watch the [[screencasts|Screencasts]] first as they will give you an idea of how to use OpenRefine.
 
 ==The Basics==
 

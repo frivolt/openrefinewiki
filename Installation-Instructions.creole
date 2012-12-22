@@ -17,7 +17,7 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 ====It's easy, Don't be scared...Follow our step-by-step instructions to get & build the development version:====
 
-1. [[Get Development Version|Step-by-step to get & build the development version]].
+1. [[Step-by-step to get & build the development version|Get Development Version]].
 
 
 ===Install the Release Version on===
@@ -25,11 +25,11 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 ===Windows===
 
-**Install:** Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in ##{{{C:\Google-Refine}}}##).
+**Install:** Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in {{{C:\Google-Refine}}}).
 
-**Run:** In that folder, run the ##{{{.exe}}}## file in that folder. You should see the Command window in which OpenRefine runs. By default, the Command window has a black background and text in monospace font in it.
+**Run:** In that folder, run the {{{.exe}}} file in that folder. You should see the Command window in which OpenRefine runs. By default, the Command window has a black background and text in monospace font in it.
 
-**Shut down:** When you need to shut down OpenRefine, switch to that Command window, and press ##{{{Ctrl-C}}}##. Wait until there's a message that says the shutdown is complete. That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.
+**Shut down:** When you need to shut down OpenRefine, switch to that Command window, and press {{{Ctrl-C}}}. Wait until there's a message that says the shutdown is complete. That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.
 
 ===Mac OSX===
 
@@ -41,7 +41,7 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 ===Linux===
 
-**Install / Run:** Once you have downloaded the ##{{{tar.gz}}}## file, open a shell and type
+**Install / Run:** Once you have downloaded the {{{tar.gz}}} file, open a shell and type
 
     
       tar xzf google-refine.tar.gz
@@ -50,7 +50,7 @@ OpenRefine is a desktop application in that you download it, install it, and run
 
 this will start OpenRefine and open your browser to its starting page.
 
-**Shut down:** Press ##{{{Ctrl-C}}}## in the shell.
+**Shut down:** Press {{{Ctrl-C}}} in the shell.
 
 === Running & Configuration ===
 ----

@@ -54,9 +54,9 @@ The result returned from that URL will be stored into the cell in the new column
         ]
       }
 
-Since it's just JSON, we can parse it out using the parseJSON expression, and then extract the lat/lng pair inside. For more details on geocode, see [[Geocoding|this recipe]].
+Since it's just JSON, we can parse it out using the parseJSON expression, and then extract the lat/lng pair inside. For more details on geocode, see [[this recipe|Geocoding]].
 
 ==Querying Databases==
 
 You can also extend your data using queryable web databases such as [[Freebase|http://www.freebase.com/]].
-* See [[Extending Data From Freebase|Extending Data - Using Freebase]] for more details.
+* See [[Extending Data - Using Freebase|Extending Data From Freebase]] for more details.

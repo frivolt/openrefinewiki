@@ -3,7 +3,7 @@
 ==Major Changes==
 
 * New extension architecture.
-* Generalized reconciliation framework that allows plugging in [[Reconciliation Service Api|standard reconciliation services]].
+* Generalized reconciliation framework that allows plugging in [[standard reconciliation services|Reconciliation Service Api]].
 * Support for QA on data loads into Freebase.
 
 ==Features==

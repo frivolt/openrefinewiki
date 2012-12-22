@@ -1,7 +1,7 @@
 * [[Getting Started|Getting Started]] - [FAQ FAQ]
-* [[Documentation For Users|Documentation for Users]]
-* [[Documentation For Developers|Documentation for Developers]]
-* [[How To Participate|How to Participate]]
+* [[Documentation for Users|Documentation For Users]]
+* [[Documentation for Developers|Documentation For Developers]]
+* [[How to Participate|How To Participate]]
 * Other resources
 * [[Sample Datasets|Sample Datasets]]
 * [[Data Sources|Data Sources]]

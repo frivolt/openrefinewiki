@@ -97,4 +97,4 @@ There are nothing to separate the columns, but we can count the characters and d
 
 ==Other Ways==
 
-There are a few other ways to create new columns, as documented on the [[Extending Data|Extending Data page]].
+There are a few other ways to create new columns, as documented on the [[Extending Data page|Extending Data]].

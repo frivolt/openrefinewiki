@@ -9,13 +9,13 @@
 
 **Here for the First Time?**
 
-* Watch [[Screencasts|these screencasts]] to understand what's possible with OpenRefine
-* [[What People Say|Find out what people say and do with OpenRefine]], ... [[live on Twitter|http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view]]
+* Watch [[these screencasts|Screencasts]] to understand what's possible with OpenRefine
+* [[Find out what people say and do with OpenRefine|What People Say]], ... [[live on Twitter|http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view]]
 
 **Get started:**
 
 * [[Installation Instructions|Installation Instructions]]
-* [[Documentation For Users|Documentation]] for Users
+* [[Documentation|Documentation For Users]] for Users
 * [FAQ] Frequently Asked Questions
 
 **Get help:**
@@ -25,9 +25,9 @@
 
 **Back for More?**
 
-* [[Whats New|See what's new lately]]
-* [[Back Up OpenRefine Data|Understand how to upgrade]] from OpenRefine 2.0 to OpenRefine 2.1
+* [[See what's new lately|Whats New]]
+* [[Understand how to upgrade|Back Up OpenRefine Data]] from OpenRefine 2.0 to OpenRefine 2.1
 
 **If You Are a Developer, see**
 
-* [[Documentation For Developers|Documentation]] for Developers
+* [[Documentation|Documentation For Developers]] for Developers

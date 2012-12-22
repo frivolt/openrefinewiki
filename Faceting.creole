@@ -67,7 +67,7 @@ Now let's say you have some hypothesis about the first names that presidents usu
 
 That facet splits against the 1st space char found and returns the 1st part of the split and will show you something like this (sorted by count):
 
-**IMPORTANT TIP:**  ##{{{[1]}}}## is equivalent to saying "The 2nd part of an array or list" in GREL since indexing of arrays or lists in Refine actually begins with ##{{{[0]}}}## or "The 1st part of an array or list".
+**IMPORTANT TIP:**  {{{[1]}}} is equivalent to saying "The 2nd part of an array or list" in GREL since indexing of arrays or lists in Refine actually begins with {{{[0]}}} or "The 1st part of an array or list".
 
 |=choice|=count|
 |James|5|
@@ -132,7 +132,7 @@ The regular expression language supported here is [[Java's regular expression|ht
 
 ==Miscellany==
 
-Each text facet shows up to 2000 choices by default. You can increase this limit if you think your computer can handle it. Whether "your computer" can handle it or not depends mostly on your web browser. In general, we recommend using a fast web browser anyhow. To up this limit, go to [http://127.0.0.1:3333/preferences] and add a preference with key ##{{{ui.browsing.listFacet.limit}}}## and value equal the new limit, such as ##{{{3000}}}##.
+Each text facet shows up to 2000 choices by default. You can increase this limit if you think your computer can handle it. Whether "your computer" can handle it or not depends mostly on your web browser. In general, we recommend using a fast web browser anyhow. To up this limit, go to [http://127.0.0.1:3333/preferences] and add a preference with key {{{ui.browsing.listFacet.limit}}} and value equal the new limit, such as {{{3000}}}.
 
 The choices and counts displayed in each facet can be copied out, as they serve as a good summary of your data. To do so, click on the "X choices" link near the top left corner of the facet.
 

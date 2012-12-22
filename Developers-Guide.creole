@@ -26,7 +26,7 @@ Then in Eclipse, invoke the Import ... command
 
 Locate the directory where you've checked out OpenRefine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
 
-  [[Note that the above steps are already packaged for you if you look for the ##{{{Refine.launch}}}## file in the ##{{{server/IDEs/eclipse}}}## folder inside the OpenRefine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run OpenRefine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
+  [[Note that the above steps are already packaged for you if you look for the {{{Refine.launch}}} file in the {{{server/IDEs/eclipse}}} folder inside the OpenRefine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run OpenRefine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
 
 === Netbeans ===
 
@@ -46,7 +46,7 @@ fe8984c305c1725d831a709e54dd1d25
 
 == Build and Run OpenRefine from the command line (harder but more comprehensive) ==
 
-On Mac OS X and Linux the OpenRefine build system requires you to have a Unix shell; just use a shell compatible with ##{{{/bin/sh}}}##. On Windows you can use the Windows command line. (go to ##{{{Start}}}## then ##{{{Run}}}##, type ##{{{cmd}}}## and click ##{{{OK}}}##)
+On Mac OS X and Linux the OpenRefine build system requires you to have a Unix shell; just use a shell compatible with {{{/bin/sh}}}. On Windows you can use the Windows command line. (go to {{{Start}}} then {{{Run}}}, type {{{cmd}}} and click {{{OK}}})
 
 To see what functions are supported by OpenRefine's build system, type
 
@@ -55,7 +55,7 @@ To see what functions are supported by OpenRefine's build system, type
 
 to get a list of them.
 
-**NOTE:** When running from the Windows command line, you should omit the ##{{{./}}}##
+**NOTE:** When running from the Windows command line, you should omit the {{{./}}}
 
     
        refine -h
@@ -101,11 +101,11 @@ You can also run the server-side part of the tests directly from Eclipse. To do 
     
      http://beust.com/eclipse
 
-Once the TestNG launching plugin is installed in your Eclipse, look for the ##{{{GoogleRefineTests.launch}}}## file in the ##{{{main/IDEs/eclipse}}}## folder inside the OpenRefine source code, right click on it, select "Run As..." then "GoogleRefineTests". This should open a new tab with the TestNG launcher running the OpenRefine tests.
+Once the TestNG launching plugin is installed in your Eclipse, look for the {{{GoogleRefineTests.launch}}} file in the {{{main/IDEs/eclipse}}} folder inside the OpenRefine source code, right click on it, select "Run As..." then "GoogleRefineTests". This should open a new tab with the TestNG launcher running the OpenRefine tests.
 
 ==== Testing on Windows ====
 
-In addition to Python, the [[Python for Windows extensions|http://sourceforge.net/projects/pywin32/]] are required to run Windmill on Windows. Without it Windmill fails to respond and/or gives an ##{{{ImportError?: No module named win32api}}}##
+In addition to Python, the [[Python for Windows extensions|http://sourceforge.net/projects/pywin32/]] are required to run Windmill on Windows. Without it Windmill fails to respond and/or gives an {{{ImportError?: No module named win32api}}}
 
 Curl is also required, but you can install it when you install Cygwin (there is a module for it).
 
@@ -124,18 +124,18 @@ where 'version' is the release version (for example, 1.3b3).
 
 === Windows ===
 
-On Windows, OpenRefine requires the [[Java JDK|http://java.sun.com/javase/downloads/index.jsp]] to be installed. Once these are installed you then need to [[Set the ##{{{JAVA_HOME}}}## environment variable|http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows]] (please ensure it points to the JDK, and not the JRE) and the ANT_HOME environment variable (this is set up in a similar way to JAVA_HOME, but should point to the ##{{{Tools/Ant}}}## directory in OpenRefine's source code). You may need to reboot your machine after setting these environment variables.
+On Windows, OpenRefine requires the [[Java JDK|http://java.sun.com/javase/downloads/index.jsp]] to be installed. Once these are installed you then need to [[Set the {{{JAVA_HOME}}} environment variable|http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows]] (please ensure it points to the JDK, and not the JRE) and the ANT_HOME environment variable (this is set up in a similar way to JAVA_HOME, but should point to the {{{Tools/Ant}}} directory in OpenRefine's source code). You may need to reboot your machine after setting these environment variables.
 
-Open the Windows command line. Navigate to your installation directory, then run OpenRefine (the ##{{{./}}}## should be omitted when running any of the Refine commands from the Windows command line)
+Open the Windows command line. Navigate to your installation directory, then run OpenRefine (the {{{./}}} should be omitted when running any of the Refine commands from the Windows command line)
 
     
        # cd 'C:\\path_to_installation_directory'
        # refine
 
-If you receive a message ##{{{Could not find the main class: com.google.refine.Refine. Program will exit.}}}## this means that the ##{{{JAVA_HOME}}}## variable is likely not set correctly.
+If you receive a message {{{Could not find the main class: com.google.refine.Refine. Program will exit.}}} this means that the {{{JAVA_HOME}}} variable is likely not set correctly.
 
 === Linux ===
 
 ==== Installing Java ====
 
-If your linux distro doesn't have Java installed and you have support for ##{{{apt-get}}}## (say, Debian or Ubuntu) you can read [[this helpful page|http://www.cyberciti.biz/faq/howto-ubuntu-linux-install-configure-jdk-jre/]]. Make sure that JAVA_HOME points to your JDK (Java developer kit), the one that contains the compiler, and not the JRE (Java runtime environment) which is what you need to actually run a Java program.
+If your linux distro doesn't have Java installed and you have support for {{{apt-get}}} (say, Debian or Ubuntu) you can read [[this helpful page|http://www.cyberciti.biz/faq/howto-ubuntu-linux-install-configure-jdk-jre/]]. Make sure that JAVA_HOME points to your JDK (Java developer kit), the one that contains the compiler, and not the JRE (Java runtime environment) which is what you need to actually run a Java program.

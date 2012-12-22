@@ -35,7 +35,7 @@ The Create Project action area manages a list of "importing controllers". Each c
 
 An importing controller is just programming logic, but it can manifest itself visually by registering one or more data source UIs and one or more custom panels in the Create Project action area. The default importing controller registers 3 such custom panels, which act like pages of a wizard.
 
-An extension can register any number of importing controller. Each controller has a client-side part and a server-side part. Its client-side part is just a constructor function that takes an object representing the Create Project action area (usually named ##{{{createProjectUI}}}##). The controller (client-side) is expected to use that object to register data source UIs and/or create custom panels. The controller is not expected to have any particular interface method. The default importing controller's client-side code looks like this (refine/main/webapp/modules/core/scripts/index/default-importing-controller/controller.js):
+An extension can register any number of importing controller. Each controller has a client-side part and a server-side part. Its client-side part is just a constructor function that takes an object representing the Create Project action area (usually named {{{createProjectUI}}}). The controller (client-side) is expected to use that object to register data source UIs and/or create custom panels. The controller is not expected to have any particular interface method. The default importing controller's client-side code looks like this (refine/main/webapp/modules/core/scripts/index/default-importing-controller/controller.js):
 
     
     Refine.DefaultImportingController = function(createProjectUI) {
@@ -62,10 +62,10 @@ Extensions can also add their own data source UIs. A data source selection UI ob
       ui: theDataSourceSelectionUIObject
     });
 
-##{{{theDataSourceSelectionUIObject}}}## is an object that has the following member methods:
+{{{theDataSourceSelectionUIObject}}} is an object that has the following member methods:
 
-* ##{{{attachUI(bodyDiv)}}}##
-* ##{{{focus()}}}##
+* {{{attachUI(bodyDiv)}}}
+* {{{focus()}}}
 
 If you want to install a data source selection UI that is managed by the default importing controller, then register its UI class with the default importing controller, like so (refine/main/webapp/modules/core/scripts/index/default-importing-sources/sources.js):
 
@@ -76,12 +76,12 @@ If you want to install a data source selection UI that is managed by the default
         "uiClass": ThisComputerImportingSourceUI
     });
 
-The default importing controller will assume that the ##{{{uiClass}}}## field is a constructor function and call it with one argument--the controller object itself. That constructor function should save the controller object for later use. More specifically, for data source UIs that use the default importing controller, they can call the controller to kickstart the process that retrieves and caches the data to import:
+The default importing controller will assume that the {{{uiClass}}} field is a constructor function and call it with one argument--the controller object itself. That constructor function should save the controller object for later use. More specifically, for data source UIs that use the default importing controller, they can call the controller to kickstart the process that retrieves and caches the data to import:
 
     
     controller.startImportJob(form, "... status message ...");
 
-The argument ##{{{form}}}## is a jQuery-wrapped FORM element that will get submitted to the server side at the command /command/core/create-importing-job. That command and the default importing controller will take care of uploading or downloading the data, caching it, updating the client side's progress display, and then showing the next importing step when the data is fully cached.
+The argument {{{form}}} is a jQuery-wrapped FORM element that will get submitted to the server side at the command /command/core/create-importing-job. That command and the default importing controller will take care of uploading or downloading the data, caching it, updating the client side's progress display, and then showing the next importing step when the data is fully cached.
 
 See refine/main/webapp/modules/core/scripts/index/default-importing-sources/sources.js for examples of such source selection UIs. While we write about source selection UIs managed by the default importing controller here, chances are your own extension will not be adding such a new source selection UI. Your extension probably adds with a new importing controller as well as a new source selection UI that work together.
 

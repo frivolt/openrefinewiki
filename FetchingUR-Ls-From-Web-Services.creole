@@ -49,7 +49,7 @@ That looks easy enough, but there are some things to keep in mind:
 * You will need your own Google API key.  You can sign up for one [[here|http://code.google.com/apis/ajaxsearch/signup.html]].
 * Since you're sending non-English text via a URL, you must encode it, and you must ensure you don't send it too much text or the API will return an error.  Since encoding it generally makes it longer, that constrains how much text extracted from the plot_outline element you can use.  Fortunately, the translate APIs don't require too much.
 
-Use the following expression for the "Add Column By Fetching URLs..." command on the **Plot Outline** column, replacing your own API key for ##{{{<api_key>}}}## and using a throttle delay of 200 ms:
+Use the following expression for the "Add Column By Fetching URLs..." command on the **Plot Outline** column, replacing your own API key for {{{<api_key>}}} and using a throttle delay of 200 ms:
 
     
     "http://ajax.googleapis.com/ajax/services/language/detect?v=1.0&key=<api_key>&q=" + escape(value.substring(0,128),"url")
@@ -65,7 +65,7 @@ After OpenRefine calls the URL for each row, it should look something like this:
 
 (This step is optional, but makes it easier to type subsequent expressions to extract data from JSON.)
 
-In practice, you'll want to pay attention to the confidence percentage and the isReliable flag, which is true if confidence is > 50% (0.5).  But for now, we have everything we need; let's group our dataset by ISO 639-1 language code, using the expression ##{{{value.parseJson()["language"]}}}## with the "Facet > Custom Text Facet..." command on the **Lang Detect** column (the **Plot Outline** and **Graph JSON** columns have been collapsed for readability):
+In practice, you'll want to pay attention to the confidence percentage and the isReliable flag, which is true if confidence is > 50% (0.5).  But for now, we have everything we need; let's group our dataset by ISO 639-1 language code, using the expression {{{value.parseJson()["language"]}}} with the "Facet > Custom Text Facet..." command on the **Lang Detect** column (the **Plot Outline** and **Graph JSON** columns have been collapsed for readability):
 
 [http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/FacetByLang.png]
 

@@ -3,25 +3,25 @@
 ----
 **NOTE:** The project & documentation is in the process of moving to [https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers Github].  Please check [https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers there] first for the latest information.
 ----
-[[Developers Guide|Developer's Guide]] - how to check out the code, build, run, and test
+[[Developer's Guide|Developers Guide]] - how to check out the code, build, run, and test
 
 ==Architecture==
 
-* [[Architecture|Architecture overview]]
-* [[Server Side Architecture|Server-Side]]
-* [[Client Side Architecture|Client-Side]]
-* [[Faceted Browsing Architecture|Faceted Browsing]]
+* [[Architecture overview|Architecture]]
+* [[Server-Side|Server Side Architecture]]
+* [[Client-Side|Client Side Architecture]]
+* [[Faceted Browsing|Faceted Browsing Architecture]]
 
 ==Extensions==
 
-* [[Write An Extension|Write an Extension]]
+* [[Write an Extension|Write An Extension]]
 * [[Sample Extension|Sample Extension]]
 * [[Extension Points|Extension Points]]
 
 ==Service Plug-ins==
 
-* [[Reconciliation Service Api|Reconciliation Service API]]
-* [[Suggest Api|Suggest API]]
+* [[Reconciliation Service API|Reconciliation Service Api]]
+* [[Suggest API|Suggest Api]]
 
 ==Known Client libraries for Refine==
 
@@ -35,4 +35,4 @@
 
 * [FAQ FAQ] - covers running a Refine server programmatically
 * [[Roadmap|Roadmap]]
-* [[Releasing Version|Releasing a new Version]]
+* [[Releasing a new Version|Releasing Version]]

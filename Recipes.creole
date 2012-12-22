@@ -6,7 +6,7 @@ This page collects OpenRefine recipes, small workflows and code fragments that s
 
 Here are some examples of possible types of common string manipulation operations that you might encounter and how they can be achieved with the [GRELFunctions OpenRefine Expression Language (GREL)]. See also [GRELStringFunctions GREL String Functions].
 
-=== Change ##{{{2010-05-31T01:10:05Z}}}## to ##{{{05/31/2010}}}## ===
+=== Change {{{2010-05-31T01:10:05Z}}} to {{{05/31/2010}}} ===
 
 One way to do this is use GREL's slice function.
 
@@ -17,7 +17,7 @@ One way to do this is use GREL's slice function.
 === Trim whitespace from beginning and end of values ===
     
       value.trim()
-or if you have non-breaking spaces ##{{{&nbsp}}}## on both ends then you might try this instead:
+or if you have non-breaking spaces {{{&nbsp}}} on both ends then you might try this instead:
     
       split(escape(value,'xml'),"&#160;")[0]
 
@@ -44,7 +44,7 @@ that will chop the value in an array of three strings
     
        ["", "blah_", "2342_blah_1232" ]
 
-and we get the 3rd value (remember that the arrays in OpenRefine, like in most programming languages start from 0, so ##{{{[2]}}}## is actually the third value).
+and we get the 3rd value (remember that the arrays in OpenRefine, like in most programming languages start from 0, so {{{[2]}}} is actually the third value).
 
 === "a:b:c:d:e" -> "b:c:d" ===
 
@@ -118,14 +118,14 @@ then using Jython, you can create a Custom Facet using something such as:
 
 ===Find a sub pattern that exists at the end of a string===
 
-Sometimes you have a need beyond just ##{{{endsWith}}}## to find a varying substring and want to know if that variable pattern is found at the end of a string.  You can add a Custom Text Facet and find this variable pattern with regex delmited by ##{{{/}}}## characters such as ##{{{/.*(PR\d+)/}}}##
+Sometimes you have a need beyond just {{{endsWith}}} to find a varying substring and want to know if that variable pattern is found at the end of a string.  You can add a Custom Text Facet and find this variable pattern with regex delmited by {{{/}}} characters such as {{{/.*(PR\d+)/}}}
     
     value.endsWith(get(value.match(/.*(PR\d+)/),0))
-Here you have to wrap with ##{{{get()}}}## in order to ask if it ##{{{endsWith}}}## the string version of the returned array from ##{{{match}}}##.  ##{{{endsWith}}}## then returns a boolean of True or False if the string ends with your regex pattern, in this case, cells that end with reference numbers that begin with PR followed by any number of decimal digits.
+Here you have to wrap with {{{get()}}} in order to ask if it {{{endsWith}}} the string version of the returned array from {{{match}}}.  {{{endsWith}}} then returns a boolean of True or False if the string ends with your regex pattern, in this case, cells that end with reference numbers that begin with PR followed by any number of decimal digits.
 
 ===Remove the last word in a string===
 
-This uses ##{{{smartSplit}}}## to find the last word ##{{{[-1]}}}## and then wraps ##{{{partition}}}## to keep only the first phrase or part of the string remaining with ##{{{[0]}}}##.
+This uses {{{smartSplit}}} to find the last word {{{[-1]}}} and then wraps {{{partition}}} to keep only the first phrase or part of the string remaining with {{{[0]}}}.
     
     value.partition(smartSplit(value," ")[-1])[0]
 
@@ -232,13 +232,13 @@ As a tip, if you see two weird characters where you think there should be one, t
 
 === Question Marks � showing in your data ===
 
-This is the "Replacement Character - used to replace an incoming character whose value is unknown or unrepresentable."  These will show if there are encoding issues with your data. Because the data is actually changed at import time, this may not be recoverable without re-importing, but you can try reinterpreting as above.  Also there may be non-breaking spaces ##{{{&nbsp}}}## Unicode(160). You can inspect with ##{{{unicode(value)}}}## and replace with regular spaces Unicode(32).
+This is the "Replacement Character - used to replace an incoming character whose value is unknown or unrepresentable."  These will show if there are encoding issues with your data. Because the data is actually changed at import time, this may not be recoverable without re-importing, but you can try reinterpreting as above.  Also there may be non-breaking spaces {{{&nbsp}}} Unicode(160). You can inspect with {{{unicode(value)}}} and replace with regular spaces Unicode(32).
 
 You can also try this quick fix to remove non-breaking spaces on both ends of your string:
     
       split(escape(value,'xml'),"&#160;")[0]
 
-**NOTE** To access and use the Non-breaking space character itself such as ##{{{&nbsp}}}## or ##{{{\u00A0}}}## or ##{{{[160]}}}## in GREL expressions on Windows systems type on the numeric keypad:  ALT 2 5 5 ,which will still display as a regular space in the expression window, but will actually be a non-breaking space character.  Example:  ##{{{value.replaceChars(" ", " ")}}}##
+**NOTE** To access and use the Non-breaking space character itself such as {{{&nbsp}}} or {{{\u00A0}}} or {{{[160]}}} in GREL expressions on Windows systems type on the numeric keypad:  ALT 2 5 5 ,which will still display as a regular space in the expression window, but will actually be a non-breaking space character.  Example:  {{{value.replaceChars(" ", " ")}}}
 
 == Numerical Conversions ==
 
@@ -293,7 +293,7 @@ Another useful numeric facet is the "Text Length Facet" which builds a distribut
 
 == ISBN Calculations & Manipulations ==
 ===ISBN-10===
-Compute ISBN-10 check digit:##{{{grel:sum(forRange(1,10,1,i,toNumber(value[i])**i))%11}}}##
+Compute ISBN-10 check digit:{{{grel:sum(forRange(1,10,1,i,toNumber(value[i])**i))%11}}}
 
 Check computed value against check digit: {{{grel:if(value==10,'X',toString(round(value)))==cells['ISBN10'].value[10]}}}
 
