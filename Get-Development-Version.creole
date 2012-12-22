@@ -18,10 +18,10 @@ On Windows, after installing Subversion and Ant, you may need to logoff, then lo
 
 Open a Terminal window. On Windows, this is done by
 
-  ** invoking the Start menu
-  ** picking "Run ..."
-  ** typing in: `command`
-  ** pressing Enter
+* invoking the Start menu
+* picking "Run ..."
+* typing in: `command`
+* pressing Enter
 
 On MacOSX, use Spotlight to find "Terminal".
 
@@ -41,15 +41,15 @@ Change into the `grefine` directory by typing into the Terminal window
 
 Then build the source code:
 
-  ** on Windows, type: `refine build`
-  ** on MacOSX or `**`nix, type: `./refine build`
+* on Windows, type: `refine build`
+* on MacOSX or `**`nix, type: `./refine build`
 
 =Running=
 
 To run, in the Terminal window
 
-  ** on Windows, type: `refine`
-  ** on MacOSX or `**`nix, type: `./refine`
+* on Windows, type: `refine`
+* on MacOSX or `**`nix, type: `./refine`
 
 =Shutting Down=
 

@@ -1,6 +1,6 @@
 Import the log file:
-  ** without splitting into columns
-  ** with # header lines set 0
+* without splitting into columns
+* with # header lines set 0
 
   [[Then apply the following operations
 

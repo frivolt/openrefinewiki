@@ -56,9 +56,9 @@ You can see from these two examples that they are both fairly readable. However,
 
 You can follow along by pointing Google Refine at the example spreadsheet:
 
- ** Go to http://localhost:3333/ in your web browser
- ** Begin a new project with `https://spreadsheets.google.com/pub?key=0Aq_3OYelM4ZUdEpYYmNKY0t1V0VjYlR5UjFYejVHbWc&hl=en_GB&single=true&gid=0&range=A1%3AC4&output=html` as the URL. 
- * Click on `Export` > `Templating...`
+* Go to http://localhost:3333/ in your web browser
+* Begin a new project with `https://spreadsheets.google.com/pub?key=0Aq_3OYelM4ZUdEpYYmNKY0t1V0VjYlR5UjFYejVHbWc&hl=en_GB&single=true&gid=0&range=A1%3AC4&output=html` as the URL. 
+* Click on `Export` > `Templating...`
 
 = Details =
 
@@ -118,9 +118,9 @@ To:
 
 Some points here:
 
-  ** Keep the curly braces in place. That tells Google Refine that you need to do some processing there.
-  ** Remove the trailing commas from each part
-  * Make sure the cell headings match exactly.
+* Keep the curly braces in place. That tells Google Refine that you need to do some processing there.
+* Remove the trailing commas from each part
+* Make sure the cell headings match exactly.
 
 === Suffix Field ===
 

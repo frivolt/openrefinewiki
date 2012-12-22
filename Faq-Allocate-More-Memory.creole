@@ -43,16 +43,16 @@ Also, in order to use more than 3.5 Gigs RAM you need to download and install Ja
 
 If you have downloaded the ".dmg" package and you start Google Refine by double clicking on it, follow these instructions
 
-  ** close Google Refine
-  ** "control-click" on the Google Refine icon (opens the contextual menu)
-  ** click on "show package content" (a finder window opens)
-  ** open the "Contents" folder
-  ** double click on the "Info.plist" file (a Property List Editor app comes up)
-  ** expand the "java" section at the bottom
-  ** double click on the "VMOptions" content (the right end side)
-  ** change "${java.options}" with "-Xms256M -Xmx1024M"
-  ** save file
-  ** start Google Refine again
+* close Google Refine
+* "control-click" on the Google Refine icon (opens the contextual menu)
+* click on "show package content" (a finder window opens)
+* open the "Contents" folder
+* double click on the "Info.plist" file (a Property List Editor app comes up)
+* expand the "java" section at the bottom
+* double click on the "VMOptions" content (the right end side)
+* change "${java.options}" with "-Xms256M -Xmx1024M"
+* save file
+* start Google Refine again
 
 ===Linux (or Mac):===
 

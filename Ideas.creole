@@ -2,7 +2,7 @@
 
 == Software to research: ==
 
-  ** [[Bobo - Fast faceted search with Lucene.|http://sna-projects.com/bobo/]]
-  ** [[Gephi - open source graph visualization & manipulation|http://gephi.org/]]
-  ** [[Protovis - Web graphs & charts|http://vis.stanford.edu/protovis/]]
-  ** [[Tweepy - python library for Twitter API|https://github.com/joshthecoder/tweepy]]
+* [[Bobo - Fast faceted search with Lucene.|http://sna-projects.com/bobo/]]
+* [[Gephi - open source graph visualization & manipulation|http://gephi.org/]]
+* [[Protovis - Web graphs & charts|http://vis.stanford.edu/protovis/]]
+* [[Tweepy - python library for Twitter API|https://github.com/joshthecoder/tweepy]]

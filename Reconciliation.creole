@@ -1,7 +1,7 @@
 Reconciliation is a semi-automated process of matching text names to database IDs (keys). This is semi-automated because in some cases, machine along is not sufficient and human judgement is essential. For example, given "Ocean's Eleven" as the name of a film, should it be matched to
 
-  ** the original 1960 "Ocean's Eleven" ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven_1960]]), or
-  ** the 2001 remake "Ocean's Eleven" starring George Clooney ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven]])?
+* the original 1960 "Ocean's Eleven" ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven_1960]]), or
+* the 2001 remake "Ocean's Eleven" starring George Clooney ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven]])?
 
 While we talk about "databases" here, perhaps a more accurate term would be "name registries". And conceptually, "reconciliation" isn't a new concept. In some fields, it's being done all the time. For example, when the police gets a name of a suspect, they run the name through their databases of known felons. More details about the suspect (e.g., race, height, last known address) would help the police narrow down the suspect among several database matches.
 

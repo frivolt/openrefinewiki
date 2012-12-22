@@ -43,8 +43,8 @@ Say we invoke the Transform command on the name column and enter the expression
 
 This causes Google Refine to iterate through each of the 2 rows, and for each row, set the variable `value` to the row's cell in column "name", evaluate the expression, and put the result back into that cell. More specifically,
 
-  ** when Google Refine processes row 1, it sets `value` to the string `John Smith`, splits that string into 2 strings (`John` and `Smith`), reverses those two strings (`Smith` and `John`), joins them back to yield `Smith, John`, and puts that string into that cell.
-  ** when Google Refine processes row 2, it sets `value` to the string `Jane Doe`, splits that string into 2 strings (`Jane` and `Doe`), reverses those two strings (`Doe` and `Jane`), joins them back to yield `Doe, Jane`, and puts that string into that cell.
+* when Google Refine processes row 1, it sets `value` to the string `John Smith`, splits that string into 2 strings (`John` and `Smith`), reverses those two strings (`Smith` and `John`), joins them back to yield `Smith, John`, and puts that string into that cell.
+* when Google Refine processes row 2, it sets `value` to the string `Jane Doe`, splits that string into 2 strings (`Jane` and `Doe`), reverses those two strings (`Doe` and `Jane`), joins them back to yield `Doe, Jane`, and puts that string into that cell.
 
 When you click OK, the data set will become
 

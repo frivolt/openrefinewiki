@@ -150,9 +150,9 @@ Here are two live examples:
 
 Note that Freebase itself supports at least 3 identifier spaces:
 
-  ** human-friendly IDs such as /en/apple_inc and /government/politician
-  ** machine ID (mid) such as /m/0k8z
-  ** GUID such as #9202a8c04000641f800000000000451e (deprecated)
+* human-friendly IDs such as /en/apple_inc and /government/politician
+* machine ID (mid) such as /m/0k8z
+* GUID such as #9202a8c04000641f800000000000451e (deprecated)
 
 Thus, it's not enough to say that the identifier space is http://www.freebase.com/; we have to use the URI of the specific property (in this case, mid).
 
@@ -160,9 +160,9 @@ The schema space is the identifier space for types and properties. It might be d
 
 The other fields are for
 
-  ** formulating URLs to a full topic page or to a small preview page for a given entity
-  ** customizing the suggest widgets used in various places in the reconciliation UI
-  ** default types for reconciliation - TODO needs more documentation
+* formulating URLs to a full topic page or to a small preview page for a given entity
+* customizing the suggest widgets used in various places in the reconciliation UI
+* default types for reconciliation - TODO needs more documentation
 
 ==Preview API==
 
@@ -183,8 +183,8 @@ There is also a need for a suggest service for entities rather than just for typ
 
 These suggest APIs are required to work with a modified version of the [[Freebase Suggest widget|http://code.google.com/p/freebase-suggest/]]. As illustrated on that site, each suggest API has 2 jobs to do:
 
-  ** translate what the user type into a ranked list of entities (and this is similar to the core reconciliation service and might share the same implementation)
-  ** render a flyout when an entity is moused over or highlighted using arrow keys (and this is similar to the preview API and might share the same implementation)
+* translate what the user type into a ranked list of entities (and this is similar to the core reconciliation service and might share the same implementation)
+* render a flyout when an entity is moused over or highlighted using arrow keys (and this is similar to the preview API and might share the same implementation)
 
 The metadata for each suggest API (type, property, or entity) is as follows:
 
@@ -197,9 +197,9 @@ The metadata for each suggest API (type, property, or entity) is as follows:
 
 The `service_url` field is required and it should look like this: `http://foo.com`. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
 
-  ** `service_path` defaults to `/private/suggest`
-  ** `flyout_service_url` defaults to the provided `service_url` field
-  * `flyout_service_path` defaults to `/private/flyout`
+* `service_path` defaults to `/private/suggest`
+* `flyout_service_url` defaults to the provided `service_url` field
+* `flyout_service_path` defaults to `/private/flyout`
 
 The Freebase Suggest widgets embedded in Google Refine will concatenate `_url` and `_path` to make the full URL. Refer to [[Suggest Api|the specification for a Suggest API]] for details.
 

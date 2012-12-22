@@ -1,9 +1,9 @@
-  ** [[Getting Started|Getting Started]] - [[FAQ|FAQ]]
-  ** [[Documentation For Users|Documentation for Users]]
-  ** [[Documentation For Developers|Documentation for Developers]]
-  ** [[How To Participate|How to Participate]]
-  ** Other resources
-    ** [[Sample Datasets|Sample Datasets]]
-    ** [[Data Sources|Data Sources]]
-    ** [[Related Software|Related Software]]
-    * [[Freebase Refinery|http://wiki.freebase.com/wiki/Refinery]]
+* [[Getting Started|Getting Started]] - [[FAQ|FAQ]]
+* [[Documentation For Users|Documentation for Users]]
+* [[Documentation For Developers|Documentation for Developers]]
+* [[How To Participate|How to Participate]]
+* Other resources
+* [[Sample Datasets|Sample Datasets]]
+* [[Data Sources|Data Sources]]
+* [[Related Software|Related Software]]
+* [[Freebase Refinery|http://wiki.freebase.com/wiki/Refinery]]

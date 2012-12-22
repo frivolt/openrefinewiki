@@ -56,15 +56,15 @@ A `recon` object has a few fields
     forEach(cell.recon.candidates,v,v.id).join(",")
 A recon candidate object has a few deeper fields: `id`, `name`, `type`, and `score`, whose meanings are obvious. `type` is an array of type IDs. So, the id of the best candidate can be accessed as any one of
 
-  ** `recon.best.id`
-  ** `cell.recon.best.id`
-  ** `row.cells[[(current column's name here) `"|"`]].recon.best.id`
+* `recon.best.id`
+* `cell.recon.best.id`
+* `row.cells[[(current column's name here) `"|"`]].recon.best.id`
 
 You get the idea.
 
 A `features` object has the following fields:
-  ** `typeMatch`, `nameMatch`: booleans, indicating whether the best candidate matches the intended reconciliation type and whether the best candidate's name matches the cell's text exactly
-  * `nameLevenshtein`, `nameWordDistance`: numbers computed by comparing the best candidate's name with the cell's text; larger numbers mean bigger difference
+* `typeMatch`, `nameMatch`: booleans, indicating whether the best candidate matches the intended reconciliation type and whether the best candidate's name matches the cell's text exactly
+* `nameLevenshtein`, `nameWordDistance`: numbers computed by comparing the best candidate's name with the cell's text; larger numbers mean bigger difference
 
 
 ===Record===

@@ -2,8 +2,8 @@
 
 A Suggest API that's compatible with the Freebase Suggest widget should have 2 entry points:
 
-  ** `suggest`: translates some text that the user has typed, optionally constrained in some ways, to a ranked list of entities (this is very similar to a [[Reconciliation Service Api|reconciliation service API]] and can share the same implementation)
-  ** `flyout` : renders a small view of an entity
+* `suggest`: translates some text that the user has typed, optionally constrained in some ways, to a ranked list of entities (this is very similar to a [[Reconciliation Service Api|reconciliation service API]] and can share the same implementation)
+* `flyout` : renders a small view of an entity
 
 See http://code.google.com/p/freebase-suggest/ for an illustration of these two entry points. The dropdown list on the left is populated by the data returned from the `suggest` entry point, and the block on the right is rendered from the HTML returned by a call to the `flyout` entry point given the identifier corresponding to Francis Ford Coppola.
 

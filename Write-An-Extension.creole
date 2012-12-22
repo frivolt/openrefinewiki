@@ -6,13 +6,13 @@ Google Refine makes use of the [[Butterfly framework|http://code.google.com/p/si
 
 Note that Butterfly was chosen over OSGi because 
 
-  ** Butterfly modules can contain both Java code (server-side) as well as webapp code (client-side); and
-  ** Unlike OSGi plugins, Butterfly modules don't have to be jarred and copied into one specific directory--both of which tasks make development very painful.
+* Butterfly modules can contain both Java code (server-side) as well as webapp code (client-side); and
+* Unlike OSGi plugins, Butterfly modules don't have to be jarred and copied into one specific directory--both of which tasks make development very painful.
 
 Extensions that come with the code base are located under [[the extensions subdirectory|http://code.google.com/p/google-refine/source/browse/#svn/trunk/extensions]], but when you develop your own extension, you can put its code anywhere as long as you point Butterfly to it. That is done by any one of the following methods
 
-  ** refer to your extension's directory in [[the butterfly.properites file|http://code.google.com/p/google-refine/source/browse/trunk/main/webapp/WEB-INF/butterfly.properties]] through a `butterfly.modules.path` setting.
-  ** specify the butterfly.modules.path property on the command line when you run Google Refine.  This overrides the values in the property file, so you need to include the default values first e.g. `-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension`
+* refer to your extension's directory in [[the butterfly.properites file|http://code.google.com/p/google-refine/source/browse/trunk/main/webapp/WEB-INF/butterfly.properties]] through a `butterfly.modules.path` setting.
+* specify the butterfly.modules.path property on the command line when you run Google Refine.  This overrides the values in the property file, so you need to include the default values first e.g. `-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension`
 
 
 =Directory Layout=

@@ -1,7 +1,7 @@
 Google Refine supports faceted browsing as a mechanism for
 
-  ** seeing a big picture of your data, and
-  ** filtering down to just the subset of rows that you want to change in bulk.
+* seeing a big picture of your data, and
+* filtering down to just the subset of rows that you want to change in bulk.
 
 Typically, you create a facet on a particular column. The facet summarizes the cells in that column to give you a big picture on that column, and allows you to filter to some subset of rows for which their cells in that column satisfy some constraint. That's a bit abstract, so let's jump into some examples.
 

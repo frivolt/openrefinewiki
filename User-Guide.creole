@@ -12,14 +12,14 @@ Google Refine is for applying transformations over many existing cells in bulk, 
 
 To use Google Refine, think in big patterns. For example, to spot errors, think
 
-  ** Show me every row where the string length of the customer's name is longer than 50 characters (because I suspect that the customer's address is mistakenly included in the name field)
-  ** Show me every row where the contract fee is less than 1 (because I suspect the fee was entered in unit of thousand dollars rather than dollars)
-  ** Show me every row where the description field (scraped from some web site) contains "&amp;" (because I suspect it wasn't decoded properly)
+* Show me every row where the string length of the customer's name is longer than 50 characters (because I suspect that the customer's address is mistakenly included in the name field)
+* Show me every row where the contract fee is less than 1 (because I suspect the fee was entered in unit of thousand dollars rather than dollars)
+* Show me every row where the description field (scraped from some web site) contains "&amp;" (because I suspect it wasn't decoded properly)
 
 To edit data, think
 
-  ** For every row where the contract fee is less than 1, multiply the fee by 1000.
-  * For every row where the customer name contains a comma (it has been entered as "last_name, first_name"), split the name by the comma, reverse the array, and join it back with a space (producing "first_name last_name")
+* For every row where the contract fee is less than 1, multiply the fee by 1000.
+* For every row where the customer name contains a comma (it has been entered as "last_name, first_name"), split the name by the comma, reverse the array, and join it back with a space (producing "first_name last_name")
 
 To specify patterns, use filters and facets. Typically, you create a filter or facet on a particular column. For example, you can create a numeric facet on the "contract fee" column and adjust its range selector to select values less than 1. If the default facet doesn't do what you want, you can configure it (by clicking "change" on the facet's header). For example, you can create a text facet with on the same "contract fee" column with this expression:
 

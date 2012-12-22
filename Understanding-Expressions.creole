@@ -64,8 +64,8 @@ If you're used to Excel, note that the operator for string concatenation is not 
 === Function syntax ===
 In Google Refine expression language function can be invoked using either of these 2 forms:
 
-  ** `functionName(arg0, arg1, ...)`
-  ** `arg0.functionName(arg1, ...)`
+* `functionName(arg0, arg1, ...)`
+* `arg0.functionName(arg1, ...)`
 
 The second form above is a shortcut to make expressions easier to read.
 

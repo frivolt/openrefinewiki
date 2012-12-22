@@ -4,10 +4,10 @@
 
 You can export data from an existing Google Refine project in several formats:
 
-  ** Tab separated values (TSV)
-  ** Comma separated values (CSV)
-  ** Excel
-  ** HTML table
+* Tab separated values (TSV)
+* Comma separated values (CSV)
+* Excel
+* HTML table
 
 To export from a project, click the Export button at the top right corner and pick the format you want. Note that if you have selections within some facets or filters, then only the rows matching the facets and filters' constraints will be exported.
 
@@ -21,7 +21,7 @@ These should be some good guides to getting started with exporting your data in 
 
 
 |=Format|=Prefix|=Row Template|=Row Seperator|=Suffix|
-|**!MediaWiki tables**|`{|`|`| {{cells[[|*YAML*|`----`|`- {{cells["col1"|"col1"]}}`|`|-`|`|}`|]]}}`||`...`|
+|**!MediaWiki tables**|`{|`|`| {{cells[[|**YAML**|`----`|`- {{cells["col1"|"col1"]}}`|`|-`|`|}`|]]}}`||`...`|
 
 <wiki:comment>
 I can't get this to render properly --Tim McNamara

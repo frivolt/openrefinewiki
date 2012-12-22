@@ -5,8 +5,8 @@ Google Refine is a discovery and cleanup tool mostly, as it stands now at releas
 One feature of Google Refine that folks find intriguing is it's ability to display inconsistencies in your data and clean it up easily.
 
 Usage with Enterprise data or large databases,
-  ** For instance, you might leverage Google Refine to analyze and find faults in the output of some of your stored procedures within an existing database and then fix them outright.
-  ** Or, you might make slight job changes inside your program or ETL tool after you discover (using Google Refine) that your output isn't always correct, and the job needs to be modified.
+* For instance, you might leverage Google Refine to analyze and find faults in the output of some of your stored procedures within an existing database and then fix them outright.
+* Or, you might make slight job changes inside your program or ETL tool after you discover (using Google Refine) that your output isn't always correct, and the job needs to be modified.
 
 Also, if your interest is transforming large amounts of data, you might also want to look at existing database ETL tools (Extract, Transform, Load) which some we have listed here: [[Related Software]]
 

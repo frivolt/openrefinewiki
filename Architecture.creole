@@ -4,10 +4,10 @@ Google Refine is a web application, but unlike 99% of web applications, it is in
 
 This architecture has emerged from our experience building similar systems such as Simile Longwell CSI, a faceted browser for RDF data. It provides a good separation of concerns (data vs. UI) and also makes it quick and easy to implement user interface features using familiar web technologies. It leaves doors open for collaborative editing support in the future. And it's possible to make the server-side scriptable from the command line.
 
-  ** [[Server Side Architecture|Server-Side]]: how the data is modeled, stored, changed, etc.
-  ** [[Client Side Architecture|Client-Side]]: how the UI is built
-  ** [[Faceted Browsing Architecture|Faceted Browsing]]: how faceted browsing is implemented (this straddles the client and the server)
-  ** [[Reconciliation Service Api|Reconciliation Service API]]: describes a standard reconciliation service structure.
+* [[Server Side Architecture|Server-Side]]: how the data is modeled, stored, changed, etc.
+* [[Client Side Architecture|Client-Side]]: how the UI is built
+* [[Faceted Browsing Architecture|Faceted Browsing]]: how faceted browsing is implemented (this straddles the client and the server)
+* [[Reconciliation Service Api|Reconciliation Service API]]: describes a standard reconciliation service structure.
 
 == Technology Stack ==
 

@@ -69,8 +69,8 @@ to get a list of them.
 
 Since Google Refine is composed of two parts, a server and a in-browser UI, the testing system reflects that:
 
-  ** on the server side, it's powered by [[TestNG|http://testng.org/]] and the unit tests are written in Java;
-  ** on the client side, it's powered by [[Windmill|http://www.getwindmill.com/]] and the [[functional tests are written in Javascript|http://wiki.github.com/windmill/windmill/javascript-tests]];
+* on the server side, it's powered by [[TestNG|http://testng.org/]] and the unit tests are written in Java;
+* on the client side, it's powered by [[Windmill|http://www.getwindmill.com/]] and the [[functional tests are written in Javascript|http://wiki.github.com/windmill/windmill/javascript-tests]];
 
 To run the complete testing harness, simply type
 

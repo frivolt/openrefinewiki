@@ -19,8 +19,8 @@ A project is loaded into memory when it needs to be displayed or modified, and i
 ==Data Model==
 
 A project's data consists of
-  ** *raw data*: a list of rows, each row consisting of a list of cells
-  ** *models* on top of that raw data that give high-level presentation or interpretation of that data.
+* *raw data*: a list of rows, each row consisting of a list of cells
+* *models* on top of that raw data that give high-level presentation or interpretation of that data.
 This design lets the same raw data be viewed in different ways by different models, and let the models be changed without costly changes to the raw data.
 
 ===Column Model===
@@ -66,10 +66,10 @@ As the user interacts with the UI on the client-side, their interactions trigger
 A process can effect a change in one thing in the project (e.g., edit one particular cell, star one particular row), or a process can effect changes in *potentially* many things in the project (e.g., edit zero or more cells sharing the same content, starring all rows filtered by some facets). The latter kind of process is generalizable: it is meaningful to apply them on another similar project. Such a process is associated with an *abstract operation* `com.google.refine.model.AbstractOperation` that encodes the information necessary to create another instance of that process, but potentially for a different project. When you click "extract" in the History panel, these abstract operations are called to serialize their information to JSON; and when you click "apply" in the History panel, the JSON you paste in is used to re-construct these abstract operations, which in turn create processes, which get run sequentially in a queue to generate change object and history entry pairs.
 
 In summary,
-  ** change objects store diffs
-  ** history entries store metadata of change objects
-  ** processes compute diffs and create change object and history entry pairs
-  ** some processes are long-running and some are immediate; processes are run sequentially in a queue
-  * generalizable processes can be re-constructed from abstract operations
+* change objects store diffs
+* history entries store metadata of change objects
+* processes compute diffs and create change object and history entry pairs
+* some processes are long-running and some are immediate; processes are run sequentially in a queue
+* generalizable processes can be re-constructed from abstract operations
 
 ==Expressions== 

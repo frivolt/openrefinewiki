@@ -8,10 +8,10 @@ A column can be removed entirely by invoking its drop-down menu and picking Edit
 
 A column can be moved. The simple ways to move a column is available in its drop-down menu under the Edit column submenu:
 
-  ** Move column to beginning
-  ** Move column to end
-  ** Move column left
-  ** Move column right
+* Move column to beginning
+* Move column to end
+* Move column left
+* Move column right
 
 For more elaborate rearrangement of columns, invoke the left-most drop-down menu in front of "All" and pick Edit columns > Reorder columns... This command also lets you remove several columns in one operation. Moving and removing columns are considered to change the data, and are thus tracked in the undo/redo history.
 
