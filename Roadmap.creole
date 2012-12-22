@@ -1,4 +1,4 @@
-# Google Refine Roadmap
+//OpenRefine Roadmap//
 
 This is a very rough outline of the future of this project.
 

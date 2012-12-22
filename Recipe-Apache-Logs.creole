@@ -4,6 +4,7 @@ Import the log file:
 
   [[Then apply the following operations
 
+    
       [
         {
           "op": "core/column-split",
@@ -127,4 +128,5 @@ Here is how to apply the operations:
 
 To create a referrer domain facet, use this expression on the Referer column:
 
+    
       if(value == "-", value, value.partition("://")[2].partition("/")[0]) 

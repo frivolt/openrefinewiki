@@ -1,4 +1,4 @@
-* [[Getting Started|Getting Started]] - [[FAQ|FAQ]]
+* [[Getting Started|Getting Started]] - [FAQ FAQ]
 * [[Documentation For Users|Documentation for Users]]
 * [[Documentation For Developers|Documentation for Developers]]
 * [[How To Participate|How to Participate]]

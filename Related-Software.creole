@@ -1,4 +1,4 @@
-# List of other software products that can be used with or instead of Google Refine
+//List of other software products that can be used with or instead of OpenRefine//
 
 (in no particular order)
 

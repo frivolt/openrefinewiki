@@ -1,9 +1,9 @@
-# List of sample datasets that you can use to try out Google Refine.
+//List of sample datasets that you can use to try out OpenRefine.//
 
-Here are a few sample data sets to get you started on understanding how to use Google Refine
+Here are a few sample data sets to get you started on understanding how to use OpenRefine
 
 * [[Disasters worldwide from 1900-2008 at Infochimps|http://infochimps.org/datasets/disasters-wordwide-from-1900-2008]]
-* [[Louisiana elected officials|http://www.sos.louisiana.gov/tabid/136/Default.aspx]] - For Google Refine versions up to 2.0, you must use Excel itself to convert the .xls file to a .tsv file first because the Java library for dealing with .xls files doesn't like this particular .xls file. Google Refine versions 2.1 and above will successfully load the .xls directly
+* [[Louisiana elected officials|http://www.sos.louisiana.gov/tabid/136/Default.aspx]] - For OpenRefine versions up to 2.0, you must use Excel itself to convert the .xls file to a .tsv file first because the Java library for dealing with .xls files doesn't like this particular .xls file. OpenRefine versions 2.1 and above will successfully load the .xls directly
 * [[Clean Air Status and Trends Network (CASTNET): Ozone|http://www.data.gov/raw/8]] - 500K rows, 6 columns
 * [[Federal Advisory Committee Act (FACA) Committee Member List-2004|http://www.data.gov/raw/1175]] - 65K rows, 25 columns
 * [[U.S. Overseas Loans and Grants (Greenbook)|http://www.data.gov/raw/1554]] - 2K rows

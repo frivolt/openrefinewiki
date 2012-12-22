@@ -1,8 +1,8 @@
-# How to start writing an extension
+//How to start writing an extension//
 
 (This document is for the version 2.0 and later only. This is still in flux.)
 
-Google Refine makes use of the [[Butterfly framework|http://code.google.com/p/simile-butterfly/]] to provide an extension architecture. Google Refine extensions are Butterfly modules. You don't really need to know about Butterfly itself, but you might encounter "butterfly" here and there in the code base.
+OpenRefine makes use of the [[Butterfly framework|http://code.google.com/p/simile-butterfly/]] to provide an extension architecture. OpenRefine extensions are Butterfly modules. You don't really need to know about Butterfly itself, but you might encounter "butterfly" here and there in the code base.
 
 Note that Butterfly was chosen over OSGi because 
 
@@ -11,14 +11,15 @@ Note that Butterfly was chosen over OSGi because
 
 Extensions that come with the code base are located under [[the extensions subdirectory|http://code.google.com/p/google-refine/source/browse/#svn/trunk/extensions]], but when you develop your own extension, you can put its code anywhere as long as you point Butterfly to it. That is done by any one of the following methods
 
-* refer to your extension's directory in [[the butterfly.properites file|http://code.google.com/p/google-refine/source/browse/trunk/main/webapp/WEB-INF/butterfly.properties]] through a `butterfly.modules.path` setting.
-* specify the butterfly.modules.path property on the command line when you run Google Refine.  This overrides the values in the property file, so you need to include the default values first e.g. `-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension`
+* refer to your extension's directory in [[the butterfly.properites file|http://code.google.com/p/google-refine/source/browse/trunk/main/webapp/WEB-INF/butterfly.properties]] through a ##{{{butterfly.modules.path}}}## setting.
+* specify the butterfly.modules.path property on the command line when you run OpenRefine.  This overrides the values in the property file, so you need to include the default values first e.g. ##{{{-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension}}}##
 
 
 =Directory Layout=
 
-A Google Refine extension (implemented as a Butterfly module) sits in a file directory that contains the following files and sub-directories:
+A OpenRefine extension (implemented as a Butterfly module) sits in a file directory that contains the following files and sub-directories:
 
+    
       build.xml
       src/
           com/foo/bar/... *.java source files
@@ -35,18 +36,20 @@ A Google Refine extension (implemented as a Butterfly module) sits in a file dir
 
 The file named module.properties (see [[example|http://code.google.com/p/google-refine/source/browse/trunk/extensions/sample-extension/module/MOD-INF/module.properties]]) contains the extension's metadata. Of importance is the name field, which gives the extension a name that's used in many other places to refer to it. This can be different from the extension's directory name.
 
+    
       name = my-extension-name
 
 Your extension's client-side resources (.html, .js, .css files) stored in the module/ subdirectory will be accessible from http://127.0.0.1:3333/extension/my-extension-name/. 
 
 Also of importance is the dependency
 
+    
       requires = core
 
-which makes sure that the core module of Google Refine is loaded before the extension attempts to hook into it.
+which makes sure that the core module of OpenRefine is loaded before the extension attempts to hook into it.
 
-The file named controller.js is responsible for registering the extension's hooks into Google Refine. Look at the sample-extension extension's [[controller.js|http://code.google.com/p/google-refine/source/browse/trunk/extensions/sample/module/MOD-INF/controller.js]] file for an example. It should have a function called init() that does the hook registrations.
+The file named controller.js is responsible for registering the extension's hooks into OpenRefine. Look at the sample-extension extension's [[controller.js|http://code.google.com/p/google-refine/source/browse/trunk/extensions/sample/module/MOD-INF/controller.js]] file for an example. It should have a function called init() that does the hook registrations.
 
-The `build.xml` file is an [[Apache Ant|http://ant.apache.org/]] build file. You can make a copy of the sample extension's `build.xml` file to get started. The important point here is that the Java classes should be built into the `module/MOD-INF/classes` sub-directory.
+The ##{{{build.xml}}}## file is an [[Apache Ant|http://ant.apache.org/]] build file. You can make a copy of the sample extension's ##{{{build.xml}}}## file to get started. The important point here is that the Java classes should be built into the ##{{{module/MOD-INF/classes}}}## sub-directory.
 
-Note that your extension's Java code would need to reference some libraries used in Google Refine and Refine's Java classes themselves. The libraries are in [[trunk/main/webapp/WEB-INF/lib/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/WEB-INF/lib]] and Refine's classes are in [[trunk/main/webapp/modules/core/MOD-INF/classes/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/modules/core/MOD-INF/classes]]. 
+Note that your extension's Java code would need to reference some libraries used in OpenRefine and Refine's Java classes themselves. The libraries are in [[trunk/main/webapp/WEB-INF/lib/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/WEB-INF/lib]] and Refine's classes are in [[trunk/main/webapp/modules/core/MOD-INF/classes/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/modules/core/MOD-INF/classes]]. 

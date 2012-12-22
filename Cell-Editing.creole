@@ -1,4 +1,4 @@
-# Editing cells.
+//Editing cells.//
 
 ==Editing One Cell at A Time==
 
@@ -10,7 +10,7 @@ You could set the data type of the cell in the popup. For dates, we support [[IS
 
 ==Editing through Text Facets==
 
-You could also edit cells in a column sharing some common value using a default text facet created on that column. First, create a default text facet on that column. Then locate that value choice in the facet and hover your mouse over it. An "edit" link will appear next to the choice. Click it to get a popup. As this is a text facet, Google Refine will only let you enter a text string.
+You could also edit cells in a column sharing some common value using a default text facet created on that column. First, create a default text facet on that column. Then locate that value choice in the facet and hover your mouse over it. An "edit" link will appear next to the choice. Click it to get a popup. As this is a text facet, OpenRefine will only let you enter a text string.
 
 Editing through a text facet performs a find and replace operation. Consider a data set with a column of people's names. Creating a text facet on that column might yield something like this:
 
@@ -31,7 +31,7 @@ If you click "edit" on the choice "Andy R. Anderson" in the facet and enter "And
 
 ==Editing by Transforming==
 
-The most common way to edit cells in a column in Google Refine is by invoking the Transform command on that column: from the column's drop-down menu, pick Edit cells > Transform ... In the dialog box, you enter an expression that gets evaluated on each row to compute the new cell value for that row. For example, consider this data set
+The most common way to edit cells in a column in OpenRefine is by invoking the Transform command on that column: from the column's drop-down menu, pick Edit cells > Transform ... In the dialog box, you enter an expression that gets evaluated on each row to compute the new cell value for that row. For example, consider this data set
 
 |=name|=age|
 |John Smith|28|
@@ -39,12 +39,13 @@ The most common way to edit cells in a column in Google Refine is by invoking th
 
 Say we invoke the Transform command on the name column and enter the expression
 
+    
       value.split(" ").reverse().join(", ")
 
-This causes Google Refine to iterate through each of the 2 rows, and for each row, set the variable `value` to the row's cell in column "name", evaluate the expression, and put the result back into that cell. More specifically,
+This causes OpenRefine to iterate through each of the 2 rows, and for each row, set the variable ##{{{value}}}## to the row's cell in column "name", evaluate the expression, and put the result back into that cell. More specifically,
 
-* when Google Refine processes row 1, it sets `value` to the string `John Smith`, splits that string into 2 strings (`John` and `Smith`), reverses those two strings (`Smith` and `John`), joins them back to yield `Smith, John`, and puts that string into that cell.
-* when Google Refine processes row 2, it sets `value` to the string `Jane Doe`, splits that string into 2 strings (`Jane` and `Doe`), reverses those two strings (`Doe` and `Jane`), joins them back to yield `Doe, Jane`, and puts that string into that cell.
+* when OpenRefine processes row 1, it sets ##{{{value}}}## to the string ##{{{John Smith}}}##, splits that string into 2 strings (##{{{John}}}## and ##{{{Smith}}}##), reverses those two strings (##{{{Smith}}}## and ##{{{John}}}##), joins them back to yield ##{{{Smith, John}}}##, and puts that string into that cell.
+* when OpenRefine processes row 2, it sets ##{{{value}}}## to the string ##{{{Jane Doe}}}##, splits that string into 2 strings (##{{{Jane}}}## and ##{{{Doe}}}##), reverses those two strings (##{{{Doe}}}## and ##{{{Jane}}}##), joins them back to yield ##{{{Doe, Jane}}}##, and puts that string into that cell.
 
 When you click OK, the data set will become
 
@@ -62,7 +63,7 @@ Refine has a feature called **Split multi-valued cells** that can essentially cr
 |Kate Moss|Person|profession:Model,href:"/0122-kate-moss",title="Kate Moss",hair:brown|
 |Marilyn Monroe|Person|profession:Actor,href:"/1488-marilyn-monroe",title="Marilyn Monroe",hair:blond|
 
-The 'data record' column has several fields that need to be split, but we do not necessarily want to create additional columns, instead we want those individual 'fields' for each Person record, since that seems to be how this dataset is arranged.  We can use `Edit Cells -> Split multi-valued cells...` on the 'data record' column using the comma `,` separator character.  After applying, our table in Refine now looks like this and you are taken from **rows** mode into **records** mode which is shown just above the **All** column,
+The 'data record' column has several fields that need to be split, but we do not necessarily want to create additional columns, instead we want those individual 'fields' for each Person record, since that seems to be how this dataset is arranged.  We can use ##{{{Edit Cells -> Split multi-valued cells...}}}## on the 'data record' column using the comma ##{{{,}}}## separator character.  After applying, our table in Refine now looks like this and you are taken from **rows** mode into **records** mode which is shown just above the **All** column,
 ----
 Show as: rows **records**  Show: 5 **10** 25 50 records
 || All || name || data type || data record ||
@@ -80,9 +81,9 @@ Show as: rows **records**  Show: 5 **10** 25 50 records
  
 ===Comparison with Spreadsheets Software===
 
-[[Understanding Expressions|Expressions]] in Google Refine differ from formulas in popular spreadsheet software. In spreadsheets, formulas are entered into cells. That is, a cell can contain a formula (the formula is computed and its result is displayed in the cell). In Google Refine, cells do **not** contain expressions. Rather, any expression you specify is evaluated to compute a value that is then stored into the cell. If the expression depends on other cells, and the other cells get changed later on, the expression is **not** evaluated again. Each transformation is done only once, **not** updated constantly.
+[[Understanding Expressions|Expressions]] in OpenRefine differ from formulas in popular spreadsheet software. In spreadsheets, formulas are entered into cells. That is, a cell can contain a formula (the formula is computed and its result is displayed in the cell). In OpenRefine, cells do **not** contain expressions. Rather, any expression you specify is evaluated to compute a value that is then stored into the cell. If the expression depends on other cells, and the other cells get changed later on, the expression is **not** evaluated again. Each transformation is done only once, **not** updated constantly.
 
-Also, in spreadsheets, you have to copy formulas from one cell to other cells (typically using the Fill Down command or dragging down the selection rectangle from its bottom right corner). In Google Refine, there is no copying of expressions. Rather, an [[Understanding Expressions|expression]] is applied to rows that are currently shown, as determined by constraints in facets and filters.
+Also, in spreadsheets, you have to copy formulas from one cell to other cells (typically using the Fill Down command or dragging down the selection rectangle from its bottom right corner). In OpenRefine, there is no copying of expressions. Rather, an [[Understanding Expressions|expression]] is applied to rows that are currently shown, as determined by constraints in facets and filters.
 
 
 ==Editing by Clustering==

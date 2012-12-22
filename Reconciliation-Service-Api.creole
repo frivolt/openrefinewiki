@@ -1,10 +1,10 @@
-# Specification for a standard reconciliation service API.
+//Specification for a standard reconciliation service API.//
 
 =Introduction=
 
 A reconciliation service is a web service that, given some text which is a name or label for something, and optionally some additional details, returns a ranked list of potential entities matching the criteria. The candidate text does not have to match each entity's official name perfectly, and that's the whole point of reconciliation--to get from ambiguous text name to precisely identified entities. For instance, given the text "apple", a reconciliation service probably should return the Apple Inc. company, the apple fruit, and New York city (also known as the Big Apple).
 
-Entities are identified by strong identifiers in some particular identifier space. In the same identifier space, identifiers follow the same syntax. For example, given the string "apple", a reconciliation service might return entities identified by "/en/apple", "/en/apple_inc", and "/en/apple_ii", in the Freebase ID space. Given the same string, another reconciliation service might return entities identified by URIs, which are in the URI space, so to speak. Some other identifier spaces are ISBN, LSID. (Although ISBN and LSID identifiers are numbers, for uniformity, they are still stored as strings in Google Refine.)
+Entities are identified by strong identifiers in some particular identifier space. In the same identifier space, identifiers follow the same syntax. For example, given the string "apple", a reconciliation service might return entities identified by "/en/apple", "/en/apple_inc", and "/en/apple_ii", in the Freebase ID space. Given the same string, another reconciliation service might return entities identified by URIs, which are in the URI space, so to speak. Some other identifier spaces are ISBN, LSID. (Although ISBN and LSID identifiers are numbers, for uniformity, they are still stored as strings in OpenRefine.)
 
 Each reconciliation service can only reconcile to one single identifier space, but several reconciliation services can reconcile to the same identifier space.
 
@@ -15,7 +15,7 @@ A standard reconciliation service is a HTTP-based RESTful JSON-formatted API. It
 (Much of this standard is based on the [[Freebase relevance service|http://api.freebase.com/api/service/search?help]] and the [[Freebase experimental recon service|http://data.labs.freebase.com/recon/]].)
 
 ===BEFORE YOU BEGIN WITH BELOW ===
-View our [[mailing list thread HERE|http://groups.google.com/group/google-refine/browse_thread/thread/b47758b5e9002149]] where Tom Morris gives a helpful basic Reconciliation layout.
+View our [[mailing list thread HERE|http://groups.google.com/group/openrefine/browse_thread/thread/b47758b5e9002149]] where Tom Morris gives a helpful basic Reconciliation layout.
 
 =Query Request=
 
@@ -23,10 +23,11 @@ View our [[mailing list thread HERE|http://groups.google.com/group/google-refine
 
 A call to a reconciliation service API for a single query looks like either of these:
 
+    
       http://foo.com/bar/reconcile?query=...string...
       http://foo.com/bar/reconcile?query={...json object literal...}
 
-If the query parameter is a string, then it's an abbreviation of `query={"query":...string...}`. Here are two live examples:
+If the query parameter is a string, then it's an abbreviation of ##{{{query={"query":...string...}}}}##. Here are two live examples:
 
 1. http://standard-reconcile.freebaseapps.com/reconcile?query=boston
 1. http://standard-reconcile.freebaseapps.com/reconcile?query={%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22}
@@ -41,6 +42,7 @@ The query json object literal has a few fields
 
 Each json object literal of the "properties" array is of this form
 
+    
       {
         "p" : string, property name, e.g., "country", or
         "pid" : string, property ID, e.g., "/people/person/nationality" in the Freebase ID space
@@ -51,6 +53,7 @@ A "v" object literal would have a single key "id" whose value is an identifier r
 
 Here is an example of a full query parameter:
 
+    
       {
         "query" : "Ford Taurus",
         "limit" : 3,
@@ -66,10 +69,12 @@ Here is an example of a full query parameter:
 
 A call to a standard reconciliation service API for multiple queries looks like this:
 
+    
       http://foo.com/bar/reconcile?queries={...json object literal...}
 
 The json object literal has zero or more arbitrary key, each of which has a value in the same format as a single query, e.g.
 
+    
       http://foo.com/bar/reconcile?queries={ "q0" : { "query" : "foo" }, "q1" : { "query" : "bar" } }
 
 "q0" and "q1" can be arbitrary strings. Note that the query counter starts at zero.  Here is a live example:
@@ -81,6 +86,7 @@ The json object literal has zero or more arbitrary key, each of which has a valu
 
 The response for a single query is a JSON literal object
 
+    
       {
         "result" : [
           {
@@ -97,6 +103,7 @@ The response for a single query is a JSON literal object
 
 For multiple queries, the response is a JSON literal object with the same keys as in the request
 
+    
       {
         "q0" : {
           "result" : { ... }
@@ -116,6 +123,7 @@ Here are two live examples:
 1. http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
 1. http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
 
+    
     {
       "name" : "Netflix Reconciliation through Freebase",
       "identifierSpace" : "http://rdf.freebase.com/ns/authority.netflix.movie",
@@ -166,16 +174,16 @@ The other fields are for
 
 ==Preview API==
 
-The preview service API (complementary to the reconciliation service API) is quite simple. Pass it an identifier and it renders information about the corresponding entity in an HTML page, which will be shown in an iframe inside Google Refine. The given width and height dimensions tell Google Refine how to size that iframe.
+The preview service API (complementary to the reconciliation service API) is quite simple. Pass it an identifier and it renders information about the corresponding entity in an HTML page, which will be shown in an iframe inside OpenRefine. The given width and height dimensions tell OpenRefine how to size that iframe.
 
-If there is no preview service specified in the reconciliation service's metadata, and if the entity identifier space is a Freebase ID or Mid identifier space, then Google Refine knows to use Freebase's topicblock service. Here is an example of how an entity's preview looks like
+If there is no preview service specified in the reconciliation service's metadata, and if the entity identifier space is a Freebase ID or Mid identifier space, then OpenRefine knows to use Freebase's topicblock service. Here is an example of how an entity's preview looks like
 
   http://www.freebase.com/widget/topic/en/apple_inc?mode=content
 
 
 ==Suggest APIs==
 
-In the "Start Reconciling" dialog box in Google Refine, you can specify which type of entities the column in question contains. For instance, the column might contains names of politicians. But you don't know the identifier corresponding to the "politician" type. So we need a suggest API that translates "politician" to something like, say, "/government/politician" if we're reconciling against Freebase.
+In the "Start Reconciling" dialog box in OpenRefine, you can specify which type of entities the column in question contains. For instance, the column might contains names of politicians. But you don't know the identifier corresponding to the "politician" type. So we need a suggest API that translates "politician" to something like, say, "/government/politician" if we're reconciling against Freebase.
 
 In the same dialog box, you can specify that other columns should be used to provide more details for the reconciliation. For instance, if there is a column specifying the politicians' home city, passing that data onto the reconciliation service might make reconciliation more accurate. You might want to specify how that second column is related to the column being reconciled, but you might not now how to specify "home city" as a precise relationship. So we need a suggest API that translates "home city" to something like "/people/person/places_lived".
 
@@ -188,6 +196,7 @@ These suggest APIs are required to work with a modified version of the [[Freebas
 
 The metadata for each suggest API (type, property, or entity) is as follows:
 
+    
     {
       "service_url" : "... url including only the domain ...",
       "service_path" : "... optional relative path ...",
@@ -195,19 +204,19 @@ The metadata for each suggest API (type, property, or entity) is as follows:
       "flyout_service_path" : "... optional relative path ..."
     }
 
-The `service_url` field is required and it should look like this: `http://foo.com`. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
+The ##{{{service_url}}}## field is required and it should look like this: ##{{{http://foo.com}}}##. There should be no trailing / at the end. The other fields are optional and have defaults if not provided:
 
-* `service_path` defaults to `/private/suggest`
-* `flyout_service_url` defaults to the provided `service_url` field
-* `flyout_service_path` defaults to `/private/flyout`
+* ##{{{service_path}}}## defaults to ##{{{/private/suggest}}}##
+* ##{{{flyout_service_url}}}## defaults to the provided ##{{{service_url}}}## field
+* ##{{{flyout_service_path}}}## defaults to ##{{{/private/flyout}}}##
 
-The Freebase Suggest widgets embedded in Google Refine will concatenate `_url` and `_path` to make the full URL. Refer to [[Suggest Api|the specification for a Suggest API]] for details.
+The Freebase Suggest widgets embedded in OpenRefine will concatenate ##{{{_url}}}## and ##{{{_path}}}## to make the full URL. Refer to [[Suggest Api|the specification for a Suggest API]] for details.
 
 
-=Google Refine Integration & Testing=
+=OpenRefine Integration & Testing=
 
-Google Refine includes a mechanism for adding reconciliation service API URLs.  After choosing Reconcile->Start Reconciling for a column, look at the bottom of the page for two buttons : "Add Standard Service..." and "Add Namespaced Service..."
+OpenRefine includes a mechanism for adding reconciliation service API URLs.  After choosing Reconcile->Start Reconciling for a column, look at the bottom of the page for two buttons : "Add Standard Service..." and "Add Namespaced Service..."
 
-Each column in Google Refine should only be reconciled against one identity space. 
+Each column in OpenRefine should only be reconciled against one identity space. 
 
 To test and debug a new reconciliation service ... TODO

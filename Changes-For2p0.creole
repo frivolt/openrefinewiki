@@ -1,4 +1,4 @@
-# Change list for version 2.0
+//Change list for version 2.0//
 
 ==Major Changes==
 
@@ -20,7 +20,7 @@
 * Clear recon data for one cell
 * Clear recon data for similar cells
 * Copy recon judgments across columns
-* Google Refine Expression Language (GREL):
+* OpenRefine Expression Language (GREL):
 * JSON support
 * New functions: smartSplit, escape, parseJson, hasField, uniques
 * New controls: forEachIndex, forRange, filter

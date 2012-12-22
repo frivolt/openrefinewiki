@@ -1,6 +1,6 @@
-# Listing of Reconcilable Data Sources
+//Listing of Reconcilable Data Sources//
 
-With Google Refine you can perform reconciliation against any web service supporting the [[Reconciliation Service Api|Reconciliation Service API]].
+With OpenRefine you can perform reconciliation against any web service supporting the [[Reconciliation Service Api|Reconciliation Service API]].
 Reconciliation against Freebase is built in, but there are several other
 reconciliation services available, including:
 
@@ -31,7 +31,7 @@ Taxonomic databases (EOL, NCBI, uBio, WORMS), as documented here [http://iphylo.
 
 ==Wish List==
 
-The following are data sources that could provide useful reconciling within Google Refine.
+The following are data sources that could provide useful reconciling within OpenRefine.
 If you would like to help with coding a reconciling extension for any, please contact our mailing list.  We would love to see some of these happen!
 
 * [[WoRMS|http://www.marinespecies.org/aphia.php?p=webservice]] - World Register of Marine Species provides web service for marine taxa. 

@@ -1,4 +1,4 @@
-# Extensions
+//Extensions//
 
 * [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune
 * [[RDF extension|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]] - by DERI

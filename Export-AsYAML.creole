@@ -1,4 +1,4 @@
-# A demonstration on how to use export templating to produce YAML.
+//A demonstration on how to use export templating to produce YAML.//
 
 = Introduction =
 
@@ -9,11 +9,12 @@ For this tutorial, we are going to be working with a small set of data that look
 |Bernd|1.79|Zoologist|
 |Carol|1.65|Carpenter|
 
-By default, Google Refine exports JSON. JSON is a very effective way to transport data, but it can sometimes be difficult to read. Consider the difference between these two presentations of the same data:
+By default, OpenRefine exports JSON. JSON is a very effective way to transport data, but it can sometimes be difficult to read. Consider the difference between these two presentations of the same data:
 
 
 == JSON ==
 
+    
     {
       "rows" : [
         {
@@ -36,6 +37,7 @@ By default, Google Refine exports JSON. JSON is a very effective way to transpor
 
 == YAML ==
 
+    
     rows:
     
     - Name: Andy
@@ -54,15 +56,15 @@ You can see from these two examples that they are both fairly readable. However,
 
 = Getting Started =
 
-You can follow along by pointing Google Refine at the example spreadsheet:
+You can follow along by pointing OpenRefine at the example spreadsheet:
 
 * Go to http://localhost:3333/ in your web browser
-* Begin a new project with `https://spreadsheets.google.com/pub?key=0Aq_3OYelM4ZUdEpYYmNKY0t1V0VjYlR5UjFYejVHbWc&hl=en_GB&single=true&gid=0&range=A1%3AC4&output=html` as the URL. 
-* Click on `Export` > `Templating...`
+* Begin a new project with ##{{{https://spreadsheets.google.com/pub?key=0Aq_3OYelM4ZUdEpYYmNKY0t1V0VjYlR5UjFYejVHbWc&hl=en_GB&single=true&gid=0&range=A1%3AC4&output=html}}}## as the URL. 
+* Click on ##{{{Export}}}## > ##{{{Templating...}}}##
 
 = Details =
 
-YAML is a very simple format. Its entire purpose is to be human readable. Also, it is focused on data, rather than documents. This makes it a perfect fit for sharing data from Google Refine.
+YAML is a very simple format. Its entire purpose is to be human readable. Also, it is focused on data, rather than documents. This makes it a perfect fit for sharing data from OpenRefine.
 
 == Changes to make ==
 
@@ -71,12 +73,14 @@ YAML is a very simple format. Its entire purpose is to be human readable. Also, 
 **Basic**
 We only need a single word in the prefix field:
 
+    
     rows:
 
 **Bonus points**
 
 If we want to be nice to YAML parsers, we can add some optional dashes. These help to tell the computer that's reading it that it has entered a YAML document.
 
+    
     ----#people
     
     rows:
@@ -88,6 +92,7 @@ If we want to be nice to YAML parsers, we can add some optional dashes. These he
 Generating rows is much simpler than the current JSON. The main thing to watch out for is that there is a blank line between rows.
 
 Try changing:
+    
         {
           "Person 0" : {{jsonize(cells["Person 0"].value)}},
           "Height (m) 1" : {{jsonize(cells["Height (m) 1"].value)}},
@@ -112,13 +117,14 @@ Try changing:
         }
 To:
     
+    
     -  Name: {{cells["Person 0"].value}}
        Height (m): {{cells["Height (m) 1"].value}}
        Occupation: {{cells["Occupation 2"].value}}
 
 Some points here:
 
-* Keep the curly braces in place. That tells Google Refine that you need to do some processing there.
+* Keep the curly braces in place. That tells OpenRefine that you need to do some processing there.
 * Remove the trailing commas from each part
 * Make sure the cell headings match exactly.
 
@@ -126,4 +132,5 @@ Some points here:
 
 Adding three dots is good practice. It tells the parser that we've finished.
 
+    
     ...

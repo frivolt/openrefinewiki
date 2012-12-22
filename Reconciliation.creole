@@ -5,14 +5,14 @@ Reconciliation is a semi-automated process of matching text names to database ID
 
 While we talk about "databases" here, perhaps a more accurate term would be "name registries". And conceptually, "reconciliation" isn't a new concept. In some fields, it's being done all the time. For example, when the police gets a name of a suspect, they run the name through their databases of known felons. More details about the suspect (e.g., race, height, last known address) would help the police narrow down the suspect among several database matches.
 
-You can use Google Refine to perform reconciliation of names in your data against any database that exposes a web service following this [[Reconciliation Service Api|Reconciliation Service API]] specification. One such database is [[Freebase|http://www.freebase.com/]], and in this document we will use it as our example service.
+You can use OpenRefine to perform reconciliation of names in your data against any database that exposes a web service following this [[Reconciliation Service Api|Reconciliation Service API]] specification. One such database is [[Freebase|http://www.freebase.com/]], and in this document we will use it as our example service.
 
 
 ==Basics==
 
 For a column containing names, to reconcile those names against Freebase, invoke the column's drop-down menu and pick Reconcile > Start reconciling... If you want to reconcile only some cells in that column, then use filters and facets to isolate them first.
 
-In the Reconcile dialog box, pick Freebase Reconciliation Service on the left. That service comes by default, but you can install more services. Using that service, Google Refine will try to determine the type of names we're dealing with. When it's done, it will show you a list of types. Pick the best type in your opinion and click Start Reconcile at the bottom.
+In the Reconcile dialog box, pick Freebase Reconciliation Service on the left. That service comes by default, but you can install more services. Using that service, OpenRefine will try to determine the type of names we're dealing with. When it's done, it will show you a list of types. Pick the best type in your opinion and click Start Reconcile at the bottom.
 
 This process will take a while depending on how much data you have. For now, we would recommend reconciling only a few hundred cells at a time. In the future, perhaps we can afford reconciliation services with greater capacity.
 
@@ -20,11 +20,11 @@ When the process is done, you will see that the reconciled cells display either 
 
 Example:
 
-`San Francisco, CA (.95)`
+##{{{San Francisco, CA (.95)}}}##
 
 Cells with links have been automatically matched, and you don't have to process them manually. Cells with candidates have not been matched yet, and you will have to process them yourself, either individually or in bulk depending on the nature of your data.
 
-In addition to changing the ways the reconciled cells are displayed, Google Refine also automatically creates two facets for you to use to filter the cells based on the reconciliation data. One is a numeric facet for the reconciliation scores of the best candidates of the cells. Higher scores mean better matches. You could filter for the higher scores, and approve them all in bulk (invoking that column's drop-down menu and using the Reconcile > Actions submenu).
+In addition to changing the ways the reconciled cells are displayed, OpenRefine also automatically creates two facets for you to use to filter the cells based on the reconciliation data. One is a numeric facet for the reconciliation scores of the best candidates of the cells. Higher scores mean better matches. You could filter for the higher scores, and approve them all in bulk (invoking that column's drop-down menu and using the Reconcile > Actions submenu).
 
 There is also the "judgment" facet, which lets you filter for the cells that haven't been matched (pick "None" in the facet). As you process each cell, its judgment changes from "None" to "Matched" and it disappears from the view, because it no longer fits the facet's selection.
 
@@ -35,9 +35,9 @@ Reconciliation is a delicate process, hard to describe here. We will provide som
 
 As a degenerate form of "reconciliation", you can get a column of database IDs to be "reconciled". It's "degenerate" because the process isn't ambiguous since you already have IDs. The process of "reconciliation" here only involves fetching more data for those IDs (such as the official names corresponding to those IDs).
 
-Right now Google Refine only supports this kind of "query-based reconciliation" against Freebase. In the Reconcile dialog box, pick Freebase Query-based Reconciliation on the left. Your data can contain Freebase IDs, GUIDs, Wikipedia IDs, or keys in certain namespaces. For example, if you have country 2-letter ISO codes, you can reconcile against the namespace ISO 3166-1.
+Right now OpenRefine only supports this kind of "query-based reconciliation" against Freebase. In the Reconcile dialog box, pick Freebase Query-based Reconciliation on the left. Your data can contain Freebase IDs, GUIDs, Wikipedia IDs, or keys in certain namespaces. For example, if you have country 2-letter ISO codes, you can reconcile against the namespace ISO 3166-1.
 
-Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [[here|GRELStringFunctions]].
+Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [GRELStringFunctions here].
 
 == Additional Recon variables and functions that can be used ==
 See also: [Variables#Recon]

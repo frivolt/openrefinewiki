@@ -1,23 +1,27 @@
-# Extending data
+//Extending data//
 
 ==Calling Web Services==
 
-* **NOTE:** For a walkthrough tutorial of this, see [[Fetching URLs From Web Services|FetchingURLsFromWebServices]]
+* **NOTE:** For a walkthrough tutorial of this, see [FetchingURLsFromWebServices Fetching URLs From Web Services]
 
 You can construct a new column by calling a web service, passing it data from existing columns. For example, if you have a column containing street addresses, you can create a new column containing their corresponding latitude/longitude pairs by calling a geocoding service, such as Google's [[Geocoding service|http://code.google.com/apis/maps/documentation/geocoding/]]. Invoke the column's drop-down menu and pick Edit column > Add column by fetching URLs... The expression you enter formulates the URL to fetch for each row. For example, this expression should work on Google's Geocoding service:
 
+    
       "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=" + escape(value)
 
 Consider a cell containing
 
+    
       77 Massachusetts Ave., Cambridge, MA
 
 Evaluating the expression above on that cell yields the URL
 
+    
       http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=77%20Massachusetts%20Ave.%2C%20Cambridge%2C%20MA
 
 The result returned from that URL will be stored into the cell in the new column on the same row as the original cell. In this case, the result will look something like this:
 
+    
       {
         "status": "OK",
         "results": [ {

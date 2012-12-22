@@ -1,14 +1,14 @@
-# Curated list of quotes, references, uses and extensions about Google Refine (previously called Freebase Gridworks) in the wild
+//Curated list of quotes, references, uses and extensions about OpenRefine (previously called Freebase Gridworks) in the wild//
 
 =About the Latest Version=
 
 ===Tweets===
 
-"Damn! Wish I had this 5 years ago! RT @swiertz nice tools ! Format & clean your data with Google Refine http://goo.gl/UniR6 #cleanup #tools"
+"Damn! Wish I had this 5 years ago! RT @swiertz nice tools ! Format & clean your data with OpenRefine http://goo.gl/UniR6 #cleanup #tools"
 
     [[Xavier Bartholome|http://twitter.com/barthox]] [[view|http://twitter.com/#!/barthox/status/4803982065147904]]
 
-"YIPEEEE!  Google Refine works with OAI-PMH XML out of the box.   This is going to make my life much easier."
+"YIPEEEE!  OpenRefine works with OAI-PMH XML out of the box.   This is going to make my life much easier."
 
     [[Richard Urban|http://twitter.com/#!/Musebrarian]] [[view|http://twitter.com/#!/Musebrarian/status/4723491286810624]]
 
@@ -16,16 +16,16 @@
 
     [[kb|http://twitter.com/#!/kb]], [[view tweet|http://twitter.com/kb/statuses/5177336995512320]]
 
-"Google Refine is like a dream come true. #grefine http://sunlightfoundation.com/blog/2011/01/06/tools-for-transparency-google-refine/ "
+"OpenRefine is like a dream come true. #grefine http://sunlightfoundation.com/blog/2011/01/06/tools-for-transparency-google-refine/ "
 
     [[Liam Arbetman|http://twitter.com/#!/liamaa]], [[tweet|http://twitter.com/#!/liamaa/status/23103260483129344]]
             
 
-"I rarely feel the desire to kiss a corporation on the mouth, but Google Refine is making me come close http://goo.gl/8pvKB #datageek"
+"I rarely feel the desire to kiss a corporation on the mouth, but OpenRefine is making me come close http://goo.gl/8pvKB #datageek"
 
     [[litcritter|http://twitter.com/#!/litcritter]], [[view tweet|http://twitter.com/#!/litcritter/statuses/5296061488828416]]
 
-"For those who haven't looked yet, Google Refine / Gridworks 2.0 blows the doors off. Its the single best tool I'm using."
+"For those who haven't looked yet, OpenRefine / Gridworks 2.0 blows the doors off. Its the single best tool I'm using."
 
    [[Christopher Groskopf|http://twitter.com/#!/onyxfish]], [[view tweet|http://twitter.com/#!/onyxfish/statuses/4599207788806144]]
 
@@ -41,19 +41,19 @@
 
    [[Salesient|http://twitter.com/#!/Salesient]], [[view tweet|http://twitter.com/#!/Salesient/statuses/4242219707928576]]
 
-"I am having far, far too much fun with Google Refine. This tool is ridiculously powerful, even without Freebase integration."
+"I am having far, far too much fun with OpenRefine. This tool is ridiculously powerful, even without Freebase integration."
 
    [[Jerry Towler|http://twitter.com/#!/jatowler]], [[view tweet|http://twitter.com/#!/jatowler/statuses/5542139572264960]]
 
-"Not only will it clean your data, Google Refine will slice, dice and put bows on your hairdo! http://bit.ly/cPGn1E Rocks data exploration."
+"Not only will it clean your data, OpenRefine will slice, dice and put bows on your hairdo! http://bit.ly/cPGn1E Rocks data exploration."
 
    [[Mario Talavera|http://twitter.com/#!/Mayin]], [[view tweet|http://twitter.com/#!/mayin/status/5386710112276481]]
 
-"Google Refine: Making interns unneccesary since 2010."
+"OpenRefine: Making interns unneccesary since 2010."
 
    [[Mark Labedz|http://twitter.com/#!/marklabedz]] [[view tweet|http://twitter.com/#!/marklabedz/statuses/9633943271772160]]
 
-"i'm completely in love with Google Refine. fo' reals."
+"i'm completely in love with OpenRefine. fo' reals."
 
    [[Nater Kane|http://twitter.com/#!/naterkane]] [[view tweet|http://twitter.com/#!/naterkane/statuses/9981143436763136]]
 
@@ -61,35 +61,35 @@
 
    [[Learon Dalby|http://twitter.com/#!/LearonDalby]] [[view tweet|http://twitter.com/#!/LearonDalby/statuses/10370150263947266]]
 
-"Google Refine: love at first click"
+"OpenRefine: love at first click"
 
    [[Loran Cook|http://twitter.com/loranstefani]], [[view tweet|http://twitter.com/loranstefani/statuses/18051195771817984]]
 
-"Um, this intro to Google Refine makes the data-lover in me uber-horny. http://bit.ly/8XN0xU [[monitor|humps]]"
+"Um, this intro to OpenRefine makes the data-lover in me uber-horny. http://bit.ly/8XN0xU [humps monitor]"
 
    [[Kim M.|http://twitter.com/#!/kimmieoftroy]] [[view tweet|http://twitter.com/#!/kimmieoftroy/status/22388155407667201]]
 
-"Google Refine 2.0 makes this reporter so happy he could hug it. Except that he has a rule: no hugging Google products."
+"OpenRefine 2.0 makes this reporter so happy he could hug it. Except that he has a rule: no hugging Google products."
 
    [[Jeff Severns Guntzel|http://twitter.com/#!/jsguntzel]] [[view tweet|http://twitter.com/#!/jsguntzel/statuses/22658537058467840]]
 
-"Google Refine is gonna change my life"
+"OpenRefine is gonna change my life"
 
    [[Tracy Tran|http://twitter.com/#!/tracyctran]] [[view tweet|http://twitter.com/#!/tracyctran/status/27422734816382977]]
 
-Oh man! Google Refine is making our lives so much easier, shaving hours off analysing keyword data: http://t.co/WQotutC
+Oh man! OpenRefine is making our lives so much easier, shaving hours off analysing keyword data: http://t.co/WQotutC
 
    [[woofonline|http://twitter.com/#!/woofonline]] [[view tweet|http://twitter.com/#!/woofonline/status/28130932099645440]]
 
-Google Refine, I freakin' love you. #Badass #NerdLove #fangirl #NewBoyfriendDay
+OpenRefine, I freakin' love you. #Badass #NerdLove #fangirl #NewBoyfriendDay
 
    [[Rhiannon Coppin|http://twitter.com/#!/rhiannoncoppin]] [[view tweet|http://twitter.com/#!/rhiannoncoppin/status/31149069439078400]]
 
-If only more people knew how amazingly powerful Google Refine was, the world would be a different place.
+If only more people knew how amazingly powerful OpenRefine was, the world would be a different place.
 
    [[irwin|http://twitter.com/#!/irwin]] [[view tweet|http://twitter.com/#!/irwin/status/34989881616891904]]
 
-Mind officially blown by how great Google Refine looks for cleaning messy data. Thank you, @dfhuynh: http://ow.ly/43YnO #nicar11
+Mind officially blown by how great OpenRefine looks for cleaning messy data. Thank you, @dfhuynh: http://ow.ly/43YnO #nicar11
 
    [[Tom Meagher|http://twitter.com/#!/ultracasual]] [[view tweet|http://twitter.com/#!/ultracasual/status/41543073511112704]]
 
@@ -101,23 +101,23 @@ Google you have made my world 400% easier with google refine. Im your friend.
 
     [[davvyk|http://twitter.com/davvyk]] [[view tweet|http://twitter.com/davvyk/status/58545718415204352#]]
 
-Not too many programs are a pleasure to work with to the level of Google Refine
+Not too many programs are a pleasure to work with to the level of OpenRefine
 
     [[Victor Castell|http://twitter.com/#!/victorcoder]] [[view tweet|http://twitter.com/#!/victorcoder/status/71132170948845568]]
 
-Google Refine, in one minute, has saved me hours of work! http://bit.ly/d3mIXG
+OpenRefine, in one minute, has saved me hours of work! http://bit.ly/d3mIXG
 
     [[Aaron Rubinstein|http://twitter.com/rubinsztajn]] [[view tweet|http://twitter.com/#!/rubinsztajn/status/74164857364156417]]
 
-@mattwaite tells of his despair over the hours spent cleaning data that can now be cleaned in a few minutes in Google Refine #IRE11 #gannett
+@mattwaite tells of his despair over the hours spent cleaning data that can now be cleaned in a few minutes in OpenRefine #IRE11 #gannett
 
     [[Mark Schaver|http://twitter.com/#!/markschaver]] [[view tweet|http://twitter.com/#!/markschaver/status/78837142964547584]]
 
-@mattwaite also says #IRE2011 "It makes me want to drown in a bathtub when I look at Google Refine... all the hours of my life I've lost."
+@mattwaite also says #IRE2011 "It makes me want to drown in a bathtub when I look at OpenRefine... all the hours of my life I've lost."
 
     [[alicitabrennan|http://twitter.com/#!/alicitabrennan]] [[view tweet|http://twitter.com/#!/alicitabrennan/status/78836868719984640]]
 
-Google Refine: An empiricist's new best friend. - If you’ve never seen it before, Google Refine is a free... http://tumblr.com/x8r34dba7z
+OpenRefine: An empiricist's new best friend. - If you’ve never seen it before, OpenRefine is a free... http://tumblr.com/x8r34dba7z
 
     [[[http://twitter.com/#!/Jaron_In_Theory/status/83582754364735488 view tweet|http://twitter.com/Jaron_In_Theory]]]
 
@@ -125,11 +125,11 @@ Finally played around with @google refine. In two clicks it did what took me sev
 
     [[[http://twitter.com/#!/lisachiuster/status/83315910613540865 view tweet|http://twitter.com/lisachiuster]]]
 
-Today my life was made much easier by Google Refine (http://t.co/gZm3T9X). I love it.
+Today my life was made much easier by OpenRefine (http://t.co/gZm3T9X). I love it.
 
     [[VanL|http://twitter.com/#!/VanL]] [[view tweet|http://twitter.com/#!/VanL/status/103517015851020288]]
 
-Totally and utterly in love with Google Refine right now...
+Totally and utterly in love with OpenRefine right now...
 
     [[Joanna Geary|http://twitter.com/#!/timesjoanna]] [[view tweet|http://twitter.com/#!/timesjoanna/status/104260882208522240]]
 
@@ -137,7 +137,7 @@ Totally and utterly in love with Google Refine right now...
 
     [[Andrew Walkingshaw|http://twitter.com/#!/covert]] [[view tweet|http://twitter.com/#!/covert/status/104261036047216640]]
 
-The more I learn about Google Refine the more excited I get about using it. #Analyst4Life
+The more I learn about OpenRefine the more excited I get about using it. #Analyst4Life
 
     [[Kim Z Dale|http://twitter.com/#!/observacious]] [[view tweet|http://twitter.com/#!/observacious/status/108264180527792128]]
 
@@ -146,7 +146,7 @@ The more I learn about Google Refine the more excited I get about using it. #Ana
     [[buzzdata|http://twitter.com/#!/buzzdata]] [[view tweet|http://twitter.com/#!/buzzdata/status/113634815487655936]]
 
 
-Cleaning up data using Google Refine. It's a gift sent from heaven
+Cleaning up data using OpenRefine. It's a gift sent from heaven
 
     [[Ben Poston|http://twitter.com/#!/bposton]] [[view tweet|http://twitter.com/#!/bposton/status/122056208709459970]]
 
@@ -154,39 +154,39 @@ I think I've fallen in love with google refine #infovis
 
     [[Jeremy Field|http://twitter.com/#!/jeremy_field]] [[view tweet|http://twitter.com/#!/jeremy_field/status/126995834159116288]]
 
-Google Refine might be the greatest thing on the planet.
+OpenRefine might be the greatest thing on the planet.
 
     [[Greg Reda|http://twitter.com/#!/gjreda]] [[view tweet|http://twitter.com/#!/gjreda/status/144226939723448320]]
 
-Crushin' on a project. The object of my affect doesn't even have to be human. Google Refine is so sharp!
+Crushin' on a project. The object of my affect doesn't even have to be human. OpenRefine is so sharp!
 
     [[Kasia Hayden|http://twitter.com/#!/haydenkasia]] [[view tweet|http://twitter.com/#!/haydenkasia/status/144317138042228736]]
 
-Google Refine is my friend today.
+OpenRefine is my friend today.
 
     [[mrgunn|http://twitter.com/#!/mrgunn]] [[view tweet|http://twitter.com/#!/mrgunn/status/144855308311859200]]
 
-The award for the biggest timesaver goes to Google Refine and its data reconciliation #epic
+The award for the biggest timesaver goes to OpenRefine and its data reconciliation #epic
 
-    [[Hannes Ebner|https://twitter.com/#!/electricbum]] [[view tweet|https://twitter.com/#!/electricbum/status/164789954059309056]]
+    [https://twitter.com/#!/electricbum Hannes Ebner] [https://twitter.com/#!/electricbum/status/164789954059309056 view tweet]
 
-10 minutes into the Google Refine session and I'm in love. #dirtydata #Nicar12
+10 minutes into the OpenRefine session and I'm in love. #dirtydata #Nicar12
 
-    [[AmyJo Brown|https://twitter.com/#!/amyjo_brown]] [[view tweet|https://twitter.com/#!/amyjo_brown/status/173138136489136129]]
+    [https://twitter.com/#!/amyjo_brown AmyJo Brown] [https://twitter.com/#!/amyjo_brown/status/173138136489136129 view tweet]
 
 I may be late but this is quite possibly the coolest thing I've seen recently since the other side of the pillow: http://code.google.com/p/google-refine/
 
     [[Jeff Rush|http://twitter.com/#!/jeffrush]] [[view tweet|http://twitter.com/#!/jeffrush/status/179296155711193089]]
 
-Google Refine is amazing - fast cluster heuristics intelligently clean up your data. Best find of 2012 so far... #analytics #data
+OpenRefine is amazing - fast cluster heuristics intelligently clean up your data. Best find of 2012 so far... #analytics #data
 
     [[Senan|http://twitter.com/#!/NativeAnalytics]] [[view tweet|http://twitter.com/#!/NativeAnalytics/status/179326447620591616]]
 
-I seriously love Google Refine. Dead simple and very useful. You don't want a Swiss army knife. Just a simple, simple hammer.
+I seriously love OpenRefine. Dead simple and very useful. You don't want a Swiss army knife. Just a simple, simple hammer.
 
     [[Eric Feng|http://twitter.com/#!/ehfeng]] [[view tweet|http://twitter.com/#!/ehfeng/status/179496038548250624]]
 
-I love Google Refine.
+I love OpenRefine.
 
     [[Michael Grimes|http://twitter.com/#!/citizensheep]] [[view tweet|http://twitter.com/#!/citizensheep/status/179554740521275393]]
 
@@ -194,15 +194,15 @@ Where does Google come up with this stuff? Amazing data manipulation tool!
 
     [[(eaɹsmack)|http://twitter.com/#!/earsmack]] [[view tweet|http://twitter.com/#!/earsmack/status/187921361480593410]]
 
-Waking up and trying to organize data with Google Refine is my version of Saturday morning cartoons.
+Waking up and trying to organize data with OpenRefine is my version of Saturday morning cartoons.
 
     [[Troy Griggs|http://twitter.com/#!/TroyEricG]] [[view tweet|http://twitter.com/#!/TroyEricG/status/188640514906656769]]
 
-Google Refine.. absolutely beautiful. @Reggieonthereg @IUSamParsons rock
+OpenRefine.. absolutely beautiful. @Reggieonthereg @IUSamParsons rock
 
     [[John Sibo|http://twitter.com/#!/iRideSiboats]] [[view tweet|http://twitter.com/#!/iRideSiboats/status/189153182620983296]]
 
-@cspenn I LOVE Google Refine -- super fast to clean up tons of data! cc @johnjwall @iPullRank
+@cspenn I LOVE OpenRefine -- super fast to clean up tons of data! cc @johnjwall @iPullRank
 
     [[Slavik Volinsky|http://twitter.com/#!/svolinsky]] [[view tweet|http://twitter.com/#!/svolinsky/status/200678775975981056]]
 
@@ -214,65 +214,65 @@ Goble says google refine - the lords' work! ‪#jcdl2012‬
 
     [[maureen henninger|http://twitter.com/#!/maureenh1]] [[view tweet|http://twitter.com/maureenh1/status/212535889967067136]]
 
-Google Refine, take my pain away.
+OpenRefine, take my pain away.
 
-    [[Sean Hannan|https://twitter.com/#!/MrDys]] [[view tweet|https://twitter.com/mrdys/status/220246953596948481]]
+    [https://twitter.com/#!/MrDys Sean Hannan] [https://twitter.com/mrdys/status/220246953596948481 view tweet]
 
-Google Refine: Where the hell have you been all my life? Excel for Big Data/Regex geeks
+OpenRefine: Where the hell have you been all my life? Excel for Big Data/Regex geeks
 
-    [[Geoffrey McCaleb|https://twitter.com/#!/geoffreymccaleb]] [[view tweet|https://twitter.com/geoffreymccaleb/status/220158210361929730]]
+    [https://twitter.com/#!/geoffreymccaleb Geoffrey McCaleb] [https://twitter.com/geoffreymccaleb/status/220158210361929730 view tweet]
 
-Google Refine is (an outstanding) power tool for working with messy data. http://bit.ly/ak6gfC  Thank you, GR devs! #DataScience
+OpenRefine is (an outstanding) power tool for working with messy data. http://bit.ly/ak6gfC  Thank you, GR devs! #DataScience
 
     [[Harlan Harris|http://twitter.com/HarlanH]] [[view tweet|http://twitter.com/harlanh/status/241259084421156864]]
 
-Just spent 10 hours playing with Google Refine like it was my new favorite video game.
+Just spent 10 hours playing with OpenRefine like it was my new favorite video game.
 
     [[Kim Witten|http://twitter.com/iamkimiam]] [[view tweet|http://twitter.com/iamkimiam/status/240930667955904513]]
 
-Today is yet another day where Google Refine made my life better.
+Today is yet another day where OpenRefine made my life better.
 
    [[Chris Weber|http://twitter.com/chris_m_weber]] [[view tweet|http://twitter.com/chris_m_weber/status/253157884295274496]]
 
-Oh Google Refine, you compl33t me.
+Oh OpenRefine, you compl33t me.
 
-    [[Dorian Taylor|https://twitter.com/doriantaylor]] [[view tweet|https://twitter.com/doriantaylor/status/258771194520686592]]
+    [https://twitter.com/doriantaylor Dorian Taylor] [https://twitter.com/doriantaylor/status/258771194520686592 view tweet]
 
 
 ===Blogs===
 
-"Google Refine isn’t going to solve the problem of poor data availability, but for those who manage to gain access to existing records, it can be a powerful tool for transparency."
+"OpenRefine isn’t going to solve the problem of poor data availability, but for those who manage to gain access to existing records, it can be a powerful tool for transparency."
 
-    [[Rebekah Heacock|http://jackfruity.com/]], co-director of the [[Technology for Transparency Network|http://transparency.globalvoicesonline.org/]] and a Project Coordinator at Harvard’s [[Berkman Center for Internet and Society|http://cyber.law.harvard.edu/]] -  [[Sunlight Foundation|http://sunlightfoundation.com/blog/]], [[Tools for transparency: Google Refine|http://sunlightfoundation.com/blog/2011/01/06/tools-for-transparency-google-refine/]].
+    [[Rebekah Heacock|http://jackfruity.com/]], co-director of the [[Technology for Transparency Network|http://transparency.globalvoicesonline.org/]] and a Project Coordinator at Harvard’s [[Berkman Center for Internet and Society|http://cyber.law.harvard.edu/]] -  [[Sunlight Foundation|http://sunlightfoundation.com/blog/]], [[Tools for transparency: OpenRefine|http://sunlightfoundation.com/blog/2011/01/06/tools-for-transparency-google-refine/]].
 
-"Google Refine is an immensely powerful tool for dealing with "messy" data, and it sports a myriad of advanced features for massaging and analyzing complex data sets"
+"OpenRefine is an immensely powerful tool for dealing with "messy" data, and it sports a myriad of advanced features for massaging and analyzing complex data sets"
 
-    Dmitri Popov ([[Linux Magazine|http://www.linux-magazine.com/]]) - [[Use Google Refine to Massage Your Data|http://www.linux-magazine.com/Online/Blogs/Productivity-Sauce/Use-Google-Refine-to-Massage-Your-Data]]
+    Dmitri Popov ([[Linux Magazine|http://www.linux-magazine.com/]]) - [[Use OpenRefine to Massage Your Data|http://www.linux-magazine.com/Online/Blogs/Productivity-Sauce/Use-Google-Refine-to-Massage-Your-Data]]
 
 "For anyone who’s ever had to sort through messy data to try to turn up a meaningful treatment, and who hasn’t, this tool is a godsend."
 
-    [[Michael Lines|http://library.law.uvic.ca/services/contact-us/mrl]], [[SLAW|http://www.slaw.ca/]] - [[Google Refine 2.0|http://www.slaw.ca/2010/11/12/google-refine-2/]]
+    [[Michael Lines|http://library.law.uvic.ca/services/contact-us/mrl]], [[SLAW|http://www.slaw.ca/]] - [[OpenRefine 2.0|http://www.slaw.ca/2010/11/12/google-refine-2/]]
 
-"Google Refine 2.0 will serve an excellent back-end for data visualization services. It has been well received by the Chicago Tribune and open-government data communities. Along with Google Squared, Refine 2.0 can create a powerful research tool."
+"OpenRefine 2.0 will serve an excellent back-end for data visualization services. It has been well received by the Chicago Tribune and open-government data communities. Along with Google Squared, Refine 2.0 can create a powerful research tool."
 
-    Chinmoy Kanjilal, Techie Buzz - [[Google Refine 2.0: Power Tools for Working With Data|http://techie-buzz.com/foss/google-refine-data-tool.html]]
+    Chinmoy Kanjilal, Techie Buzz - [[OpenRefine 2.0: Power Tools for Working With Data|http://techie-buzz.com/foss/google-refine-data-tool.html]]
 
 
-Google Refine (the program formerly known as Freebase Gridworks) is described by its creators as a “power tool for working with messy data” but could very well be advertised as “remedy for eye fatigue, migraines, depression, and other symptoms of prolonged data-cleaning.”
+OpenRefine (the program formerly known as Freebase Gridworks) is described by its creators as a “power tool for working with messy data” but could very well be advertised as “remedy for eye fatigue, migraines, depression, and other symptoms of prolonged data-cleaning.”
 
-    Dan Nguyen, ProPublica - [[Chapter 1. Using Google Refine to Clean Messy Data|http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning]]
+    Dan Nguyen, ProPublica - [[Chapter 1. Using OpenRefine to Clean Messy Data|http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning]]
 
-The functionality offered by Google Refine is paramount and provides the user with a simple interface with powerful data manipulation capabilities. ... I solicited Ryan Boyles to develop a script to sanitize the data which, in total, took about 45 minutes to get the data into a proper format. Utilizing Google Refine I was able to replicate the work of his script in about 15 minutes!
+The functionality offered by OpenRefine is paramount and provides the user with a simple interface with powerful data manipulation capabilities. ... I solicited Ryan Boyles to develop a script to sanitize the data which, in total, took about 45 minutes to get the data into a proper format. Utilizing OpenRefine I was able to replicate the work of his script in about 15 minutes!
 
-    Logan Lynn, The Data Revolution - [[Get Started With Google Refine 2.0|http://www.thedatarevolution.com/2011/01/14/get-started-with-google-refine-2-0/]]
+    Logan Lynn, The Data Revolution - [[Get Started With OpenRefine 2.0|http://www.thedatarevolution.com/2011/01/14/get-started-with-google-refine-2-0/]]
 
-Google Refine for SEO: [["When I first saw Freebase Gridworks I was a very happy man. Here was a tool that tackled one of the biggest problems in data journalism: cleaning dirty data (and data is invariably dirty). The tool made it easy to identify variations of a single term, and clean them up, to link one set of data to another – and much more besides."
+OpenRefine for SEO: [["When I first saw Freebase Gridworks I was a very happy man. Here was a tool that tackled one of the biggest problems in data journalism: cleaning dirty data (and data is invariably dirty). The tool made it easy to identify variations of a single term, and clean them up, to link one set of data to another – and much more besides."
 
-    [http://ojb.journallocal.co.uk Online Journalism Blog|http://www.blindfiveyearold.com/find-keyword-modifiers-with-google-refine]]] post [[Data cleaning tool relaunches: Freebase Gridworks becomes Google Refine|http://ojb.journallocal.co.uk/2010/11/11/data-cleaning-tool-relaunches-freebase-gridworks-becomes-google-refine/]]
+    [http://ojb.journallocal.co.uk Online Journalism Blog|http://www.blindfiveyearold.com/find-keyword-modifiers-with-google-refine]]] post [[Data cleaning tool relaunches: Freebase Gridworks becomes OpenRefine|http://ojb.journallocal.co.uk/2010/11/11/data-cleaning-tool-relaunches-freebase-gridworks-becomes-google-refine/]]
 
-Google Refine bills itself as a “power tool for working with messy data,” and it does not disappoint. While not a turnkey solve-all for data integrity, it makes this tedious task far less intimidating. ... Dirty data is here to stay. But with Refine, at least it’s no longer the daunting task it once was.
+OpenRefine bills itself as a “power tool for working with messy data,” and it does not disappoint. While not a turnkey solve-all for data integrity, it makes this tedious task far less intimidating. ... Dirty data is here to stay. But with Refine, at least it’s no longer the daunting task it once was.
 
-    [[Matt Wynn|http://www.poynter.org/author/matt-wynn/]] - [[How journalists can use Google Refine to clean ‘dirty’ data sets|http://www.poynter.org/how-tos/digital-strategies/155975/how-journalists-can-use-google-refine-to-clean-dirty-data-sets/]]
+    [[Matt Wynn|http://www.poynter.org/author/matt-wynn/]] - [[How journalists can use OpenRefine to clean ‘dirty’ data sets|http://www.poynter.org/how-tos/digital-strategies/155975/how-journalists-can-use-google-refine-to-clean-dirty-data-sets/]]
 
 
 =About Freebase Gridworks 1.x=
@@ -280,7 +280,7 @@ Google Refine bills itself as a “power tool for working with messy data,” an
 === Blog Posts ===
 
 "Refine really shines when it is used to combine or transform data from multiple sources, so it's no surprise that it has been popular for open government and data journalism tasks.
-... Best of all, Google Refine keeps a running changelog that lets you review and revert changes to your data -- so go ahead: play around."
+... Best of all, OpenRefine keeps a running changelog that lets you review and revert changes to your data -- so go ahead: play around."
 
     [[Julie Steele|http://radar.oreilly.com/julies/index.html]] (O'Reilly Radar) - [[Strata week: Keeping it clean|http://radar.oreilly.com/2010/11/strata-week-keeping-it-clean.html]]
 
@@ -396,7 +396,7 @@ own technology for this purpose, I suggest you check out these state-of-the-art 
 
     - Fadi Maali, [[Richard Cyganiak|http://richard.cyganiak.de/]], and Vassilios Peristeras ([[DERI|http://www.deri.ie/]]) 
 
-**[[Refine Stats|https://github.com/newsapps/refine-stats]]**
+**[https://github.com/newsapps/refine-stats Refine Stats]**
 
     - [[Joe Germuska|http://twitter.com/#!/joegermuska]] and [[Christopher Groskopf|http://twitter.com/#!/onyxfish]]
 
@@ -410,6 +410,6 @@ own technology for this purpose, I suggest you check out these state-of-the-art 
 
 [[Jeff Larson|http://www.propublica.org/site/author/jeff_larson]] ([[ProPublica|http://www.propublica.org/]]) - **[[The Rainbow Connection: How We Made Our CDO Connections Graphic|http://www.propublica.org/nerds/item/the-rainbow-connection-how-we-made-our-cdo-connections-graphic]]**
 
-[[Where to sleep in Turin: un esempio d’uso dei raw data piemontesi con Google Refine e SIMILE Exhibit|http://blog.spaziogis.it/2010/10/29/where-to-sleep-in-turin-un-esempio-d-uso-dei-raw-data-piemontesi-con-google-refine-e-simile-exhibit/]]
+[[Where to sleep in Turin: un esempio d’uso dei raw data piemontesi con OpenRefine e SIMILE Exhibit|http://blog.spaziogis.it/2010/10/29/where-to-sleep-in-turin-un-esempio-d-uso-dei-raw-data-piemontesi-con-google-refine-e-simile-exhibit/]]
 
 [[Tim Davies|http://www.timdavies.org.uk/]] - **[[Sliced and diced aid data with google refine|http://www.opendatacookbook.net/wiki/recipe/sliced_and_diced_aid_data_with_google_refine]]**

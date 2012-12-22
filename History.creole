@@ -1,11 +1,12 @@
-# How to use the undo/redo change history
+//How to use the undo/redo change history//
 
 ==Basics==
 
-Any operation in Google Refine that changes the data can be undone. Changes are tracked from the very beginning when a project is just created. The undo/redo change history of each project is saved together with the project's data, so closing down your browser and quitting Google Refine does not disturb the history. When you restart Google Refine, you can still undo changes that you had made before you closed down your browser and/or quit Google Refine.
+Any operation in OpenRefine that changes the data can be undone. Changes are tracked from the very beginning when a project is just created. The undo/redo change history of each project is saved together with the project's data, so closing down your browser and quitting OpenRefine does not disturb the history. When you restart OpenRefine, you can still undo changes that you had made before you closed down your browser and/or quit OpenRefine.
 
 The history is shown as a list of indexed changes, with the first "change" being the action of creating the project itself. (That first change, indexed zero, cannot be undone.) Here is a sample history with 3 changes
 
+    
       0. Create project
       1. Remove 7 rows
       2. Create new column Last Name based on column Name by filling 67 rows with grel:value.split(" ")[1] 
@@ -20,7 +21,7 @@ When you've undone some changes, then they are grayed out. In this example, chan
 
 ==Replaying Operations==
 
-Operations that you perform in Google Refine to create changes to the data can be reused. An operation is different from the change that it creates. For example, an operation to transform the cells in column X with some expression creates a change that sets the values of some number of cells. That same operation can be performed on another, similar project, and it would create a different change that sets the values of a different number of cells. (In computer science terms, abstract operations create concrete changes.)
+Operations that you perform in OpenRefine to create changes to the data can be reused. An operation is different from the change that it creates. For example, an operation to transform the cells in column X with some expression creates a change that sets the values of some number of cells. That same operation can be performed on another, similar project, and it would create a different change that sets the values of a different number of cells. (In computer science terms, abstract operations create concrete changes.)
 
 For example, consider two different projects, each containing a column Name that contains people's names in the format "first_name last_name". The first project contains 20 names and the second contains 45 names. You can perform the same operation "Split column into several columns" by the separator space on the column Name of each project. In the first project, 20 rows x 2 cells per row = 40 cells will be created, and in the second project, 45 rows x 2 cells per row = 90 cells will be created. Although the two changes are different, they both result from the same abstract, conceptual operation of splitting "first_name last_name" by space.
 

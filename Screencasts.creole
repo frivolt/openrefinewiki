@@ -1,4 +1,4 @@
-# Screencasts about Google Refine
+//Screencasts about OpenRefine//
 
 <wiki:video url="http://www.youtube.com/watch?v=B70J_H_zAWM" width="720" height="500" />
 

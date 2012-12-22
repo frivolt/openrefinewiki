@@ -1,16 +1,16 @@
-# Announcements of the latest features
+//Announcements of the latest features//
 
 ==December 2011==
 
-Google Refine 2.5 is released ([[change list|ChangesFor2p5]])
+OpenRefine 2.5 is released ([ChangesFor2p5 change list])
 
 ==June 2011==
 
-Google Refine 2.1 is released([[change list|ChangesFor2p1]])
+OpenRefine 2.1 is released([ChangesFor2p1 change list])
 
 ==November 2010==
 
-Google Refine 2.0 is released ([[change list|ChangesFor2p0]]).
+OpenRefine 2.0 is released ([ChangesFor2p0 change list]).
 
 ==May 2010==
 ===May 28th, 2010===

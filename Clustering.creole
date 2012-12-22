@@ -1,6 +1,6 @@
-# How to edit cells by clustering.
+//How to edit cells by clustering.//
 
-Google Refine's text facets are a great mechanism for surfacing patterns from your data. Consider a data set that contains people's names entered in two different ways: "first_name middle_initial last_name", and "last_name, first_name". A text facet on that column might reveal
+OpenRefine's text facets are a great mechanism for surfacing patterns from your data. Consider a data set that contains people's names entered in two different ways: "first_name middle_initial last_name", and "last_name, first_name". A text facet on that column might reveal
 
 |=choice|=count|
 |Andy Anderson|79|

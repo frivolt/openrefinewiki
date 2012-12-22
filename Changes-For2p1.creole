@@ -1,8 +1,8 @@
-# Changes for v2.1 release
+//Changes for v2.1 release//
 
-=Google Refine 2.1=
+=OpenRefine 2.1=
 
-Google Refine 2.1 is a maintenance release primarily focused on bug fixes.
+OpenRefine 2.1 is a maintenance release primarily focused on bug fixes.
 
 ==New Features==
 

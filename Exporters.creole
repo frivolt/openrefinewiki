@@ -1,8 +1,8 @@
-# Exporting data and projects
+//Exporting data and projects//
 
 ==Basics==
 
-You can export data from an existing Google Refine project in several formats:
+You can export data from an existing OpenRefine project in several formats:
 
 * Tab separated values (TSV)
 * Comma separated values (CSV)
@@ -13,7 +13,7 @@ To export from a project, click the Export button at the top right corner and pi
 
 ==Templating Exporter==
 
-If you pick `Templating...` from the Export menu, you can "roll your own" exporter. This is useful for formats that we don't support natively yet, or won't support. For example, right now, you can use the Templating exporter to generate JSON by default. We have a tutorial on using this approach [[export your data as YAML|ExportAsYAML]].
+If you pick ##{{{Templating...}}}## from the Export menu, you can "roll your own" exporter. This is useful for formats that we don't support natively yet, or won't support. For example, right now, you can use the Templating exporter to generate JSON by default. We have a tutorial on using this approach [ExportAsYAML export your data as YAML].
 
 === Guides ===
 
@@ -21,15 +21,16 @@ These should be some good guides to getting started with exporting your data in 
 
 
 |=Format|=Prefix|=Row Template|=Row Seperator|=Suffix|
-|**!MediaWiki tables**|`{|`|`| {{cells[[|**YAML**|`----`|`- {{cells["col1"|"col1"]}}`|`|-`|`|}`|]]}}`||`...`|
+|**!MediaWiki tables**|##{{{{|}}}##|##{{{| {{cells["col1"]}}}}}##|##{{{|-}}}##|##{{{|}}}}##|
+|**YAML**|##{{{----}}}##|##{{{- {{cells["col1"]}}}}}##||##{{{...}}}##|
 
 <wiki:comment>
 I can't get this to render properly --Tim McNamara
 
-|=**Google Code wiki tables**|=|=`|={{cells["col1"]}}|=`|=|=|
+|=**Google Code wiki tables**|=|=##{{{|={{cells["col1"]}}|=}}}##|=|=|
 </wiki:comment>
 
 
 ==Exporting Projects==
 
-You can also export a whole Google Refine project as a .tar.gz file and then someone else can import it into their Google Refine. The exported file will contain not only the data but also the history of changes. This way, the person who receives your project file knows exactly what operations you have performed, and can even undo them.
+You can also export a whole OpenRefine project as a .tar.gz file and then someone else can import it into their OpenRefine. The exported file will contain not only the data but also the history of changes. This way, the person who receives your project file knows exactly what operations you have performed, and can even undo them.

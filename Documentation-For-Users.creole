@@ -1,13 +1,13 @@
-# Documentation hub for users
+//Documentation hub for users//
 
 Where to start?
 
-* [[Installation Instructions|How to install and run]] ([[upgrading instructions|UpgradingTo2p0]])
+* [[Installation Instructions|How to install and run]] ([UpgradingTo2p0 upgrading instructions])
 * [[User Guide|How to use]]
 
 Love it so much?
 
-* [[How To Participate|Join in]] with the development or help spread the meme about Google Refine.
+* [[How To Participate|Join in]] with the development or help spread the meme about OpenRefine.
 * [[Get Development Version|Get the development version]] so you can play with all the latest and greatest features, but if you are not afraid of bugs.
 
 =Feature Areas=
@@ -50,8 +50,8 @@ There are **[[Recipes|Quick Recipes]]**  (like removing duplicate row values, et
 and there are full recipes:
 
 * [[Geocoding|Geocoding]] - translating street addresses to lat/lng coordinates
-* [[Fetching URLs From Web Services|FetchingURLsFromWebServices]] - grabbing from the Web more data related to the data you already have
-* [[Web Scraping & Extracting items from HTML pages|StrippingHTML]]
+* [FetchingURLsFromWebServices Fetching URLs From Web Services] - grabbing from the Web more data related to the data you already have
+* [StrippingHTML Web Scraping & Extracting items from HTML pages]
 * [[Recipe Apache Logs|Analyzing Apache Logs]]
 
 
@@ -60,15 +60,15 @@ and there are full recipes:
 ==Expressions==
 
 * [[Variables|Variables]]
-* Google Refine Expression Language (GREL)
-* [[Controls|GRELControls]]
-* [[Functions|GRELFunctions]]
-* [[Boolean functions|GRELBooleanFunctions]]
-* [[String functions|GRELStringFunctions]]
-* [[Array functions|GRELArrayFunctions]]
-* [[Math functions|GRELMathFunctions]]
-* [[Date functions|GRELDateFunctions]]
-* [[Other functions|GRELOtherFunctions]]
+* OpenRefine Expression Language (GREL)
+* [GRELControls Controls]
+* [GRELFunctions Functions]
+* [GRELBooleanFunctions Boolean functions]
+* [GRELStringFunctions String functions]
+* [GRELArrayFunctions Array functions]
+* [GRELMathFunctions Math functions]
+* [GRELDateFunctions Date functions]
+* [GRELOtherFunctions Other functions]
 * [[Jython|Jython]]
 
 =External Sites=
@@ -77,6 +77,6 @@ While there's a lot of information in this wiki, there's plenty more online too.
 
 * [[Tony Hirst's blog|http://blog.ouseful.info/tag/google-refine/]]
 * [[Martin Magdinier's blog|http://googlerefine.blogspot.ca/]]
-* Yours? [[Let us know!|http://groups.google.com/group/google-refine/]]
+* Yours? [[Let us know!|http://groups.google.com/group/openrefine/]]
 
-And of course [[searching online|https://www.google.com/search?q=%22google+refine%22]].
+And of course [https://www.google.com/search?q=%22google+refine%22 searching online].
