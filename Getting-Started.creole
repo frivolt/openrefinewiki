@@ -1,15 +1,5 @@
 //How to get started with OpenRefine//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GettingStarted]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/GettingStarted]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-
-==NOTE: This documentation wiki is in transition to [https://github.com/OpenRefine/OpenRefine/wiki]==
-
-----
-
 =Welcome!=
 
 **Here for the First Time?**
@@ -19,7 +9,7 @@
 
 **Get started:**
 
-* [[Installation Instructions|Installation Instructions]]
+* [[Installation Instructions]]
 * [[Documentation|Documentation For Users]] for Users
 * [FAQ] Frequently Asked Questions
 
