@@ -33,12 +33,12 @@ Locate the directory where you've checked out OpenRefine. Eclipse should detect 
 
 === Netbeans ===
 
-1. make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
-1. in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
+# make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
+# in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
 {{{
 -Drefine.autoreloading=true  -Drefine.webapp=src/main/webapp
 }}}
-1. apply, close the dialog and then click the green run button and voila', you should see it run and open your default browser.
+# apply, close the dialog and then click the green run button and voila', you should see it run and open your default browser.
 
 If you want OpenRefine logs to be more verbose, append this to the line above
 

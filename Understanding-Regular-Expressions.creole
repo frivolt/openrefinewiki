@@ -33,11 +33,11 @@ Elsewhere in OpenRefine, i.e., not within a GREL expression, do not use slashes 
 
 ==GREL functions that support Regex==
 
-1. replace
-1. match
-1. partition
-1. rpartition
-1. split
+# replace
+# match
+# partition
+# rpartition
+# split
 
 ==Basic Examples==
 

@@ -35,8 +35,8 @@ A call to a reconciliation service API for a single query looks like either of t
 
 If the query parameter is a string, then it's an abbreviation of {{{query={"query":...string...}}}}. Here are two live examples:
 
-1. http://standard-reconcile.freebaseapps.com/reconcile?query=boston
-1. http://standard-reconcile.freebaseapps.com/reconcile?query={%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22}
+# http://standard-reconcile.freebaseapps.com/reconcile?query=boston
+# http://standard-reconcile.freebaseapps.com/reconcile?query={%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22}
 
 The query json object literal has a few fields
 
@@ -132,8 +132,8 @@ The service must also support JSONP through a callback parameter.
 When a service is called with just a JSONP callback parameter and no other paramters, then it must return its metadata as a JSON object literal with at least 3 fields "name", "identifierSpace", and "schemaSpace". Other fields are optional for reconciliation services which can make use of the default Freebase preview, suggest, etc services, but non-Freebase reconciliation services may need to implement them all.
 
 Here are two live examples:
-1. http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
-1. http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
+# http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
+# http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
 
 {{{
 {

@@ -63,10 +63,10 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 ** How can I delete a whole row or several rows? **
 
   Follow these steps:
-1. Flag (or star) the row(s)
-1. In the dropdown above the flag you can get a facet, by going to Facet > Facet by flag.
-1. From the facet that opens select the 'true' option.
-1. In the dropdown menu above the flag you can go to Edit Rows > Remove all matching rows.
+# Flag (or star) the row(s)
+# In the dropdown above the flag you can get a facet, by going to Facet > Facet by flag.
+# From the facet that opens select the 'true' option.
+# In the dropdown menu above the flag you can go to Edit Rows > Remove all matching rows.
 
 ** How do I make a Text Facet show more than 2000 choices? **
 

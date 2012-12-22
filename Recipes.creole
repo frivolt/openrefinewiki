@@ -116,11 +116,11 @@ In Release 2.1+ there is now a Facet -> Customized Facets -> Duplicates Facet th
 
 However, to ONLY remove subsequent instances of duplicates (any string), use this method:
 
-1. Sort (on the column that has duplicates or potentially)
-1. Reorder rows permanently (this option is in blue color SORT link in header)
-1. Edit cells -> Blank down
-1. Facet -> Customized Facets -> Facet by blank (click True)
-1. All -> Edit rows -> Remove all matching rows
+# Sort (on the column that has duplicates or potentially)
+# Reorder rows permanently (this option is in blue color SORT link in header)
+# Edit cells -> Blank down
+# Facet -> Customized Facets -> Facet by blank (click True)
+# All -> Edit rows -> Remove all matching rows
 
 ===Facet and Count duplicate patterns found in a cell value at each row===
 

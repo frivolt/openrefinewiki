@@ -21,13 +21,13 @@ You can use almost any Python {{{(.py)}}}{{{(.pyc)}}} files compatible with the 
 
 A few HTML parsing Python libraries to experiment with :
 
-1. [[HTMLParser (bundled with Jython in Refine)|http://docs.python.org/lib/module-HTMLParser.html]]
-1. [[BeautifulSoup|http://www.crummy.com/software/BeautifulSoup/]]
+# [[HTMLParser (bundled with Jython in Refine)|http://docs.python.org/lib/module-HTMLParser.html]]
+# [[BeautifulSoup|http://www.crummy.com/software/BeautifulSoup/]]
 
 A few XML parsing Python libraries:
 
-1. [[ElementTree (bundled with Jython in Refine)|http://effbot.org/zone/element-index.htm]]
-1. [[lxml|http://codespeak.net/lxml/]] ** will NOT work in Jython, since lxml has C bindings for CPython (regular Python), hence will not work in Refine which is Jython / Java only, and has no CPython interpreter built-in**  
+# [[ElementTree (bundled with Jython in Refine)|http://effbot.org/zone/element-index.htm]]
+# [[lxml|http://codespeak.net/lxml/]] ** will NOT work in Jython, since lxml has C bindings for CPython (regular Python), hence will not work in Refine which is Jython / Java only, and has no CPython interpreter built-in**  
 
 ----
 
