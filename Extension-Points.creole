@@ -1,11 +1,6 @@
-//How extensions can hook into various points in OpenRefine (1.5 or later).//
+//How extensions can hook into various points in OpenRefine.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ExtensionPoints]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/ExtensionPoints]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-This document is for the upcoming version 1.5 and later only. This is still in flux.
+Extensions were first introduced in v1.5, so this document is not applicable for earlier versions.
 
 =Client-side Resources=
 
