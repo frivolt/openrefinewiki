@@ -1,12 +1,11 @@
-//Screencasts about OpenRefine//
+//Screencasts about Refine//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Screencasts]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Screencasts]] , correct any errors or omissions, then remove this warning block.
-----
+**NOTE**: These were done by Google when the product was named Google Refine,
+but they still provide a great introduction and not much has changed except
+the name
 
+- [Introduction - Screencast 1/3|http://www.youtube.com/watch?v=B70J_H_zAWM]
 
-<wiki:video url="http://www.youtube.com/watch?v=B70J_H_zAWM" width="720" height="500" />
+- [Data Transformation - Screencast 2/3|http://www.youtube.com/watch?v=cO8NVCs_Ba0]
 
-<wiki:video url="http://www.youtube.com/watch?v=cO8NVCs_Ba0" width="720" height="500" />
-
-<wiki:video url="http://www.youtube.com/watch?v=5tsyz3ibYzk" width="720" height="500" />
+- [Data Augmentation - Screencast 3/3|http://www.youtube.com/watch?v=5tsyz3ibYzk]
