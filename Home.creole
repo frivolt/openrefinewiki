@@ -1,0 +1,25 @@
+//Welcome to the OpenRefine wiki!//
+----
+//**NOTE**: we've just moved to our new home here.  If you can't find something or stumble across a broken link, you can check the [[old site|http://code.google.com/p/google-refine/]] too//
+----
+=== Here for the First Time?
+* Watch [[these screencasts|Screencasts]] to understand what's possible with Google Refine
+* [[Find out what people say and do with Google Refine|What People Say]], ... [[live on Twitter|http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view]]
+
+=== Get started:
+* [[Installation Instructions]]
+* [[Documentation|Documentation For Users]] for Users
+* [[FAQ]] Frequently Asked Questions
+
+==== Get help:
+* [[Ask questions here|http://groups.google.com/group/openrefine/]]
+* [[File bugs and feature requests here|issues]]
+
+==== Back for More?
+
+* [[See what's new lately|Whats New]]
+* [[Understand how to upgrade|Back Up OpenRefine Data]] from Google Refine 2.0 to Google Refine 2.1
+
+==== If You Are a Developer, see
+
+* [[Documentation|Documentation For Developers]] for Developers
