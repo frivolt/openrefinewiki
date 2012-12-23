@@ -20,12 +20,10 @@ git clone https://github.com/OpenRefine/OpenRefine.git
 
 Then in Eclipse, invoke the Import ... command
 
-----
-**TODO**: These broken image links need to be rehosted somewhere
-----
-{{http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects2.png|Pick Existing Projects into Workspace}}
 
-{{http://google-refine.googlecode.com/svn/wiki/images/ImportSeveralProjects.png}}
+{{images/ImportSeveralProjects2.png|Pick Existing Projects into Workspace}}
+
+{{images/ImportSeveralProjects.png}}
 
 Locate the directory where you've checked out OpenRefine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
 
