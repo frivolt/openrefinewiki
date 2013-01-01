@@ -29,7 +29,7 @@ The Kasabi reconciliation services provide reconciliation against any database p
 
 ====Talis Platform reconciliation services (dead?)====
 Example: 
-* [[|http://ldodds.com/gridworks/govuk-statistics/reconcile]] //dead link//
+* [[dead link|http://ldodds.com/gridworks/govuk-statistics/reconcile]]
 
 ====RDF Extension ====
 Access [[extension project site|http://refine.deri.ie/]]
