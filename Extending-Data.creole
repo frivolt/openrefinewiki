@@ -12,7 +12,7 @@
 You can construct a new column by calling a web service, passing it data from existing columns. For example, if you have a column containing street addresses, you can create a new column containing their corresponding latitude/longitude pairs by calling a geocoding service, such as Google's [[Geocoding service|http://code.google.com/apis/maps/documentation/geocoding/]]. Invoke the column's drop-down menu and pick Edit column > Add column by fetching URLs... The expression you enter formulates the URL to fetch for each row. For example, this expression should work on Google's Geocoding service:
 
 {{{
-  "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=" + escape(value)
+  "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=" + escape(value,'url')
 }}}
 
 Consider a cell containing
