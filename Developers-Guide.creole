@@ -20,10 +20,15 @@ git clone https://github.com/OpenRefine/OpenRefine.git
 
 Then in Eclipse, invoke the Import ... command
 
+  {{images/ImportSeveralProjects.png|Pick Existing Projects into Workspace}}
 
-{{images/ImportSeveralProjects2.png|Pick Existing Projects into Workspace}}
+Pick Existing Projects into Workspace
 
-{{images/ImportSeveralProjects.png}}
+  {{images/ImportSeveralProjects2.png}}
+
+Locate the directory where you've checked out Google Refine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
+
+  {{images/ImportSeveralProjects3.png}}
 
 Locate the directory where you've checked out OpenRefine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
 
