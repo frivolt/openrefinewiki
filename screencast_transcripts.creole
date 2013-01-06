@@ -1,9 +1,5 @@
 //Textual transcripts for the speech over the screencasts//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/screencast_transcripts]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/screencast_transcripts]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 = Screencast 1 - Introduction to Gridworks =
 
@@ -17,7 +13,7 @@ In this screencast we'll show you how to use Gridworks and its faceting engine t
 
 We'll start by looking at a dataset of various foods and their contents.
 
-    (click on food)
+{{{    (click on food)}}}
 
 The dataset contains more than 7 thousand values. 
 
