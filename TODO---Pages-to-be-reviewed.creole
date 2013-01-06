@@ -5,9 +5,9 @@ Please use the following procedure to review and update these pages to make it a
 # Choose an available page and put your name next to it on the list below
 # Add a message to the top of that page saying "Being reviewed by <your name>" and **save the page**
 # Carefully review the page against the original at Google Code.  Each page has a link to its original at the top.  If you two pages side by side, you can carefully review for any omissions or errors in the conversion process.  Things to check carefully include:
- * Links
- * Images
- * Missing code snippets (you'll see a 32 character hex string in its place)
+** Links
+** Images
+** Missing code snippets (you'll see a 32 character hex string in its place)
 # Check the top of the Google Code page to make sure it correctly links to the new Github page.
 # When you are satisfied with the conversion, remove the warning block from the top of the Github page and **save the page**.
 # Remove the page from the list below
