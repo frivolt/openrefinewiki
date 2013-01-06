@@ -1,0 +1,72 @@
+The following pages have been automatically converted from the Google Refine wiki at Google Code.
+
+Please use the following procedure to review and update these pages to make it as easy as possible for everyone to collaborate.
+
+# Choose an available page and put your name next to it on the list below
+# Add a message to the top of that page saying "Being reviewed by <your name>" and **save the page**
+# Carefully review the page against the original at Google Code.  Each page has a link to its original at the top.  If you two pages side by side, you can carefully review for any omissions or errors in the conversion process.  Things to check carefully include:
+ * Links
+ * Images
+ * Missing code snippets (you'll see a 32 character hex string in its place)
+# Check the top of the Google Code page to make sure it correctly links to the new Github page.
+# When you are satisfied with the conversion, remove the warning block from the top of the Github page and **save the page**.
+# Remove the page from the list below
+# Repeat!
+
+* [[Architecture]] - being reviewed by Tom Morris
+* [[Broker Protocol]]
+* [[Cell Editing]]
+* [[Changes For2p5]]
+* [[Clustering In Depth]]
+* [[Clustering]]
+* [[Column Editing]]
+* [[Data Sources]]
+* [[Developers Guide]]
+* [[Documentation For Users]]
+* [[Export As YAML]]
+* [[Exporters]]
+* [[Extending Data From Freebase]]
+* [[Extending Data]]
+* [[Extensions]]
+* [[FAQ]]
+* [[Faceted Browsing Architecture]]
+* [[Faceting]]
+* [[Faq Allocate More Memory]]
+* [[Faq Where Is Data Stored]]
+* [[Fetching URLs From Web Services]]
+* [[GREL Array Functions]]
+* [[GREL Boolean Functions]]
+* [[GREL Controls]]
+* [[GREL Date Functions]]
+* [[GREL Functions]]
+* [[GREL Math Functions]]
+* [[GREL Other Functions]]
+* [[GREL String Functions]]
+* [[Get Development Version]]
+* [[History]]
+* [[Ideas]]
+* [[Importers]]
+* [[Importing Architecture]]
+* [[Installing Extensions]]
+* [[Issues]]
+* [[Jython]]
+* [[Plugin Interfaces]]
+* [[Recipes]]
+* [[Reconcilable Data Sources]]
+* [[Reconciliation Service Api]]
+* [[Reconciliation]]
+* [[Related Software]]
+* [[Releasing Version]]
+* [[Roadmap]]
+* [[Row Editing]]
+* [[Sample Datasets]]
+* [[Schema Alignment]]
+* [[Server Side Architecture]]
+* [[StrippingHTML]]
+* [[Suggest Api]]
+* [[Understanding Expressions]]
+* [[Understanding Regular Expressions]]
+* [[User Guide]]
+* [[Uses With ETL]]
+* [[Variables]]
+* [[Write An Extension]]
