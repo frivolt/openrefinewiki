@@ -17,7 +17,7 @@ Here's the initial dataset, created from information found [[here|http://www.fac
 
   {{images/FetchUrlsRecipe/InitialDataset.png}}
 
-First, let's get more information about these pages using the [[http://developers.facebook.com/docs/api|Facebook Open Graph API]].  For example, you retrieve the JSON for the first row with this URL: [[http://graph.facebook.com/105911579453084]]
+First, let's get more information about these pages using the [[Facebook Open Graph API|http://developers.facebook.com/docs/api]].  For example, you retrieve the JSON for the first row with this URL: [[http://graph.facebook.com/105911579453084]]
 
 OpenRefine can retrieve this information for all the rows at once using the "Add Column By Fetching URLs..." command, accessed via the dropdown menu to the left of the **Facebook ID** column:
 
