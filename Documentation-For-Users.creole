@@ -55,9 +55,9 @@ There are **[[Quick Recipes|Recipes]]**  (like removing duplicate row values, et
 and there are full recipes:
 
 * [[Geocoding|Geocoding]] - translating street addresses to lat/lng coordinates
-* [FetchingURLsFromWebServices Fetching URLs From Web Services] - grabbing from the Web more data related to the data you already have
-* [StrippingHTML Web Scraping & Extracting items from HTML pages]
-* [[Analyzing Apache Logs|Recipe Apache Logs]]
+* [[Fetching-URLs-From-Web-Services|Fetching URLs From Web Services]] - grabbing from the Web more data related to the data you already have
+* [[StrippingHTML|Web Scraping & Extracting items from HTML pages]] - //broken link to: https://github.com/OpenRefine/OpenRefine/wiki/StrippingHTML//
+* Recipe Apache Logs
 
 
 =Reference=

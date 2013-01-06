@@ -1,13 +1,11 @@
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/RecipeApacheLogs]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/RecipeApacheLogs]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 Import the log file:
 * without splitting into columns
 * with # header lines set 0
 
-  [[Then apply the following operations
+  {{images/ApacheLogsImport.png}}
+
+Then apply the following operations:
 
 {{{
   [
@@ -128,7 +126,7 @@ Import the log file:
 
 Here is how to apply the operations:
 
-  [http://google-refine.googlecode.com/svn/wiki/images/ApplyOperations.png|http://google-refine.googlecode.com/svn/wiki/images/ApacheLogsImport.png]]]
+  {{images/ApplyOperations.png}}
 
 ==Facets==
 

@@ -15,19 +15,25 @@ In this article, I'll show a detailed example how it's done, starting with a ver
 
 Here's the initial dataset, created from information found [[here|http://www.facebook.com/pages/#!/pages/?browse&ps=89]]:
 
-[[First, let's get more information about these pages using the [http://developers.facebook.com/docs/api Facebook Open Graph API|http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/InitialDataset.png]]].  For example, you retrieve the JSON for the first row with this URL: [[OpenRefine can retrieve this information for all the rows at once using the "Add Column By Fetching URLs..." command, accessed via the dropdown menu to the left of the **Facebook ID** column:
+  {{images/FetchUrlsRecipe/InitialDataset.png}}
 
-[http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/FetchUrlsMenu.png|http://graph.facebook.com/105911579453084].]]
+First, let's get more information about these pages using the [[Facebook Open Graph API|http://developers.facebook.com/docs/api]].  For example, you retrieve the JSON for the first row with this URL: [[http://graph.facebook.com/105911579453084]]
+
+OpenRefine can retrieve this information for all the rows at once using the "Add Column By Fetching URLs..." command, accessed via the dropdown menu to the left of the **Facebook ID** column:
+
+  {{images/FetchUrlsRecipe/FetchUrlsMenu.png}}
 
 Next, enter the information in the "Fetch URLs" dialog as follows:
 
-[[Note the following:
+  {{images/FetchUrlsRecipe/FetchUrlsDialog.png}}
+
+Note the following:
 * Many systems prevent you from making too many requests per second.  To avoid this problem, set the throttle delay, which tells OpenRefine to wait the specified number of milliseconds between URL requests. 
 * Before pressing OK, copy/paste a URL or two from the right column in the dialog and test them in another browser tab to make sure they work.
 
 When it's done, it will look something like this:
 
-[http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/AfterFacebookFetch.png|http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/FetchUrlsDialog.png]]]
+  {{images/FetchUrlsRecipe/AfterFacebookFetch.png}}
 
 There is a lot of information in the JSON you might be interested in, but let's extract the information from the "link" element and the "plot_outline" element.  To do this, click on the dropdown menu for **Graph JSON** and use the "Edit Column > Add Column Based on This Column..." command.  Use the following expression:
 
@@ -37,13 +43,17 @@ value.parseJson()["link"]
 
 When it's done, there will be a new column with the contents of the "link" element extracted from the JSON returned from the Graph API:
 
-[[Note that these pages do not appear to be in English.  But what language(s) are they in?  The Google Language APIs can help determine an answer.  First, we need to find an element in the JSON that has sufficient text.  The plot_outline element is a good candidate, although not every page has one.  We can extract that into a new column using the following expression:
+  {{images/FetchUrlsRecipe/LinkExtracted.png}}
 
-e4f75853dbde35e99740908c000b85ff
+Note that these pages do not appear to be in English.  But what language(s) are they in?  The Google Language APIs can help determine an answer.  First, we need to find an element in the JSON that has sufficient text.  The plot_outline element is a good candidate, although not every page has one.  We can extract that into a new column using the following expression:
+
+{{{
+value.parseJson()["plot_outline"]
+}}}
 
 Note that OpenRefine has taken care of any text encoding during the parsing/extraction process:
 
-[http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/PlotOutlineExtracted.png|http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/LinkExtracted.png]]]
+  {{images/FetchUrlsRecipe/PlotOutlineExtracted.png}}
 
 The RESTful URL syntax for the Google Language APIs isn't as [[well documented|http://code.google.com/apis/ajaxlanguage/documentation/]] as it is for using it in languages such as Javascript, but it's not too hard to figure out.  The URL syntax for the Google Language Detection API looks like this:
 
@@ -64,18 +74,20 @@ Use the following expression for the "Add Column By Fetching URLs..." command on
 
 After OpenRefine calls the URL for each row, it should look something like this:
 
-[[Note that the information we really want is inside the responseData "envelope" so let's extract it using the following expression with the "Edit Cells > Transform..." command on the **Lang Detect** column:
+  {{images/FetchUrlsRecipe/GoogleTranslate.png}}
+
+Note that the information we really want is inside the responseData "envelope" so let's extract it using the following expression with the "Edit Cells > Transform..." command on the **Lang Detect** column:
 
 {{{
 value.parseJson()["responseData"]
 }}}
 
-[http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/StripEnvelope.png|http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/GoogleTranslate.png]]]
+  {{images/FetchUrlsRecipe/StripEnvelope.png}}
 
 (This step is optional, but makes it easier to type subsequent expressions to extract data from JSON.)
 
 In practice, you'll want to pay attention to the confidence percentage and the isReliable flag, which is true if confidence is > 50% (0.5).  But for now, we have everything we need; let's group our dataset by ISO 639-1 language code, using the expression {{{value.parseJson()["language"]}}} with the "Facet > Custom Text Facet..." command on the **Lang Detect** column (the **Plot Outline** and **Graph JSON** columns have been collapsed for readability):
 
-[http://google-refine.googlecode.com/svn/wiki/images/FetchUrlsRecipe/FacetByLang.png]
+  {{images/FetchUrlsRecipe/FacetByLang.png}}
 
 That's it!  OpenRefine makes it easy to annotate datasets with data fetched from any web service which returns JSON -- a very powerful and useful feature. 
