@@ -28,7 +28,6 @@ Please use the following procedure to review and update these pages to make it a
 * [[Extending Data From Freebase]]
 * [[Extending Data]]
 * [[Extensions]]
-* [[FAQ]] - being reviewed by Thad Guidry
 * [[Faceted Browsing Architecture]]
 * [[Faceting]]
 * [[Faq Allocate More Memory]]
