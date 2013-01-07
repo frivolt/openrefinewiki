@@ -1,11 +1,4 @@
-BEING REVIEWED BY THAD GUIDRY
-
 //Frequently Asked Questions//
-
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FAQ]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/FAQ]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 This is a collection of frequently asked questions on OpenRefine. Feel free to ask your own question on [[the OpenRefine mailing list|http://groups.google.com/group/openrefine/]] and we'll try to answer to the best of our abilities and add them to this list.
 
