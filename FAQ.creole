@@ -78,7 +78,7 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
   Several options:
 * create a Text Facet on a column and then in the facet click "Sort by: count". Any facets with a count of 2 or more are duplicates
-* use the [GRELOtherFunctions facetCount()] function like {{{facetCount(value, 'value', 'column name') > 1}}} and select 'true' to show all rows that have duplicates
+* use the [[facetCount()|GREL Other Functions]] function like {{{facetCount(value, 'value', 'column name') > 1}}} and select 'true' to show all rows that have duplicates
 * from version 2.1, there is a shortcut for this, Facet → Customized facets → Duplicates facet
 
 ** Can OpenRefine be used as a piece of a larger [[ETL|http://en.wikipedia.org/wiki/Etl]] pipeline? **
