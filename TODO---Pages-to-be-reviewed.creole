@@ -48,7 +48,6 @@ Please use the following procedure to review and update these pages to make it a
 * [[Importing Architecture]]
 * [[Installing Extensions]]
 * [[Issues]]
-* [[Jython]] - being reviewed by Thad Guidry
 * [[Plugin Interfaces]]
 * [[Recipes]]
 * [[Reconcilable Data Sources]]
