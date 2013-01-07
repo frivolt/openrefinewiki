@@ -28,7 +28,7 @@ Please use the following procedure to review and update these pages to make it a
 * [[Extending Data From Freebase]]
 * [[Extending Data]]
 * [[Extensions]]
-* [[FAQ]]
+* [[FAQ]] - being reviewed by Tom Morris
 * [[Faceted Browsing Architecture]]
 * [[Faceting]]
 * [[Faq Allocate More Memory]]
