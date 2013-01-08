@@ -31,7 +31,7 @@ If you click "edit" on the choice "Andy R. Anderson" in the facet and enter "And
 
 ==Editing by Transforming==
 
-The most common way to edit cells in a column in OpenRefine is by invoking the Transform command on that column: from the column's drop-down menu, pick Edit cells > Transform ... In the dialog box, you enter an expression that gets evaluated on each row to compute the new cell value for that row. For example, consider this data set
+The most common way to edit cells in a column in OpenRefine is by invoking the Transform command on that column: from the column's drop-down menu, pick {{{Edit cells > Transform ...}}} In the dialog box, you enter an expression that gets evaluated on each row to compute the new cell value for that row. For example, consider this data set
 
 |=name|=age|
 |John Smith|28|
@@ -78,7 +78,7 @@ Show as: rows **records**  Show: 5 **10** 25 50 records
 | | | |hair:blond|
 
 
-**NOTE:** You can split multi-valued cells on any column and even export those records, keeping the record format, but be aware of the current record model handling in OpenRefine 2.5 and prior; The left-most column is always the **"key column"** for the record set. If you move columns to the left-most column (the beginning), this will break the underlying record model.  However, breakage is only because we have not yet incorporated support for interactive column grouping. (but planned for in a future release)  
+**NOTE:** You can split multi-valued cells on any column and even export those records, keeping the record format, but be aware of the current record model handling in OpenRefine 2.5 and prior: the left-most column is always the **"key column"** for the record set. If you move columns to the left-most column (the beginning), this will break the underlying record model.  However, breakage is only because we have not yet incorporated support for interactive column grouping. (but planned for in a future release)  
  
 ===Comparison with Spreadsheets Software===
 
