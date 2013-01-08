@@ -1,9 +1,6 @@
 //OpenRefine's architecture.//
 
-Under Review by Tom Morris
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Architecture]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Architecture]] , correct any errors or omissions, then remove this warning block.
-----
+//Page under Review by Tom Morris//
 
 
 OpenRefine is a web application, but unlike 99% of web applications, it is intended to be run on one's own machine and used by oneself. The server-side maintains states of the data (undo/redo history, long-running processes, etc.) while the client-side maintains states of the user interface (facets and their selections, view pagination, etc.). The client-side makes GET and POST ajax calls to cause changes to the data and to fetch data and data-related states from the server-side.
