@@ -1,10 +1,5 @@
 //How to edit cells by clustering.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Clustering]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Clustering]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 OpenRefine's text facets are a great mechanism for surfacing patterns from your data. Consider a data set that contains people's names entered in two different ways: "first_name middle_initial last_name", and "last_name, first_name". A text facet on that column might reveal
 
 |=choice|=count|
@@ -18,7 +13,7 @@ OpenRefine's text facets are a great mechanism for surfacing patterns from your 
 
 Say you want to change every name to "first_name last_name", then using that facet, you would need to edit "Anderson, Andy" to "Andy Anderson", "Beaufort, Beatrice" to "Beatrice Beaufort", and so forth. And of course there are the occasional middle initials to worry about. While editing through the text facet is already orders of magnitude easier than editing the same data in a spreadsheet, there is a more automated way to do this: the Clustering feature.
 
-The Clustering feature can be accessed in 2 different ways. If you have already created a default text facet on a column, the text facet will show a "Cluster" button near its top right corner. If you haven't, you can invoke the column's drop-down menu and pick Edit cells > Cluster and edit...
+The Clustering feature can be accessed in 2 different ways. If you have already created a default text facet on a column, the text facet will show a "Cluster" button near its top right corner. If you haven't, you can invoke the column's drop-down menu and pick {{{Edit cells > Cluster and edit...}}}
 
 The clustering feature works by trying to group the choices in the text facet, so that choices that "look similar" get grouped together. For instance, operating on our example data above, the clustering feature would generate the group
 
