@@ -1,10 +1,5 @@
 //Editing cells.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/CellEditing]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/CellEditing]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 ==Editing One Cell at A Time==
 
 To edit a cell, hover your mouse over that cell. You should see a tiny blue button labeled "edit". Click it to edit the cell. That pops up a window with a bigger text field for you to edit.
@@ -63,27 +58,27 @@ For more information on expressions, see [[Understanding Expressions|Understandi
 
 ===Splitting Multiple Values within Cells to produce Records===
 
-Refine has a feature called **Split multi-valued cells** that can essentially create fields similar to a database record.  Take the following example,
+OpenRefine has a feature called **Split multi-valued cells** that can essentially create fields similar to a database record.  Take the following example,
 
 |=name|=data type|=data record|
 |Kate Moss|Person|profession:Model,href:"/0122-kate-moss",title="Kate Moss",hair:brown|
 |Marilyn Monroe|Person|profession:Actor,href:"/1488-marilyn-monroe",title="Marilyn Monroe",hair:blond|
 
-The 'data record' column has several fields that need to be split, but we do not necessarily want to create additional columns, instead we want those individual 'fields' for each Person record, since that seems to be how this dataset is arranged.  We can use {{{Edit Cells -> Split multi-valued cells...}}} on the 'data record' column using the comma {{{,}}} separator character.  After applying, our table in Refine now looks like this and you are taken from **rows** mode into **records** mode which is shown just above the **All** column,
+The 'data record' column has several fields that need to be split, but we do not necessarily want to create additional columns, instead we want those individual 'fields' for each Person record, since that seems to be how this dataset is arranged.  We can use {{{Edit Cells -> Split multi-valued cells...}}} on the 'data record' column using the comma {{{,}}} separator character.  After applying, our table in OpenRefine now looks like this and you are taken from **rows** mode into **records** mode which is shown just above the **All** column,
 ----
 Show as: rows **records**  Show: 5 **10** 25 50 records
-|| All || name || data type || data record ||
-|| || Kate Moss || Person || profession:Model ||
-|| || || ||href:"/0122-kate-moss"||
-|| || || ||title="Kate Moss"||
-|| || || ||hair:brown||
-|| || Marilyn Monroe || Person || profession:Actor||
-|| || || ||href:"/1488-marilyn-monroe"||
-|| || || ||title="Marilyn Monroe"||
-|| || || ||hair:blond||
+|=All|=name|=data type|=data record|
+| | Kate Moss | Person | profession:Model |
+| | | |href:"/0122-kate-moss"|
+| | | |title="Kate Moss"|
+| | | |hair:brown|
+| | Marilyn Monroe | Person | profession:Actor|
+| | | |href:"/1488-marilyn-monroe"|
+| | | |title="Marilyn Monroe"|
+| | | |hair:blond|
 
 
-**NOTE:** You can split multi-valued cells on any column and even export those records, keeping the record format, but be aware of the current record model handling in Refine 2.5 and prior; The left-most column is always the **"key column"** for the record set. If you move columns to the left-most column (the beginning), this will break the underlying record model.  However, breakage is only because we have not yet incorporated support for interactive column grouping. (but planned for in a future release)  
+**NOTE:** You can split multi-valued cells on any column and even export those records, keeping the record format, but be aware of the current record model handling in OpenRefine 2.5 and prior; The left-most column is always the **"key column"** for the record set. If you move columns to the left-most column (the beginning), this will break the underlying record model.  However, breakage is only because we have not yet incorporated support for interactive column grouping. (but planned for in a future release)  
  
 ===Comparison with Spreadsheets Software===
 
