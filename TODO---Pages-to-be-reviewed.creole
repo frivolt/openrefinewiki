@@ -15,8 +15,7 @@ Please use the following procedure to review and update these pages to make it a
 
 * [[Architecture]] - being reviewed by Tom Morris
 * [[Changes For2p5]]
-* [[Clustering In Depth]]
-* [[Clustering]]  - being reviewed by Mateja Verlic
+* [[Clustering In Depth]] - being reviewed by Mateja Verlic
 * [[Column Editing]]  - being reviewed by Mateja Verlic
 * [[Data Sources]]
 * [[Developers Guide]]
