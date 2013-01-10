@@ -1,11 +1,6 @@
 //Importing architecture//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ImportingArchitecture]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/ImportingArchitecture]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-This is currently applicable only to the code in trunk/.
+This architecture was introduced in Refine 2.5 and isn't applicable to earlier versions.
 
 = Introduction =
 
