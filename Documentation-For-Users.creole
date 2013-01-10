@@ -17,11 +17,11 @@ Love it so much?
 * [[Importing|Importers]]
 * [[Filtering / faceting|Faceting]]
 * Editing:
-* [[Editing cells|Cell Editing]], editing cells by [[Clustering|Clustering]]
-* [[Editing columns|Column Editing]], creating columns by [[Extending data|Extending Data]]
-* [[Editing rows|Row Editing]]
-* [[Understanding expressions|Understanding Expressions]]
-* [[Understanding regular expressions|Understanding Regular Expressions]]
+** [[Editing cells|Cell Editing]], editing cells by [[Clustering|Clustering]]
+** [[Editing columns|Column Editing]], creating columns by [[Extending data|Extending Data]]
+** [[Editing rows|Row Editing]]
+** [[Understanding expressions|Understanding Expressions]]
+** [[Understanding regular expressions|Understanding Regular Expressions]]
 * [[Exporting|Exporters]]
 * [[History|History]] (undo/redo)
 
@@ -60,16 +60,16 @@ and there are full recipes:
 ==Expressions==
 
 * [[Variables|Variables]]
-* [[Google Refine Expression Language]] (GREL)
-* [[Controls|GREL Controls]]
-* [[Functions|GREL Functions]]
-* [[Boolean functions|GREL Boolean Functions]]
-* [[String functions|GREL String functions]]
-* [[Array functions|GREL Array functions]]
-* [[Math functions|GREL Math functions]]
-* [[Date functions|GREL Date functions]]
-* [[Other functions|GREL Other functions]]
 * [[Jython|Jython]]
+* [[Google Refine Expression Language]] (GREL)
+** [[Controls|GREL Controls]]
+** [[Functions|GREL Functions]]
+*** [[Boolean functions|GREL Boolean Functions]]
+*** [[String functions|GREL String functions]]
+*** [[Array functions|GREL Array functions]]
+*** [[Math functions|GREL Math functions]]
+*** [[Date functions|GREL Date functions]]
+*** [[Other functions|GREL Other functions]]
 
 =External Sites=
 
