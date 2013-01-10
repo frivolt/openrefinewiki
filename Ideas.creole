@@ -1,13 +1,8 @@
 //Ideas, Brainstorm sessions, etc.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Ideas]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Ideas]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 == Software to research: ==
 
 * [[Bobo - Fast faceted search with Lucene.|http://sna-projects.com/bobo/]]
 * [[Gephi - open source graph visualization & manipulation|http://gephi.org/]]
 * [[Protovis - Web graphs & charts|http://vis.stanford.edu/protovis/]]
-* [https://github.com/joshthecoder/tweepy Tweepy - python library for Twitter API]
+* [[Tweepy - python library for Twitter API|[https://github.com/joshthecoder/tweepy]]
