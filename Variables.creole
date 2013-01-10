@@ -1,10 +1,5 @@
 //Variables available in expressions//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Variables]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Variables]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 ==Variables==
 
 |=variable name|=meaning|
@@ -54,12 +49,12 @@ A {{{cell}}} object has two fields
 A {{{recon}}} object has a few fields
 
 |=field name|=meaning|=deeper fields|
-|| {{{recon.judgment}}} || a string that is one of: "matched", "new", "none" || 
-|| {{{recon.matched}}} || a boolean, true iff judgment is "matched" || 
-|| {{{recon.match}}} || null, or the recon candidate that has been matched against this cell || {{{.id}}} {{{.name}}} {{{.type}}} ||
-|| {{{recon.best}}} || null, or the best recon candidate|| {{{.id}}} {{{.name}}} {{{.type}}} {{{.score}}} ||
-|| {{{recon.features}}} || an object encapsulating reconciliation features || {{{.typeMatch}}} {{{.nameMatch}}} {{{.nameLevenshtein}}} {{{.nameWordDistance}}} || 
-|| {{{recon.candidates}}} || an object encapsulating the default 3 candidates|| {{{.id}}} {{{.name}}} {{{.type}}} {{{.score}}} ||
+| {{{recon.judgment}}} | a string that is one of: "matched", "new", "none" | |
+| {{{recon.matched}}} | a boolean, true iff judgment is "matched" | |
+| {{{recon.match}}} | null, or the recon candidate that has been matched against this cell | {{{.id}}} {{{.name}}} {{{.type}}} |
+| {{{recon.best}}} | null, or the best recon candidate| {{{.id}}} {{{.name}}} {{{.type}}} {{{.score}}} | 
+| {{{recon.features}}} | an object encapsulating reconciliation features | {{{.typeMatch}}} {{{.nameMatch}}} {{{.nameLevenshtein}}} {{{.nameWordDistance}}} | 
+| {{{recon.candidates}}} | an object encapsulating the default 3 candidates| {{{.id}}} {{{.name}}} {{{.type}}} {{{.score}}} |
 
 {{{recon.candidates}}} array can be accessed with something like:
 {{{
@@ -84,9 +79,9 @@ A {{{record}}} object encapsulates one or more rows that are grouped together. F
 
 |=row|=author|=book|=date|
 |1.|Neal Stephenson|Anathem|2009|
-|| 2. || || Snow Crash || 2000 ||  
-|| 3. || J.K. Rowlings || Harry Potter and the Half-Blood Prince || 2006 ||
-|| 4. || || Harry Potter and the Order of the Phoenix (Book 5) || 2005 ||
-|| 5. || || Harry Potter and the Chamber of Secrets (Book 2) || 2000 || 
+| 2. | | Snow Crash | 2000 |
+| 3. | J.K. Rowlings | Harry Potter and the Half-Blood Prince | 2006 |
+| 4. | | Harry Potter and the Order of the Phoenix (Book 5) | 2005 |
+| 5. | | Harry Potter and the Chamber of Secrets (Book 2) | 2000 | 
 
 A {{{record}}} object has one field, {{{cells}}}, which can be used to access the zero or more cells in a particular column. For example, evaluating {{{row.record.cells.book.value}}} on row 2 returns {{{[ "Anathem", "Snow Crash" ]}}}.
