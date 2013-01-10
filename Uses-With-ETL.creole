@@ -1,11 +1,6 @@
 //Is OpenRefine an ETL tool ? or can it be used in batch operations or job control ?//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UsesWithETL]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/UsesWithETL]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-OpenRefine is a discovery and cleanup tool mostly, as it stands now at release 2.0.  It also has the benefit of aligning, reconciling, and exporting data, to Freebase or somewhere else.  Some folks in the community have expressed the idea or need for batching transform operations or evolving OpenRefine into an automated pipeline process.
+OpenRefine is a discovery and cleanup tool mostly, as it stands now at release 2.5.  It also has the benefit of aligning, reconciling, and exporting data, to Freebase or somewhere else.  Some folks in the community have expressed the idea or need for batching transform operations or evolving OpenRefine into an automated pipeline process.
 
 One feature of OpenRefine that folks find intriguing is it's ability to display inconsistencies in your data and clean it up easily.
 
