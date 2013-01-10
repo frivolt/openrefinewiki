@@ -55,8 +55,8 @@ There are **[[Quick Recipes|Recipes]]**  (like removing duplicate row values, et
 and there are full recipes:
 
 * [[Geocoding|Geocoding]] - translating street addresses to lat/lng coordinates
-* [[Fetching-URLs-From-Web-Services|Fetching URLs From Web Services]] - grabbing from the Web more data related to the data you already have
-* [[StrippingHTML|Web Scraping & Extracting items from HTML pages]] - //broken link to: https://github.com/OpenRefine/OpenRefine/wiki/StrippingHTML//
+* [[Fetching URLs From Web Services|Fetching URLs From Web Services]] - grabbing from the Web more data related to the data you already have
+* [[Web Scraping & Extracting items from HTML pages|StrippingHTML]] 
 * Recipe Apache Logs
 
 
@@ -65,10 +65,10 @@ and there are full recipes:
 ==Expressions==
 
 * [[Variables|Variables]]
-* OpenRefine Expression Language (GREL)
-* [GRELControls Controls]
-* [GRELFunctions Functions]
-* [GRELBooleanFunctions Boolean functions]
+* [[Google Refine Expression Language]] (GREL)
+* [[Controls|GREL Controls]]
+* [[Functions|GREL Functions]]
+* [[Boolean functions|GREL Boolean Functions]]
 * [GRELStringFunctions String functions]
 * [GRELArrayFunctions Array functions]
 * [GRELMathFunctions Math functions]
