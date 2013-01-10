@@ -9,9 +9,9 @@
 
 * Completely new user interface for project creation, including:
 * Live preview with interactive settings before creating project 
-* Fixed-width importer that allows for specifying column widths by clicking (Issue 85)
+* Fixed-width importer that allows for specifying column widths by clicking (issue #85)
 * XML and JSON importers that allow for interactive selection of elements to import
-* Direct access to Google Spreadsheets ([issue 278](https://github.com/OpenRefine/OpenRefine/issues#issue/278)) and Google Fusion Tables (Issue 279)
+* Direct access to Google Spreadsheets (issue #278) and Google Fusion Tables (issue #279)
 * Import and export to private Google Spreadsheets & Fusion Tables for logged-in users 
 * Import using results of Google spreadsheet visualisation API query ([issue 375](https://github.com/OpenRefine/OpenRefine/issues#issue/375))
 * Sheet selection for import from Excel ([issue 280](https://github.com/OpenRefine/OpenRefine/issues#issue/280)) & Google Spreadsheets ([issue 281](https://github.com/OpenRefine/OpenRefine/issues#issue/281)) 
