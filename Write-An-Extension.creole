@@ -1,11 +1,6 @@
 //How to start writing an extension//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/WriteAnExtension]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/WriteAnExtension]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-(This document is for the version 2.0 and later only. This is still in flux.)
+(This document applies to v2.0 and later.)
 
 OpenRefine makes use of the [[Butterfly framework|http://code.google.com/p/simile-butterfly/]] to provide an extension architecture. OpenRefine extensions are Butterfly modules. You don't really need to know about Butterfly itself, but you might encounter "butterfly" here and there in the code base.
 
@@ -14,11 +9,10 @@ Note that Butterfly was chosen over OSGi because
 * Butterfly modules can contain both Java code (server-side) as well as webapp code (client-side); and
 * Unlike OSGi plugins, Butterfly modules don't have to be jarred and copied into one specific directory--both of which tasks make development very painful.
 
-Extensions that come with the code base are located under [[the extensions subdirectory|http://code.google.com/p/google-refine/source/browse/#svn/trunk/extensions]], but when you develop your own extension, you can put its code anywhere as long as you point Butterfly to it. That is done by any one of the following methods
+Extensions that come with the code base are located under [[the extensions subdirectory|https://github.com/OpenRefine/OpenRefine/tree/master/extensions]], but when you develop your own extension, you can put its code anywhere as long as you point Butterfly to it. That is done by any one of the following methods
 
 * refer to your extension's directory in [[the butterfly.properites file|http://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties]] through a {{{butterfly.modules.path}}} setting.
 * specify the butterfly.modules.path property on the command line when you run OpenRefine.  This overrides the values in the property file, so you need to include the default values first e.g. {{{-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension}}}
-
 
 =Directory Layout=
 
@@ -60,4 +54,4 @@ The file named controller.js is responsible for registering the extension's hook
 
 The {{{build.xml}}} file is an [[Apache Ant|http://ant.apache.org/]] build file. You can make a copy of the sample extension's {{{build.xml}}} file to get started. The important point here is that the Java classes should be built into the {{{module/MOD-INF/classes}}} sub-directory.
 
-Note that your extension's Java code would need to reference some libraries used in OpenRefine and Refine's Java classes themselves. The libraries are in [[trunk/main/webapp/WEB-INF/lib/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/WEB-INF/lib]] and Refine's classes are in [[trunk/main/webapp/modules/core/MOD-INF/classes/|http://code.google.com/p/google-refine/source/browse/#svn/trunk/main/webapp/modules/core/MOD-INF/classes]]. 
+Note that your extension's Java code would need to reference some libraries used in OpenRefine and Refine's Java classes themselves. The libraries are in [[trunk/main/webapp/WEB-INF/lib/|https://github.com/OpenRefine/OpenRefine/tree/master/main/webapp/WEB-INF/lib]] and Refine's classes are in [[trunk/main/webapp/modules/core/MOD-INF/classes/|https://github.com/OpenRefine/OpenRefine/tree/master/main/webapp/modules/core/MOD-INF/classes]]. 
