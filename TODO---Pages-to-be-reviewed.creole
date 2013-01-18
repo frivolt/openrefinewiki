@@ -16,7 +16,7 @@ Please use the following procedure to review and update these pages to make it a
 * [[Architecture]] - being reviewed by Tom Morris
 * [[Clustering In Depth]] - being reviewed by Mateja Verlic
 * [[Column Editing]]  - being reviewed by Mateja Verlic
-* [[Developers Guide]]
+* [[Developers Guide]] - being reviewed by Joel Natividad
 * [[Export As YAML]]
 * [[Extending Data From Freebase]]
 * [[Extending Data]]
