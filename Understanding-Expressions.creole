@@ -1,9 +1,5 @@
 //Understanding expressions.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UnderstandingExpressions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/UnderstandingExpressions]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 ==Introduction==
 
@@ -98,7 +94,7 @@ For member fields whose names are not words (e.g., they contain spaces or other 
 
 |={{{cells["First Name"]}}}|=access the cell in the column called "First Name" of the current row|
 
-=== [GRELArrayFunctions Array syntax] ===
+=== [[Array syntax|GREL Array Functions]] ===
 
 Brackets can also be used to get substrings and sub-arrays, and their syntax resembles Python a bit more than Javascript:
 
@@ -107,7 +103,7 @@ Brackets can also be used to get substrings and sub-arrays, and their syntax res
 |{{{"internationalization"[1,-2]}}}|return {{{nternationalizati}}} (negative indexes are counted from the end)|
 
 
-=== [GRELControls Controls] ===
+=== [[Controls|GREL Controls]] ===
 
 GREL supports branching and looping (e.g., "if" and "for") slightly differently than Javascript. To do branching and looping, you use GREL "controls", or sometimes also called "constructs", and their syntax is more like Excel's IF:
 
