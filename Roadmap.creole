@@ -1,11 +1,6 @@
 //OpenRefine Roadmap//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Roadmap]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Roadmap]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-This is a very rough outline of the future of this project.
+This list is from pre-2.2 days and needs to be reprioritized and cleaned up.
 
 Please be aware that none of this is carved in stone and can change any time, so check back regularly.
 
@@ -13,25 +8,16 @@ Please be aware that none of this is carved in stone and can change any time, so
 
 Feature Areas
 
-* Importers: UI form, better format guessing, connection to GData
-* Issue 85: Fixed width column importer - UI work required
-* Issue 84: Add a cut and paste textbox importer - mostly UI work
-* Exporters: UI for picking columns, etc.
-* Issue 97: Exporting CSV should allow for optional columns
-* GData specifics: oauth, etc.
 * Internationalization
 * Streamlining traditional features
 * Issue 213: traditional find & replace
 * Issue 68: "merge columns" command.
-* More documentation and testing on the standard reconciliation service stuff - dfhuynh
 
 Issues
 
 * Issue 36: Seamless conversion of arrays into multiple columns
 * Issue 75: Saveable reconciliation mappings
 * Issue 87: Long running processes should serialize intermediate results ? - hard (dfhuynh)
-* Issue 92: Add Columns From Freebase dialog should support constraints - design work
-* Issue 74: Saveable Templates (need to be re-thought)
 
 ==2.5==
 
@@ -50,18 +36,13 @@ Feature Areas:
 * Collaborative editing support (really hard)
 * RABJ integration (allows to distribute reconciliation loads across multiple people) - not even sure what this means
 
-Issues:
-
-* Issue 86: parse cell values after column split
-* Issue 97: TSV/CSV exporter should allow option on which columns to export
-
 ==Future==
 
 Feature Areas:
 
 * Performance - the /project page seems to be slow now
 * Column groups
-* [issue 93](https://github.com/OpenRefine/OpenRefine/issues#issue/93)
+* [[issue 93|https://github.com/OpenRefine/OpenRefine/issues#issue/93]]
 
 Issues
 
@@ -72,4 +53,4 @@ Issues
 
 ==Feature Requests, Bugs, Comments, Etc.==
 
-Please add more to the [[issues tracker|http://code.google.com/p/google-refine/issues/list]] and they will end up here once they are acknowledged and assigned. 
+Please add more to the [[issues tracker|https://github.com/OpenRefine/OpenRefine/issues]] and they will end up here once they are acknowledged and assigned. 
