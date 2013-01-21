@@ -1,9 +1,5 @@
 //OpenRefine Developer's Guide//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/DevelopersGuide]]  at Google Code and has not been fully reviewed.
-----
-
 = Guide for OpenRefine Developers =
 
 == Build and Run OpenRefine from an IDE (easier) ==
@@ -142,7 +138,7 @@ where 'version' is the release version (for example, 1.3b3).
 
 === Windows ===
 
-On Windows, OpenRefine requires the [[Java JDK|http://java.sun.com/javase/downloads/index.jsp]] to be installed. Once these are installed you then need to [[Set the {{{JAVA_HOME}}} environment variable|http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows]] (please ensure it points to the JDK, and not the JRE) and the ANT_HOME environment variable (this is set up in a similar way to JAVA_HOME, but should point to the {{{Tools/Ant}}} directory in OpenRefine's source code). You may need to reboot your machine after setting these environment variables.
+On Windows, OpenRefine requires the [[Java JDK|http://java.sun.com/javase/downloads/index.jsp]] to be installed. Once these are installed you then need to [[Set the 'JAVA_HOME' environment variable|http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows]] (please ensure it points to the JDK, and not the JRE) and the ANT_HOME environment variable (this is set up in a similar way to JAVA_HOME, but should point to the {{{Tools/Ant}}} directory in OpenRefine's source code). You may need to reboot your machine after setting these environment variables.
 
 Open the Windows command line. Navigate to your installation directory, then run OpenRefine (the {{{./}}} should be omitted when running any of the Refine commands from the Windows command line)
 
