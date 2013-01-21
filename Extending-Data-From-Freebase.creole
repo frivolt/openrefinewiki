@@ -1,10 +1,5 @@
 //(WORK IN PROGRESS: additional feature documentation on this coming soon - Thanks to Tom Morris )//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ExtendingDataFromFreebase]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/ExtendingDataFromFreebase]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 == Fetching Text Blurbs (descriptions) and Photos ==
 
 The Freebase graph stores many things, but 2 examples of useful data that are NOT stored in the graph are - text blurbs and photos.
