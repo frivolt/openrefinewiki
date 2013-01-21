@@ -1,10 +1,5 @@
 //How to get the super latest development version.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/GetDevelopmentVersion]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 If you're a user who just wants the latest features even if they have not been released yet, you can get the development "trunk" version. Beware that by its very nature that version can be unstable. Use it at your own risk.
 
 =Precautions=
@@ -13,7 +8,7 @@ The trunk version supposedly offers certain features that you want. You probably
 
 =What You Need=
 
-To get the trunk version, you first need [[Subversion|http://subversion.apache.org/]]. If all the download options bewilder you, we would recommend just the "Command-Line Client" hosted on [[CollabNet|http://www.collab.net/downloads/subversion/]]. 
+To get the trunk version, you first need [[Git|http://git-scm.com/]]. And since Open Refine is hosted on GitHub, you may also want to download the [[GitHub GUI client|https://help.github.com/articles/set-up-git]] if you prefer to use a graphical interface.
 
 You will also need [[Apache Ant|http://ant.apache.org/]] to build the source code. [[Download|http://ant.apache.org/bindownload.cgi]], unzip, and point your path to it. Or you can try [[the Windows installer|http://wiki.apache.org/ant/AntOnWindows]], too.
 
@@ -35,17 +30,17 @@ In the Terminal window, change directory to wherever you want to put the OpenRef
 Then in the Terminal window, type
 
 {{{
-  svn co https://google-refine.googlecode.com/svn/trunk grefine
+  git clone https://github.com/OpenRefine/OpenRefine.git 
 }}}
 
 You would see a lot of lines scroll past as the source is getting downloaded.
 
 =Building the Source=
 
-Change into the {{{grefine}}} directory by typing into the Terminal window
+Change into the {{{OpenRefine}}} directory by typing into the Terminal window
 
 {{{
-  cd grefine
+  cd OpenRefine
 }}}
 
 Then build the source code:
@@ -68,10 +63,10 @@ You can shut down OpenRefine at any time. You can even close the Terminal window
 
 =Updating=
 
-The trunk version will get updated as we work on it. To get the latest updates, shut down OpenRefine if it's running. Then in a Terminal window, already changed to the {{{grefine}}} directory, type
+The trunk version will get updated as we work on it. To get the latest updates, shut down OpenRefine if it's running. Then in a Terminal window, already changed to the {{{OpenRefine}}} directory, type
 
 {{{
-  svn up
+  git pull
 }}}
 
 Then follow the instructions to build and then to run.
