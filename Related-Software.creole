@@ -1,10 +1,5 @@
 //List of other software products that can be used with or instead of OpenRefine//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/RelatedSoftware]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/RelatedSoftware]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 (in no particular order)
 
 * [[Microsoft PowerPivot|http://www.powerpivot.com/]]
