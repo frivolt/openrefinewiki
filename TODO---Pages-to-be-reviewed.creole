@@ -34,7 +34,7 @@ Please use the following procedure to review and update these pages to make it a
 * [[GREL Math Functions]]
 * [[GREL Other Functions]]
 * [[GREL String Functions]]
-* [[Get Development Version]]
+* [[Get Development Version]] - reviewed by Joel Natividad
 * [[History]]
 * [[Plugin Interfaces]]
 * [[Recipes]]
