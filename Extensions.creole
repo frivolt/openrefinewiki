@@ -1,9 +1,12 @@
-//Extensions//
+//Extensions for OpenRefine//
 
 ----
 **NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Extensions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Extensions]] , correct any errors or omissions, then remove this warning block.
 ----
 
 
-* [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune
-* [[RDF extension|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]] - by DERI
+* [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune (doesn't work with newer versions of Refine)
+* [[RDF extension|http://refine.deri.ie/]] - by DERI
+* [[DBpedia extension|https://github.com/sparkica/dbpedia-extension]] - by Zemanta
+* [[Crowdsourcing extension|https://github.com/sparkica/crowdsourcing]] - by Zemanta
+* [[Named-Entity Recognition extension | http://freeyourmetadata.org/named-entity-extraction/]] - by Free Your Metadata Group
