@@ -1,40 +1,35 @@
 //Array functions supported by the OpenRefine Expression Language (GREL)//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELArrayFunctions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/GRELArrayFunctions]] , correct any errors or omissions, then remove this warning block.
-----
+See also: [[All GREL functions | GREL Functions]].
 
-
-See also: [GRELFunctions All GREL functions].
-
-==={{{length(array a)}}}===
+===length(array a)===
 
 Returns the length of array {{{a}}}.
 
-==={{{slice(array a, number from, optional number to)}}}===
+===slice(array a, number from, optional number to)===
 
 Returns the sub-array of {{{a}}} from its index {{{from}}} up to but not including index {{{to}}}. If {{{to}}} is omitted, it is understood to be the end of the array {{{a}}}. For example, {{{slice([ 0, 1, 2, 3, 4], 1, 3)}}} returns {{{[ 1, 2 ]}}}, and {{{slice([ 0, 1, 2, 3, 4], 1)}}} returns {{{[ 1, 2, 3, 4 ]}}}.
 
-==={{{get(array a, number or string from, optional number to)}}}===
+===get(array a, number from, optional number to)===
 
-???
+See {{{slice}}} function above.
 
-==={{{reverse(array a)}}}===
+===reverse(array a)===
 
 Reverses array {{{a}}}. For example, {{{reverse([ 0, 1, 2, 3])}}} returns the array {{{[ 3, 2, 1, 0 ]}}}.
 
-==={{{sort(array a)}}}===
+===sort(array a)===
 
 Sorts array {{{a}}} in ascending order. For example, {{{sort([ 2, 1, 0, 3])}}} returns the array {{{[ 0, 1, 2, 3 ]}}}.
 
-==={{{sum(array a)}}}===
+===sum(array a)===
 
 Return the sum of the numbers in the array {{{a}}}. For example, {{{sum([ 2, 1, 0, 3])}}} returns {{{6}}}.
 
-==={{{join(array a, string sep)}}}===
+===join(array a, string sep)===
 
 Returns the string obtained by joining the array {{{a}}} with the separator {{{sep}}}. For example, {{{join([ "foo", "bar", "baz" ], ";")}}} returns the string {{{foo;bar;baz}}}.
 
-==={{{uniques(array a)}}}===
+===uniques(array a)===
 
 Returns array {{{a}}} with duplicates removed. For example, {{{uniques([ 2, 1, 2, 0, 1, 4, 3])}}} returns the array {{{[ 0, 1, 2, 3, 4 ]}}}.
