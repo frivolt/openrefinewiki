@@ -17,21 +17,21 @@ Please use the following procedure to review and update these pages to make it a
 * [[Developers Guide]] - reviewed by Joel Natividad
 * [[Export As YAML]]
 * [[Extending Data From Freebase]] - reviewed by Joel Natividad
-* [[Extending Data]]
+* [[Extending Data]] - being reviewed by Mateja Verlic (sparkica)
 * [[Extensions]]
 * [[Faceted Browsing Architecture]]
 * [[Faceting]]
 * [[Faq Allocate More Memory]]
 * [[Faq Where Is Data Stored]]
 * [[Fetching URLs From Web Services]]
-* [[GREL Array Functions]]
-* [[GREL Boolean Functions]]
-* [[GREL Controls]]
-* [[GREL Date Functions]]
-* [[GREL Functions]]
-* [[GREL Math Functions]]
-* [[GREL Other Functions]]
-* [[GREL String Functions]]
+* [[GREL Array Functions]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL Boolean Functions]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL Controls]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL Date Functions]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL Functions]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL Math Functions]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL Other Functions]] - being reviewed by Mateja Verlic (sparkica)
+* [[GREL String Functions]] - being reviewed by Mateja Verlic (sparkica)
 * [[Get Development Version]] - reviewed by Joel Natividad
 * [[History]]
 * [[Plugin Interfaces]]
@@ -46,5 +46,5 @@ Please use the following procedure to review and update these pages to make it a
 * [[Server Side Architecture]]
 * [[StrippingHTML]]
 * [[Suggest Api]]
-* [[Understanding Regular Expressions]]
+* [[Understanding Regular Expressions]] - being reviewed by Mateja Verlic (sparkica)
 * [[User Guide]]
