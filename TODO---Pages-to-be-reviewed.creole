@@ -14,7 +14,6 @@ Please use the following procedure to review and update these pages to make it a
 # Repeat!
 
 * [[Architecture]] - being reviewed by Tom Morris
-* [[Column Editing]]  - being reviewed by Mateja Verlic
 * [[Developers Guide]] - reviewed by Joel Natividad
 * [[Export As YAML]]
 * [[Extending Data From Freebase]] - reviewed by Joel Natividad
