@@ -17,13 +17,12 @@ Please use the following procedure to review and update these pages to make it a
 * [[Developers Guide]] - reviewed by Joel Natividad
 * [[Export As YAML]]
 * [[Extending Data From Freebase]] - reviewed by Joel Natividad
-* [[Extending Data]] - being reviewed by Mateja Verlic (sparkica)
-* [[Extensions]]
+* [[Extensions]] - being reviewed by Mateja Verlic (sparkica)
 * [[Faceted Browsing Architecture]]
-* [[Faceting]]
+* [[Faceting]] - being reviewed by Mateja Verlic (sparkica)
 * [[Faq Allocate More Memory]]
 * [[Faq Where Is Data Stored]]
-* [[Fetching URLs From Web Services]]
+* [[Fetching URLs From Web Services]] - being reviewed by Mateja Verlic (sparkica)
 * [[Get Development Version]] - reviewed by Joel Natividad
 * [[History]]
 * [[Plugin Interfaces]]
@@ -32,10 +31,10 @@ Please use the following procedure to review and update these pages to make it a
 * [[Reconciliation Service Api]]
 * [[Reconciliation]]
 * [[Releasing Version]]
-* [[Row Editing]]
+* [[Row Editing]] - being reviewed by Mateja Verlic (sparkica)
 * [[Sample Datasets]]
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
-* [[StrippingHTML]]
+* [[StrippingHTML]] - being reviewed by Mateja Verlic (sparkica)
 * [[Suggest Api]]
 * [[User Guide]]
