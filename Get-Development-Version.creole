@@ -59,7 +59,7 @@ To run, in the Terminal window
 
 To shut down OpenRefine, in the same Terminal window, press the key combination Ctrl-C.
 
-You can shut down OpenRefine at any time. You can even close the Terminal window altogether. To re-start OpenRefine, open a new Terminal window if you already closed the old one, change to the directory where you put {{{grefine}}}, and just following the instruction to run in the previous section.
+You can shut down OpenRefine at any time. You can even close the Terminal window altogether. To re-start OpenRefine, open a new Terminal window if you already closed the old one, change to the directory where you put OpenRefine, and just following the instruction to run in the previous section.
 
 =Updating=
 
