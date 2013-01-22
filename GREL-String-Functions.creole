@@ -58,10 +58,10 @@ Returns the substring of {{{s}}} starting from character index {{{from}}} and up
 Character indexes start from zero. Negative character indexes are understood as counting from the end of the string. For example, {{{substring("profound", 1, -1)}}} returns the string {{{rofoun}}}.
 
 ===slice(s, number from, optional number to)===  
-See substring function above.
+See {{{substring}}} function above.
 
 === get(o, number or string from, optional number to)===
-See substring function above. 
+See {{{substring}}} function above. 
 
 
 
