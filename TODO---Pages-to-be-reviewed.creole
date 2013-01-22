@@ -32,7 +32,7 @@ Please use the following procedure to review and update these pages to make it a
 * [[Reconciliation]]
 * [[Releasing Version]]
 * [[Row Editing]] - being reviewed by Mateja Verlic (sparkica)
-* [[Sample Datasets]] - being reviewed by Joel Natividad
+* [[Sample Datasets]] - reviewed by Joel Natividad
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
 * [[StrippingHTML]] - being reviewed by Mateja Verlic (sparkica)
