@@ -1,12 +1,5 @@
 //List of functions supported by the OpenRefine Expression Language (GREL)//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELFunctions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/GRELFunctions]] , correct any errors or omissions, then remove this warning block.
-----
-
-
-<wiki:toc max_depth="1" />
-
 Function invocation in OpenRefine expression language has 2 forms:
 
 * {{{functionName(arg0, arg1, ...)}}}
@@ -16,9 +9,9 @@ The second is a shortcut to make expressions easier to read. It's only syntactic
 
 ===Functions by Type===
 
-* [GRELBooleanFunctions GREL Boolean Functions]
-* [GRELStringFunctions GREL String Functions]
-* [GRELArrayFunctions GREL Array Functions]
-* [GRELMathFunctions GREL Math Functions]
-* [GRELDateFunctions GREL Date Functions]
-* [GRELOtherFunctions GREL Other Functions]
+* [[GREL Boolean Functions|GREL Boolean Functions]]
+* [[GREL String Functions|GREL String Functions]]
+* [[GREL Array Functions | GREL Array Functions]]
+* [[GREL Math Functions | GREL Math Functions]]
+* [[GREL Date Functions | GREL Date Functions]]
+* [[GREL Other Functions | GREL Other Functions]]
