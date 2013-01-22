@@ -24,6 +24,7 @@ replace(value,/<\/?\w+((\s+\w+(\s*=\s*(?:".*?"|'.*?'|[^'">\s]+))?)+\s*|\s*)\/?>/
 
 Press OK, and you'll soon have a new column with the plain text extracted from **Col1**.
 ----
+<<Anchor(ExtractHTMLAttributes)>>
 = Extract HTML attributes, text, links with integrated GREL commands =
 
 **WARNING**: Make sure to use .toString() suffixes when needed to output strings into Refine cells while working with the built-in HTML GREL commands (the default output is org.jsoup.nodes objects).  Otherwise you'll get a preview just fine in the Expression Editor, BUT no data shown in the Refine cells when you apply it!
