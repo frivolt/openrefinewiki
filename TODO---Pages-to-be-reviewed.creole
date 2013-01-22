@@ -46,5 +46,4 @@ Please use the following procedure to review and update these pages to make it a
 * [[Server Side Architecture]]
 * [[StrippingHTML]]
 * [[Suggest Api]]
-* [[Understanding Regular Expressions]] - being reviewed by Mateja Verlic (sparkica)
 * [[User Guide]]
