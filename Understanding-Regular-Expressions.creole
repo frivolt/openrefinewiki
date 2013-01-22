@@ -1,10 +1,5 @@
 //Understanding regular expressions//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UnderstandingRegularExpressions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/UnderstandingRegularExpressions]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 ==Introduction==
 
 A regular expression is a string that describes a text pattern occurring in other strings. Consider the text
@@ -15,7 +10,9 @@ A regular expression is a string that describes a text pattern occurring in othe
 
 The number of spaces between consecutive words vary. In order to change the text so that there is precisely 1 space between any 2 consecutive words, conceptually, we want to replace any continuous sequence of one or more spaces (no matter how many) with exactly one space. We can use a regular expression to describe "any continuous sequence of one or more spaces (no matter how many)".
 
-OpenRefine and OpenRefine Expression Language support regular expressions in the syntax of Java regular expressions: [[To write a regular expression inside a GREL expression, wrap it between a pair of forward slashes /. For example, in
+OpenRefine and OpenRefine Expression Language support regular expressions in the syntax of Java regular expressions: [[see Java Regex Tutorial|http://docs.oracle.com/javase/tutorial/essential/regex/index.html/]].
+
+To write a regular expression inside a GREL expression, wrap it between a pair of forward slashes /. For example, in
 
 {{{
   value.replace(/\s+/, " ")
@@ -70,8 +67,8 @@ We can describe a decimal number as follows:
 * It optionally starts with a sign (minus or plus)
 * Then it consists of a sequence of one or more digits
 * Then optionally if it has a decimal part, it contains
-* a period, followed by
-* one or more digits
+** a period, followed by
+** one or more digits
 
 We can express that as this regular expression
 
@@ -79,9 +76,9 @@ We can express that as this regular expression
   [-+]?[0-9]+(\.[0-9]+)?
 }}}
 
-The question mark ? denotes an optional character or group of characters. The period . needs to be escaped by preceding it with a backslash \. A digit is denoted as the range of character from 0 to 9.
+The question mark {{{?}}} denotes an optional character or group of characters. The period {{{.}}} needs to be escaped by preceding it with a backslash {{{\}}}. A digit is denoted as the range of character from 0 to 9.
 
-We have encoded a digit as {{{[0-9|http://java.sun.com/docs/books/tutorial/essential/regex/index.html].]]}}} but there is a shortcut: {{{\d}}}. There are several shortcuts:
+We have encoded a digit as {{{[0-9]}}} but there is a shortcut: {{{\d}}}. There are several shortcuts:
 
 * {{{\d}}}, same as {{{[0-9]}}}
 * {{{\D}}}, same as {{{[^0-9]}}}, meaning any character other than a digit
