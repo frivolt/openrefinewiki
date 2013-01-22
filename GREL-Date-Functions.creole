@@ -1,19 +1,14 @@
 //Date functions supported by the OpenRefine Expression Language (GREL)//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/GRELDateFunctions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/GRELDateFunctions]] , correct any errors or omissions, then remove this warning block.
-----
+See also: [[All GREL functions | GREL Functions ]].
 
-
-See also: [GRELFunctions All GREL functions].
-
-==={{{now()}}}===
+===now()===
 
 Returns the current time.
 
-==={{{toDate(o, boolean month_first / format1, format2, ... )}}}===
+===toDate(o, boolean month_first / format1, format2, ... )===
 
-Returns o converted to a date object.
+Returns {{{o}}} converted to a date object.
 
 All other arguments are optional:
 
@@ -26,18 +21,18 @@ You can parse the cells "Nov-09" and "11/09" using
 value.toDate('MM/yy','MMM-yy').toString('yyyy-MM')
 }}}
 
-==={{{toString(o, optional string format)}}}===
+===toString(o, optional string format)===
 
-When o is a date, format specifies how to format the date.
+When {{{o}}} is a date, format specifies how to format the date.
 
-==={{{diff(date d1, date d2, optional string timeUnit)}}}===
+===diff(date d1, date d2, optional string timeUnit)===
 
 For dates, returns the difference in given time units.
 
-==={{{inc(date d, number value, string unit (defaults to 'hour'))}}}===
+===inc(date d, number value, string unit)===
 
-Returns a date changed by the given amount in the given unit of time.
+Returns a date changed by the given amount in the given unit of time. Unit defaults to 'hour'.
 
-==={{{datePart(date d, string unit)}}}===
+===datePart(date d, string unit)===
 
 Returns part of a date.
