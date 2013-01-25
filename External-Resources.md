@@ -66,4 +66,6 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [Google refine basic: Full Tutorial by David Huynh](http://googlerefine.blogspot.com/2011/07/full-tutorial-by-david-huynh.html) (introduction), Description : A must read tutorial from the creator of google refine.
 
 # Spanish
-[Cómo usar OpenRefine para trabajar una base de datos](http://blogs.lanacion.com.ar/data/datos-abiertos/como-usar-google-refine-para-trabajar-una-base-de-datos/)
++ [Cómo usar OpenRefine para trabajar una base de datos](http://blogs.lanacion.com.ar/data/datos-abiertos/como-usar-google-refine-para-trabajar-una-base-de-datos/) including video tutorial
++ [Tutorial de OpenRefine](http://digital.buenosaires.gob.ar/tutorial-de-open-refine/) including video tutorial
++ [Keyword Research con Google Refine (SEO)](http://www.youtube.com/watch?v=pqjlYJXTakA)
