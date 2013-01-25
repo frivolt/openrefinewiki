@@ -44,7 +44,7 @@ If you decide to use the google-refine.exe directly, then set your parameters in
 
 Also, in order to use more than 3.5 Gigs RAM you need to download and install Java 64bit and set it as your default {{{JAVA_HOME}}}.  As in this screenshot (notice {{{C:\Program Files\}}} and NOT the {{{C:\Program Files (x86)\}}} folder):
 
-{{https://raw.github.com/jqnatividad/openrefine.github.com/master/images/wiki/JavaHomePathWin7_64bit.png}}
+{{images/JavaHomePathWin7_64bit.png}}
 
 ===Mac===
 
