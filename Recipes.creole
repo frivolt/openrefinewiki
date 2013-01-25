@@ -29,7 +29,7 @@ or if you have non-breaking spaces {{{&nbsp}}} on both ends then you might try t
   split(escape(value,'xml'),"&#160;")[0]
 }}}
 
-=== Titlecase that works on hyphenated names
+=== Titlecase that works on hyphenated names ===
 
 If you have a "name" column with values like "FOTHERINGTON-THOMAS", this will 
 convert correctly to "Fotherington-Thomas" (more detailed explanation  
@@ -96,6 +96,26 @@ If you need to fill out a number with for example leading zeroes up to four char
 }}}
 
 This provides a string of zeroes from which we ask for the first 4-length(value) characters using the string slicing action of [start, offset]. 
+
+===Parse a URL or URI to extract a Host, Path, Query, or convert to a URI===
+
+Use Clojure as your expression language and use one of these expressions (consult [[java URL or URI docs|http://docs.oracle.com/javase/6/docs/api/java/net/URL.html]] for other methods besides just the .getHost() method.
+
+{{{
+(.getHost(java.net.URL. http://www.example.com/index/search/q=%22OpenRefine%22))
+}}}
+{{{
+(.getHost(java.net.URI. value))
+}}}
+{{{
+(.getPath (java.net.URI. value))
+}}}
+{{{
+(.getQuery (java.net.URI. value))
+}}}
+{{{
+(.toURI (java.net.URL. value))
+}}}
 
 ===Parse JSON and Create Custom Arrays using forEach()===
 
