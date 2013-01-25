@@ -1,7 +1,4 @@
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Faceting]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Faceting]] , correct any errors or omissions, then remove this warning block.
-----
-
+//Exploring data by applying multiple filters
 
 OpenRefine supports faceted browsing as a mechanism for
 
@@ -31,7 +28,7 @@ Consider a data set like this
 |Calvin Coolidge|no|Republican|
 |...|...|...|
 
-Let's create a text facet on the "party" column (by clicking on that column's drop-down menu and invoke Facet > Text facet). It will show something like this
+Let's create a text facet on the "party" column (by clicking on that column's drop-down menu and invoke {{{Facet > Text facet}}}). It will show something like this
 
 |=choice|=count|
 |Democratic|15|
@@ -51,7 +48,7 @@ In addition to the "party" facet, let's create a text facet on the column "died 
 |no|37|
 
 Selecting something in one facet affects the choices in the other(s). For example, if you select "yes" in the facet "died in office", then that filters the data table to only the 6 
-rows where the cells "died in office" contain "yes". Now, the other facet--the facet "party"--will operate only on those 6 rows. And it might now show something like this
+rows where the cells "died in office" contain "yes". Now, the other facet -- the facet "party" -- will operate only on those 6 rows. And it might now show something like this
 
 |=choice|=count|
 |Democratic|2|
@@ -65,15 +62,13 @@ Now, if you select something in **both** facets, then you get the intersection o
 
 ==Custom Text Facets==
 
-Now let's say you have some hypothesis about the first names that presidents usually have. There is no column for first names, and let's say that you don't want to create a new column for it. That's OK, because we can create a custom text facet that extracts out the first names. Invoke the "president" column's drop-down menu and pick Facet > Custom text facet ... and enter the expression
+Now let's say you have some hypothesis about the first names that presidents usually have. There is no column for first names, and let's say that you don't want to create a new column for it. That's OK, because we can create a custom text facet that extracts out the first names. Invoke the "president" column's drop-down menu and pick {{{Facet > Custom text facet...}}} and enter the expression
 
 {{{
   value.split(" ")[0]
 }}}
 
-That facet splits against the 1st space char found and returns the 1st part of the split and will show you something like this (sorted by count):
-
-**IMPORTANT TIP:**  {{{[1]}}} is equivalent to saying "The 2nd part of an array or list" in GREL since indexing of arrays or lists in Refine actually begins with {{{[0]}}} or "The 1st part of an array or list".
+That facet splits the value against the 1st space char found and returns the 1st part of the split and will show you something like this (sorted by count):
 
 |=choice|=count|
 |James|5|
@@ -84,6 +79,14 @@ That facet splits against the 1st space char found and returns the 1st part of t
 |Thomas|1|
 |Franklin|2|
 |...|...|
+
+**IMPORTANT TIP:**  {{{[1]}}} is equivalent to saying "The 2nd part of an array or list" in GREL since indexing of arrays or lists in Refine actually begins with {{{[0]}}} or "The 1st part of an array or list". For example, if current value in column is "James Garfield", then: 
+
+{{{"James Garfield".split(" ")[0]}}} returns {{{James}}} 
+
+and 
+
+{{{"James Garfield".split(" ")[1]}}} returns {{{Garfield}}}.
 
 ==Row-based Text Facets==
 
@@ -103,7 +106,7 @@ Sometimes you want to create a facet that references several columns. For exampl
   cells["First Name"].value[0] == cells["Last Name"].value[0]
 }}}
 
-That shows 2 choices: true and false. Select "true" for the people you want.
+That shows 2 choices: {{{true}}} and {{{false}}}. Select "true" for the people you want.
 
 
 ==Numeric Facets==
