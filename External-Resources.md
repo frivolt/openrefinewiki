@@ -1,4 +1,4 @@
-This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _OpenRefine Custom Search Engine_. 
+This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
 + [Google Refine, Shawn Simister, Google (Atelier Open Data Google / Dataconnexions)](http://www.youtube.com/watch?feature=player_embedded&v=J_Oz1E857R4) A talk in Shawn Simister, developer advocate at Google. This talk was recorded during the "Atelier Open Data" hackathon held in Paris on March 14, 2012. Shawn Simister demos Google Refine, a tool for easy data cleaning and analysis.
 + [How to use Google Refine for data clean up and enhancement](http://gardenandalibrary.blogspot.ca/p/presentations.html) (freebase, reconcile), Description: This is a walk-through of a sample project using Google Refine - standardizing the names of cities of publication for books.
