@@ -29,7 +29,6 @@ Please use the following procedure to review and update these pages to make it a
 * [[Reconciliation Service Api]]
 * [[Reconciliation]]
 * [[Releasing Version]]
-* [[Row Editing]] - reviewed by Mateja Verlic (sparkica)
 * [[Sample Datasets]] - reviewed by Joel Natividad
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
