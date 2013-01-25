@@ -1,10 +1,5 @@
 //FAQ: How to allocate more memory?//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FaqAllocateMoreMemory]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/FaqAllocateMoreMemory]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 If you are working with large data sets, you'll probably want to allow OpenRefine to allocate more memory than the default.  If you get OutOfMemoryError reported or if your operations are taking a very long time to run, you should allocate more memory if possible. You will, however, need to balance that allocation with the needs of your operating system.
 
 Even if you don't get OutOfMemoryError, when you are getting close to running out of heap space (memory), the system will spend more and more time managing the heap (ie garbage collecting) and less time doing useful work on your operations.
