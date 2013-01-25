@@ -1,4 +1,7 @@
 This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _OpenRefine Custom Search Engine_. 
+# English
++ [Google Refine, Shawn Simister, Google (Atelier Open Data Google / Dataconnexions)](http://www.youtube.com/watch?feature=player_embedded&v=J_Oz1E857R4) A talk in Shawn Simister, developer advocate at Google. This talk was recorded during the "Atelier Open Data" hackathon held in Paris on March 14, 2012. Shawn Simister demos Google Refine, a tool for easy data cleaning and analysis.
++ [How to use Google Refine for data clean up and enhancement](http://gardenandalibrary.blogspot.ca/p/presentations.html) (freebase, reconcile), Description: This is a walk-through of a sample project using Google Refine - standardizing the names of cities of publication for books.
 + [Mining and OpenRefine(ing) JISCMail:](http://mashe.hawksey.info/2012/11/mining-and-openrefineing-jiscmail-a-look-at-oer-discuss/) (cluster,facet,fetch url), Description : A look at OER-DISCUSS [Listserv] JISC CETIS MASHe: a complete tutorial to scrap data from a mailing list and analyse participant and contribution.
 + [Finding (Nearly) Duplicate Items in a Data Column](http://blog.ouseful.info/2012/11/14/finding-nearly-duplicate-items-in-a-data-column/) (fingerprint,ngram,cluster,facet), Description : An other great article by Tony Hirst. This tutorial will show you how to use clustering function (ngram and fingerprint) directly in your facet. Really handy.
 + [Chit Chat with New Datasets, Facets in OpenRefine (Was /Google Refine/)](http://blog.ouseful.info/2012/11/06/chit-chat-with-new-datasets-facets-in-open-was-google-refine/#comment-28458) (duplicate,facet), Description : A good review of faceting capability including text, numeric, timeline customized and scatterplot facet.
@@ -61,3 +64,6 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [Free Your Metadata | Reconciliation with Google refine](http://freeyourmetadata.org/reconciliation/) (reconciliation), Description : 
 + [Free Your Metadata | Cleanup using google refine](http://freeyourmetadata.org/cleanup/) (introduction,video), Description : 
 + [Google refine basic: Full Tutorial by David Huynh](http://googlerefine.blogspot.com/2011/07/full-tutorial-by-david-huynh.html) (introduction), Description : A must read tutorial from the creator of google refine.
+
+# Spanish
+[Cómo usar OpenRefine para trabajar una base de datos](http://blogs.lanacion.com.ar/data/datos-abiertos/como-usar-google-refine-para-trabajar-una-base-de-datos/)
