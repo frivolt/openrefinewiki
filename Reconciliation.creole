@@ -44,5 +44,7 @@ Right now OpenRefine only supports this kind of "query-based reconciliation" aga
 
 Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [GRELStringFunctions here].
 
-== Additional Recon variables and functions that can be used ==
-See also: [Variables#Recon]
+== Additional Resources ==
+See also: 
++ [Recon section](https://github.com/OpenRefine/OpenRefine/wiki/Variables) in the Variables page. 
++ The different Data Sources available for [Reconciliation](https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources)
