@@ -27,7 +27,7 @@ Please use the following procedure to review and update these pages to make it a
 * [[Recipes]]
 * [[Reconcilable Data Sources]]
 * [[Reconciliation Service Api]]
-* [[Reconciliation]]  - being reviewed by Martin Magdinier
+* [[Reconciliation]]  - reviewed by Martin Magdinier
 * [[Releasing Version]]
 * [[Sample Datasets]] - reviewed by Joel Natividad
 * [[Schema Alignment]]
