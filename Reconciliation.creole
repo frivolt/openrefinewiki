@@ -2,7 +2,6 @@
 **NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Reconciliation]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Reconciliation]] , correct any errors or omissions, then remove this warning block.
 ----
 
-
 Reconciliation is a semi-automated process of matching text names to database IDs (keys). This is semi-automated because in some cases, machine along is not sufficient and human judgement is essential. For example, given "Ocean's Eleven" as the name of a film, should it be matched to
 
 * the original 1960 "Ocean's Eleven" ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven_1960]]), or
@@ -42,7 +41,17 @@ As a degenerate form of "reconciliation", you can get a column of database IDs t
 
 Right now OpenRefine only supports this kind of "query-based reconciliation" against Freebase. In the Reconcile dialog box, pick Freebase Query-based Reconciliation on the left. Your data can contain Freebase IDs, GUIDs, Wikipedia IDs, or keys in certain namespaces. For example, if you have country 2-letter ISO codes, you can reconcile against the namespace ISO 3166-1.
 
-Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [GRELStringFunctions here].
+Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [[GREL-String-Functions]].
+
+== Keep all the suggestions made ==
+To keep all suggestion made by the reconciliation service and not match against the best one:
+# Before starting reconciliation un-check option Auto-match candidates with high confidence in Reconcile dialog (it's at the bottom). 
+## After reconciliation you should be able to see all three suggested reconciliation candidates. This step is optional - it is just for you to see what will be extracted.
+# After reconciliation click on the reconciled column and choose Add column based on this column.
+##Put following expression in the Expression field if you want the value: {{{cell.recon.candidates[0].name}}}
+##if you want link to Freebase - usually it is Freebase mid: {{{cell.recon.candidates[0].id}}}
+##To get all off the IDs at the same time use the expression: {{{cell.recon.candidates.join(',')}}} , which will give you a comma separated list of all the IDs.  Then use the command "Split multi-valued cells" to split the identifiers into individual rows.
+# If you then use reconcile against Freebase using the Freebase identifier option, you'll get the names and links that all you to use "Add column from Freebase" to get any other property values which are of interest.
 
 == Additional Resources ==
 See also: 
