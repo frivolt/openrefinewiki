@@ -46,5 +46,5 @@ Note that you might have to encode your data into property Freebase keys before 
 
 == Additional Resources ==
 See also: 
-+ [Recon section](https://github.com/OpenRefine/OpenRefine/wiki/Variables) in the Variables page. 
-+ The different Data Sources available for [Reconciliation](https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources)
+* Recon section in the [[Variables]] page. 
+* The different Data Sources available for [[Reconcilable-Data-Sources]]
