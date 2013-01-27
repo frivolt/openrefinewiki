@@ -1,9 +1,5 @@
 //Listing of Reconcilable Data Sources//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ReconcilableDataSources]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/ReconcilableDataSources]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 With OpenRefine you can perform reconciliation against any web service supporting the [[Reconciliation Service API|Reconciliation Service Api]].
 Reconciliation against Freebase is built in, but there are several other
