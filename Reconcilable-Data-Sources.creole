@@ -18,7 +18,7 @@ reconciliation services available, including:
 ====SPARQL endpoints====
 
 The RDF Extension by DERI at NUI Galway includes reconciliation against
-any SPARQL endpoint or RDF dump file and publishing of the results in RDF.
+any SPARQL endpoint or RDF dump file and publishing of the results in RDF. [[http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]]
 
 ====VIVO Scientific Collaboration Platform===
 
