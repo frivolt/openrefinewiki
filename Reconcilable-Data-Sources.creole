@@ -22,7 +22,7 @@ any SPARQL endpoint or RDF dump file and publishing of the results in RDF. [[htt
 
 ====VIVO Scientific Collaboration Platform===
 
-VIVO is a U.S. national interdisciplinary open source scientific collaboration platform funded by the NIH with development led by Cornell.  Their reconciliation service allows reconciling against VIVO entities (faculty members, journals, etc) in any VIVO installation. [[Code|http://sourceforge.net/apps/mediawiki/vivo/index.php?title=Extending_Google_Refine_for_VIVO]]
+VIVO is a U.S. national interdisciplinary open source scientific collaboration platform funded by the NIH with development led by Cornell.  Their reconciliation service allows reconciling against VIVO entities (faculty members, journals, etc) in any VIVO installation. [[Extending Google Refine for VIVO|https://wiki.duraspace.org/display/VIVO/Extending+Google+Refine+for+VIVO]]
 
 ====Talis Kasabi====
 The Kasabi reconciliation services provide reconciliation against any database published on the Kasabi platform. [[Documentation|http://kasabi.com/doc/api/reconciliation]]
