@@ -27,8 +27,8 @@ VIVO is a U.S. national interdisciplinary open source scientific collaboration p
 ====Talis Kasabi====
 The Kasabi reconciliation services provide reconciliation against any database published on the Kasabi platform. [[Documentation|http://kasabi.com/doc/api/reconciliation]]
 
-====Talis Platform reconciliation services (dead?)====
-Example: 
+====Talis Platform reconciliation services ====
+This project has been shut down. [[They suggest some alternatives|http://blog.kasabi.com/2012/07/30/so-long-and-thanks-for-all-the-data/]]
 * [[dead link|http://ldodds.com/gridworks/govuk-statistics/reconcile]]
 
 ====RDF Extension ====
