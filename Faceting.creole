@@ -125,7 +125,7 @@ Or if you suspect that the values are periodic you could take the modulus by the
   mod(value, 7)
 }}}
 
-Even for a column that contains text, you could still create a numeric facet by taking the length of the strength
+Even for a column that contains text, you could still create a numeric facet by taking the length of the string
 
 {{{
   value.length()
