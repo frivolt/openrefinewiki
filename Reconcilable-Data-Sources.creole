@@ -3,7 +3,7 @@
 
 With OpenRefine you can perform reconciliation against any web service supporting the [[Reconciliation Service API|Reconciliation Service Api]].
 Reconciliation against Freebase is built in, but there are several other
-reconciliation services available, including:
+reconciliation services available as describe on this page. You can alternatively extend your data by [[calling web services|Extending-Data]]
 
 ====OpenCorporates====
 
