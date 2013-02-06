@@ -66,4 +66,4 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [Cómo usar OpenRefine para trabajar una base de datos](http://blogs.lanacion.com.ar/data/datos-abiertos/como-usar-google-refine-para-trabajar-una-base-de-datos/) including video tutorial
 + [Tutorial de OpenRefine](http://digital.buenosaires.gob.ar/tutorial-de-open-refine/) including video tutorial
 + [Keyword Research con Google Refine (SEO)](http://www.youtube.com/watch?v=pqjlYJXTakA)
-+ [Cómo usar Google Refine en tu próxima investigación periodística|http://ijnet.org/es/stories/c%C3%B3mo-usar-google-refine-en-tu-pr%C3%B3xima-investigaci%C3%B3n-period%C3%ADstica]
++ [Cómo usar Google Refine en tu próxima investigación periodística](http://ijnet.org/es/stories/c%C3%B3mo-usar-google-refine-en-tu-pr%C3%B3xima-investigaci%C3%B3n-period%C3%ADstica)
