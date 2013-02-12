@@ -67,3 +67,20 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [Tutorial de OpenRefine](http://digital.buenosaires.gob.ar/tutorial-de-open-refine/) including video tutorial
 + [Keyword Research con Google Refine (SEO)](http://www.youtube.com/watch?v=pqjlYJXTakA)
 + [Cómo usar Google Refine en tu próxima investigación periodística](http://ijnet.org/es/stories/c%C3%B3mo-usar-google-refine-en-tu-pr%C3%B3xima-investigaci%C3%B3n-period%C3%ADstica)
+
+
+# German
++ [text face funktion](http://www.databeast.org/text-face-funktion/)
++ [hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/)
++ [datenzeilen zerstueckeln mit google refine](http://www.databeast.org/datenzeilen-zerstueckeln-mit-google-refine/)"
++ [suchen und ersetzen mit google refine](http://www.databeast.org/suchen-und-ersetzen-mit-google-refine/)"
++ [twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/)"
++ [google refine die replace funktion](http://www.databeast.org/google-refine-die-replace-funktion/)
++ [benutzerdefinierter datenexport mit google refine](http://www.databeast.org/benutzerdefinierter-datenexport-mit-google-refine/)
++ [rechnen mit google refine](http://www.databeast.org/rechnen-mit-google-refine/)
++ [spalte duplizieren mit google refine](http://www.databeast.org/spalte-duplizieren-mit-google-refine/)
++ [transponieren mit google refine](http://www.databeast.org/transponieren-mit-google-refine/)
++ [google refine tutorial informationen in datenzellen erganzen](http://www.databeast.org/google-refine-tutorial-informationen-in-datenzellen-erganzen/)
++ [google refine tutorial externe datenspalte importieren](http://www.databeast.org/google-refine-tutorial-externe-datenspalte-importieren/)
++ [zeit online content api mit google refine anzapfen](http://www.databeast.org/zeit-online-content-api-mit-google-refine-anzapfen/)
++ [google refine tutorial doppelte zeileneintrage in spalten loschen](http://www.databeast.org/google-refine-tutorial-doppelte-zeileneintrage-in-spalten-loschen/)
