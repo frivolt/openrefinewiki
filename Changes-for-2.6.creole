@@ -1,0 +1,25 @@
+//Changes for OpenRefine v2.6 release//
+
+=New Features=
+* New branding! - we're now OpenRefine instead of Google Refine
+* Freebase Suggest 4.1 & new Freebase APIs
+
+=Enhancements=
+* Better handling of various project creation cases:
+** Zip files and archives containing sub-directories ([[issue #144|https://github.com/OpenRefine/OpenRefine/issues/144]])
+** Better defaults & more options to allow importing data without any changes ([[issue #|https://github.com/OpenRefine/OpenRefine/issues/]])
+** Shorter names for columns on JSON & XML import ([[issue #524|https://github.com/OpenRefine/OpenRefine/issues/524]])
+** Better heap memory usage reporting (issue [[#467|https://github.com/OpenRefine/OpenRefine/issues/]],[[#604|https://github.com/OpenRefine/OpenRefine/issues/604]]))
+* Better support for internationalization in clustering
+* ...
+
+=Bug Fixes=
+* ...
+
+
+
+==Miscellaneous==
+* Issue 000: ([[issue #|https://github.com/OpenRefine/OpenRefine/issues/]])
+
+
+[[Full list of Issues|https://github.com/OpenRefine/OpenRefine/issues?milestone=1]].
