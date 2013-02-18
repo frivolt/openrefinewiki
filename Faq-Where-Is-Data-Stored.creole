@@ -1,10 +1,5 @@
 //FAQ: Where is the data stored?//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FaqWhereIsDataStored]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/FaqWhereIsDataStored]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 All your projects are stored on your own computer in the workspace directory listed below. To open it, click "Browse workspace directory" on your OpenRefine application home page, by default at http://127.0.0.1:3333/
 
 **MacOSX:**
@@ -17,4 +12,4 @@ All your projects are stored on your own computer in the workspace directory lis
 * {{{C:\Users\(user id)\Google\Refine}}}
 
 **Linux:**
-* {{{~/.local/share/google-refine/}}}
+* {{{~/.local/share/google/refine/}}}
