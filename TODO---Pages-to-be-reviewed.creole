@@ -15,7 +15,6 @@ Please use the following procedure to review and update these pages to make it a
 
 * [[Architecture]] - being reviewed by Tom Morris
 * [[Fetching URLs From Web Services]]
-* [[Plugin Interfaces]]
 * [[Reconciliation Service Api]]
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
