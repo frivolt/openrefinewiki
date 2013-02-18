@@ -15,7 +15,6 @@ Please use the following procedure to review and update these pages to make it a
 
 * [[Architecture]] - being reviewed by Tom Morris
 * [[Export As YAML]]
-* [[Extending Data From Freebase]] - reviewed by Joel Natividad
 * [[Faceted Browsing Architecture]]
 * [[Faq Where Is Data Stored]]
 * [[Fetching URLs From Web Services]]
@@ -26,6 +25,5 @@ Please use the following procedure to review and update these pages to make it a
 * [[Releasing Version]]
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
-* [[StrippingHTML]] - reviewed by Mateja Verlic (sparkica)
 * [[Suggest Api]]
 * [[User Guide]]
