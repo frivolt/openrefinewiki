@@ -19,7 +19,6 @@ Please use the following procedure to review and update these pages to make it a
 * [[Fetching URLs From Web Services]]
 * [[History]]
 * [[Plugin Interfaces]]
-* [[Recipes]]
 * [[Reconciliation Service Api]]
 * [[Releasing Version]]
 * [[Schema Alignment]]
