@@ -1,17 +1,13 @@
 //Useful recipes for achieving certain tasks in OpenRefine//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Recipes]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Recipes]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 This page collects OpenRefine recipes, small workflows and code fragments that show you how to achieve specific things with OpenRefine.
 
 == String Manipulation ==
 
-Here are some examples of possible types of common string manipulation operations that you might encounter and how they can be achieved with the [GRELFunctions OpenRefine Expression Language (GREL)]. See also [GRELStringFunctions GREL String Functions].
+Here are some examples of possible types of common string manipulation operations that you might encounter and how they can be achieved with the [[Refine Expression Language (GREL)|GREL-Functions]]. See also [[GREL String Functions]].
 
-=== Change {{{2010-05-31T01:10:05Z}}} to {{{05/31/2010}}} ===
+=== Change //2010-05-31T01:10:0Z//"to "05/31/2010" ===
 
 One way to do this is use GREL's slice function.
 
@@ -247,7 +243,8 @@ Note that sometimes a string can get escaped several times: "AT&amp;amp;amp;amp;
 
 Suppose you have XML or ATOM feed data in your cells that you may have gathered with the Add Column by Fetching URLs feature in Refine or some other source and you need to parse and strip certain tag elements such as:
 
-{{{  
+{{{
+
     <entry>
         <title>San Francisco chronicle.</title>
         <link href="http://chroniclingamerica.loc.gov/lccn/sn82003402/" />
@@ -255,7 +252,7 @@ Suppose you have XML or ATOM feed data in your cells that you may have gathered 
         <author><name>Library of Congress</name></author>
         <updated>2010-09-03T00:01:07-04:00</updated>
     </entry>
-    
+
     <entry>
         <title>The San Francisco call.</title>
         <link href="http://chroniclingamerica.loc.gov/lccn/sn85066387/" />
@@ -263,6 +260,7 @@ Suppose you have XML or ATOM feed data in your cells that you may have gathered 
         <author><name>Library of Congress</name></author>
         <updated>2010-09-03T00:18:25-04:00</updated>
     </entry>
+
 }}}
 
 You can strip out the elements that your interested in from any XML or ATOM feed and create an array of those elements values for further processing.  In the above example, I only want the lccn id and title for all the **entry** records.  This is useful when working with the http://chroniclingamerica.loc.gov API or any XML or ATOM feed.
