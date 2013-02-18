@@ -1,10 +1,5 @@
 //Extracting & Converting HTML markup//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/StrippingHTML]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/StrippingHTML]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 = Introduction =
 
 At some point you may have a dataset where one or more of the columns contain HTML markup.  The markup tags may interfere with data extraction/cleansing, word counts, etc.
@@ -60,7 +55,7 @@ BeautifulSoup is a python library that offers powerful HTML parsing and operates
 
 The following will strip out only the 4th table row text found on the first table in an HTML document using Jython as the expression language in Refine:
 
-[http://google-refine.googlecode.com/issues/attachment?aid=3743089648310961680&name=ParseHTML_BeautifulSoup.png&token=31499509f849f514f584519cd59cd4fa&inline=1]
+{{images/ParseHTML_BeautifulSoup.png|ParseHTML}}
 
 {{{
 from BeautifulSoup import BeautifulSoup
