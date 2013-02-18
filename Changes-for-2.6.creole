@@ -1,5 +1,10 @@
 //Changes for OpenRefine v2.6 release//
 
+----
+UNDER CONSTRUCTION - this list isn't complete
+----
+
+
 =New Features=
 * New branding! - we're now OpenRefine instead of Google Refine
 * Freebase Suggest 4.1 & new Freebase APIs
