@@ -1,9 +1,5 @@
 //Extensions for OpenRefine//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/Extensions]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/Extensions]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 * [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune for Refine 2.1
 * [[Stats extension|https://github.com/sparkica/refine-stats]] updated by [[sparkica|https://github.com/sparkica]] for Refine 2.5
