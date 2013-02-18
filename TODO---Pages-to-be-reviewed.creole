@@ -14,14 +14,11 @@ Please use the following procedure to review and update these pages to make it a
 # Repeat!
 
 * [[Architecture]] - being reviewed by Tom Morris
-* [[Developers Guide]] - reviewed by Joel Natividad
 * [[Export As YAML]]
 * [[Extending Data From Freebase]] - reviewed by Joel Natividad
-* [[Extensions]] - reviewed by Mateja Verlic (sparkica)
 * [[Faceted Browsing Architecture]]
 * [[Faq Where Is Data Stored]]
 * [[Fetching URLs From Web Services]]
-* [[Get Development Version]] - reviewed by Joel Natividad
 * [[History]]
 * [[Plugin Interfaces]]
 * [[Recipes]]
