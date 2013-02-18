@@ -23,5 +23,4 @@ Please use the following procedure to review and update these pages to make it a
 * [[Releasing Version]]
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
-* [[Suggest Api]]
 * [[User Guide]]
