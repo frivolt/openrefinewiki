@@ -20,7 +20,6 @@ Please use the following procedure to review and update these pages to make it a
 * [[History]]
 * [[Plugin Interfaces]]
 * [[Reconciliation Service Api]]
-* [[Releasing Version]]
 * [[Schema Alignment]]
 * [[Server Side Architecture]]
 * [[User Guide]]
