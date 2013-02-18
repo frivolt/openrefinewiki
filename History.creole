@@ -1,13 +1,8 @@
 //How to use the undo/redo change history//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/History]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/History]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 ==Basics==
 
-Any operation in OpenRefine that changes the data can be undone. Changes are tracked from the very beginning when a project is just created. The undo/redo change history of each project is saved together with the project's data, so closing down your browser and quitting OpenRefine does not disturb the history. When you restart OpenRefine, you can still undo changes that you had made before you closed down your browser and/or quit OpenRefine.
+Any operation in OpenRefine that changes the data can be undone. Changes are tracked from the very beginning when a project is first created. The undo/redo change history of each project is saved together with the project's data, so closing down your browser and quitting OpenRefine does not disturb the history. When you restart OpenRefine, you can still undo changes that you had made before you closed down your browser and/or quit OpenRefine.
 
 The history is shown as a list of indexed changes, with the first "change" being the action of creating the project itself. (That first change, indexed zero, cannot be undone.) Here is a sample history with 3 changes
 
@@ -22,8 +17,7 @@ There should be exactly one change with a blue background. That is the last perf
 
 To revert the state of the project to after some change X has been done, click on X in the history. For example, in the sample history above, suppose we only want to perform all changes up to and including the removal of 7 rows, then click on "Remove 7 rows". The last 2 changes will be undone in order to bring the project back to state #1.
 
-When you've undone some changes, then they are grayed out. In this example, changes #2 and #3 will be grayed out. You can redo up to and including a change by clicking on it in the history.
-
+When you've undone some changes, then they are grayed out. In this example, changes #2 and #3 will be grayed out. You can redo up to and including a change by clicking on it in the history.  Once you execute a new operation however, all the remaining changes from the redo stack will be cleared and are no longer available.
 
 ==Replaying Operations==
 
