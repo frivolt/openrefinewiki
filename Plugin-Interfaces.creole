@@ -1,14 +1,10 @@
 //Plugin Interfaces//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/PluginInterfaces]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/PluginInterfaces]] , correct any errors or omissions, then remove this warning block.
-----
-
 
 == Introduction ==
 
 OpenRefine 2.0 (November 2010) and later supports third-party extensions/plugins.
 
-See WriteAnExtension for more information on writing your own extension.
+See [[Write An Extension]] for more information on writing your own extension.
 
  
