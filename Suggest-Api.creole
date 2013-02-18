@@ -1,10 +1,5 @@
 //Specification for a Suggest API that's compatible with the Freebase Suggest widget//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/SuggestApi]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/SuggestApi]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 A Suggest API that's compatible with the Freebase Suggest widget should have 2 entry points:
 
 * {{{suggest}}}: translates some text that the user has typed, optionally constrained in some ways, to a ranked list of entities (this is very similar to a [[reconciliation service API|Reconciliation Service Api]] and can share the same implementation)
@@ -20,7 +15,7 @@ Similarly, for the {{{flyout}}} entry point, it is important to respond quickly 
 
 The {{{suggest}}} entry point takes the following URL parameters
 
-|="prefix"|=a string the user has typed|
+|"prefix"|a string the user has typed|
 |"type"|optional, a single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/policician" as a Freebase type)|
 |"type_strict"|optional, a string, one of "any", "all", "should"|
 |"limit"|optional, an integer to specify how many results to return|
