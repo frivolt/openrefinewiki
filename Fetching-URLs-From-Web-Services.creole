@@ -1,9 +1,8 @@
 //Examples of fetching URLs from web services and processing them within OpenRefine//
 
 ----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/FetchingURLsFromWebServices]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/FetchingURLsFromWebServices]] , correct any errors or omissions, then remove this warning block.
+**NOTE**: The Google Translation API is no longer free, as it was when this tutorial was written.  If you'd like to contribute an example using a different API which is freely available, please do!
 ----
-
 
 = Introduction =
 
@@ -14,6 +13,8 @@ In this article, I'll show a detailed example how it's done, starting with a ver
 = Details =
 
 Here's the initial dataset, created from information found [[here|http://www.facebook.com/pages/#!/pages/?browse&ps=89]]:
+
+NOTE: Facebook directory structure has changed since this was written.  Pages are rooted at http://www.facebook.com/directory/pages/ now.
 
   {{images/FetchUrlsRecipe/InitialDataset.png}}
 
@@ -64,6 +65,7 @@ http://ajax.googleapis.com/ajax/services/language/detect?v=1.0&key=<api_key>&q=<
 That looks easy enough, but there are some things to keep in mind:
 
 * You will need your own Google API key.  You can sign up for one [[here|http://code.google.com/apis/ajaxsearch/signup.html]].
+* Although the API was free when this tutorial was written, it is now only available as a paid service.
 * Since you're sending non-English text via a URL, you must encode it, and you must ensure you don't send it too much text or the API will return an error.  Since encoding it generally makes it longer, that constrains how much text extracted from the plot_outline element you can use.  Fortunately, the translate APIs don't require too much.
 
 Use the following expression for the "Add Column By Fetching URLs..." command on the **Plot Outline** column, replacing your own API key for {{{<api_key>}}} and using a throttle delay of 200 ms:
