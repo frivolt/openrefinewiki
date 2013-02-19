@@ -1,9 +1,6 @@
 //Specification for a standard reconciliation service API.//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/ReconciliationServiceApi]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/ReconciliationServiceApi]] , correct any errors or omissions, then remove this warning block.
-----
-
+**NOTE:** This has not been updated for changes caused by the new Freebase APIs.  This is mostly transparent, but the default API endpoints and services have changed.
 
 =Introduction=
 
@@ -193,6 +190,9 @@ If there is no preview service specified in the reconciliation service's metadat
 
   http://www.freebase.com/widget/topic/en/apple_inc?mode=content
 
+NOTE: The Freebase Topic Blocks widget is deprecated and will go away when the old API is turned off (soon!).  New code should use the Topic API in this fashion:
+
+  https://www.googleapis.com/freebase/v1/topic/en/apple_inc?filter=suggest&key=${key}
 
 ==Suggest APIs==
 
