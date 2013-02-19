@@ -1,10 +1,5 @@
 //How to use OpenRefine//
 
-----
-**NOTE**: This page was automatically converted from the [[old page|http://code.google.com/p/google-refine/wiki/UserGuide]]  at Google Code and has not been manually reviewed.  Please compare it to  [[the original|http://code.google.com/p/google-refine/wiki/UserGuide]] , correct any errors or omissions, then remove this warning block.
-----
-
-
 If you haven't done so already, we strongly suggest you to watch the [[screencasts|Screencasts]] first as they will give you an idea of how to use OpenRefine.
 
 ==The Basics==
