@@ -1,5 +1,8 @@
-The following pages have been automatically converted from the Google Refine wiki at Google Code.
+We are **DONE**!  Thanks very much to everyone who helped with migrating to the new wiki, including   @sparkica, @presveva, @magdmartin, @thadguidry, @jqnatividad, @smach, @dfhuynh, @mozz100, @smithjd, @timClicks, @nklatt , @mrlowe, @gkarekinian, @benmiller314, @amandabee, and @tfmorris
 
+
+
+----
 Please use the this procedure to review and update these pages to make it as easy as possible for everyone to collaborate.
 ----
 # Choose an available page and put your name next to it on the list below
@@ -13,7 +16,3 @@ Please use the this procedure to review and update these pages to make it as eas
 # Remove the page from the list below
 # Repeat!
 ----
-* [[Architecture]] - being reviewed by Tom Morris
-* [[Reconciliation Service Api]]
-----
-Thanks very much to everyone who has helped with migrating to the new wiki so far, including   @sparkica, @presveva, @magdmartin, @thadguidry, @jqnatividad, @smach, @dfhuynh, @mozz100, @smithjd, @timClicks, @nklatt , @mrlowe, @gkarekinian, @benmiller314, @amandabee, and @tfmorris
