@@ -15,6 +15,5 @@ Please use the this procedure to review and update these pages to make it as eas
 ----
 * [[Architecture]] - being reviewed by Tom Morris
 * [[Reconciliation Service Api]]
-* [[User Guide]]
 ----
 Thanks very much to everyone who has helped with migrating to the new wiki so far, including   @sparkica, @presveva, @magdmartin, @thadguidry, @jqnatividad, @smach, @dfhuynh, @mozz100, @smithjd, @timClicks, @nklatt , @mrlowe, @gkarekinian, @benmiller314, @amandabee, and @tfmorris
