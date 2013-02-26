@@ -73,7 +73,7 @@ Returns the index of {{{sub}}} first ocurring in {{{s}}} as a character index; o
 
 ===lastIndexOf(string s, string sub)===
 
-Returns the index of {{{sub}}} last ocurring in {{{s}}} as a character index; or {{{-1}}} if {{{s}}} does not contain {{{sub}}}. For example, {{{indexOf("parallel", "a")}}} returns {{{3}}} (pointing at the second character "a").
+Returns the index of {{{sub}}} last ocurring in {{{s}}} as a character index; or {{{-1}}} if {{{s}}} does not contain {{{sub}}}. For example, {{{lastIndexOf("parallel", "a")}}} returns {{{3}}} (pointing at the second character "a").
 
 ===replace(string s, string f, string r)===
 
