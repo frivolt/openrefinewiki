@@ -11,7 +11,7 @@
 * [[Spotfire|http://spotfire.tibco.com/]]
 * [[Pentaho|http://www.pentaho.com]] 
 * [[CloverETL|http://www.cloveretl.com]]
-* [[Informatica Powercenter|http://www.informatica.com/PRODUCTS_SERVICES/POWERCENTER/OPTIONS/METADATA/Pages/metadata_exchange_features.aspx]]
+* [[Informatica Data Quality|http://www.informatica.com/us/products/data-quality/data-quality/]]
 * [[Elixir Repertoire|http://www.elixirtech.com/products/DataETL.html]]
 * [[Pervasive Datarush|http://www.pervasivedatarush.com/Pages/default.aspx]]
 * [[Palantir|http://www.palantirtech.com/]]
