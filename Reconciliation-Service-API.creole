@@ -37,11 +37,12 @@ If the query parameter is a string, then it's an abbreviation of {{{query={"quer
 
 The query json object literal has a few fields
 
-|="query"|=a string to search for|
-|"limit"|optional, an integer to specify how many results to return|
-|"type"|optional, a single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/politician" as a Freebase type)|
-|"type_strict"|optional, a string, one of "any", "all", "should"|
-|"properties"|optional, array of json object literals|
+|=Parameter|=Description|
+|"query"|A string to search for. Required.|
+|"limit"|An integer to specify how many results to return. Optional.|
+|"type"|A single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/politician" as a Freebase type). Optional.|
+|"type_strict"|A string, one of "any", "all", "should". Optional.|
+|"properties"|Array of json object literals. Optional|
 
 Each json object literal of the "properties" array is of this form
 
