@@ -301,6 +301,8 @@ The open-reconcile project provides a complete Java based reconciliation service
 
 The RDF extension incorporates, amongst other things, a reconciliation service which will query a SPARQL endpoint or reconcile against a provided RDF file. https://github.com/OpenRefine/grefine-rdf-extension
 
+Also look at the [[Reconcilable Data Sources]] page for other examples of available reconciliation services that are compatible with Refine.  Not all of them are open source, but they might spark some ideas.
+
 ----
 
 (Much of this standard is based on the old [[Freebase relevance service|http://api.freebase.com/api/service/search?help]] and the [[Freebase experimental recon service|http://data.labs.freebase.com/recon/]].)
