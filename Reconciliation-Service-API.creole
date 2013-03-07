@@ -292,10 +292,14 @@ To test and debug a new reconciliation service ... TODO
 We've cloned a number of the Refine reconciliation services as a way of providing them visibility.  They can be found at https://github.com/OpenRefine
 
 Some of them include:
-* https://github.com/dergachev/redmine-reconcile
+* https://github.com/dergachev/redmine-reconcile - Python & Flask implementation that just returns the given name/number with a base url prepended
 * https://github.com/okfn/helmut - A generic Refine reconciliation API implementation using Python & Flask
 * https://github.com/mblwhoi/reconciliation_service_skeleton - Skeleton for Standalone Python & Flask Reconciliation Service for Refine
 * https://github.com/mikejs/reconcile-demo 
+
+The open-reconcile project provides a complete Java based reconciliation service which queries a SQL database. https://code.google.com/p/open-reconcile
+
+The RDF extension incorporates, amongst other things, a reconciliation service which will query a SPARQL endpoint or reconcile against a provided RDF file. https://github.com/OpenRefine/grefine-rdf-extension
 
 ----
 
