@@ -1,6 +1,4 @@
-//Specification for a standard reconciliation service API.//
-
-**NOTE:** This has not been updated for changes caused by the new Freebase APIs.  This is mostly transparent, but the default API endpoints and services have changed.
+//Specification for a standard reconciliation service API//
 
 =Introduction=
 
@@ -14,10 +12,114 @@ So that it will be easy for users to plug in a variety of interchangeable reconc
 
 A standard reconciliation service is a HTTP-based RESTful JSON-formatted API. It operates in 2 modes: single query mode and multiple query mode. The second is for optimization (reducing number of HTTP calls).  Reconciliation services must implement support for both query modes as well as implementing the metadata query.
 
-(Much of this standard is based on the [[Freebase relevance service|http://api.freebase.com/api/service/search?help]] and the [[Freebase experimental recon service|http://data.labs.freebase.com/recon/]].)
+The Service Metadata call is made when your reconciliation service is registered, so this needs to be implemented first.  Refine currently only uses the multiple query mode, but other consumers of the API may use the single query option since it was included in the spec.  
 
-===BEFORE YOU BEGIN WITH BELOW ===
-View our [[mailing list thread HERE|http://groups.google.com/group/openrefine/browse_thread/thread/b47758b5e9002149]] where Tom Morris gives a helpful basic Reconciliation layout.
+**NOTE**: We encourage all API consumers to consider the single query mode **DEPRECATED**.
+
+The next request that your service will see is a multiple reconciliation query request with the first ten names in the column that the user is reconciling.  The types returned with the candidates are used by Refine to populate a list of types for the user to choose from when reconciling, ordered from most to least frequent.  For example, if your service reconciles both people and companies, and the query for the first 10 names returns 15 candidates which are people and 7 candidates which are companies, the types will be presented to the user in that order.  They can override the order and pick whichever type they want, as well as chosen a different type by hand or choose to reconcile without any type information.
+
+After the user has chosen a type and, optionally, other columns with associated types to include in the reconciliation, you'll start receiving batches of data in multiple query reconciliation requests.
+
+----
+Here's a little overview and theory from our [[mailing list thread|https://groups.google.com/forum/#!msg/openrefine/tHdYtekAIUk/RaI-xDSGFysJ]].  **TODO:** it needs to be reworked and incorporated into the text.
+----
+The main elements are: 
+
+* reconciliation service - single end point which can reconcile 
+against multiple "types" of entities 
+** type - modeled on Freebase types, but basically a type of thing 
+that can be reconciled against. A type has: 
+*** an ID (the identifier for the type itself) 
+*** a name/label (the string presented to the user for when they're 
+picking types) 
+*** a bunch of properties (e.g. the director or release date for a film) 
+*** a bunch of instances with values for the properties which can be 
+matched in addition to the name, returning: 
+**** an ID (for the matched entity) which is stored by Refine in 
+cell.recon.match.id 
+**** a name which is used as the display name for the cell after it is match 
+
+There's a bunch of ways that you could mix and match this in a table 
+oriented scenario, but one logical mapping would be to have the "type" 
+match to a database/table tuple with "id", "name", and any additional 
+properties mapped to columns and the matched entities being rows. 
+
+Because the reconciliation service only returns a single ID, getting 
+additional column values could be done one of two ways: 
+
+1. The Freebase way using a separate command a la "Add column by 
+fetching from Freebase" (perhaps just using "Add column by fetching 
+URL" against a local REST service) 
+
+2. By defining multiple "types" in the reconciliation service mapped 
+to the same table, but returning different columns as the ID.  In 
+Mr/Ms 9er's example, you could have: 
+
+* CA Corporation ID returning the id column value as the ID 
+* CA Corporation CorpID returning the corpid column value as the ID 
+
+both mapped to the same table.  The user would then choose the "type" 
+that they want based which ID they want returned. 
+----
+
+=Service Metadata=
+
+When a service is called with just a JSONP callback parameter and no other parameters, it must return its metadata as a JSON object literal with at least 3 fields "name", "identifierSpace", and "schemaSpace". Other fields are optional for reconciliation services which can make use of the default Freebase preview, suggest, etc services, but non-Freebase reconciliation services may need to implement them all.
+
+Here are two live examples:
+# http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
+# http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
+
+{{{
+{
+  "name" : "Netflix Reconciliation through Freebase",
+  "identifierSpace" : "http://rdf.freebase.com/ns/authority.netflix.movie",
+  "schemaSpace" : "http://rdf.freebase.com/ns/type.object.id",
+  "view" : {
+    "url" : "http://www.netflix.com/WiMovie//{{id}}"
+  },
+  "preview" : {
+    "url" : "http://netflix-reconcile.freebaseapps.com/preview/{{id}}",
+    "width" : 430,
+    "height" : 300
+  },
+  "suggest" : {
+    "type" : {
+      "service_url" : "http://netflix-reconcile.freebaseapps.com",
+      "service_path" : "/suggest_type",
+      "flyout_service_url" : "http://www.freebase.com"
+    },
+    "property" : {
+      "service_url" : "http://netflix-reconcile.freebaseapps.com",
+      "service_path" : "/suggest_property",
+      "flyout_service_url" : "http://www.freebase.com"
+    },
+    "entity" : {
+      "service_url" : "http://netflix-reconcile.freebaseapps.com",
+      "service_path" : "/suggest",
+      "flyout_service_path" : "/flyout"
+    }
+  },
+  "defaultTypes" : []
+}
+}}}
+
+Note that Freebase itself supports at least 3 identifier spaces:
+
+* human-friendly IDs such as /en/apple_inc and /government/politician
+* machine ID (mid) such as /m/0k8z
+* GUID such as #9202a8c04000641f800000000000451e (deprecated)
+
+Thus, it's not enough to say that the identifier space is http://www.freebase.com/; we have to use the URI of the specific property (in this case, mid).
+
+The schema space is the identifier space for types and properties. It might be different from the entities' identifier space.
+
+The other fields are for
+
+* formulating URLs to a full topic page or to a small preview page for a given entity
+* customizing the suggest widgets used in various places in the reconciliation UI
+* default types for reconciliation - TODO needs more documentation
+
 
 =Query Request=
 
@@ -79,13 +181,13 @@ A call to a standard reconciliation service API for multiple queries looks like 
   http://foo.com/bar/reconcile?queries={...json object literal...}
 }}}
 
-The json object literal has zero or more arbitrary key, each of which has a value in the same format as a single query, e.g.
+The json object literal has zero or more key/value pairs with arbitrary keys where the value is in the same format as a single query, e.g.
 
 {{{
   http://foo.com/bar/reconcile?queries={ "q0" : { "query" : "foo" }, "q1" : { "query" : "bar" } }
 }}}
 
-"q0" and "q1" can be arbitrary strings. Note that the query counter starts at zero.  Here is a live example:
+"q0" and "q1" can be arbitrary strings.  They will be used to key the results returned. Here is a live example:
 
   http://standard-reconcile.freebaseapps.com/reconcile?queries={%22q0%22:{%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22},%22q1%22:{%22query%22:%22jaguar%22}}
 
@@ -123,65 +225,8 @@ For multiple queries, the response is a JSON literal object with the same keys a
   }
 }}}
 
-The service must also support JSONP through a callback parameter.
+The service must also support JSONP through a callback parameter ie &callback=foo.
 
-=Service Metadata=
-
-When a service is called with just a JSONP callback parameter and no other paramters, then it must return its metadata as a JSON object literal with at least 3 fields "name", "identifierSpace", and "schemaSpace". Other fields are optional for reconciliation services which can make use of the default Freebase preview, suggest, etc services, but non-Freebase reconciliation services may need to implement them all.
-
-Here are two live examples:
-# http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
-# http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
-
-{{{
-{
-  "name" : "Netflix Reconciliation through Freebase",
-  "identifierSpace" : "http://rdf.freebase.com/ns/authority.netflix.movie",
-  "schemaSpace" : "http://rdf.freebase.com/ns/type.object.id",
-  "view" : {
-    "url" : "http://www.netflix.com/WiMovie//{{id}}"
-  },
-  "preview" : {
-    "url" : "http://netflix-reconcile.freebaseapps.com/preview/{{id}}",
-    "width" : 430,
-    "height" : 300
-  },
-  "suggest" : {
-    "type" : {
-      "service_url" : "http://netflix-reconcile.freebaseapps.com",
-      "service_path" : "/suggest_type",
-      "flyout_service_url" : "http://www.freebase.com"
-    },
-    "property" : {
-      "service_url" : "http://netflix-reconcile.freebaseapps.com",
-      "service_path" : "/suggest_property",
-      "flyout_service_url" : "http://www.freebase.com"
-    },
-    "entity" : {
-      "service_url" : "http://netflix-reconcile.freebaseapps.com",
-      "service_path" : "/suggest",
-      "flyout_service_path" : "/flyout"
-    }
-  },
-  "defaultTypes" : []
-}
-}}}
-
-Note that Freebase itself supports at least 3 identifier spaces:
-
-* human-friendly IDs such as /en/apple_inc and /government/politician
-* machine ID (mid) such as /m/0k8z
-* GUID such as #9202a8c04000641f800000000000451e (deprecated)
-
-Thus, it's not enough to say that the identifier space is http://www.freebase.com/; we have to use the URI of the specific property (in this case, mid).
-
-The schema space is the identifier space for types and properties. It might be different from the entities' identifier space.
-
-The other fields are for
-
-* formulating URLs to a full topic page or to a small preview page for a given entity
-* customizing the suggest widgets used in various places in the reconciliation UI
-* default types for reconciliation - TODO needs more documentation
 
 ==Preview API==
 
@@ -234,4 +279,24 @@ OpenRefine includes a mechanism for adding reconciliation service API URLs.  Aft
 
 Each column in OpenRefine should only be reconciled against one identity space. 
 
+There is a testing dashboard available as part of the standard reconciliation service at:
+
+http://standard-reconcile.freebaseapps.com/
+
+It will allow you to see the format of various example queries as well as the responses that the return for both the standard reconciliation service and a number of example reconciliation services.
+
 To test and debug a new reconciliation service ... TODO
+
+=Examples=
+
+We've cloned a number of the Refine reconciliation services as a way of providing them visibility.  They can be found at https://github.com/OpenRefine
+
+Some of them include:
+* https://github.com/dergachev/redmine-reconcile
+* https://github.com/okfn/helmut - A generic Refine reconciliation API implementation using Python & Flask
+* https://github.com/mblwhoi/reconciliation_service_skeleton - Skeleton for Standalone Python & Flask Reconciliation Service for Refine
+* https://github.com/mikejs/reconcile-demo 
+
+----
+
+(Much of this standard is based on the old [[Freebase relevance service|http://api.freebase.com/api/service/search?help]] and the [[Freebase experimental recon service|http://data.labs.freebase.com/recon/]].)
