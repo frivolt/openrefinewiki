@@ -1,11 +1,8 @@
-#summary Translate street addresses to lat/lng coordinates.
+//Translate street addresses to lat/lng coordinates.//
 
-Available on the upcoming version 1.5 and later only.
+You can use Refine to translate street addresses to lat/lng coordinates to plot data on maps. While there is no native geocoding command in Refine, you can still accomplish this task calling HTTP-based geocoding services using the command Add Column by Fetching URLs and then parsing the returned HTTP responses to extract the lat/lng coordinates.
 
-You can use Google Refine to translate street addresses to lat/lng coordinates to plot data on maps. While there is no native geocoding command in Refine, you can still accomplish this task calling HTTP-based geocoding services using the command Add Column by Fetching URLs and then parsing the returned HTTP responses to extract the lat/lng coordinates.
-
-Google Geocoding Service
-------------------------
+==Google Geocoding Service==
 
 One geocoding service to use is the [http://code.google.com/apis/maps/documentation/geocoding/ Google Geocoding API]. For whatever API you use, please note its usage limits and its terms of service. For the Google Geocoding API, the limit is 2,500 calls per day, with the following restriction:
 
@@ -20,8 +17,7 @@ This document will use the Google Geocoding API as an example. Note that to geoc
 Then, parse the HTTP response body as JSON, and retrieve the lat/lng coordinates in `jsonBody.results[0].geometry.location`.
 
 
-Fetching
---------
+===Fetching===
 
 Say your project has a column named `address` that contains street addresses. Click on that column's dropdown menu and invoke Edit Column > Add Column by Fetching URLs... and enter this expression
 
@@ -29,8 +25,7 @@ Say your project has a column named `address` that contains street addresses. Cl
 
 Give the new column to be created a name, such as `geocodingResponse`, adjust the throttle delay if you wish, and click OK. The process will take a while depending on the delay.
 
-Parsing
--------
+===Parsing===
 
 When the fetching process is done, you should see the new column `geocodingResponse` with a lot of JSON blobs. Invoke that column's dropdown menu Edit Column > Add Column based on This Column... and enter this expression
 
@@ -38,13 +33,11 @@ When the fetching process is done, you should see the new column `geocodingRespo
 
 Give the new column to be created a name, such as "latlng", and hit OK.
 
-Cleaning Up
------------
+===Cleaning Up===
 
 You can delete the `geocodingResponse` column after you have already extracted the lat/lng coordinates.
 
-Batching
---------
+===Batching===
 
 If you have more rows than the per-day limit, then you can work on one small batch of row per day. First, create a Custom Numeric Facet with an expression like this:
 
@@ -63,5 +56,5 @@ At the end, you will have created several columns for the several batches. Say, 
 You can then delete the original 3 columns and use the merged one.
 
 Additional References, Tests, & Software for GeoData & Coordinate Systems
--------------------------------------------------------------------------
+----
   * http://earth-info.nga.mil/GandG/
