@@ -301,6 +301,9 @@ The open-reconcile project provides a complete Java based reconciliation service
 
 The RDF extension incorporates, amongst other things, a reconciliation service which will query a SPARQL endpoint or reconcile against a provided RDF file. https://github.com/OpenRefine/grefine-rdf-extension
 
+[[Sunlight Labs|https://github.com/sunlightlabs]] implemented a reconciliation service using Piston on Django for their [[Influence Explorer|http://influenceexplorer.com/]]
+https://github.com/sunlightlabs/datacommons/blob/master/dcapi/reconcile/handlers.py
+
 Also look at the [[Reconcilable Data Sources]] page for other examples of available reconciliation services that are compatible with Refine.  Not all of them are open source, but they might spark some ideas.
 
 ----
