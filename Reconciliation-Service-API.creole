@@ -296,6 +296,7 @@ Some of them include:
 * https://github.com/okfn/helmut - A generic Refine reconciliation API implementation using Python & Flask
 * https://github.com/mblwhoi/reconciliation_service_skeleton - Skeleton for Standalone Python & Flask Reconciliation Service for Refine
 * https://github.com/mikejs/reconcile-demo 
+* https://github.com/rdmpage/phyloinformatics/tree/master/services - PHP examples (reconciliation_*.php)
 
 The open-reconcile project provides a complete Java based reconciliation service which queries a SQL database. https://code.google.com/p/open-reconcile
 
