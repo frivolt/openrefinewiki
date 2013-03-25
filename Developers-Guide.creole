@@ -51,7 +51,9 @@ If you want OpenRefine logs to be more verbose, append this to the line above
 
 == Build and Run OpenRefine from the command line (harder but more comprehensive) ==
 
-On Mac OS X and Linux the OpenRefine build system requires you to have a Unix shell; just use a shell compatible with {{{/bin/sh}}}. On Windows you can use the Windows command line. (go to {{{Start}}} then {{{Run}}}, type {{{cmd}}} and click {{{OK}}})
+On Mac OS X and Linux the OpenRefine build system requires you to have a Unix shell; just use a shell compatible with {{{/bin/sh}}}. On Windows you can use the Windows command line. (go to {{{Start}}} then {{{Run}}}, type {{{cmd}}} and click {{{OK}}}).  The {{{refine.bat}}} on Windows only supports a subset of the functionality, supported by the {{{refine}}} shell script.
+
+NOTE: The Ant build is not designed to be run separately.  It expects things to be set up by the shell script/batch file.
 
 To see what functions are supported by OpenRefine's build system, type
 
@@ -106,6 +108,13 @@ or, if you want to run only the client side portion of the tests run
   ./refine ui_test
 }}}
 
+If you get an an error saying "No default or local profile has been set" from Windmill, add the following two lines to your {{{~/.windmill/prefs.py}}} file:
+
+{{{
+MOZILLA_BINARY='/usr/bin/firefox'                                                               
+MOZILLA_DEFAULT_PROFILE='~/.mozilla/firefox/'
+}}}
+
 ==== Testing in Eclipse ====
 
 You can also run the server-side part of the tests directly from Eclipse. To do that you need to have the TestNG launcher plugin installed. If you don't have it, you can get it by [[installing new software|http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm]] from this update URL
@@ -122,9 +131,9 @@ In addition to Python, the [[Python for Windows extensions|http://sourceforge.ne
 
 Curl is also required, but you can install it when you install Cygwin (there is a module for it).
 
-== Distributions ==
+== Building Distributions (Kits) ==
 
-The OpenRefine build system uses Apache Ant to automate the creation of the installation packages for the different operating systems. The packages are currently optimized to run on Mac OS X which is the only platform capable of creating the packages for all three OS that we support.
+The Refine build system uses Apache Ant to automate the creation of the installation packages for the different operating systems. The packages are currently optimized to run on Mac OS X which is the only platform capable of creating the packages for all three OS that we support.
 
 To build the distributions type
 
@@ -132,7 +141,7 @@ To build the distributions type
   ./refine dist <version>
 }}}
 
-where 'version' is the release version (for example, 1.3b3).
+where 'version' is the release version (for example, 2.6b1).
 
 == Troubleshooting ==
 
