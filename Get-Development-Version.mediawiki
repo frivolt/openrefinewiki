@@ -1,4 +1,8 @@
-#summary How to get the super latest development version.
+
+
+NOTE: This page is out of date and will be removed after any relevant material is merged into the main developer's page.
+
+
 
 If you're a user who just wants the latest features even if they have not been released yet, you can get the development "trunk" version. Beware that by its very nature that version can be unstable. Use it at your own risk.
 
