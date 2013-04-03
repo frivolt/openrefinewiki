@@ -1,4 +1,4 @@
-//String functions supported by OpenRefine Expression Language (GREL)//
+//String functions supported by [[OpenRefine Expression Language|Google Refine Expression Language]] (GREL)//
 
 See also: [[All GREL Functions | GREL functions]].
 
