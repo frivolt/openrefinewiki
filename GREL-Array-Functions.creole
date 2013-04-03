@@ -1,4 +1,4 @@
-//Array functions supported by the OpenRefine Expression Language (GREL)//
+//Array functions supported by the [[OpenRefine Expression Language|Google Refine Expression Language]] (GREL)//
 
 See also: [[All GREL functions | GREL Functions]].
 
