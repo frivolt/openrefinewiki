@@ -1,4 +1,4 @@
-//List of functions supported by the OpenRefine Expression Language (GREL)//
+//List of functions supported by the [[OpenRefine Expression Language|Google Refine Expression Language]] (GREL)//
 
 Function invocation in OpenRefine expression language has 2 forms:
 
