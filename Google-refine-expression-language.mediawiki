@@ -4,11 +4,11 @@ The following pages provide an overview of GREL:
 
 *[[GREL-Controls|GREL Controls]]
 
-*[[GREL-Functions|GREL Functions]]
+*[[GREL-Functions|GREL Functions]] overview
 
 *[[GREL-Boolean functions|GREL Boolean Functions]]
 
-*[[GREL-String functions|GREL String functions]]
+*[[GREL-String functions|GREL String functions]], including parsing, splitting, encoding and hashing
 
 *[[GREL-Array functions|GREL Array functions]]
 
@@ -16,6 +16,6 @@ The following pages provide an overview of GREL:
 
 *[[GREL-Date functions|GREL Date functions]]
 
-*[[GREL-Other functions|GREL Other functions]]
+*[[GREL-Other functions|GREL Other functions]] including JSON and Jsoup
 
 For more information about GREL, see these: [[Documentation-For-Users#external-sites|External sites]]
