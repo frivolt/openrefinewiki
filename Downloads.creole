@@ -5,4 +5,5 @@ please go directly to [[the original|http://code.google.com/p/google-refine/wiki
 
 <wiki:gadget url="http://refine-gadgets.freebaseapps.com/gadget/downloads" width="600" height="500" border="0" />
 
-Here are [UpgradingTo2p0 instructions for upgrading from 1.1 to 2.x].
+
+Here are [[instructions for upgrading from 1.1 to 2.x|Upgrading To2p0]].
