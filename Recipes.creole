@@ -367,8 +367,11 @@ Convert ISBN-10 check digit to number ('X' == 10) {{{grel:if(toLowercase(value[1
 
 
 ===Convert an ISBN-10 to ISBN-13===
-Take the first 9 digits and prepend 978: {{{grel:'978'+value[1,10]}}}
+Take the first 9 digits and prepend 978: {{{grel:'978'+value[0,9]}}}
 
-Compute the ISBN-13 check digit: {{{grel:(10-(sum(forRange(0,12,1,i,toNumber(value[i])**(1+((i)%2*2)))) %10))%10}}}
+Compute the ISBN-13 check digit: {{{grel:((10-(sum(forRange(0,12,1,i,toNumber(v[i])*(1+(i%2*2)) )) %10)) %10).toString()[0]}}}
 
 Append the check digit to the 12-digit base
+
+Or, do it all in one expression: 
+{{{with('978'+value[0,9],v,v+((10-(sum(forRange(0,12,1,i,toNumber(v[i])*(1+(i%2*2)) )) %10)) %10).toString()[0] )}}}
