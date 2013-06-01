@@ -1,5 +1,8 @@
 This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++ [Clean data is the best weapon against the monkey insurrection](http://blog.tommeagher.com/2012/06/clean-data-is-the-best-weapon-against-the-planet-of-the-apes/)
++ [Google Refine tip sheet from CAR ‘13](https://docs.google.com/document/d/1kRoK6oDtgRO-g1KAHBMaAFPFOEGYsr5p5kpllRIn_og/edit)
++ [Refine for NICAR '13 Presentation](https://docs.google.com/presentation/d/1LNz4Y23KKkvmmPxXjJxiiBpO0ttMabJL7uI4WggQuig/edit#slide=id.g1d36f366_1_62)
 + [Using OpenRefine to explore information about UK Schools - LinkedUp DevTalk](http://data.linkededucation.org/linkedup/devtalk/?p=73)
 + [ Limpiando datos: Google Refine - Medialab-Prado Madrid](http://medialab-prado.es/article/limpiando_datos_google_refine)
 + [Cleaning up data in Google Refine | Back That Thing Up](http://backthatthingup.wordpress.com/2013/05/06/cleaning-up-data-in-google-refine/)
