@@ -1,5 +1,33 @@
 This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++ [Using OpenRefine to explore information about UK Schools - LinkedUp DevTalk](http://data.linkededucation.org/linkedup/devtalk/?p=73)
++ [ Limpiando datos: Google Refine - Medialab-Prado Madrid](http://medialab-prado.es/article/limpiando_datos_google_refine)
++ [Cleaning up data in Google Refine | Back That Thing Up](http://backthatthingup.wordpress.com/2013/05/06/cleaning-up-data-in-google-refine/)
++ [Ordnance Survey Linked Data and the Reconciliation API | John's Weblog](http://johngoodwin225.wordpress.com/2013/04/25/ordnance-survey-linked-data-and-the-reconciliation-api/)
++ [A Wrangling Example With OpenRefine: Making \"Oven Ready Data\" | OUseful.Info, the blog...](http://blog.ouseful.info/2013/05/03/a-wrangling-example-with-openrefine-making-ready-data)
++ [\n\t\t  Cleaning Data with Refine | School of Data            - Evidence is Power         ](http://schoolofdata.org/handbook/recipes/cleaning-data-with-refine/)
++ [A Simple OpenRefine Example \u2013 Tidying Cut\u2019n'Paste Data from a Web Page](http://blog.ouseful.info/2013/05/01/a-simple-openrefine-example-tidying-cutnpaste-data-from-a-web-page/)
++ [Questioning Election Data to See if It Has a Story to Tell | OUseful.Info, the blog...](http://blog.ouseful.info/2013/05/05/questioning-election-data-to-see-if-it-has-a-story-to-tell/)
++ [A Librarian\u2019s Guide to OpenRefine](http://acrl.ala.org/techconnect/?p=3276)
++ [OpenRefine - list-making made easy | CS-SIS](http://cssis.org/news/blog/2013/05/openrefine-list-making-made-easy)
++ [Geocoding Using the Google Maps Geocoder via OpenRefine | OUseful.Info, the blog...](http://blog.ouseful.info/2013/02/20/geocoding-using-the-google-maps-geocoder-via-openrefine/)
++ [Evaluating the success of vocabulary reconciliation for cultural heritage collections - Hooland - 2013 - Journal of the American Society for Information Science and Technology - Wiley Online Library](http://onlinelibrary.wiley.com/doi/10.1002/asi.22763/abstract)
++ [Clean and transform a messy dataset to RDF format - Screencast on Vimeo](http://vimeo.com/62430786)
++ [From Excel file to RDF with links to DBpedia and Europeana - YouTube](http://www.youtube.com/watch?v=XdpzmGxA33U)
++ [Geocoding Using Google Refine and Data Science Toolkit | Matt Briney](http://mattbriney.com/2011/08/geocoding-using-google-refine-and-data-science-toolkit/)
++ [Grabbing Twitter Search Results into Google Refine and Exporting Conversations into Gephi | Resources | Data Driven Journalism](http://datadrivenjournalism.net/resources/grabbing_twitter_search_results_into_google_refine_and_exporting_into_Gephi)
++ [LOD Refine presentation for reconciliation and data augmentation](http://www.youtube.com/watch?v=4Ve93C238gI)
++ [A short intro to OpenRefine by magdmartin](http://www.slideshare.net/MartinMagdinier/20130206-open-refine)
++ [OMG! My metadata is as fresh as the Backstreet Boys: How Google Ref...](http://www.slideshare.net/rascalwhale/using-google-refine-long-version)
++ [Patent Assignee Cleanup Using Google Refine (Open Refine) \u2013 Text Facets and Clustering](http://www.patinformatics.com/blog/patent-assignee-cleanup-using-google-refine-open-refine-text-facets-and-clustering/)
++ [A Sample Dirty Dataset For Trying Out Google Refine](http://onlinejournalismblog.com/2013/02/21/a-sample-dirty-dataset-for-trying-out-google-refine/)
++ [Open Refine Starter: Erste Schritte und Orientierung für Einsteiger | tobiaskut.de](http://www.tobiaskut.de/2013/02/22/open-refine-starter-erste-schritte-und-orientierung-fur-einsteiger)
++ [Codesnippet: basic geoinferencing with Shapely, GeoJSON and OpenRefine](http://www.mhermans.net/geojson-shapely-geocoding.html)
++ [Geocoding Using the Google Maps Geocoder via OpenRefine | Resources | Data Driven Journalism](http://datadrivenjournalism.net/resources/geocoding_using_the_google_maps_geocoder_via_openrefine)
++ [Open refine reconciliation service api (dc python 2013_03_05)](http://www.slideshare.net/alisonrowland56/open-refine-reconciliation-service-api-dc-python-20130305-16992472)
++ [Generate ADMS asset descriptions from a spreadsheet with Refine RDF | Joinup](https://joinup.ec.europa.eu/asset/adms/document/generate-adms-asset-descriptions-spreadsheet-refine-rdf)
++ [Xenu/ScreamingFrog/Scrutiny + Google Refine + SharedCount API = free social data for a complete domain](http://monchito.com/blog/bulk-social-counts)
++ [First Dabblings with the Gateway to Research API Using OpenRefine | OUseful.Info, the blog...](http://blog.ouseful.info/2013/03/14/first-dabblings-with-the-gateway-to-research-api-using-openrefine/)
 + [Appropriating IT: Glue Steps](|http://blog.ouseful.info/2012/10/03/appropriating-it-glue-steps/) Reflexion on OpenRefine used as a glue steps between systems. 
 + [A look at a fantastic tool for data clean-up: Google Refine](http://gardenandalibrary.blogspot.ca/p/presentations.html) A presentation for librarians on data cleaning using OpenRefine.
 + [Google Refine, Shawn Simister, Google (Atelier Open Data Google / Dataconnexions)](http://www.youtube.com/watch?feature=player_embedded&v=J_Oz1E857R4) A talk in Shawn Simister, developer advocate at Google. This talk was recorded during the "Atelier Open Data" hackathon held in Paris on March 14, 2012. Shawn Simister demos Google Refine, a tool for easy data cleaning and analysis.
@@ -67,6 +95,8 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [Tutorial de OpenRefine](http://digital.buenosaires.gob.ar/tutorial-de-open-refine/) including video tutorial
 + [Keyword Research con Google Refine (SEO)](http://www.youtube.com/watch?v=pqjlYJXTakA)
 + [Cómo usar Google Refine en tu próxima investigación periodística](http://ijnet.org/es/stories/c%C3%B3mo-usar-google-refine-en-tu-pr%C3%B3xima-investigaci%C3%B3n-period%C3%ADstica)
++ [Gobierno Vasco Irekia :: Introducción a Google Refine (Curso periodismo de datos 4/10)](http://www.irekia.euskadi.net/es/news/11703-introduccion-google-refine-curso-periodismo-datos)
++ [Recursos para limpiar datos con Google Refine](http://blog.albertcuesta.com/post/51294386873/recursos-para-limpiar-datos-con-google-refine)
 
 
 # German
@@ -84,3 +114,7 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [google refine tutorial externe datenspalte importieren](http://www.databeast.org/google-refine-tutorial-externe-datenspalte-importieren/)
 + [zeit online content api mit google refine anzapfen](http://www.databeast.org/zeit-online-content-api-mit-google-refine-anzapfen/)
 + [google refine tutorial doppelte zeileneintrage in spalten loschen](http://www.databeast.org/google-refine-tutorial-doppelte-zeileneintrage-in-spalten-loschen/)
+
+# French
++ [Utiliser OpenRefine avec bibliopedia](http://www.bibliopedia.fr/index.php/OpenRefine)
++ [L\u2019attribution d'un code de domaine aux notices en provenance du Sudoc | Punktokomo ;](http://punktokomo.abes.fr/2013/05/27/lattribution-dun-code-de-domaine-aux-notices-en-provenance-du-sudoc/)
