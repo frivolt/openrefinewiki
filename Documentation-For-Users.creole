@@ -2,7 +2,7 @@
 
 Where to start?
 
-* [[How to install and run|Installation Instructions]] ([UpgradingTo2p0 upgrading instructions])
+* [[How to install and run|Installation Instructions]] ([[UpgradingTo2p0 upgrading instructions|https://github.com/OpenRefine/OpenRefine/wiki/Upgrading-To2p0]])
 * [[How to use|User Guide]]
 
 Love it so much?
