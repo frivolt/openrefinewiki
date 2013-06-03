@@ -7,3 +7,4 @@
 * [[DBpedia extension|https://github.com/sparkica/dbpedia-extension]] - by Zemanta
 * [[Crowdsourcing extension|https://github.com/sparkica/crowdsourcing]] - by Zemanta
 * [[Named-Entity Recognition extension | http://freeyourmetadata.org/named-entity-extraction/]] - by Free Your Metadata Group
+* [[History tools, pivot too and Scatterplot using D3 | http://www.bits.vib.be/index.php/software-overview/openrefine ]] - by VIB-BITS
