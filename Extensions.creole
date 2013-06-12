@@ -6,5 +6,5 @@
 * [[RDF extension|http://refine.deri.ie/]] - by DERI
 * [[DBpedia extension|https://github.com/sparkica/dbpedia-extension]] - by Zemanta
 * [[Crowdsourcing extension|https://github.com/sparkica/crowdsourcing]] - by Zemanta
-* [[Named-Entity Recognition extension | http://freeyourmetadata.org/named-entity-extraction/]] - by Free Your Metadata Group
+* [[Named-Entity Recognition | http://freeyourmetadata.org/named-entity-extraction/]] - by [[Ruben Verborgh | http://ruben.verborgh.org/]] ([[Free Your Metadata | http://freeyourmetadata.org/]])
 * [[History tools, pivot tool and scatterplot tool using D3 | http://www.bits.vib.be/index.php/software-overview/openrefine ]] - by VIB-BITS
