@@ -1,10 +1,9 @@
 //Extensions for OpenRefine//
 
-
+* [[Crowdsourcing extension|https://github.com/sparkica/crowdsourcing]] - by Zemanta
+* [[DBpedia extension|https://github.com/sparkica/dbpedia-extension]] - by Zemanta
+* [[History tools, pivot tool and scatterplot tool using D3 | http://www.bits.vib.be/index.php/software-overview/openrefine ]] - by VIB-BITS
+* [[Named-Entity Recognition | http://freeyourmetadata.org/named-entity-extraction/]] - by [[Ruben Verborgh | http://ruben.verborgh.org/]] ([[Free Your Metadata | http://freeyourmetadata.org/]])
+* [[RDF extension|http://refine.deri.ie/]] - by DERI
 * [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune for Refine 2.1
 * [[Stats extension|https://github.com/sparkica/refine-stats]] updated by [[sparkica|https://github.com/sparkica]] for Refine 2.5
-* [[RDF extension|http://refine.deri.ie/]] - by DERI
-* [[DBpedia extension|https://github.com/sparkica/dbpedia-extension]] - by Zemanta
-* [[Crowdsourcing extension|https://github.com/sparkica/crowdsourcing]] - by Zemanta
-* [[Named-Entity Recognition | http://freeyourmetadata.org/named-entity-extraction/]] - by [[Ruben Verborgh | http://ruben.verborgh.org/]] ([[Free Your Metadata | http://freeyourmetadata.org/]])
-* [[History tools, pivot tool and scatterplot tool using D3 | http://www.bits.vib.be/index.php/software-overview/openrefine ]] - by VIB-BITS
