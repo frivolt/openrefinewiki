@@ -147,8 +147,14 @@ The regular expression language supported here is [[Java's regular expression|ht
 
 ==Miscellany==
 
-Each text facet shows up to 2000 choices by default. You can increase this limit if you think your computer can handle it. Whether "your computer" can handle it or not depends mostly on your web browser. In general, we recommend using a fast web browser anyhow. To up this limit, go to [http://127.0.0.1:3333/preferences] and add a preference with key {{{ui.browsing.listFacet.limit}}} and value equal the new limit, such as {{{3000}}}.
+Each text facet shows up to 2000 choices by default. You can increase this limit if you think your computer can handle it. Whether "your computer" can handle it or not depends mostly on your web browser. In general, we recommend using a fast web browser anyhow. If the facet has more choices than the current limit, you'll be offered the option to increase the limit.  If you find the new limit is too much for your computer to handle, you can decrease it again by going to [http://127.0.0.1:3333/preferences] and changing the preference with key {{{ui.browsing.listFacet.limit}}} and value equal the new limit, such as {{{3000}}}.
 
 The choices and counts displayed in each facet can be copied out, as they serve as a good summary of your data. To do so, click on the "X choices" link near the top left corner of the facet.
 
 Facets are **not** saved in the project along with the data. But you could save a **permalink** to the current state of the application (much like you can save permalinks in any decent web application). Find the "permalink" after the project's name, at the top.
+
+Other facets to be documented:
+- Timeline - select by date
+- Scatterplot - plot x/y graph and select by rectangular area
+- Duplicates
+- Word, Text Length, Character code, etc
