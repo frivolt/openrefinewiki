@@ -1,7 +1,7 @@
 //Examples of fetching URLs from web services and processing them within OpenRefine//
 
 ----
-**NOTE**: The Google Translation API is no longer free, as it was when this tutorial was written.  If you'd like to contribute an example using a different API which is freely available, please do!
+**NOTE**: The Google Translation API is no longer free, as it was when this tutorial was written.  If you'd like to contribute an example using a different API which is freely available, please do! You can also read Paul Bradshaw tutorial for [[adding geographical information to a spreadsheet based on postcodes google-refine and APIs|http://onlinejournalismblog.com/2010/12/16/adding-geographical-information-to-a-spreadsheet-based-on-postcodes-google-refine-and-apis/]]
 ----
 
 = Introduction =
