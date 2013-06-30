@@ -62,7 +62,7 @@ GREL is designed to resemble Javascript. So you can expect these basic things to
 |=example|=description|
 |{{{value + " (approved)"}}}|concatenate two strings; whatever is in {{{value}}} gets converted to a string first|
 |{{{value + 2.239}}}|add two numbers; if {{{value}}} actually holds something other than a number, this becomes a string concatenation|
-|{{{value.trim().length()}}}|take the length of {{{value}}} after trimming its leading and trailing whitespace|
+|{{{value.trim().length()}}}|trimming leading and trailing whitespace of {{{value}}} and than take the length of the result|
 |{{{value.substring(7, 10)}}}|take the substring of {{{value}}} from character index 7 up to and excluding character index 10|
 |{{{value.substring(13)}}}|take the substring of {{{value}}} from character index 13 until the end of the string|
 
