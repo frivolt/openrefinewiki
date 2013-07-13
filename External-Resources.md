@@ -20,7 +20,6 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 + [A short intro to OpenRefine by magdmartin](http://www.slideshare.net/MartinMagdinier/20130206-open-refine)
 + [OMG! My metadata is as fresh as the Backstreet Boys: How Google Ref...](http://www.slideshare.net/rascalwhale/using-google-refine-long-version)
 + [Patent Assignee Cleanup Using Google Refine (Open Refine) \u2013 Text Facets and Clustering](http://www.patinformatics.com/blog/patent-assignee-cleanup-using-google-refine-open-refine-text-facets-and-clustering/)
-+ [A Sample Dirty Dataset For Trying Out Google Refine](http://onlinejournalismblog.com/2013/02/21/a-sample-dirty-dataset-for-trying-out-google-refine/)
 + [Open Refine Starter: Erste Schritte und Orientierung für Einsteiger | tobiaskut.de](http://www.tobiaskut.de/2013/02/22/open-refine-starter-erste-schritte-und-orientierung-fur-einsteiger)
 + [Codesnippet: basic geoinferencing with Shapely, GeoJSON and OpenRefine](http://www.mhermans.net/geojson-shapely-geocoding.html)
 + [Geocoding Using the Google Maps Geocoder via OpenRefine | Resources | Data Driven Journalism](http://datadrivenjournalism.net/resources/geocoding_using_the_google_maps_geocoder_via_openrefine)
