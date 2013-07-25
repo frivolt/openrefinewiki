@@ -93,6 +93,17 @@ If you need to fill out a number with for example leading zeroes up to four char
 
 This provides a string of zeroes from which we ask for the first 4-length(value) characters using the string slicing action of [start, offset]. 
 
+===Separate letters and digits e.g. Aug13 -> Aug 13===
+
+{{{
+value.replace(/(\p{IsAlphabetic})(?=\d)/,'$1 ')
+}}}
+
+* (\p{IsAlphabetic}) is any Unicode alphabetic character, wrapping it in parens makes it a "matching group"
+* (?=\d) is a "lookahead". it basically means "followed by any digit"
+* $1 means "first matching group", or the letter that was matched by the first bullet above.
+Adapted from this [[StackOverflow answer|http://stackoverflow.com/questions/11941487/javascript-regexp-if-a-letter-is-adjacent-to-a-number-add-an-underscore]].
+
 ===Parse a URL or URI to extract a Host, Path, Query, or convert to a URI===
 
 Use Clojure as your expression language and use one of these expressions (consult [[java URL or URI docs|http://docs.oracle.com/javase/6/docs/api/java/net/URL.html]] for other methods besides just the .getHost() method.
