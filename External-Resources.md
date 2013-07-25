@@ -1,7 +1,6 @@
 This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
 + [Using OpenRefine to explore information about UK Schools - LinkedUp DevTalk](http://data.linkededucation.org/linkedup/devtalk/?p=73)
-+ [ Limpiando datos: Google Refine - Medialab-Prado Madrid](http://medialab-prado.es/article/limpiando_datos_google_refine)
 + [Cleaning up data in Google Refine | Back That Thing Up](http://backthatthingup.wordpress.com/2013/05/06/cleaning-up-data-in-google-refine/)
 + [Ordnance Survey Linked Data and the Reconciliation API | John's Weblog](http://johngoodwin225.wordpress.com/2013/04/25/ordnance-survey-linked-data-and-the-reconciliation-api/)
 + [A Wrangling Example With OpenRefine: Making \"Oven Ready Data\" | OUseful.Info, the blog...](http://blog.ouseful.info/2013/05/03/a-wrangling-example-with-openrefine-making-ready-data)
@@ -91,6 +90,7 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 
 # Spanish
 + [Cómo usar OpenRefine para trabajar una base de datos](http://blogs.lanacion.com.ar/data/datos-abiertos/como-usar-google-refine-para-trabajar-una-base-de-datos/) including video tutorial
++ [ Limpiando datos: Google Refine - Medialab-Prado Madrid](http://medialab-prado.es/article/limpiando_datos_google_refine)
 + [Tutorial de OpenRefine](http://digital.buenosaires.gob.ar/tutorial-de-open-refine/) including video tutorial
 + [Keyword Research con Google Refine (SEO)](http://www.youtube.com/watch?v=pqjlYJXTakA)
 + [Cómo usar Google Refine en tu próxima investigación periodística](http://ijnet.org/es/stories/c%C3%B3mo-usar-google-refine-en-tu-pr%C3%B3xima-investigaci%C3%B3n-period%C3%ADstica)
