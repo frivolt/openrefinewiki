@@ -1,4 +1,4 @@
-Translation into multiple languages of OpenRefine is possible  using [jquery-i18n plugin](https://github.com/newage/jquery-i18n). The translation is handled using a dictionary (a JSON object), retrieved with a new OpenRefine Command.
+Translation into multiple languages of OpenRefine is possible  using [[jquery-i18n plugin|https://github.com/newage/jquery-i18n]]. The translation is handled using a dictionary (a JSON object), retrieved with a new OpenRefine Command.
 
 The JSON dictionnary should be added to the 
 * https://github.com/OpenRefine/OpenRefine/tree/master/main/webapp/modules/langs/ for the main interface
@@ -6,4 +6,3 @@ The JSON dictionnary should be added to the
 *  https://github.com/OpenRefine/OpenRefine/tree/extensions/gdata/module/langs/ for google spreadsheet connection
 
 An Italian translation is available as example. 
-
