@@ -1,12 +1,44 @@
-=== Front End ===
-The OpenRefine front end has been localized using [[jquery-i18n plugin|https://github.com/newage/jquery-i18n]]. The translation is handled using a dictionary (a JSON object), retrieved with a new OpenRefine Command.
+=Internationalization / Localization =
+== Front End ==
+The OpenRefine front end has been localized using [[jquery-i18n plugin|https://github.com/newage/jquery-i18n]]. The localized text is stored in a JSON dictionary on the server and retrieved with a new OpenRefine command.
 
-The JSON dictionnary should be added to the 
+===Adding a new string===
+There should be no hard-coded language strings in the HTML or JSON used for the front end.  If you need a new string, first check the existing strings to make sure there isn't an equivalent that you can reuse.  This cuts down on the amount of text which needs to be translated.
+
+If there's no string you can reuse, allocate an available key in the appropriate translation dictionary and add the default string, e.g.
+
+```javascript
+...,
+"dictionaryname":{
+  "newkey":"new default string for this key",
+},
+...
+```
+
+and then set the text (or HTML) of your HTML element using i18n helper method. So given an HTML fragment like:
+```html
+<label id="new-element-id">[untranslated text would have appeared here before]</label>
+```
+we could set it's text using:
+```javascript
+$('#new-html-element-id').text($.i18n._('dictionaryname')["newkey"]);
+```
+or, if you need to embed HTML tags:
+```javascript
+$('#new-html-element-id').html($.i18n._('dictionaryname')["newkey"]);
+```
+
+===Adding a new language===
+The language dictionaries are stored in the {{{langs}}} subdirectory for the module e.g.
 * https://github.com/OpenRefine/OpenRefine/tree/master/main/webapp/modules/langs/ for the main interface
-*  https://github.com/OpenRefine/OpenRefine/tree/extensions/freebase/module/langs/ for freebase extension
-*  https://github.com/OpenRefine/OpenRefine/tree/extensions/gdata/module/langs/ for google spreadsheet connection
+* https://github.com/OpenRefine/OpenRefine/tree/extensions/freebase/module/langs/ for freebase extension
+* https://github.com/OpenRefine/OpenRefine/tree/extensions/gdata/module/langs/ for google spreadsheet connection
 
-An Italian translation is available as example. 
+To add support for a new language, copy {{{translation-default.json}}} to {{{translation-<locale>.json}}} and have your translator translate all the value strings (ie right hand side).
 
-=== Server / Back end ===
+NOTE: Gettext .po files are better supported for translation, so in the future we may switch to those and use a PO to JSON converter at build time.
+
+Currently supported languages include English and Italian.
+
+== Server / Back end ==
 Additional work needs to be done on to localize the Refine server, so things like error messages, undo history , etc may appear in non-localized (ie English) form.
