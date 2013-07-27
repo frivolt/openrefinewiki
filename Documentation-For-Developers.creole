@@ -8,6 +8,7 @@
 * [[Server-Side|Server Side Architecture]]
 * [[Client-Side|Client Side Architecture]]
 * [[Faceted Browsing|Faceted Browsing Architecture]]
+* [[Internationalization (I18N) / Localization|Translate OpenRefine]]
 
 ==Extensions==
 
