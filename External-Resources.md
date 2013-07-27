@@ -116,4 +116,4 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 
 # French
 + [Utiliser OpenRefine avec bibliopedia](http://www.bibliopedia.fr/index.php/OpenRefine)
-+ [L\u2019attribution d'un code de domaine aux notices en provenance du Sudoc | Punktokomo ;](http://punktokomo.abes.fr/2013/05/27/lattribution-dun-code-de-domaine-aux-notices-en-provenance-du-sudoc/)
++ [L'attribution d'un code de domaine aux notices en provenance du Sudoc | Punktokomo ;](http://punktokomo.abes.fr/2013/05/27/lattribution-dun-code-de-domaine-aux-notices-en-provenance-du-sudoc/)
