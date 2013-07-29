@@ -36,6 +36,12 @@ The language dictionaries are stored in the {{{langs}}} subdirectory for the mod
 
 To add support for a new language, copy {{{translation-default.json}}} to {{{translation-<locale>.json}}} and have your translator translate all the value strings (ie right hand side).
 
+By default, the system tries to load the language file corresponding to the currently in-use browser language. To override this setting a new menu item ("Language Settings") has been added at the index page.
+To support a new language file, the developer should add a corresponding entry to the dropdown menu in this file: {{{/OpenRefine/main/webapp/modules/core/scripts/index/lang-settings-ui.html}}}. The entry should look like:
+```javascript
+<option value="<locale>">[Language Label]</option>
+```
+
 NOTE: Gettext .po files are better supported for translation, so in the future we may switch to those and use a PO to JSON converter at build time.
 
 Currently supported languages include English and Italian.
