@@ -7,7 +7,7 @@ UNDER CONSTRUCTION - this list isn't complete
 
 =New Features=
 * New branding! - we're now OpenRefine instead of Google Refine
-* Freebase Suggest 4.1 & new Freebase APIs
+* Freebase Suggest 4.2+ & new Freebase APIs including new Freebase reconciliation service
 
 =Enhancements=
 * Better handling of various project creation cases:
