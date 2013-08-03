@@ -1,3 +1,29 @@
+UPDATE:
+
+
+----
+
+
+As some of you have noticed, reconciliation against Freebase, one of Refine's most awesome (among many awesome) features, has gone to hell in a handbasket recently. (In other words, it no longer works).
+
+We weren't really counting on having to transition on a moment's notice, but Tom Morris has patched together an *experimental* service which will hopefully help bridge the gap.
+
+The new service is at: http://reconcile.freebaseapps.com/reconcile
+
+You should be able to add it as a standard reconciliation service in either Google Refine 2.5 or OpenRefine (soon to be) 2.6 (aka the current development version)..
+
+The new service is intended to be API compatible with the old service, but it doesn't use any of the old Freebase APIs with their consequent performance issues.  It should be 10x (at least!) faster.
+
+Having said that, it's not without issues.  Tom coded it up in a hurry to bridge the gap.  It's untested.  It's got some known issues.
+
+*IN PARTICULAR*, it has a hard filter on the type that you're reconciling against.  There's a fix in the pipe for this, but in the mean time, if you're not sure that all of your candidates are, say, /people/person you should instead reconcile against /common/topic.
+
+On the plus side, our previous warnings about not including additional columns in your reconciliation no long apply.  If you want to include the person's birth date, death date, whatever, ..., you won't get vectored off to the land of the 18 month stale indexes.
+
+----
+
+Reconciliation:
+
 Reconciliation is a semi-automated process of matching text names to database IDs (keys). This is semi-automated because in some cases, machine alone is not sufficient and human judgement is essential. For example, given "Ocean's Eleven" as the name of a film, should it be matched to
 
 * the original 1960 "Ocean's Eleven" ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven_1960]]), or
