@@ -101,18 +101,19 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 # German
 + [text face funktion](http://www.databeast.org/text-face-funktion/)
 + [hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/)
-+ [datenzeilen zerstueckeln mit google refine](http://www.databeast.org/datenzeilen-zerstueckeln-mit-google-refine/)"
-+ [suchen und ersetzen mit google refine](http://www.databeast.org/suchen-und-ersetzen-mit-google-refine/)"
-+ [twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/)"
-+ [google refine die replace funktion](http://www.databeast.org/google-refine-die-replace-funktion/)
-+ [benutzerdefinierter datenexport mit google refine](http://www.databeast.org/benutzerdefinierter-datenexport-mit-google-refine/)
-+ [rechnen mit google refine](http://www.databeast.org/rechnen-mit-google-refine/)
-+ [spalte duplizieren mit google refine](http://www.databeast.org/spalte-duplizieren-mit-google-refine/)
-+ [transponieren mit google refine](http://www.databeast.org/transponieren-mit-google-refine/)
-+ [google refine tutorial informationen in datenzellen erganzen](http://www.databeast.org/google-refine-tutorial-informationen-in-datenzellen-erganzen/)
-+ [google refine tutorial externe datenspalte importieren](http://www.databeast.org/google-refine-tutorial-externe-datenspalte-importieren/)
-+ [zeit online content api mit google refine anzapfen](http://www.databeast.org/zeit-online-content-api-mit-google-refine-anzapfen/)
-+ [google refine tutorial doppelte zeileneintrage in spalten loschen](http://www.databeast.org/google-refine-tutorial-doppelte-zeileneintrage-in-spalten-loschen/)
++ [google refine tutorial - datenzeilen zerstueckeln mit google refine](http://www.databeast.org/datenzeilen-zerstueckeln-mit-google-refine/)
++ [google refine tutorial - suchen und ersetzen mit google refine](http://www.databeast.org/suchen-und-ersetzen-mit-google-refine/)
++ [google refine tutorial - twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/)
++ [google refine tutorial - google refine die replace funktion](http://www.databeast.org/google-refine-die-replace-funktion/)
++ [google refine tutorial - benutzerdefinierter datenexport mit google refine](http://www.databeast.org/benutzerdefinierter-datenexport-mit-google-refine/)
++ [google refine tutorial - rechnen mit google refine](http://www.databeast.org/rechnen-mit-google-refine/)
++ [google refine tutorial - spalte duplizieren mit google refine](http://www.databeast.org/spalte-duplizieren-mit-google-refine/)
++ [google refine tutorial - transponieren mit google refine](http://www.databeast.org/transponieren-mit-google-refine/)
++ [google refine tutorial - informationen in datenzellen erganzen](http://www.databeast.org/google-refine-tutorial-informationen-in-datenzellen-erganzen/)
++ [google refine tutorial - externe datenspalte importieren](http://www.databeast.org/google-refine-tutorial-externe-datenspalte-importieren/)
++ [google refine tutorial - zeit online content api mit google refine anzapfen](http://www.databeast.org/zeit-online-content-api-mit-google-refine-anzapfen/)
++ [google refine tutorial - doppelte zeileneintrage in spalten loschen](http://www.databeast.org/google-refine-tutorial-doppelte-zeileneintrage-in-spalten-loschen/)
++ [google refine tutorial - datamining](http://www.databeast.org/google-refine-tutorial-datamining/)
 
 # French
 + [Utiliser OpenRefine avec bibliopedia](http://www.bibliopedia.fr/index.php/OpenRefine)
