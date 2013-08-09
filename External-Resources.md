@@ -99,8 +99,8 @@ This page list tutorial and resources developed outside the OpenRefine wiki. It 
 
 
 # German
-+ [text face funktion](http://www.databeast.org/text-face-funktion/)
-+ [hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/)
++ [google refine tutorial - text face funktion](http://www.databeast.org/text-face-funktion/)
++ [google refine tutorial - hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/)
 + [google refine tutorial - datenzeilen zerstueckeln mit google refine](http://www.databeast.org/datenzeilen-zerstueckeln-mit-google-refine/)
 + [google refine tutorial - suchen und ersetzen mit google refine](http://www.databeast.org/suchen-und-ersetzen-mit-google-refine/)
 + [google refine tutorial - twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/)
