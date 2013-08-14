@@ -7,7 +7,7 @@ This page collects OpenRefine recipes, small workflows and code fragments that s
 
 Here are some examples of possible types of common string manipulation operations that you might encounter and how they can be achieved with the [[Refine Expression Language (GREL)|GREL-Functions]]. See also [[GREL String Functions]].
 
-=== Change //2010-05-31T01:10:0Z//"to "05/31/2010" ===
+=== Change "2010-05-31T01:10:0Z" to "05/31/2010" ===
 
 One way to do this is use GREL's slice function.
 
