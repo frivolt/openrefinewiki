@@ -1,11 +1,13 @@
-
 Import the log file:
 * without splitting into columns
 * with # header lines set 0
 
   {{images/ApacheLogsImport.png}}
 
+
+
 Then apply the following operations:
+(You may need to rename Column 1 to "Column" before applying)
 
 {{{
   [
