@@ -15,6 +15,11 @@ One way to do this is use GREL's slice function.
    value.slice(5, 7) + '/' + value.slice(8, 10) + '/' + value.slice(0, 4)
 }}}
 
+Another way to do this is to convert this to a Date data type, then convert back to a string with the specified format:
+
+{{{
+   toString(toDate(value),"dd/MM/yyyy")
+}}}
 
 === Trim whitespace from beginning and end of values ===
 {{{
