@@ -42,4 +42,16 @@ Returns a date changed by the given amount in the given unit of time. Unit defau
 
 ===datePart(date d, string unit)===
 
-Returns part of a date.
+Returns part of a date.  Unit may be one of:
+
+```
+        if ("hours".equals(part) || "hour".equals(part) || "h".equals(part)) {
+        if ("minutes".equals(part) || "minute".equals(part) || "min".equals(part)) 
+        if ("seconds".equals(part) || "sec".equals(part) || "s".equals(part)) {
+        if ("years".equals(part) || "year".equals(part)) {
+        if ("months".equals(part) || "month".equals(part)) { 
+        if ("weeks".equals(part) || "week".equals(part) || "w".equals(part)) {
+        if ("days".equals(part) || "day".equals(part) || "d".equals(part)) {
+        id ("weekday".equals(part)) {
+        if ("time".equals(part)) return c.getTimeInMillis();
+```
