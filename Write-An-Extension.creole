@@ -14,6 +14,9 @@ Extensions that come with the code base are located under [[the extensions subdi
 * refer to your extension's directory in [[the butterfly.properites file|http://github.com/OpenRefine/OpenRefine/blob/master/main/webapp/WEB-INF/butterfly.properties]] through a {{{butterfly.modules.path}}} setting.
 * specify the butterfly.modules.path property on the command line when you run OpenRefine.  This overrides the values in the property file, so you need to include the default values first e.g. {{{-Dbutterfly.modules.path=modules,../../extensions,/path/to/your/extension}}}
 
+
+Please note that you should bundle any dependencies yourself, so you are insulated from Refine packaging changes over time.
+
 =Directory Layout=
 
 A OpenRefine extension (implemented as a Butterfly module) sits in a file directory that contains the following files and sub-directories:
