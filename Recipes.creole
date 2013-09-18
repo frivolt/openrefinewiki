@@ -109,6 +109,19 @@ value.replace(/(\p{IsAlphabetic})(?=\d)/,'$1 ')
 * $1 means "first matching group", or the letter that was matched by the first bullet above.
 Adapted from this [[StackOverflow answer|http://stackoverflow.com/questions/11941487/javascript-regexp-if-a-letter-is-adjacent-to-a-number-add-an-underscore]].
 
+===Parse an IP address to extract a Country Name, Latitude & Longitude===
+
+Create a new column by fetching URLs based on a column with IP Addresses using an expression like:
+{{{
+"http://freegeoip.net/json/\"+value
+}}}
+There are many such services such as that one.  Then parse the resulting **json** to create new columns with expressions such as:
+{{{
+* value.parseJson().country_name
+* value.parseJson().latitude
+* value.parseJson().longitude
+}}}
+
 ===Parse a URL or URI to extract a Host, Path, Query, or convert to a URI===
 
 Use Clojure as your expression language and use one of these expressions (consult [[java URL or URI docs|http://docs.oracle.com/javase/6/docs/api/java/net/URL.html]] for other methods besides just the .getHost() method.
