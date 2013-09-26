@@ -80,4 +80,4 @@ While there's a lot of information in this wiki, there's plenty more online too.
 * Rod Whiteley's [[GREL Quick Reference|http://co-synergy.com/GREL%20Quick%20Reference.pdf]] (PDF)
 * Yours? [[Let us know!|http://groups.google.com/group/openrefine/]]
 
-And of course [https://www.google.com/search?q=%22google+refine%22 searching online].
+And of course [[searching online|https://www.google.com/search?q=%22google+refine%22]].
