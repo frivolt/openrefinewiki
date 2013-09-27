@@ -38,6 +38,21 @@ convert correctly to "Fotherington-Thomas" (more detailed explanation
     
       replace(toTitlecase(replace(value,"-",".")),".","-")
 
+=== Replacing Chars, Punctuation, etc using regular expressions ===
+
+Replace will take a regular expression, e.g. 
+{{{
+  value.replace(/[%@#!]/,' ').  
+}}}
+You can also use character classes to replace all punctuation characters with spaces
+{{{
+  value.replace(/\p{Punct}/,' ')
+}}}
+If you ever do have to do multiple replaces, you can chain them together e.g. 
+{{{
+  value.replace('w','x').replace('y','z')
+}}}
+
 === "someprefix_a2343" -> "a2343" ===
 
 You can use 
