@@ -116,7 +116,13 @@ smartSplit(value,"\n")  //split cell at Carriage Return or New Line char
 
 ===splitByCharType(s)===
 
-Returns an array of strings obtained by splitting {{{s}}} into groups of consecutive characters where the characters within each group share the same unicode type, and consecutive groups differ in their unicode types.
+Returns an array of strings obtained by splitting {{{s}}} into groups of consecutive characters where the characters within each group share the same unicode type, and consecutive groups differ in their unicode types. 
+
+for example the string {{{HenryCTaylor}}} will be split as follow
+* splitByCharType(value)[0] = H
+* splitByCharType(value)[1] = enry
+* splitByCharType(value)[2] = CT
+* splitByCharType(value)[3] = aylor
 
 ===partition(string s, string or regex frag, optional boolean omitFragment)===
 
