@@ -119,10 +119,10 @@ smartSplit(value,"\n")  //split cell at Carriage Return or New Line char
 Returns an array of strings obtained by splitting {{{s}}} into groups of consecutive characters where the characters within each group share the same unicode type, and consecutive groups differ in their unicode types. 
 
 for example the string {{{HenryCTaylor}}} will be split as follow
-* splitByCharType(value)[0] = H
-* splitByCharType(value)[1] = enry
-* splitByCharType(value)[2] = CT
-* splitByCharType(value)[3] = aylor
+* {{{splitByCharType(value)[0]}}} will return H
+* {{{splitByCharType(value)[1]}}} will return enry
+* {{{splitByCharType(value)[2]}}} will return CT
+* {{{splitByCharType(value)[3]}}} will return aylor
 
 ===partition(string s, string or regex frag, optional boolean omitFragment)===
 
