@@ -137,6 +137,24 @@ There are many such services such as that one.  Then parse the resulting **json*
 * value.parseJson().longitude
 }}}
 
+=== Get HTTP Response Header field (e.g. redirect location) ===
+
+This clever hack from @atomotic shows how to use Python to get the location header field from a 
+redirect response (in this case from the DOI API).
+
+{{{
+import httplib
+conn = httplib.HTTPConnection("dx.doi.org")
+doi = "/"+value
+conn.request("HEAD", doi)
+res = conn.getresponse()
+return res.getheader('location')
+}}}
+
+or in a single line version that you could paste into your Undo history
+
+{{{jython:import httplib\nconn = httplib.HTTPConnection(\"dx.doi.org\")\ndoi = \"/\"+value\nconn.request(\"HEAD\", doi)\nres = conn.getresponse()\nreturn res.getheader('location')"}}}
+
 ===Parse a URL or URI to extract a Host, Path, Query, or convert to a URI===
 
 Use Clojure as your expression language and use one of these expressions (consult [[java URL or URI docs|http://docs.oracle.com/javase/6/docs/api/java/net/URL.html]] for other methods besides just the .getHost() method.
@@ -156,6 +174,9 @@ Use Clojure as your expression language and use one of these expressions (consul
 {{{
 (.toURI (java.net.URL. value))
 }}}
+
+=== Get HTTP header field value (e.g. redirect location) ===
+This clever hack 
 
 ===Parse JSON and Create Custom Arrays using forEach()===
 
