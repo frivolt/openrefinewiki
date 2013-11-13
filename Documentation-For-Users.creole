@@ -41,7 +41,7 @@ If you reconcile against [[Freebase|http://www.freebase.com/]], you can then ali
 * [[Installing Extensions|Installing Extensions]]
 * [[Extensions|Extensions]] that we know about
 
-=Recipes=
+=Recipes and worked examples=
 
 For complicated tasks that are commonly done, just follow recipes that other folks have discovered and written up.  A recipe is just a sequence of steps, and tips and tricks.
 
@@ -54,7 +54,7 @@ and there are full recipes:
 * [[Web Scraping & Extracting items from HTML pages|StrippingHTML]] 
 * Recipe Apache Logs
 
-
+Many **worked examples** that illustrate project flow and the logic of using OpenRefine are collected under [[External Resources]]
 =Reference=
 
 ==Expressions==
