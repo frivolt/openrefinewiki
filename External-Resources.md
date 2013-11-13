@@ -1,5 +1,7 @@
-This page list tutorial and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
+This page list tutorials and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++ [Using OpenRefine to explore Tenders awarded in Bosnia and Herzegovina]
+(https://docs.google.com/document/d/1B1Scr3xEsvEHiBA43GkuGBrUDNYL0sag6H5pfbHnwxo/edit#)
 + [Using OpenRefine to explore information about UK Schools - LinkedUp DevTalk](http://data.linkededucation.org/linkedup/devtalk/?p=73)
 + [Cleaning up data in Google Refine | Back That Thing Up](http://backthatthingup.wordpress.com/2013/05/06/cleaning-up-data-in-google-refine/)
 + [Ordnance Survey Linked Data and the Reconciliation API | John's Weblog](http://johngoodwin225.wordpress.com/2013/04/25/ordnance-survey-linked-data-and-the-reconciliation-api/)
