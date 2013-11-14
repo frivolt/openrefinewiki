@@ -8,3 +8,4 @@
 * [[RDF extension|http://refine.deri.ie/]] - by DERI
 * [[Stats extension|http://blog.apps.chicagotribune.com/2010/11/18/sprint-our-first-google-refine-extension-refine-stats/]] - by the Chicago Tribune for Refine 2.1
 * [[Stats extension|https://github.com/sparkica/refine-stats]] updated by [[sparkica|https://github.com/sparkica]] for Refine 2.5
+* [[Kuali Extension|https://github.com/k-int/gokb-phase1]] this extension require credential on the Kuali OLE server, see the [[documentation|https://wiki.kuali.org/display/OLE/OpenRefine]] for more details
