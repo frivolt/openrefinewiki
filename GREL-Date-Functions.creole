@@ -13,7 +13,7 @@ Returns {{{o}}} converted to a date object.
 All other arguments are optional:
 
 * {{{month_first}}}: set false if the date is formatted with the day before the month.
-* {{{formatN}}}: attempt to parse the date using an ordered list of possible formats. See [[SimpleDateFormat|http://java.sun.com/j2se/1.4.2/docs/api/java/text/SimpleDateFormat.html]] for the syntax.
+* {{{formatN}}}: attempt to parse the date using an ordered list of possible formats. See [[SimpleDateFormat|http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html]] for the syntax.
 
 Examples: 
 You can parse the cells "Nov-09" and "11/09" using
