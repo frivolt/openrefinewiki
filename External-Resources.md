@@ -98,7 +98,7 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Cómo usar Google Refine en tu próxima investigación periodística](http://ijnet.org/es/stories/c%C3%B3mo-usar-google-refine-en-tu-pr%C3%B3xima-investigaci%C3%B3n-period%C3%ADstica)
 + [Gobierno Vasco Irekia :: Introducción a Google Refine (Curso periodismo de datos 4/10)](http://www.irekia.euskadi.net/es/news/11703-introduccion-google-refine-curso-periodismo-datos)
 + [Recursos para limpiar datos con Google Refine](http://blog.albertcuesta.com/post/51294386873/recursos-para-limpiar-datos-con-google-refine)
-+ [Usa Open Refine junto a Google Geocoding API para georeferenciar direcciones, enfatizado en el caso colombiano](http://sigdiferente.blogspot.com/)
++ [Geocodificar en Colombia con OpenRefine y Google Geocoding API](http://sigdiferente.blogspot.com/)
 
 # German
 + [google refine tutorial - text face funktion](http://www.databeast.org/text-face-funktion/)
