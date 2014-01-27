@@ -1,5 +1,7 @@
 This page list tutorials and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++ [Cleaning Data with OpenRefine - a lesson from the Programming Historian]
+(http://programminghistorian.org/lessons/cleaning-data-with-openrefine)
 + [Using OpenRefine to explore Tenders awarded in Bosnia and Herzegovina]
 (https://docs.google.com/document/d/1B1Scr3xEsvEHiBA43GkuGBrUDNYL0sag6H5pfbHnwxo/edit#)
 + [Using OpenRefine to explore information about UK Schools - LinkedUp DevTalk](http://data.linkededucation.org/linkedup/devtalk/?p=73)
