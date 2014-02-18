@@ -300,7 +300,10 @@ Some of them include:
 
 The open-reconcile project provides a complete Java based reconciliation service which queries a SQL database. https://code.google.com/p/open-reconcile
 
-The RDF extension incorporates, amongst other things, a reconciliation service which will query a SPARQL endpoint or reconcile against a provided RDF file. https://github.com/OpenRefine/grefine-rdf-extension
+The [[RDF extension|http://refine.deri.ie]] incorporates, among other things, reconciliation support with different approaches:
+  * a service to reconciliate against querying a SPARQL endpoint
+  * reconcile against a provided RDF file
+  * based on Apache Stanbol ([[implementation details|https://github.com/fadmaa/grefine-rdf-extension/pull/59]])
 
 [[Sunlight Labs|https://github.com/sunlightlabs]] implemented a reconciliation service using Piston on Django for their [[Influence Explorer|http://influenceexplorer.com/]]
 https://github.com/sunlightlabs/datacommons/blob/master/dcapi/reconcile/handlers.py
