@@ -415,7 +415,7 @@ This new expression transforms those cells to
   2010
 }}}
 
-What forNonBlank does is test its first argument and decides what to do based on whether that is blank (null or empty string) or not. If it's not blank, bind that value to the variable name in the second argument (v) and evaluates the third argument ("-" + v). Otherwise, it evaluates the forth argument ("").
+What forNonBlank does is test its first argument and decides what to do based on whether that is blank (null or empty string) or not. If it's not blank, bind that value to the variable name in the second argument (v) and evaluates the third argument ("-" + v). Otherwise, it evaluates the fourth argument ("").
 
 == Spot Potential Encoding Issues ==
 
