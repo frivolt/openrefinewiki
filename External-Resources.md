@@ -23,7 +23,6 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [A short intro to OpenRefine by magdmartin](http://www.slideshare.net/MartinMagdinier/20130206-open-refine)
 + [OMG! My metadata is as fresh as the Backstreet Boys: How Google Ref...](http://www.slideshare.net/rascalwhale/using-google-refine-long-version)
 + [Patent Assignee Cleanup Using Google Refine (Open Refine) - Text Facets and Clustering](http://www.patinformatics.com/blog/patent-assignee-cleanup-using-google-refine-open-refine-text-facets-and-clustering/)
-+ [Open Refine Starter: Erste Schritte und Orientierung für Einsteiger | tobiaskut.de](http://www.tobiaskut.de/2013/02/22/open-refine-starter-erste-schritte-und-orientierung-fur-einsteiger)
 + [Codesnippet: basic geoinferencing with Shapely, GeoJSON and OpenRefine](http://www.mhermans.net/geojson-shapely-geocoding.html)
 + [Geocoding Using the Google Maps Geocoder via OpenRefine | Resources | Data Driven Journalism](http://datadrivenjournalism.net/resources/geocoding_using_the_google_maps_geocoder_via_openrefine)
 + [Open refine reconciliation service api (dc python 2013_03_05)](http://www.slideshare.net/alisonrowland56/open-refine-reconciliation-service-api-dc-python-20130305-16992472)
@@ -103,6 +102,7 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Geocodificar en Colombia con OpenRefine y Google Geocoding API](http://sigdiferente.blogspot.com/)
 
 # German
++ [Open Refine Starter: Erste Schritte und Orientierung für Einsteiger | tobiaskut.de](http://www.tobiaskut.de/2013/02/22/open-refine-starter-erste-schritte-und-orientierung-fur-einsteiger)
 + [google refine tutorial - text face funktion](http://www.databeast.org/text-face-funktion/)
 + [google refine tutorial - hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/)
 + [google refine tutorial - datenzeilen zerstueckeln mit google refine](http://www.databeast.org/datenzeilen-zerstueckeln-mit-google-refine/)
