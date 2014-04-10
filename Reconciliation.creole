@@ -1,4 +1,6 @@
-UPDATE:
+UPDATE: April 2014 [[regarding freebase availability on the discussion list|https://groups.google.com/forum/#!topic/openrefine/N-O2Wn12S-g|]].
+----
+UPDATE: October 2013
 
 
 ----
