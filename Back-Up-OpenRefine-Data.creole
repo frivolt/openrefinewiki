@@ -4,7 +4,8 @@ You may wish a quick way to quickly backup all your projects, particularly if yo
 
 This can be done by manually **making a copy** of the Refine workspace directory. **Do not move** that directory, just copy.  The location of the OpenRefine workspace directory varies between operating systems, and these are listed below:
 
-* MacOSX: {{{~/Library/Application Support/Google/Refine/}}}
+* MacOSX: {{{~/Library/Application Support/OpenRefine
+}}}
 * Windows: depending on the Windows version, the data is in one of these directories
 * {{{C:\Documents and Settings\(user id)\Local Settings\Application Data\Google\Refine}}}
 * {{{C:\Users\(user id)\AppData\Roaming\Google\Refine}}}
