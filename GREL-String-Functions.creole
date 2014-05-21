@@ -158,9 +158,9 @@ Returns the MD5 hash of {{{s}}}.
 
 Returns the SHA-1 hash of {{{s}}}.
 
-===phonetic(string s, optional string encoding)===
+===phonetic(string s, string encoding)===
 
-Returns the a phonetic encoding of {{{s}}}, optionally indicating which encoding to use (defaults to {{{DoubleMetaphone}}}).  Example: phonetic(value,'metaphone3')
+Returns the a phonetic encoding of {{{s}}}, string encoding to use).  Example: phonetic(value,'metaphone3')
 
 ===reinterpret(string s, string encoder)===
 
