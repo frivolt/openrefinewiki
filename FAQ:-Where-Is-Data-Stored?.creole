@@ -12,4 +12,4 @@ All your projects are stored on your own computer in the workspace directory lis
 * {{{C:\Users\(user id)\Google\Refine}}}
 
 **Linux:**
-* {{{~/.local/share/google/refine/}}}
+* {{{~/.local/share/openrefine/}}}
