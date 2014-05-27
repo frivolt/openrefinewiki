@@ -232,8 +232,10 @@ for x in v[:]: # makes a slice copy of the entire list
 
 ===Create a new column based on the value of "Star" or "Flag"===
 
-Starring or Flagging rows is a handy way of accumulating insights about messy data.  Create a new column based on the Star, use this formula
-{{{if(row.starred, "yes", "no")}}}
+Starring or Flagging rows is a handy way of accumulating insights based on many different facets about messy data.  Create a new column based on the Star, use:
+{{{
+ if(row.starred, "yes", "no")
+}}}
 
 ===Find a sub pattern that exists at the end of a string===
 
