@@ -4,6 +4,7 @@ Where to start?
 
 * [[How to install and run|Installation Instructions]] ([[UpgradingTo2p0 upgrading instructions|https://github.com/OpenRefine/OpenRefine/wiki/Upgrading-To2p0]])
 * [[How to use|User Guide]]
+* A [[Google Chrome extension for GitHub-Wiki-Search|https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en]] will help you search this site.
 
 Love it so much?
 
