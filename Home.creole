@@ -1,5 +1,7 @@
 //Welcome to the OpenRefine wiki!//
 
+* You can **Search this Wiki** by first installing a [[Google Chrome extension for GitHub-Wiki-Search|https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en]]
+
 === Here for the First Time?
 * Watch [[these screencasts|Screencasts]] to understand what's possible with OpenRefine
 * [[Find out what people say and do with OpenRefine|What People Say]], ... [[live on Twitter|http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view]]
