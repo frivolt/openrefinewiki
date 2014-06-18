@@ -1,5 +1,41 @@
 This page list tutorials and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++ [import.io + Open Refine + Google Fusion Tables = Magic!](http://blog.import.io/post/importio-open-refine-google-fusion-tables-magic)
++[Putting Points on Maps Using GeoJSON Created by Open Refine](http://schoolofdata.org/2014/05/19/putting-points-on-maps-using-geojson-created-by-open-refine)
++[Help me, I’m covered in bees -or- using OpenRefine to clean specimen data](http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/)
++ [How to: combine multiple rows in a dataset where text is split across them (OpenRefine)](http://onlinejournalismblog.com/2014/05/30/how-to-combine-multiple-rows-in-a-dataset-where-text-is-split-across-them-open-refine/)
++[Using Open Refine to Update, Clean up, and Link Your Metadata to the Wider World](http://www.youtube.com/watch?v=E-NbMR3_MRw&feature=share) - Video
++ [How to Extract Data from Tables in PDFs with Tabula and OpenRefine]
+(http://computers.tutsplus.com/tutorials/how-to-extract-data-from-tables-in-pdfs-with-tabula-and-openrefine--cms-20843)
++ [Analyzing Usage Logs with OpenRefine](http://acrl.ala.org/techconnect/?p=4253) for librarians using LCSH and RDF extension
++ [Prepare SQL query in OpenRefine part1] (http://googlerefine.blogspot.ca/2014/04/prepare-sql-query-using-openrefine.html) - [part 2](http://googlerefine.blogspot.ca/2014/04/prepare-sql-update-query-in-openrefine.html)
++ [CLEAN UP: DATES AND OPENREFINE](http://icantiemyownshoes.wordpress.com/2014/04/24/clean-up-dates-and-openrefine/)
++ [OPENREFINE AND MESSY LEGACY ACCESS POINTS IN AN ARCHIVISTS’ TOOLKIT DATABASE](http://icantiemyownshoes.wordpress.com/2014/04/15/openrefine-and-messy-legacy-access-points-in-an-archivists-toolkit-database/)
++ [OpenRefine Cheat Sheets](http://t.co/pu7iz4xRHg)
++ [Getting Started with Google Refine (now OpenRefine)](https://wikis.utexas.edu/pages/viewpage.action?pageId=46631837)
++ [SOCIAL NETWORK ANALYSIS AND VISUALISATION FOR #RDAPLENARY 3](http://hujo.deri.ie/rdaplenarysn/)
++ [Harvesting and Analyzing Tweets](http://schoolofdata.org/harvesting-and-analyzing-tweets)
++ [How to: clean up spreadsheet headings that run across multiple rows using Open Refine](http://onlinejournalismblog.com/2013/11/13/how-to-clean-up-spreadsheet-headings-that-run-across-multiple-rows-using-open-refine/)
++ [http://blog.ouseful.info/2013/12/18/creating-data-from-text-regular-expressions-in-openrefine/](Creating Data from Text – Regular Expressions in OpenRefine)
++ [Open Refine & AdWords](http://www.samlaw.co.nz/adwords/using-google-open-refine-for-adwords/)
++ [An Introduction to Mapping Company Networks Using Gephi and OpenCorporates, via OpenRefine](http://schoolofdata.org/2013/11/15/an-introduction-to-mapping-company-networks-using-gephi-and-opencorporates-via-openrefine)
++ [Calling REST services and parsing JSON with OpenRefine](https://github.com/DruidSmith/OpenRefine-Recipes/blob/master/URLs_and_JSON.md)
++ [Working With Company Data](http://schoolofdata.org/2013/10/31/working-with-company-data/)
++ [A recipe for	grabbing director information from OpenCorporates using OpenReﬁne](http://www.slideshare.net/psychemedia/scoda-openrefinedirectordata-27929941)
++ [Using OpenRefine, Excel to clean user-submitted data](http://editorialmatters.lee.net/blogs/data_journalism/article_ee6eb14c-0047-11e3-8f34-0019bb2963f4.html)
++ [Automating Basic Research Tasks with OpenRefine and Freebase](http://www.kevintbaker.com/2013/09/13/automating-basic-research-tasks-with-openrefine-and-freebase/)
++ [Archives Hub and VIAF Name Matching](http://archiveshub.ac.uk/blog/2013/08/hub-viaf-namematching/)
++ [LEARNING TO OPENREFINE: FACETING AND CLUSTERING](http://altbibl.io/dst4l/learning-to-openrefine-faceting-and-clustering/)
++ [Cleaning Geo-Data with Open Refine](http://ahmadassaf.com/blog/data-analysis/cleaning-geo-data-open-refine/)
++ [How to Visualize Data With OpenSpending](http://www.pbs.org/idealab/2013/09/how-to-visualize-data-with-openspending/)
++ [Diff or Chop? Github, CSV data files and OpenRefine](http://blog.ouseful.info/2013/08/27/diff-or-chop-github-csv-data-files-and-openrefine/)
++ [Extending data with OpenRefine (ex-Google Refine)](http://www.xavigimenez.net/blog/2013/08/extending-data-with-openrefine-ex-google-refine/)
++ [Unpivoting Data with Excel, Open Refine and Python](http://blogs.worldbank.org/opendata/unpivoting-data-excel-open-refine-and-python)
++ [Using OpenRefine to Clean Multiple Documents in the Same Way](http://schoolofdata.org/2013/07/26/using-openrefine-to-clean-multiple-documents-in-the-same-way)
++ [Generating Sankey Diagrams from rCharts](http://blog.ouseful.info/2013/07/23/generating-sankey-diagrams-from-rcharts/)
++ [OpenRefine/LODRefine – A Power Tool for Cleaning Data](http://schoolofdata.org/2013/07/15/openrefinelodrefine-a-power-tool-for-cleaning-data)
+
+
 + [Cleaning Data with OpenRefine - a lesson from the Programming Historian]
 (http://programminghistorian.org/lessons/cleaning-data-with-openrefine)
 + [Using OpenRefine to explore Tenders awarded in Bosnia and Herzegovina]
@@ -8,7 +44,7 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Cleaning up data in Google Refine | Back That Thing Up](http://backthatthingup.wordpress.com/2013/05/06/cleaning-up-data-in-google-refine/)
 + [Ordnance Survey Linked Data and the Reconciliation API | John's Weblog](http://johngoodwin225.wordpress.com/2013/04/25/ordnance-survey-linked-data-and-the-reconciliation-api/)
 + [A Wrangling Example With OpenRefine: Making "Oven Ready Data" | OUseful.Info, the blog...](http://blog.ouseful.info/2013/05/03/a-wrangling-example-with-openrefine-making-ready-data)
-+ [Cleaning Data with Refine | School of Data            - Evidence is Power         ](http://schoolofdata.org/handbook/recipes/cleaning-data-with-refine/)
++ [Cleaning Data with Refine | School of Data - Evidence is Power](http://schoolofdata.org/handbook/recipes/cleaning-data-with-refine/)
 + [A Simple OpenRefine Example - Tidying Cut'n'Paste Data from a Web Page](http://blog.ouseful.info/2013/05/01/a-simple-openrefine-example-tidying-cutnpaste-data-from-a-web-page/)
 + [Questioning Election Data to See if It Has a Story to Tell | OUseful.Info, the blog...](http://blog.ouseful.info/2013/05/05/questioning-election-data-to-see-if-it-has-a-story-to-tell/)
 + [A Librarian's Guide to OpenRefine](http://acrl.ala.org/techconnect/?p=3276)
@@ -92,6 +128,10 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Google refine basic: Full Tutorial by David Huynh](http://googlerefine.blogspot.com/2011/07/full-tutorial-by-david-huynh.html) (introduction), Description : A must read tutorial from the creator of google refine.
 
 # Spanish
++ [Chuleta / Guía / Tutorial de OpenRefine (Google Refine)](http://josepvalles.com/chuleta-guia-tutorial-open-refine-google-refine/)
++ [Enriqueciendo datos con OpenRefine: geocodificación de direcciones](http://www.altergeosistemas.com/web/enriqueciendo-datos-con-openrefine/)
++ [School of data - Limpieza de bases de datos](https://www.youtube.com/watch?v=2nQgSKcORKI) - video
++ [Chuleta / Guía / Tutorial de Open Refine (Google Refine)](http://josepvalles.com/chuleta-guia-tutorial-open-refine-google-refine)
 + [Cómo usar OpenRefine para trabajar una base de datos](http://blogs.lanacion.com.ar/data/datos-abiertos/como-usar-google-refine-para-trabajar-una-base-de-datos/) including video tutorial
 + [ Limpiando datos: Google Refine - Medialab-Prado Madrid](http://medialab-prado.es/article/limpiando_datos_google_refine)
 + [Tutorial de OpenRefine](http://digital.buenosaires.gob.ar/tutorial-de-open-refine/) including video tutorial
@@ -122,3 +162,15 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 # French
 + [Utiliser OpenRefine avec bibliopedia](http://www.bibliopedia.fr/index.php/OpenRefine)
 + [L'attribution d'un code de domaine aux notices en provenance du Sudoc | Punktokomo ;](http://punktokomo.abes.fr/2013/05/27/lattribution-dun-code-de-domaine-aux-notices-en-provenance-du-sudoc/)
++ [Préparer un corpus de tweets avec open/google Refine pour le visualiser dans Gephi](http://blog.sociographie.net/post/2013/04/09/Pr%C3%A9parer-un-corpus-de-tweets-avec-open)
+
+# Japanses
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（1）](http://belvedere4pat.sakura.ne.jp/wp/?p=25)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（2）](http://belvedere4pat.sakura.ne.jp/wp/?p=31)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（３）](http://belvedere4pat.sakura.ne.jp/wp/?p=35)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（４）](http://belvedere4pat.sakura.ne.jp/wp/?p=39)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（5）](http://belvedere4pat.sakura.ne.jp/wp/?p=43)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（6）](http://belvedere4pat.sakura.ne.jp/wp/?p=65)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（7）](http://belvedere4pat.sakura.ne.jp/wp/?p=67)
++ [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（8）](http://belvedere4pat.sakura.ne.jp/wp/?p=75)
++[Google Refineの使い方](http://wiki.annotation.jp/Google_Refine%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
