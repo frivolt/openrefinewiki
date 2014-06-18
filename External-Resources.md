@@ -4,7 +4,7 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 +[Putting Points on Maps Using GeoJSON Created by Open Refine](http://schoolofdata.org/2014/05/19/putting-points-on-maps-using-geojson-created-by-open-refine)
 +[Help me, I’m covered in bees -or- using OpenRefine to clean specimen data](http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/)
 + [How to: combine multiple rows in a dataset where text is split across them (OpenRefine)](http://onlinejournalismblog.com/2014/05/30/how-to-combine-multiple-rows-in-a-dataset-where-text-is-split-across-them-open-refine/)
-+[Using Open Refine to Update, Clean up, and Link Your Metadata to the Wider World](http://www.youtube.com/watch?v=E-NbMR3_MRw&feature=share) - Video
++ [Using Open Refine to Update, Clean up, and Link Your Metadata to the Wider World](http://www.youtube.com/watch?v=E-NbMR3_MRw&feature=share) - Video
 + [How to Extract Data from Tables in PDFs with Tabula and OpenRefine]
 (http://computers.tutsplus.com/tutorials/how-to-extract-data-from-tables-in-pdfs-with-tabula-and-openrefine--cms-20843)
 + [Analyzing Usage Logs with OpenRefine](http://acrl.ala.org/techconnect/?p=4253) for librarians using LCSH and RDF extension
@@ -34,8 +34,6 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Using OpenRefine to Clean Multiple Documents in the Same Way](http://schoolofdata.org/2013/07/26/using-openrefine-to-clean-multiple-documents-in-the-same-way)
 + [Generating Sankey Diagrams from rCharts](http://blog.ouseful.info/2013/07/23/generating-sankey-diagrams-from-rcharts/)
 + [OpenRefine/LODRefine – A Power Tool for Cleaning Data](http://schoolofdata.org/2013/07/15/openrefinelodrefine-a-power-tool-for-cleaning-data)
-
-
 + [Cleaning Data with OpenRefine - a lesson from the Programming Historian]
 (http://programminghistorian.org/lessons/cleaning-data-with-openrefine)
 + [Using OpenRefine to explore Tenders awarded in Bosnia and Herzegovina]
