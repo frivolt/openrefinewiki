@@ -141,21 +141,22 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 
 # German
 + [Open Refine Starter: Erste Schritte und Orientierung für Einsteiger | tobiaskut.de](http://www.tobiaskut.de/2013/02/22/open-refine-starter-erste-schritte-und-orientierung-fur-einsteiger)
-+ [google refine tutorial - text face funktion](http://www.databeast.org/text-face-funktion/)
-+ [google refine tutorial - hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/)
-+ [google refine tutorial - datenzeilen zerstueckeln mit google refine](http://www.databeast.org/datenzeilen-zerstueckeln-mit-google-refine/)
-+ [google refine tutorial - suchen und ersetzen mit google refine](http://www.databeast.org/suchen-und-ersetzen-mit-google-refine/)
-+ [google refine tutorial - twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/)
-+ [google refine tutorial - google refine die replace funktion](http://www.databeast.org/google-refine-die-replace-funktion/)
-+ [google refine tutorial - benutzerdefinierter datenexport mit google refine](http://www.databeast.org/benutzerdefinierter-datenexport-mit-google-refine/)
-+ [google refine tutorial - rechnen mit google refine](http://www.databeast.org/rechnen-mit-google-refine/)
-+ [google refine tutorial - spalte duplizieren mit google refine](http://www.databeast.org/spalte-duplizieren-mit-google-refine/)
-+ [google refine tutorial - transponieren mit google refine](http://www.databeast.org/transponieren-mit-google-refine/)
-+ [google refine tutorial - informationen in datenzellen erganzen](http://www.databeast.org/google-refine-tutorial-informationen-in-datenzellen-erganzen/)
-+ [google refine tutorial - externe datenspalte importieren](http://www.databeast.org/google-refine-tutorial-externe-datenspalte-importieren/)
-+ [google refine tutorial - zeit online content api mit google refine anzapfen](http://www.databeast.org/zeit-online-content-api-mit-google-refine-anzapfen/)
-+ [google refine tutorial - doppelte zeileneintrage in spalten loschen](http://www.databeast.org/google-refine-tutorial-doppelte-zeileneintrage-in-spalten-loschen/)
-+ [google refine tutorial - datamining](http://www.databeast.org/google-refine-tutorial-datamining/)
++ [google refine tutorial - text face funktion](http://www.databeast.org/text-face-funktion/) not available but will be updaded ...
++ [google refine tutorial - hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/) not available but will be updaded ...
++ [google refine tutorial - twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/) not available but will be updaded ...
++ [google refine tutorial - google refine die replace funktion](http://www.databeast.org/google-refine-die-replace-funktion/) not available but will be updaded ...
++ [google refine tutorial - benutzerdefinierter datenexport mit google refine](http://www.databeast.org/benutzerdefinierter-datenexport-mit-google-refine/) not available but will be updaded ...
++ [google refine tutorial - rechnen mit google refine](http://www.databeast.org/rechnen-mit-google-refine/) not available but will be updaded ...
++ [google refine tutorial - transponieren mit google refine](http://www.databeast.org/transponieren-mit-google-refine/) not available but will be updaded ...
++ [google refine tutorial - informationen in datenzellen erganzen](http://www.databeast.org/google-refine-tutorial-informationen-in-datenzellen-erganzen/) not available but will be updaded ...
++ [google refine tutorial - externe datenspalte importieren](http://www.databeast.org/google-refine-tutorial-externe-datenspalte-importieren/) currently not available but will be updaded ...
+
++ OpenRefine Tutorial - [ZEIT Online Content API mit OpenRefine anzapfen](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Doppelte Zeileneintrage in Spalten löschen](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Datamining mit OpenRefine](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Spalte duplizieren mit OpenRefine](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Datenzeilen zergliedern mit OpenRefine](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Suchen und Ersetzen mit OpenRefine](http://www.pushthings4ward.com)
 
 # French
 + [Utiliser OpenRefine avec bibliopedia](http://www.bibliopedia.fr/index.php/OpenRefine)
