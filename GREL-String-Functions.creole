@@ -160,7 +160,10 @@ Returns the SHA-1 hash of {{{s}}}.
 
 ===phonetic(string s, string encoding)===
 
-Returns the a phonetic encoding of {{{s}}}, string encoding to use).  Example: phonetic(value,'metaphone3')
+Returns the a phonetic encoding of {{{s}}}, string encoding to use).  Example: 
+* phonetic(value,'metaphone3')
+* phonetic(value,'soundex')
+* phonetic(value,'cologne')
 
 ===reinterpret(string s, string encoder)===
 
