@@ -123,7 +123,7 @@ You can also run the server-side part of the tests directly from Eclipse. To do 
  http://beust.com/eclipse
 }}}
 
-Once the TestNG launching plugin is installed in your Eclipse, look for the {{{GoogleRefineTests.launch}}} file in the {{{main/IDEs/eclipse}}} folder inside the OpenRefine source code, right click on it, select "Run As..." then "GoogleRefineTests". This should open a new tab with the TestNG launcher running the OpenRefine tests.
+Once the TestNG launching plugin is installed in your Eclipse, right click on the source folder {{main/tests/server/src}}, select "Run As -> TestNG Test". This should open a new tab with the TestNG launcher running the OpenRefine tests.
 
 ==== Testing on Windows ====
 
