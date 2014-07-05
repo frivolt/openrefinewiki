@@ -141,11 +141,9 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 
 # German
 + [Open Refine Starter: Erste Schritte und Orientierung für Einsteiger | tobiaskut.de](http://www.tobiaskut.de/2013/02/22/open-refine-starter-erste-schritte-und-orientierung-fur-einsteiger)
-+ [google refine tutorial - text face funktion](http://www.databeast.org/text-face-funktion/) currently not available but will be updated ...
-+ [google refine tutorial - hintergrundrauschen mit google refine ausblenden](http://www.databeast.org/hintergrundrauschen-mit-google-refine-ausblenden/) currently not available but will be updated ...
-+ [google refine tutorial - twitter api mit google refine anzapfen](http://www.databeast.org/twitter-api-mit-google-refine-anzapfen/) currently not available but will be updated ...
-+ [google refine tutorial - google refine die replace funktion](http://www.databeast.org/google-refine-die-replace-funktion/) currently not available but will be updated ...
-
++ OpenRefine Tutorial - [Die Text Facet Funktion](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Hintergrundrauschen ausblenden](http://www.pushthings4ward.com)
++ OpenRefine Tutorial - [Die Replace Funktion](http://www.pushthings4ward.com)
 + OpenRefine Tutorial - [Benutzerdefinierter Datenexport](http://www.pushthings4ward.com)
 + OpenRefine Tutorial - [Rechnen mit OpenRefine](http://www.pushthings4ward.com)
 + OpenRefine Tutorial - [Informationen in Datenzellen ergänzen](http://www.pushthings4ward.com)
