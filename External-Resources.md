@@ -3,8 +3,8 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Converting Spreadsheets into MODSXML using Open Refine
 ](https://www.utsc.utoronto.ca/digitalscholarship/content/blogs/converting-spreadsheets-modsxml-using-open-refine)
 + [import.io + Open Refine + Google Fusion Tables = Magic!](http://blog.import.io/post/importio-open-refine-google-fusion-tables-magic)
-+[Putting Points on Maps Using GeoJSON Created by Open Refine](http://schoolofdata.org/2014/05/19/putting-points-on-maps-using-geojson-created-by-open-refine)
-+[Help me, I’m covered in bees -or- using OpenRefine to clean specimen data](http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/)
++ [Putting Points on Maps Using GeoJSON Created by Open Refine](http://schoolofdata.org/2014/05/19/putting-points-on-maps-using-geojson-created-by-open-refine)
++ [Help me, I’m covered in bees -or- using OpenRefine to clean specimen data](http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/)
 + [How to: combine multiple rows in a dataset where text is split across them (OpenRefine)](http://onlinejournalismblog.com/2014/05/30/how-to-combine-multiple-rows-in-a-dataset-where-text-is-split-across-them-open-refine/)
 + [Using Open Refine to Update, Clean up, and Link Your Metadata to the Wider World](http://www.youtube.com/watch?v=E-NbMR3_MRw&feature=share) - Video
 + [How to Extract Data from Tables in PDFs with Tabula and OpenRefine]
