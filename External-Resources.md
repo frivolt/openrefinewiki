@@ -1,5 +1,7 @@
 This page list tutorials and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++[Converting Spreadsheets into MODSXML using Open Refine
+](https://www.utsc.utoronto.ca/digitalscholarship/content/blogs/converting-spreadsheets-modsxml-using-open-refine)
 + [import.io + Open Refine + Google Fusion Tables = Magic!](http://blog.import.io/post/importio-open-refine-google-fusion-tables-magic)
 +[Putting Points on Maps Using GeoJSON Created by Open Refine](http://schoolofdata.org/2014/05/19/putting-points-on-maps-using-geojson-created-by-open-refine)
 +[Help me, I’m covered in bees -or- using OpenRefine to clean specimen data](http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/)
