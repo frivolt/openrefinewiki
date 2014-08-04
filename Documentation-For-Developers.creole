@@ -15,6 +15,7 @@
 * [[Write an Extension]]
 * [[Sample Extension]]
 * [[Extension Points]]
+* [[Extensions]]
 
 ==Service Plug-ins==
 
