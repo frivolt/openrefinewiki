@@ -19,6 +19,7 @@
 
 * [[See what's new lately|Whats New]]
 * [[Understand how to upgrade|Back Up OpenRefine Data]] from Google Refine 2.0 to Google Refine 2.1
+* [[Cool Extensions to OpenRefine written by others|Extensions]]
 
 ==== If You Are a Developer, see
 
