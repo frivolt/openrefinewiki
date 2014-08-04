@@ -11,16 +11,16 @@
 * [[Documentation|Documentation For Users]] for Users
 * [[FAQ]] Frequently Asked Questions
 
-==== Get help:
+=== Get help:
 * [[Ask questions here|http://groups.google.com/group/openrefine/]]
 * [[File bugs and feature requests here|issues]]
 
-==== Back for More?
+=== Back for More?
 
 * [[See what's new lately|Whats New]]
 * [[Understand how to upgrade|Back Up OpenRefine Data]] from Google Refine 2.0 to Google Refine 2.1
 * [[Cool Extensions to OpenRefine written by others|Extensions]]
 
-==== If You Are a Developer, see
+=== If You Are a Developer, see
 
 * [[Documentation|Documentation For Developers]] for Developers
