@@ -9,7 +9,6 @@
 * [[Gapminder|http://www.gapminder.org/data/]]
 * [[Infochimps|http://infochimps.org/]]
 * [[Many Eyes|http://manyeyes.alphaworks.ibm.com/manyeyes/datasets]]
-* [[~~Swivel~~|http://eagereyes.org/criticism/the-rise-and-fall-of-swivel]]
 * [[Data 360|http://www.data360.org/ds_list.aspx]]
 * [[ScraperWiki|http://www.scraperwiki.com]]
  
