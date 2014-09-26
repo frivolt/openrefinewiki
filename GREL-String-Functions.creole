@@ -87,7 +87,13 @@ Returns the string obtained by replacing any character in {{{s}}} that is also i
 
 ===match(string s, regexp p)===
 
-Attempts to match the string {{{s}}} in its entirety against the regex pattern {{{p}}} and returns an array of capture groups. For example, {{{match("230.22398, 12.3480", /\.(\d\d\d+)/)}}} returns an array of 1 string: {{{3480}}}. {{{match("230.22398, 12.3480", /.**\.(\d+).*\.(\d+)/)}}} returns an array of 2 strings: {{{22398}}} and {{{3480}}}. 
+Attempts to match the string {{{s}}} in its entirety against the regex pattern {{{p}}} and returns an array of capture groups. For example, {{{match("230.22398, 12.3480", /\.(\d\d\d+)/)}}} returns an array of 1 string: {{{3480}}}. {{{match("230.22398, 12.3480", /.**\.(\d+).*\.(\d+)/)}}} returns an array of 2 strings: {{{22398}}} and {{{3480}}}.
+
+Another {{{match()}}} example:
+
+{{{isNotNull(value.match(/(a.c)/))}}}
+
+returns True or False if value is like {{{abc}}} or {{{azc}}} , etc but would not match a value of {{{ac}}}.  Remember to use Parentheses when using match() to denote the Capture Group or Groups inside your Regex expression so that you can get output when needed otherwise an empty array [] is shown for no match.
 
 
 =String Parsing and Splitting=
