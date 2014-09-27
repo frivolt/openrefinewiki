@@ -136,6 +136,12 @@ Returns an array of strings {{{[}}} {{{a}}}, {{{frag}}}, {{{b}}} {{{]}}} where {
 
 If {{{omitFragment}}} is {{{true}}}, {{{frag}}} is not returned. That is, the result is an array of only 2 elements.
 
+Another Example using Regex with partition():
+
+{{{value.partition(/c.e/)[1]}}} used on a cell with a value of "abcdefgh" will output {{{"cde"}}}
+
+{{{"abcdefgh".partition(/d..g/)[0]}}} will output {{{"abc"}}}, since "abc" is the 1st part {{{[0]}}}, not the middle part {{{[1]}}} which is "defg", or the tail or last part {{{[-1]}}} which is "h".
+
 ===rpartition(string s, string or regex frag, optional boolean omitFragment)===
 
 Returns an array of strings {{{[}}} {{{a}}}, {{{frag}}}, {{{b}}} {{{]}}} where {{{a}}} is the substring within {{{s}}} before the **last** occurrence of {{{frag}}} in {{{s}}}, and {{{b}}} is the substring after {{{frag}}} in {{{s}}}. For example, {{{partition("parallel", "a")}}} returns 3 strings: {{{par}}}, {{{a}}}, and {{{llel}}}. If {{{s}}} does not contain {{{frag}}}, it returns an array of {{{[}}} {{{s}}}, "", "" {{{]}}} (the first string is the original {{{s}}} and the second and third strings are empty).
