@@ -94,3 +94,12 @@ Note that any character that is used to describe patterns within regular express
 * {{{?}}} must be written as {{{\?}}}
 * {{{[}}} must be written as {{{\[}}}
 * and so forth.
+
+== Jython can be used for Regex also ==
+
+  You can also use [[Jython Regex|http://www.jython.org/docs/library/re.html]] instead of GREL functions and use a Custom Text Facet, etc with something like this for example:
+{{{
+import re
+g = re.search(ur"\u2014 (.*),\s*BWV", value)
+return g.group(1)
+}}}
