@@ -35,7 +35,7 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
 ** What syntax of regular expression (regex) does OpenRefine support? **
 
-  The regular expression syntax is that of Java regex, not of Javascript. See [[GREL Regular Expressions|Understanding Regular Expressions]].
+  The regular expression syntax for GREL is that of Java regex, not of Javascript. See [[GREL Regular Expressions|Understanding Regular Expressions]].
 
   You can also use [[Jython Regex|http://www.jython.org/docs/library/re.html]] instead of GREL functions and use a Custom Text Facet with something like this:
 {{{
