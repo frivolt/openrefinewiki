@@ -10,7 +10,18 @@ A regular expression is a string that describes a text pattern occurring in othe
 
 The number of spaces between consecutive words vary. In order to change the text so that there is precisely 1 space between any 2 consecutive words, conceptually, we want to replace any continuous sequence of one or more spaces (no matter how many) with exactly one space. We can use a regular expression to describe "any continuous sequence of one or more spaces (no matter how many)".
 
-OpenRefine and OpenRefine Expression Language support regular expressions in the syntax of Java regular expressions: [[see Java Regex Tutorial|http://docs.oracle.com/javase/tutorial/essential/regex/index.html/]].
+OpenRefine and OpenRefine Expression Language (GREL) support regular expressions in the syntax of Java regular expressions: [[see Java Regex Tutorial|http://docs.oracle.com/javase/tutorial/essential/regex/index.html/]].
+
+====Jython supported Regex====
+
+  You can also use [[Jython Regex|http://www.jython.org/docs/library/re.html]] instead of GREL functions and use a Custom Text Facet, etc with something like this for example:
+{{{
+import re
+g = re.search(ur"\u2014 (.*),\s*BWV", value)
+return g.group(1)
+}}}
+
+====GREL supported Regex====
 
 To write a regular expression inside a GREL expression, wrap it between a pair of forward slashes /. For example, in
 
@@ -28,7 +39,7 @@ Note for advanced users: That (wrapping with forward slashes) is similar to how 
 
 Elsewhere in OpenRefine, i.e., not within a GREL expression, do not use slashes to wrap regular expressions.
 
-==GREL functions that support Regex==
+=====GREL functions that support Regex:=====
 
 # replace
 # match
@@ -94,12 +105,3 @@ Note that any character that is used to describe patterns within regular express
 * {{{?}}} must be written as {{{\?}}}
 * {{{[}}} must be written as {{{\[}}}
 * and so forth.
-
-== Jython can be used for Regex also ==
-
-  You can also use [[Jython Regex|http://www.jython.org/docs/library/re.html]] instead of GREL functions and use a Custom Text Facet, etc with something like this for example:
-{{{
-import re
-g = re.search(ur"\u2014 (.*),\s*BWV", value)
-return g.group(1)
-}}}
