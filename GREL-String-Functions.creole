@@ -81,6 +81,8 @@ Returns the string obtained by replacing {{{f}}} with {{{r}}} in {{{s}}}. {{{f}}
 
 For a simple example, {{{replace("The cow jumps over the moon and moos", "oo", "ee")}}} returns the string {{{The cow jumps over the meen and mees}}}.
 
+More info on [[Regex|Understanding-Regular-Expressions]]
+
 ===replaceChars(string s, string f, string r)===
 
 Returns the string obtained by replacing any character in {{{s}}} that is also in {{{f}}} with the character {{{r}}}. For example, {{{replaceChars("commas , and semicolons ; are separators", ",;", "**")}}} returns the string {{{commas ** and semicolons ** are separators}}}.
@@ -95,6 +97,7 @@ Another {{{match()}}} example:
 
 returns True or False if value is like {{{abc}}} or {{{azc}}} , etc but would not match a value of {{{ac}}}.  Remember to use Parentheses when using match() to denote the Capture Group or Groups inside your Regex expression so that you can get output when needed otherwise an empty array [] is shown for no match.
 
+More info on [[Regex|Understanding-Regular-Expressions]]
 
 =String Parsing and Splitting=
 
@@ -106,6 +109,8 @@ Returns {{{o}}} converted to a number.
 
 Returns the array of strings obtained by splitting {{{s}}} at wherever {{{sep}}} is found in it. {{{sep}}} can be either a string or a regular expression. For example, {{{split("fire, water, earth, air", ",")}}} returns the array of 4 strings: "{{{fire}}}", "{{{ water}}}", " {{{ earth}}}" , and "{{{ air}}}". The double quotation marks are shown here only to highlight the fact that the spaces are retained.
 
+More info on [[Regex|Understanding-Regular-Expressions]]
+
 ===splitByLengths(string s, number n1, number n2, ...)===
 
 Returns the array of strings obtained by splitting s into substrings with the given lengths. For example, {{{splitByLengths("internationalization", 5, 6, 3)}}} returns an array of 3 strings: {{{inter}}}, {{{nation}}}, and {{{ali}}}.
@@ -116,9 +121,6 @@ Returns the array of strings obtained by splitting {{{s}}} by the separator {{{s
 {{{
 smartSplit(value,"\n")  //split cell at Carriage Return or New Line char
 }}}
-
-
-
 
 ===splitByCharType(s)===
 
@@ -142,10 +144,13 @@ Another Example using Regex with partition():
 
 {{{"abcdefgh".partition(/d..g/)[0]}}} will output {{{"abc"}}}, since "abc" is the 1st part {{{[0]}}}, not the middle part {{{[1]}}} which is "defg", or the tail or last part {{{[-1]}}} which is "h".
 
+More info on [[Regex|Understanding-Regular-Expressions]]
+
 ===rpartition(string s, string or regex frag, optional boolean omitFragment)===
 
 Returns an array of strings {{{[}}} {{{a}}}, {{{frag}}}, {{{b}}} {{{]}}} where {{{a}}} is the substring within {{{s}}} before the **last** occurrence of {{{frag}}} in {{{s}}}, and {{{b}}} is the substring after {{{frag}}} in {{{s}}}. For example, {{{partition("parallel", "a")}}} returns 3 strings: {{{par}}}, {{{a}}}, and {{{llel}}}. If {{{s}}} does not contain {{{frag}}}, it returns an array of {{{[}}} {{{s}}}, "", "" {{{]}}} (the first string is the original {{{s}}} and the second and third strings are empty).
 
+More info on [[Regex|Understanding-Regular-Expressions]]
 
 =Encoding and Hashing=
 
