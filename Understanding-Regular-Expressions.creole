@@ -10,7 +10,7 @@ A regular expression is a string that describes a text pattern occurring in othe
 
 The number of spaces between consecutive words vary. In order to change the text so that there is precisely 1 space between any 2 consecutive words, conceptually, we want to replace any continuous sequence of one or more spaces (no matter how many) with exactly one space. We can use a regular expression to describe "any continuous sequence of one or more spaces (no matter how many)".
 
-OpenRefine and OpenRefine Expression Language (GREL) support regular expressions in the syntax of Java regular expressions: [[see Java Regex Tutorial|http://docs.oracle.com/javase/tutorial/essential/regex/index.html/]].
+OpenRefine and OpenRefine Expression Language (GREL) support regular expressions in the syntax of Java regular expressions: [[see Java Regex Tutorial|http://docs.oracle.com/javase/tutorial/essential/regex/]].
 
 ====Jython supported Regex====
 
