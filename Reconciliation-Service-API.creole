@@ -1,5 +1,7 @@
 //Specification for a standard reconciliation service API//
 
+**NOTE: The Standard Reconcile Service that was hosted by Freebase is no longer operational.**
+
 =Introduction=
 
 A reconciliation service is a web service that, given some text which is a name or label for something, and optionally some additional details, returns a ranked list of potential entities matching the criteria. The candidate text does not have to match each entity's official name perfectly, and that's the whole point of reconciliation--to get from ambiguous text name to precisely identified entities. For instance, given the text "apple", a reconciliation service probably should return the Apple Inc. company, the apple fruit, and New York city (also known as the Big Apple).
