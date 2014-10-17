@@ -31,9 +31,9 @@ Love it so much?
 * [[Reconciliation]]
 * [[Data sources|Reconcilable Data Sources]]
 * [[Extending Data - Calling Web Services|Extending Data]]
-* [[Extending Data - Using Freebase|Extending Data From Freebase]]
+* [[Extending Data - Using Freebase|Extending Data From Freebase]] **NOW DEPRECATED FUNCTIONALITY**
 
-**Uploading to Freebase:**
+**Uploading to Freebase:** **NOW DEPRECATED FUNCTIONALITY**
 If you reconcile against [[Freebase|http://www.freebase.com/]], you can then align your data with Freebase's schemas using [[Schema Alignment dialogs|Schema Alignment]] and load your data into Freebase. For more information on Freebase data loading, see the [[Refinery project|http://wiki.freebase.com/wiki/Refinery]].
 * [[Schema Alignment|Schema Alignment]]
 
