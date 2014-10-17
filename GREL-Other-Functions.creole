@@ -130,6 +130,10 @@ An example of extracting all table rows {{{<tr>}}} from a {{{<div>}}} using {{{p
 
 returns an element from an HTML doc element using selector syntax.
 
+Example:
+
+{{{value.parseHtml().select("div#content")[0].select("tr").toString()}}}
+
 This function can be used with most of the Jsoup selector syntax as documented here: [[http://jsoup.org/cookbook/extracting-data/selector-syntax]]
 
 ===htmlAttr(Element e, String s)===
