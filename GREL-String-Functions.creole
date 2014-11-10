@@ -17,7 +17,7 @@ Returns boolean indicating whether {{{s}}} starts with {{{sub}}}. For example, {
 
 ===endsWith(string s, string sub)===
 
-Returns boolean indicating whether {{{s}}} ends with {{{sub}}}. For example, {{{endsWith("food", "ood")}}} returns {{{true}}}, whereas {{{endsWith("food", "odd")}}} returns {{{false}}}. You could also write the first case as {{{"food".endsWith("foo")}}}.
+Returns boolean indicating whether {{{s}}} ends with {{{sub}}}. For example, {{{endsWith("food", "ood")}}} returns {{{true}}}, whereas {{{endsWith("food", "odd")}}} returns {{{false}}}. You could also write the first case as {{{"food".endsWith("ood")}}}.
 
 ===contains(string s, string sub)===
 
