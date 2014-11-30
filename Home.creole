@@ -4,7 +4,7 @@
 
 === Here for the First Time?
 * Watch [[these screencasts|Screencasts]] to understand what's possible with OpenRefine
-* [[Find out what people say and do with OpenRefine|What People Say]], ... [[live on Twitter|http://refine-gadgets.stefanomazzocchi.user.dev.freebaseapps.com/twitter_tracker_view]]
+* [[Find out what people say and do with OpenRefine|What People Say]], ... [[live on Twitter|https://twitter.com/search?q=OpenRefine&src=typd]]
 
 === Get started:
 * [[Installation Instructions]]
