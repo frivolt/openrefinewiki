@@ -80,8 +80,14 @@ A {{{record}}} object encapsulates one or more rows that are grouped together. F
 |=row|=author|=book|=date|
 |1.|Neal Stephenson|Anathem|2009|
 | 2. | | Snow Crash | 2000 |
-| 3. | J.K. Rowlings | Harry Potter and the Half-Blood Prince | 2006 |
+| 3. | J.K. Rowling | Harry Potter and the Half-Blood Prince | 2006 |
 | 4. | | Harry Potter and the Order of the Phoenix (Book 5) | 2005 |
 | 5. | | Harry Potter and the Chamber of Secrets (Book 2) | 2000 | 
 
-A {{{record}}} object has one field, {{{cells}}}, which can be used to access the zero or more cells in a particular column. For example, evaluating {{{row.record.cells.book.value}}} on row 2 returns {{{[ "Anathem", "Snow Crash" ]}}}.
+A {{{record}}} object has a few fields, which can be accessed with a dot operator or with square brackets: {{{record.index}}}, {{{record["index"]}}}, much like in Javascript.
+
+|=field name|=meaning|=example
+|{{{record.index}}}|zero-based index of the current record|evaluating {{{row.record.index}}} on row 2 returns {{{0}}}
+|{{{record.cells}}}|the cells of the row|evaluating {{{row.record.cells.book.value}}} on row 2 returns {{{[ "Anathem", "Snow Crash" ]}}}
+|{{{row.fromRowIndex}}}|zero based index of the first row in the record|evaluating {{{row.record.fromRowIndex}}} on row 2 returns {{{0}}}
+|{{{row.toRowIndex}}}|index (not zero based) of the last row in the record|evaluating {{{row.record.toRowIndex}}} on row 2 returns {{{2}}}
