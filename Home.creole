@@ -9,9 +9,9 @@
 === Get started:
 * [[Installation Instructions]]
 * [[Documentation|Documentation For Users]] for Users
-* [[FAQ]] Frequently Asked Questions
 
 === Get help:
+* [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
 * [[Ask questions here|http://groups.google.com/group/openrefine/]]
 * [[File bugs and feature requests here|issues]]
 
