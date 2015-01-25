@@ -5,33 +5,96 @@ With OpenRefine you can perform reconciliation against any web service supportin
 Reconciliation against Freebase is built in, but there are several other
 reconciliation services available as describe on this page. You can alternatively extend your data by [[calling web services|Extending-Data]]
 
-====OpenCorporates====
+==General==
+
+===Reconcile-csv===
+Reconcile-csv is a reconciliation service for OpenRefine running from a CSV file. It uses fuzzy matching to match entries in one dataset to entries in another dataset, helping to introduce unique IDs into the system - so they can be used to join your data painlessly.
+
+* [[Official Website|http://okfnlabs.org/reconcile-csv/]]
+* [[GitHub Project|https://github.com/okfn/reconcile-csv]]
+
+===Nomenklatura===
+Nomenklatura is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list – for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical “Acme Widgets”.
+
+With Nomenklatura its a matters of minutes to set up your own set of master data to match against and it provides a simple user interface and API which you can then use do matching (the API is compatible with Open Refine’s reconciliation function).
+
+* [[Official Website|http://okfnlabs.org/projects/nomenklatura/index.html]]
+* [[GitHub Project|https://github.com/pudo/nomenklatura]]
+
+===SPARQL endpoints===
+The RDF Extension by DERI at NUI Galway includes reconciliation against
+any SPARQL endpoint or RDF dump file and publishing of the results in RDF. [[http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]]
+
+
+==Librarians==
+
+===VIVO Scientific Collaboration Platform===
+VIVO is a U.S. national interdisciplinary open source scientific collaboration platform funded by the NIH with development led by Cornell.  Their reconciliation service allows reconciling against VIVO entities (faculty members, journals, etc) in any VIVO installation. [[Extending Google Refine for VIVO|https://wiki.duraspace.org/display/VIVO/Extending+Google+Refine+for+VIVO]]
+
+===FundRef===
+[[The FundRef Reconciliation Service|http://labs.crossref.org/fundref-reconciliation-service]] is designed to help publishers (or anybody) more easily clean-up their funder data and map it to the FundRef Registry. It is built on Open Refine and FundRef Metadata Search.
+
+===JournalTOCs===
+Use [[JournalTOCs API|http://www.journaltocs.ac.uk/develop.php]] to create your own cool web applications that integrate content from freely available journal TOCs. Most of JournalTOCs API calls are free and don't require any registration process.
+
+* [[GitHub Project|https://github.com/lawlesst/journaltocs-reconcile]]
+
+===VIAF===
+The [[VIAF® (Virtual International Authority File)|http://viaf.org/]] combines multiple name authority files into a single OCLC-hosted name authority service. The goal of the service is to lower the cost and increase the utility of library authority files by matching and linking widely-used authority files and making that information available on the Web.
+
+The reconciliation service is hosted by Roderic D. M. Page, more details on [[Reconciling author names using Open Refine and VIAF|http://iphylo.blogspot.ca/2013/04/reconciling-author-names-using-open.html]].
+
+===FAST (Faceted Application of Subject Terminology)===
+FAST is derived from the Library of Congress Subject Headings (LCSH), one of the library domain’s most widely-used subject terminology schemas. The development of FAST has been a collaboration of OCLC Research and the Library of Congress. Work on FAST began in late 1998.
+
+* [[Official Website|http://www.oclc.org/research/activities/fast.html?urlm=159754]]
+* [[GitHub Project|https://github.com/lawlesst/fast-reconcile]]
+
+
+===Library of Congress Subject Headings===
+Library of Congress Subject Headings (LCSH) has been actively maintained since 1898 to catalog materials held at the Library of Congress. By virtue of cooperative cataloging other libraries around the United States also use LCSH to provide subject access to their collections.
+
+The reconciliation service is hosted by Free Your Metadata group, more details on [[their website|http://freeyourmetadata.org/reconciliation/]].
+
+
+==Open Data==
+
+===OpenCorporates===
 
 31 million corporate entities (as of Nov. 2011) available for reconciliation through their service.
 * [[Blog posts|http://blog.opencorporates.com/tag/google-refine/]]
 * [[Screencast|http://vimeo.com/17924204]]
 
-====SPARQL endpoints====
+===dbpedia===
+DBpedia extension (currently) provides possibility to extend your DBpedia-reconciled data with additional related columns from DBpedia. It is based on similar Freebase extension.
 
-The RDF Extension by DERI at NUI Galway includes reconciliation against
-any SPARQL endpoint or RDF dump file and publishing of the results in RDF. [[http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]]
+* [[GitHub Project|https://github.com/sparkica/dbpedia-extension]]
 
-====VIVO Scientific Collaboration Platform===
+===Ordnance Survey===
+The Reconciliation API is a simple web service that supports linking of datasets to the Ordnance Survey Linked Data. The API accepts a simple text search, e.g. a label, code or other identifier for a resource and then returns a ranked list of potential matches. Client-side tools may then use these results to either build links to the Linked Data or use the returned identifiers to extract further data to enrich the original dataset.
 
-VIVO is a U.S. national interdisciplinary open source scientific collaboration platform funded by the NIH with development led by Cornell.  Their reconciliation service allows reconciling against VIVO entities (faculty members, journals, etc) in any VIVO installation. [[Extending Google Refine for VIVO|https://wiki.duraspace.org/display/VIVO/Extending+Google+Refine+for+VIVO]]
+* [[Official Website|http://data.ordnancesurvey.co.uk/docs/reconciliation]]
 
-====Talis Kasabi====
+
+==Biodiversity Researchers==
+
+===Taxonomic Databases===
+
+Taxonomic databases (EOL,GBIF, NCBI,Global Names Index, uBio, [[WoRMS|http://www.marinespecies.org/aphia.php?p=webservice]]), as documented [[here|http://iphylo.blogspot.com/2012/02/using-google-refine-and-taxonomic.html]].
+
+Taxonomic names from [[IPNI|http://www.ipni.org/]], [[IPNI Names Reconciliation Service|http://data1.kew.org/reconciliation]].
+
+
+==Deprecated==
+
+===Talis Kasabi===
 The Kasabi reconciliation services provide reconciliation against any database published on the Kasabi platform. [[Documentation|http://kasabi.com/doc/api/reconciliation]]
 
-====Talis Platform reconciliation services ====
+===Talis Platform reconciliation services ===
 This project has been shut down. [[They suggest some alternatives|http://blog.kasabi.com/2012/07/30/so-long-and-thanks-for-all-the-data/]]
 
 
-====Taxonomic Databases====
 
-Taxonomic databases (EOL, NCBI, uBio, [[WoRMS|http://www.marinespecies.org/aphia.php?p=webservice]]), as documented [[here|http://iphylo.blogspot.com/2012/02/using-google-refine-and-taxonomic.html]].
-
-Taxonomic names from [[IPNI|http://www.ipni.org/]], [[IPNI Names Reconciliation Service|http://data1.kew.org/reconciliation]].
 
 ==Wish List==
 
