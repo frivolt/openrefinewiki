@@ -43,39 +43,3 @@ forEach(value.parseHtml().select("a[href~=\\d+]"),e,e.htmlAttr("href")).join("Sp
 After adding that new column with the above GREL snippet, you can then do Edit Cells -> Split multi-valued cells... and use your separator chars phrase, such as {{{"SplitCharsGoHere"}}} or {{{"--SPLITME--"}}} or {{{"|||||"}}} ; Whatever chars you choose to do your {{{join()}}}.
 
 After the Split multi-valued cells operation finishes, you should be left in records mode view (rather than row mode view) and you now have a bunch of URLs extracted from EACH original HTML record where you can perform another Fetch URLs operation on all of them.
-
-----
-= Using Jython and BeautifulSoup to handle Entity Extraction and HTML markup removal =
-
-**Note:** Ask on our mailing list if you ever need help with using Jython and BeautifulSoup in OpenRefine.
-
-**Note:** For more on using Jython in expressions and other HTML/XML parsing utilities & recipes visit [[Using Jython as your Expression Language|Jython]]
-
-BeautifulSoup is a python library that offers powerful HTML parsing and operates very similarly to GREL syntax.
-
-[[Full documentation on BeautifulSoup website|http://www.crummy.com/software/BeautifulSoup/documentation.html]]
-
-The following will strip out only the 4th table row text found on the first table in an HTML document using Jython as the expression language in Refine:
-
-{{images/ParseHTML_BeautifulSoup.png|ParseHTML}}
-
-{{{
-from BeautifulSoup import BeautifulSoup
-
-soup = BeautifulSoup(value)
-
-gettablerow4 = soup.tr(text=True)[4]
-
-return gettablerow4
-}}}
-
-These 4 lines can easily strip tables from an HTML page:
-
-{{{
-from BeautifulSoup import BeautifulSoup
-
-soup = BeautifulSoup(value)
-text = soup.table.findAllNext(text=True)
-
-return text
-}}}
