@@ -208,6 +208,9 @@ However, to ONLY remove subsequent instances of duplicates (any string), use thi
 # Facet -> Customized Facets -> Facet by blank (click True)
 # All -> Edit rows -> Remove all matching rows
 
+=== Handling duplicate patterns found in cells within a column ===
+The canonical recipe for stuff like this is to Move Column of interest to the beginning, Sort, Reorder Rows Permanently, Blank Down, <do stuff>, Fill Down.  This effectively converts your rows to OpenRefine pseudo-"records" so that you can do further record based operations.  GREL supports special record based commands.
+
 ===Facet and Count duplicate patterns found in a cell value at each row===
 
 With strings that have duplicate words in them such as "Beef, Ground Beef", you may wish to see a count of the duplicates in each column's row.  Using value.ngram(1) only separates the words, but doesn't give a count.  So, first, standardize spacing in the cell value or find good alternate separation chars to use on your particular pattern if needed, and perhaps clean up spaces with GREL tranform of
