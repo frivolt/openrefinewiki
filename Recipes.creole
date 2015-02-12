@@ -393,6 +393,20 @@ For a string holding longitude/latitude information in the format XX degrees, XX
    forNonBlank(value[6,8], v, v.toNumber()/360000, 0)
 }}}
 
+=== Convert Epoch time to Date/Time as String ===
+For a string holding an Epoch time (number of seconds that have elapsed since January 1, 1970 midnight UTC/GMT) convert into an ISO8601 string. This can be done using a 'Jython' transformation:
+```
+import time;
+epochlong = int(float(value));
+datetimestamp = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.localtime(epochlong));
+return datetimestamp
+```
+
+This creates a String. You can subsequently transforms this string with
+```
+value.toDate()
+```
+To covert it to an OpenRefine Date
 == Error Handling ==
 
 === forNonBlank ===
