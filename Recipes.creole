@@ -394,7 +394,7 @@ For a string holding longitude/latitude information in the format XX degrees, XX
 }}}
 
 === Convert Epoch time to Date/Time as String ===
-For a string holding an Epoch time (number of seconds that have elapsed since January 1, 1970 midnight UTC/GMT) convert into an ISO8601 string. This can be done using a 'Jython' transformation:
+For a string holding an Epoch time (number of seconds that have elapsed since January 1, 1970 midnight UTC/GMT) convert into an ISO8601 string. This can be done using a [Jython](https://github.com/OpenRefine/OpenRefine/wiki/Jython) transformation:
 ```
 import time;
 epochlong = int(float(value));
