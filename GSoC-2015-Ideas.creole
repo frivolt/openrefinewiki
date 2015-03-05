@@ -10,7 +10,7 @@ The idea is to integrate the Apache Spark into the OpenRefine to allow the in-me
 https://github.com/andreybratus/RefineOnSpark
 
 ====pipelining mode using the Hadoop====
-This approach will establish a full-fledged Hadoop cluster including the HDFS as a storage and the MapReduce as the processing engigne 
+This approach will establish a full-fledged Hadoop cluster including the HDFS as a storage and the MapReduce as the processing engigne. See this repository for some idea: https://github.com/rmalla1/OpenRefine-HD
 
 
 ====plugin manager====
