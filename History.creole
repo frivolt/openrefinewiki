@@ -28,3 +28,6 @@ For example, consider two different projects, each containing a column Name that
 To reuse operations performed in one project in another project, first, extract them out from the first project. In this undo/redo history, click Extract... This brings up a dialog box that lists all operations corresponding to changes that have been done (it does not show undone changes). Select the operations that you want to extract on the left, and they will be encoded as JSON on the right. Copy that JSON off to the clipboard. Then in the second project, in the undo/redo history, click Apply... and paste in that JSON.
 
 Currently, not all changes have operations that can be extracted. Any change performed specifically on some single cell (such as editing a cell on row 213 in the first project) does not have an extractable operation.
+
+There is a limit, if the history is bigger then 100 MB, google chrome will crush and you will not be able to extract the JSON.
+Firefox can handle around 200 MB, be sure to disable the spellchecker.
