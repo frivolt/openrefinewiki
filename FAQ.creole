@@ -9,15 +9,15 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
 ==Questions with Short Answers==
 
-** I have a question. Where do I ask? **
+==== I have a question. Where do I ask? ====
 
   Send your question to [[the OpenRefine mailing list|http://groups.google.com/group/openrefine/]].
 
-** I've found a bug or want a new feature. What should I do? **
+==== I've found a bug or want a new feature. What should I do? ====
 
   Consider first discussing it on [[the mailing list|http://groups.google.com/group/openrefine/]]. This will likely help characterize the issue for a good quality bug report or feature request which you can file on the [[issue tracker|http://github.com/OpenRefine/OpenRefine/issues]]. 
 
-** How do I change the workspace directory that I want Refine to use for its project storage ? **
+==== How do I change the workspace directory that I want Refine to use for its project storage ? ====
 
   If you run Refine from the terminal, you can point to the workspace directory through the -d parameter, e.g.,
 
@@ -37,7 +37,7 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
 Try to run on a different port: {{{./refine -i 127.0.0.1 -p 3334}}}. (Windows users must use a slash character like {{{C:>refine /i 127.0.0.1 /p 3334}}})  You can also edit the Refine.ini file to hardcode the IP Address and Port.
 
-** What syntax of regular expression (regex) does OpenRefine support? **
+==== What syntax of regular expression (regex) does OpenRefine support? ====
 
   The regular expression syntax for GREL is that of Java regex, not of Javascript. See [[GREL Regular Expressions|Understanding Regular Expressions]].
 
@@ -48,7 +48,7 @@ g = re.search(ur"\u2014 (.*),\s*BWV", value)
 return g.group(1)
 }}}
 
-** What syntax should I use with GREL for constructing URLs correctly and avoid HTTP errors and other pitfalls, for instance, when working with JSON strings within a URL or to create a HYPERLINK, etc ? **
+==== What syntax should I use with GREL for constructing URLs correctly and avoid HTTP errors and other pitfalls, for instance, when working with JSON strings within a URL or to create a HYPERLINK, etc ? ====
 
 
   A good practice is to use {{{'}}} single quotes for your Refine Expression syntax and reserve {{{"}}} double quotes for the URL syntax parts.  Also make sure to escape() your cell values used, where necessary.
@@ -62,11 +62,11 @@ return g.group(1)
 '=HYPERLINK("http://listings.listhub.net/pages/BHAMMLSAL/' + value + '",' + value + ')'
 }}}
 
-** When is it going to be possible to load things into the Freebase main graph, directly or indirectly? **
+==== When is it going to be possible to load things into the Freebase main graph, directly or indirectly? ====
 
   Short answer: we're working on this. Long answer: [[Refinery|http://wiki.freebase.com/wiki/Refinery]].
 
-** How can I delete a whole row or several rows? **
+==== How can I delete a whole row or several rows? ====
 
   Follow these steps:
 # Flag (or star) the row(s)
@@ -74,18 +74,18 @@ return g.group(1)
 # From the facet that opens select the 'true' option.
 # In the dropdown menu above the flag you can go to Edit Rows > Remove all matching rows.
 
-** How do I make a Text Facet show more than 2000 choices? **
+==== How do I make a Text Facet show more than 2000 choices? ====
 
   From version 2.0, you can go to http://127.0.0.1:3333/preferences and set the facet limit using the preference key "ui.browsing.listFacet.limit". If you are trying to discover duplicates see the next question.
 
-** How do I find duplicates in a column? **
+==== How do I find duplicates in a column? ====
 
   Several options:
 * create a Text Facet on a column and then in the facet click "Sort by: count". Any facets with a count of 2 or more are duplicates
 * use the [[facetCount()|GREL Other Functions]] function like {{{facetCount(value, 'value', 'column name') > 1}}} and select 'true' to show all rows that have duplicates
 * from version 2.1, there is a shortcut for this, Facet → Customized facets → Duplicates facet
 
-** Can OpenRefine be used as a piece of a larger [[ETL|http://en.wikipedia.org/wiki/Extract,_transform,_load]] pipeline? **
+==== Can OpenRefine be used as a piece of a larger [[ETL|http://en.wikipedia.org/wiki/Extract,_transform,_load]] pipeline? ====
 
   Not right now (version 2.0) but we're open and intrigued by the possibility of using Refine in 'batch mode' if the   community finds it a useful feature to have. It's worth pointing out that not all Refine features can work unsupervised and without human interaction (clustering, for example), but some can, and for those it makes sense.
 
