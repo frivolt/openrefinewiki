@@ -12,7 +12,7 @@ uses the new name, OpenRefine, in anticipation of the next release.
 # [[Download OpenRefine here|https://github.com/OpenRefine/OpenRefine/releases]].
 # Install it as detailed below for your operating system ([[Windows|Installation-Instructions#windows]], [[Mac OSX|Installation-Instructions#mac-osx]], [[Linux|Installation-Instructions#linux]]).
 # As long as OpenRefine is running, you can point your browser at http://127.0.0.1:3333/ to use it, and you can even use it in several browser tabs and windows.
-# If you're running a proxy, you can change the IP configuration with -i, see **Running & Configuration** below, or use refine -help for options.
+# If you're running a proxy or get a BindException, you can change the IP configuration with -i and -p, see **Running & Configuration** below, or use refine -help for options.
 
 ==Development Version==
 
@@ -65,6 +65,6 @@ This will start OpenRefine and open your browser to its starting page.
 
 === Running & Configuration ===
 ----
-By default (and for security reasons) Refine only listens to TCP requests coming from localhost (127.0.0.1). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line
+By default (and for security reasons) Refine only listens to TCP requests coming from localhost (127.0.0.1 on port 3333). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line
 
  ./refine -i 0.0.0.0
