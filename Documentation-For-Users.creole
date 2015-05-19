@@ -62,7 +62,7 @@ Many **worked examples** that illustrate project flow and the logic of using Ope
 
 * [[Variables|Variables]]
 * [[Jython|Jython]]
-* [[Google Refine Expression Language]] (GREL)
+* [[General Refine Expression Language]] (GREL)
 ** [[Controls|GREL Controls]]
 ** [[Functions|GREL Functions]]
 *** [[Boolean functions|GREL Boolean Functions]]
