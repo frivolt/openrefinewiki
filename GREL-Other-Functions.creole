@@ -116,7 +116,7 @@ This would then complete the table as so:
 
 == Jsoup HTML parsing functions ==
 ----
-[[Example usage of these functions is shown here. | StrippingHTML ]]
+A tutorial of the below HTML functions is shown [[here. | StrippingHTML ]]
 
 ===parseHtml(string s)===
 
