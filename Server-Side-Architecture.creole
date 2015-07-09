@@ -8,7 +8,7 @@ As mentioned before, the server-side maintains states of the data, and the prima
 
 ==Projects==
 
-In OpenRefine there's the concept of a workspace similar to that in Eclipse. When you run OpenRefine it manages projects within a single workspace, and the workspace is embodied in a file directory with sub-directories, which by default is specified [FAQ#-Where-is-Data-Stored?]. You could get OpenRefine to use a different directory by specifying a -d parameter at the command line.
+In OpenRefine there's the concept of a workspace similar to that in Eclipse. When you run OpenRefine it manages projects within a single workspace, and the workspace is embodied in a file directory with sub-directories, which by default is specified [FAQ:-Where-Is-Data-Stored%3F]. You could get OpenRefine to use a different directory by specifying a -d parameter at the command line.
 
 The class {{{ProjectManager}}} is what manages the workspace. It keeps in memory the metadata of every project (in the class {{{ProjectMetadata}}}). This metadata includes the project's name and last modified date, and any other information necessary to present and let the user interact with the project as a whole. Only when the user decides to look at the project's data would {{{ProjectManager}}} load the project's actual data. The separation of project metadata and data is to minimize the amount of stuff loaded into memory.
 
