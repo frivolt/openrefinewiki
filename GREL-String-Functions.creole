@@ -97,6 +97,15 @@ Another {{{match()}}} example:
 
 returns True or False if value is like {{{abc}}} or {{{azc}}} , etc but would not match a value of {{{ac}}}.  Remember to use Parentheses when using match() to denote the Capture Group or Groups inside your Regex expression so that you can get output when needed otherwise an empty array [] is shown for no match.
 
+Example: Cell contains value:
+hello 123456 goodbye
+
+{{{value.match(/\d{6}/)}}} = null
+
+{{{value.match(/.*\d{6}.*/)}}} = [ ] (empty array)
+{{{value.match(/.*(\d{6}).*/)}}} = [ "123456" ] (array with one captured value)
+{{{value.match(/(.*)(\d{6})(.*)/)}}} = [ "hello ", "123456", " goodbye" ] (array with three captured values)
+
 More info on [[Regex|Understanding-Regular-Expressions]]
 
 =String Parsing and Splitting=
