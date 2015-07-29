@@ -2,6 +2,12 @@
 
 See also: [[All GREL functions | GREL Functions]].
 
+NOTE: For Integer division and precision you can use simple evaluations such as
+
+{{{1 / 2}}}
+
+which is equivalent to floor(1/2) i.e. it returns only whole number results.  If either operand is a floating point number, they both get promoted to floating point and a floating point result is returned.  You can use 1 / 2.0 or 1.0 / 2 or 1.0 * x / y (if you're working with variables of unknown contents) to achieve the results you desire.
+
 ===floor(number d)===
 
 Returns the floor of a number. For example, {{{floor(3.7)}}} returns {{{3}}} and {{{floor(-3.7)}}} returns {{{-4}}}.
