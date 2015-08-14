@@ -12,7 +12,7 @@
 
 === Get help:
 * [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
-** Or check our [[Recipes]] where folks might have solved a similar problem as yours !
+** Or check our [[Recipes]] where folks might have solved a similar [[problems|https://github.readme.io]] as yours !
 * [[Ask questions here|http://groups.google.com/group/openrefine/]]
 * [[File bugs and feature requests here|issues]]
 
