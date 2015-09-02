@@ -13,7 +13,7 @@
 === Get help:
 * [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
 ** Or check our [[Recipes]] where folks might have solved a similar problem as yours !
-* [[Ask questions here|http://groups.google.com/group/openrefine/]]
+* [[Ask questions here|http://groups.google.com/group/openrefine/]] [[http://www.stripnotary.com/|Get help]]
 * [[File bugs and feature requests here|issues]]
 
 === Back for More?
