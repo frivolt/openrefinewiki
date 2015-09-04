@@ -1,4 +1,4 @@
-//Boolean functions supported by [[OpenRefine Expression Language|Google Refine Expression Language]] (GREL)//
+//Boolean functions supported by [[OpenRefine Expression Language|General Refine Expression Language]] (GREL)//
 
 See also: [[All GREL functions | GREL functions]].
 
