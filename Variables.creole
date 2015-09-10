@@ -89,5 +89,5 @@ A {{{record}}} object has a few fields, which can be accessed with a dot operato
 |=field name|=meaning|=example
 |{{{record.index}}}|zero-based index of the current record|evaluating {{{row.record.index}}} on row 2 returns {{{0}}}
 |{{{record.cells}}}|the cells of the row|evaluating {{{row.record.cells.book.value}}} on row 2 returns {{{[ "Anathem", "Snow Crash" ]}}}
-|{{{row.fromRowIndex}}}|zero based index of the first row in the record|evaluating {{{row.record.fromRowIndex}}} on row 2 returns {{{0}}}
-|{{{row.toRowIndex}}}|index (not zero based) of the last row in the record|evaluating {{{row.record.toRowIndex}}} on row 2 returns {{{2}}}
+|{{{record.fromRowIndex}}}|zero based index of the first row in the record|evaluating {{{row.record.fromRowIndex}}} on row 2 returns {{{0}}}
+|{{{record.toRowIndex}}}|index (not zero based) of the last row in the record|evaluating {{{row.record.toRowIndex}}} on row 2 returns {{{2}}}
