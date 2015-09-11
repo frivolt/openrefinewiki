@@ -18,7 +18,7 @@ Examples:
 Evaluates expression {{{o}}} and binds its value to variable name {{{v}}}. Then evaluates expression {{{e}}} and returns that result.
 
 |=expression|=result|
-|{{{with("european union".split(" "), a, a.length)}}}|{{{2}}}|
+|{{{with("european union".split(" "), a, a.length())}}}|{{{2}}}|
 |{{{with("european union".split(" "), a, forEach(a, v, v.length()))}}}|{{{[ 8, 5 ]}}}|
 |{{{with("european union".split(" "), a, forEach(a, v, v.length()).sum() / a.length())}}}|{{{6.5}}}|
 
