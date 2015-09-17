@@ -62,6 +62,12 @@ This will start OpenRefine and open your browser to its starting page.
 
 === Running & Configuration ===
 ----
-By default (and for security reasons) Refine only listens to TCP requests coming from localhost (127.0.0.1 on port 3333). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line
+By default (and for security reasons) Refine only listens to TCP requests coming from localhost (127.0.0.1 on port 3333). If you want to respond to TCP requests coming to any IP address the machine has, run refine like this from the command line:
 
  ./refine -i 0.0.0.0
+
+On Mac OS X, you can add a specific entry to the Info.plist file located within the app bundle (/Applications/OpenRefine.app/Contents/Info.plist):
+
+<string>-Drefine.host=0.0.0.0</string>
+
+
