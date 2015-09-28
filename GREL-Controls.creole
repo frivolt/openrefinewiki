@@ -56,6 +56,8 @@ Iterates over the variable {{{v}}} starting at {{{from}}}, incrementing by {{{st
 
 Evaluates expression {{{o}}}. If it is non-blank, binds its value to variable name {{{v}}}, evaluates expression {{{eNonBlank}}} and returns the result. Otherwise (if {{{o}}} evaluates to blank), evaluates expression {{{eBlank}}} and returns that result instead.
 
+Unlike other GREL functions beginning with 'for', forNonBlank is **not** an iterative function. forNonBlank essentially offers a shorter syntax to achieving the same outcome by using the 'isNonBlank' function within an 'if' statement.
+
 ===isBlank, isNonBlank, isNull, isNotNull, isNumeric, isError===
 
 {{{isX(e)}}} : evaluates expression {{{e}}} and returns whether its value is {{{X}}}.
