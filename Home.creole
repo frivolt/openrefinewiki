@@ -9,11 +9,12 @@
 === Get started:
 * [[Installation Instructions]]
 * [[Documentation|Documentation For Users]] for Users
+* [[GREL Reference|https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users#reference]]
 
 === Get help:
 * [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
-** Or check our [[Recipes]] where folks might have solved a similar problem as yours !
-* [[Ask questions here|http://groups.google.com/group/openrefine/]]
+* [[Recipes]] where folks might have solved a similar problem as yours
+* [[Mailing List|http://groups.google.com/group/openrefine/]]
 * [[File bugs and feature requests here|issues]]
 
 === Back for More?
