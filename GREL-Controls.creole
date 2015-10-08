@@ -36,7 +36,7 @@ Evaluates expression {{{a}}} to an array. Then for each array element, binds its
 Evaluates expression {{{a}}} to an array. Then for each array element, binds its value to variable name {{{v}}}, evaluates expression {{{e}}}, and pushes the result onto the result array.
 
 |=expression|=result|
-|{{{forEach([ 3, 4, 8, 7, 9 ], v, mod(n, 2))}}}|{{{[ 1, 0, 0, 1, 1 ]}}}|
+|{{{forEach([ 3, 4, 8, 7, 9 ], v, mod(v, 2))}}}|{{{[ 1, 0, 0, 1, 1 ]}}}|
 
 
 ===forEachIndex(expression a, variable i, variable v, expression e)===
