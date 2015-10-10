@@ -18,10 +18,7 @@ version has, but we generally try to keep it in good shape.  It will have bug
 fixes which are not yet available in the release version, but may also have
 new bugs as well.
 
-Here are step-by-step instructions to get & build the development version:
-
-# [[Step-by-step to get & build the development version|Get Development Version]].
-
+* [[Step-by-step to get & build the development version|Get Development Version]].
 
 ===Install the Release Version on===
 
