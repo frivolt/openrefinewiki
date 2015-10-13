@@ -1,11 +1,13 @@
 //How to install and run Refine//
 
-//If you have been using Freebase Gridworks 1.1, here are the [[UpgradingTo2p0 upgrading instructions|https://github.com/OpenRefine/OpenRefine/wiki/Upgrading-To2p0]].//
-
 OpenRefine is a desktop application in that you download it, install it, and run it on your own computer. However, unlike most other desktop applications, it runs as a small web server on your own computer and you point your web browser at that web server in order to use Refine. So, think of Refine as a personal and private web application.
+
+== Requirements ==
+Java JRE installed
 
 ==Release Version==
 
+# OpenRefine requires you to have a working Java JRE, otherwise you will not be able to start OpenRefine. (the commmand window will just open and close quickly after you double click on OpenRefine.exe)
 # [[Download OpenRefine here|https://github.com/OpenRefine/OpenRefine/releases]].
 # Install it as detailed below for your operating system ([[Windows|Installation-Instructions#windows]], [[Mac OSX|Installation-Instructions#mac-osx]], [[Linux|Installation-Instructions#linux]]).
 # As long as OpenRefine is running, you can point your browser at http://127.0.0.1:3333/ to use it, and you can even use it in several browser tabs and windows.
