@@ -2,6 +2,10 @@
 
 This is a collection of frequently asked questions on OpenRefine. Feel free to ask your own question on [[the OpenRefine mailing list|http://groups.google.com/group/openrefine/]] and we'll try to answer to the best of our abilities and add them to this list.
 
+==== OpenRefine does not start after clicking the .exe, it only opens and closes a window ====
+
+* Ensure that you have a Java JRE installed on your system. And have at least 1 GB of RAM available for it.
+
 ==== Out of Memory Errors - Could not reserve enough space for object heap ====
 * [[I get out of memory errors - Symptoms: {{{java.lang.OutOfMemoryError}}} or Refine feels slow.|FAQ: Allocate More Memory]]
 
