@@ -65,10 +65,6 @@ return g.group(1)
 '=HYPERLINK("http://listings.listhub.net/pages/BHAMMLSAL/' + value + '",' + value + ')'
 }}}
 
-==== When is it going to be possible to load things into the Freebase main graph, directly or indirectly? ====
-
-  Short answer: we're working on this. Long answer: [[Refinery|http://wiki.freebase.com/wiki/Refinery]].
-
 ==== How can I delete a whole row or several rows? ====
 
   Follow these steps:
