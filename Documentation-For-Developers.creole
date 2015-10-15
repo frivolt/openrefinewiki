@@ -1,6 +1,8 @@
 //Documentation hub for developers//
 
-[[Developer's Guide|Developers Guide]] - how to check out the code, build, run, and test
+==Developers Guide ==
+
+* [[Developer's Guide|Developers Guide]] - how to check out the code, build, run, and test
 
 ==Architecture==
 
