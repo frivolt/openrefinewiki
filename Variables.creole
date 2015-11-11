@@ -50,7 +50,7 @@ A {{{recon}}} object has a few fields
 
 |=field name|=meaning|=deeper fields|
 | {{{recon.judgment}}} | a string that is one of: "matched", "new", "none" | |
-| {{{recon.matched}}} | a boolean, true iff judgment is "matched" | |
+| {{{recon.matched}}} | a boolean, true if judgment is "matched" | |
 | {{{recon.match}}} | null, or the recon candidate that has been matched against this cell | {{{.id}}} {{{.name}}} {{{.type}}} |
 | {{{recon.best}}} | null, or the best recon candidate| {{{.id}}} {{{.name}}} {{{.type}}} {{{.score}}} | 
 | {{{recon.features}}} | an object encapsulating reconciliation features | {{{.typeMatch}}} {{{.nameMatch}}} {{{.nameLevenshtein}}} {{{.nameWordDistance}}} | 
