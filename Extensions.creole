@@ -1,5 +1,6 @@
 //Extensions for OpenRefine//
 
+* [[VIB-BITS bioinformatics and faceting plugins|https://www.bits.vib.be/software-overview/openrefine]] - by VIB, Life Science Research Institute, Belgium
 * [[Crowdsourcing extension|https://github.com/sparkica/crowdsourcing]] - by Zemanta
 * [[DBpedia extension|https://github.com/sparkica/dbpedia-extension]] - by Zemanta
 * [[History tools, pivot tool and scatterplot tool using D3 | http://www.bits.vib.be/index.php/software-overview/openrefine ]] - by VIB-BITS
