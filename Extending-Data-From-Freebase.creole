@@ -1,3 +1,5 @@
+**NOTE !! - The FREEBASE API is now deprecated.**
+
 == Fetching Text Blurbs (descriptions) and Photos ==
 
 NOTE: The simplest way to get this information now is the Topic API, but this documentation needs to be updated.
