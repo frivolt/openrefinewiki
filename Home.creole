@@ -18,11 +18,9 @@
 * [[File bugs and feature requests here|issues]]
 
 === Back for More?
-
+* [[Cool Extensions|Extensions]] for OpenRefine written by others
 * [[See what's new lately|Whats New]]
 * [[Understand how to upgrade|Back Up OpenRefine Data]] from Google Refine 2.0 to Google Refine 2.1
-* [[Cool Extensions to OpenRefine written by others|Extensions]]
 
 === If You Are a Developer, see
-
 * [[Documentation|Documentation For Developers]] for Developers
