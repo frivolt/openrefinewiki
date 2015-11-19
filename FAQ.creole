@@ -6,7 +6,7 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
 * Ensure that you have a Java JRE installed on your system. And have at least 1 GB of RAM available for it.
 
-==== Out of Memory Errors - Could not reserve enough space for object heap ====
+==== Out of Memory Errors - Feels Slow - Could not reserve enough space for object heap ====
 * [[I get out of memory errors - Symptoms: {{{java.lang.OutOfMemoryError}}} or Refine feels slow.|FAQ: Allocate More Memory]]
 
 ==== Where is the data stored? ====
