@@ -29,6 +29,7 @@
 * https://github.com/PaulMakepeace/refine-client-py/
 * https://github.com/maxogden/refine-python
 * https://github.com/maxogden/refine-ruby
+* https://github.com/pm5/node-openrefine
 
 ==Miscellaneous==
 
