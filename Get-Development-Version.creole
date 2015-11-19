@@ -10,7 +10,7 @@ The trunk version supposedly offers certain features that you want. You probably
 
 To get the trunk version, you first need [[Git|http://git-scm.com/]]. And since Open Refine is hosted on GitHub, you may also want to download the [[GitHub GUI client|https://help.github.com/articles/set-up-git]] if you prefer to use a graphical interface.
 
-You will also need [[Apache Ant|http://ant.apache.org/]] to build the source code. [[Download|http://ant.apache.org/bindownload.cgi]], unzip, and point your path to it. Or you can try [[the Windows installer|http://wiki.apache.org/ant/AntOnWindows]], too.
+You will also need [[Apache Ant|http://ant.apache.org/]] to build the source code. Unzip, and point your path to it. Or you can try [[the Windows installer|http://wiki.apache.org/ant/AntOnWindows]], too.
 
 On Windows, after installing Subversion and Ant, you may need to logoff, then logon for your user environment variables to take effect.
 
