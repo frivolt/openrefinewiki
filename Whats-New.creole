@@ -1,5 +1,7 @@
 //Announcements of the latest features//
+==October 2015==
 
+OpenRefine 2.6 release candidate 2 is released
 ==August 2013==
 
 OpenRefine 2.6 beta 1 is released
