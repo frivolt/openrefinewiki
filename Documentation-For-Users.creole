@@ -46,7 +46,7 @@ If you reconcile against [[Freebase|http://www.freebase.com/]], you can then ali
 
 For complicated tasks that are commonly done, just follow recipes that other folks have discovered and written up.  A recipe is just a sequence of steps, and tips and tricks.
 
-There are **[[Quick Recipes|Recipes]]**  (like removing duplicate row values, etc.)
+* [[Recipes|Recipes]]  (like removing duplicate row values, etc.)
 
 and there are full recipes:
 
