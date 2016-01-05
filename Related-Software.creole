@@ -5,6 +5,7 @@
 * [[Microsoft PowerPivot|http://www.powerpivot.com/]]
 * [[Rapid Miner|http://rapid-i.com/content/view/181/190/lang,en/]] (a light version is free)
 * [[Orange|http://orange.biolab.si/]] (open source)
+* [[Apache Nifi|http://nifi.apache.org}} (useful automated dataflow & batch processing, has expression language, extendable)
 * [[Talend|http://www.talend.com/]] (open source)
 * [[Rattle|http://rattle.togaware.com/]] (open source)
 * [[Tableau|http://www.tableausoftware.com/]]
