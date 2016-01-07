@@ -5,7 +5,7 @@ Here are a few sample data sets to get you started on understanding how to use O
 * [[Disasters worldwide from 1900-2008 at Infochimps|http://infochimps.org/datasets/disasters-worldwide-from-1900-2008]] (dead link)
 * [[Louisiana elected officials|http://electionstatistics.sos.la.gov/Data/Elected_Officials/ElectedOfficials.xls]] - For OpenRefine versions up to 2.0, you must use Excel itself to convert the .xls file to a .tsv file first because the Java library for dealing with .xls files doesn't like this particular .xls file. OpenRefine versions 2.1 and above will successfully load the .xls directly
 * [[Clean Air Status and Trends Network (CASTNET) raw data|http://java.epa.gov/castnet/clearsession.do]] 
-* [[Federal Advisory Committee Act (FACA) Committee Member List-2004|http://www.data.gov/raw/1175]] - 65K rows, 25 columns (dead link)
+* [[Federal Advisory Committee Act (FACA) Committee Member Lists|http://facadatabase.gov/datasets/]] 
 * [[U.S. Overseas Loans and Grants (Greenbook)|http://catalog.data.gov/dataset/us-overseas-loans-and-grants-greenbook-usaid-1554]] - 2K rows
 * [[Hurricane Sandy-related NYC 311 calls|https://data.cityofnewyork.us/Social-Services/sandyrelated/fs5z-tpv4]] - 84K rows, 53 columns
 * [[U.S. Census Geography and Environment data |http://www.census.gov/library/publications/2011/compendia/statab/131ed/geography-environment.html]]
