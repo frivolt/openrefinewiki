@@ -25,7 +25,7 @@
 * [[Suggest API|Suggest Api]]
 
 ==Known Client libraries for Refine==
-
+Those libraries are using the [[OpenRefine API|OpenRefine-API]]
 * https://github.com/PaulMakepeace/refine-client-py/
 * https://github.com/maxogden/refine-python
 * https://github.com/maxogden/refine-ruby
