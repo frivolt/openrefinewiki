@@ -22,10 +22,17 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
 
 ==== How do I change the workspace directory that I want Refine to use for its project storage ? ====
 
-  If you run Refine from the terminal, you can point to the workspace directory through the -d parameter, e.g.,
+  * On Linux, If you run Refine from the terminal, you can point to the workspace directory through the -d parameter, e.g.,
 
 {{{
   ./refine -p 3333 -i 0.0.0.0 -m 6000M -d /where/you/want/the/workspace
+}}}
+
+  * Alternatively, you can update and add a preference at [[http://127.0.0.1:3333/preferences|http://127.0.0.1:3333/preferences]] ,
+
+{{{
+  KEY = refine.data_dir
+  VALUE = T:\MyOpenRefineDataFolder
 }}}
 
 ==== OpenRefine opens my browser then waits a long time trying to connect to the server at 165.135.222.96 or another address I don't recognize. ====
