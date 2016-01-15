@@ -82,7 +82,7 @@ The Reconciliation API is a simple web service that supports linking of datasets
 
 Taxonomic databases (EOL,GBIF, NCBI,Global Names Index, uBio, [[WoRMS|http://www.marinespecies.org/aphia.php?p=webservice]]), as documented [[here|http://iphylo.blogspot.com/2012/02/using-google-refine-and-taxonomic.html]].
 
-Taxonomic names from [[IPNI|http://www.ipni.org/]], [[IPNI Names Reconciliation Service|http://data1.kew.org/reconciliation]].
+Taxonomic names from [[IPNI|http://www.ipni.org/]] via [[IPNI Names Reconciliation Service|http://data1.kew.org/reconciliation/]].  [[Source code|https://github.com/RBGKew/Reconciliation-and-Matching-Framework]]
 
 
 ==Deprecated==
