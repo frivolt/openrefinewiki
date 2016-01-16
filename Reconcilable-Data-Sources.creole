@@ -87,14 +87,18 @@ Taxonomic names from [[IPNI|http://www.ipni.org/]] via [[IPNI Names Reconciliati
 
 ==Deprecated==
 
+===Freebase===
+The Freebase Reconciliation Service has been deprecated as of June 2015.  There are no guarantees of its future after that date according to Google.
+
+[[http://reconcile.freebaseapps.com/]]
+
+[[https://developers.google.com/freebase/v1/reconciliation-overview?hl=en]]
+
 ===Talis Kasabi===
 The Kasabi reconciliation services provide reconciliation against any database published on the Kasabi platform. [[Documentation|http://kasabi.com/doc/api/reconciliation]]
 
 ===Talis Platform reconciliation services ===
 This project has been shut down. [[They suggest some alternatives|http://blog.kasabi.com/2012/07/30/so-long-and-thanks-for-all-the-data/]]
-
-
-
 
 ==Wish List==
 
