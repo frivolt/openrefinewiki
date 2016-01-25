@@ -38,6 +38,10 @@ For dates, returns the difference in given time units.
 
 Returns a date changed by the given amount in the given unit of time. Unit defaults to 'hour'.
 
+For example, if you want to decrement a date by 2 months:
+{{{
+value.inc(-2,'month')
+}}}
 ===datePart(date d, string unit)===
 
 Returns part of a date. Data type returned depends on the unit.  Units supported are:
