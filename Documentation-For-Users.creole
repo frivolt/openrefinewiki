@@ -76,6 +76,7 @@ Many **worked examples** that illustrate project flow and the logic of using Ope
 
 While there's a lot of information in this wiki, there's plenty more online too. Here are some notable sites,
 
+* [[RefinePro Knowledge Base for OpenRefine|http://kb.refinepro.com/]]
 * [[Tony Hirst's blog|http://blog.ouseful.info/tag/google-refine/]]
 * [[Martin Magdinier's blog|http://googlerefine.blogspot.ca/]]
 * Rod Whiteley's [[GREL Quick Reference|http://co-synergy.com/GREL%20Quick%20Reference.pdf]] (PDF)
