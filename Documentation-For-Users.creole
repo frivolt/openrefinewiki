@@ -58,6 +58,8 @@ and there are full recipes:
 Many **worked examples** that illustrate project flow and the logic of using OpenRefine are collected under [[External Resources]]
 =Reference=
 
+[[Glossary of Terms]]
+
 ==Expressions==
 
 * [[Variables|Variables]]
