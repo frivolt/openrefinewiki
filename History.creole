@@ -29,5 +29,5 @@ To reuse operations performed in one project in another project, first, extract 
 
 Currently, not all changes have operations that can be extracted. Any change performed specifically on some single cell (such as editing a cell on row 213 in the first project) does not have an extractable operation.
 
-There is a limit, if the history is bigger then 100 MB (output file), google chrome will crush and you will not be able to extract the JSON.
+There is a limit, if the history is bigger then 100 MB (output file), google chrome will crash and you will not be able to extract the JSON.
 Firefox can handle around 200 MB(output file), be sure to disable the spellchecker.
