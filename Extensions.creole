@@ -1,1 +1,0 @@
-Please see the [[download page|http://openrefine.org/download.html]] on the website for a full list of extension
