@@ -22,6 +22,7 @@
 * [[See what's new lately|Whats New]]
 * [[Related Software|Related Software]] that might fit your use case better than OpenRefine.
 * [[Understand how to upgrade|Back Up OpenRefine Data]] from Google Refine 2.0 to Google Refine 2.1
+* [[List of curated tutorials|External Resources]]
 
 === If You Are a Developer, see
 * [[Documentation|Documentation For Developers]] for Developers
