@@ -469,3 +469,69 @@ Append the check digit to the 12-digit base
 
 Or, do it all in one expression: 
 {{{with('978'+value[0,9],v,v+((10-(sum(forRange(0,12,1,i,toNumber(v[i])*(1+(i%2*2)) )) %10)) %10).toString()[0] )}}}
+
+==Shift values in multiple rows==
+
+1. Add a new column based on the Name col:
+{{{
+    Name > Edit column > Add column based on this column... 
+}}}
+    Call the column 'index' (or similar).
+
+    In expression, type: {{{""}}}
+
+    This creates a new but empty column.
+
+2. Move the new 'index' column to be the first column in the project:
+{{{
+    index > Edit column > Move column to beginning
+}}}
+
+3. Edit the cell in first row of the 'index' column to have some value in it. It could be anything, e.g. 'first'.
+
+4. Change to 'Record' mode by clicking 'Show as: records' link (top left of project).
+
+    This should create you a single record based on the index column only having a value in the first row.
+
+    If this doesn't work, then use 'Fill down' and then 'Blank down' on the Index column, and you should find this forces the shift to a single record.
+
+
+5. Modify the cells in the 'Age' column so empty cells have a placeholder value in them - this is to make sure the next step (which ignores empty cells) works correctly.
+{{{
+    Age > Edit cells > Transform 
+}}}
+
+    In the Expression box type:
+{{{
+    if(isBlank(value),"null",value) 
+}}}
+     
+6. Move the values in the Age column down one cell
+{{{
+    Age > Edit cells > Transform
+}}}
+    In expression type:
+{{{
+    row.record.cells["Age"].value[rowIndex-1]
+}}}
+
+    The {{{row.record.cells["Age"].value}}} part of this creates an array of values using all the values in the Age column - because they are now all part of the same Record (which is what steps 1-5 achieved). You can then extract the value from the row above using 'rowIndex' which gives you a row number.
+
+
+    Note that the first row in the project will get the value from the last row in the project using this expression. If this is 'null' you don't need to worry about this.
+
+7. Remove the dummy values in the Age column
+{{{
+    Age > Edit cells > Transform
+}}}   
+   In expression type:
+{{{
+    if(value=="null","",value)
+}}}
+
+8. Remove the index column
+{{{
+    index > Edit column > Remove this column
+}}}
+
+9. Make sure you are back in Row mode by clicking 'Show as: rows' link 
