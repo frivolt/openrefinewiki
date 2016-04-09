@@ -30,6 +30,7 @@ Those libraries are using the [[OpenRefine API|OpenRefine-API]]
 * https://github.com/maxogden/refine-python
 * https://github.com/maxogden/refine-ruby
 * https://github.com/pm5/node-openrefine
+* https://cran.r-project.org/web/packages/rrefine/index.html
 
 ==Miscellaneous==
 
