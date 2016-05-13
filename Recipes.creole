@@ -301,6 +301,48 @@ You'd need to use the 'cells' variable:
 
 If any of cells in the columns are blank, the merge will fail for that row. To fix, create a facet of blank cells with "Text Facet" ⇒ "Customized Facets" ⇒ "Facet by Blank". Then use "Edit Cells" ⇒ "Transform ..." and enter a string with a space: {{{' '}}}. 
 
+=== Merging all columns in a project ===
+
+To merge all values across a row, you can use 'row.columnNames' (which retrieves all the column names in the project) with the 'cells' variable:
+
+{{{
+  forEach(row.columnNames,cn,cells[cn].value).join("|")
+}}}
+
+If there are 'null' cells in the row, the row will still merge, but where the cells were null you will get the phrase "Cannot retrieve field from null|"
+If there are empty strings ("") in any cell in the row, these will be merged as empty strings.
+
+To make null cells and cells with empty strings behave in the same way you can enhance the GREL given above with a check for null cells:
+
+{{{
+  forEach(row.columnNames,cn,if(isNull(cells[cn]),"",cells[cn].value))
+}}}
+
+=== Facet for rows with a certain number of blank cells ===
+
+If you want to find rows that have a certain number of blank cells, including 'all blank' or 'no blanks' you can create a custom facet:
+
+Facet->Custom text facet (from any column in the project)
+
+use the GREL:
+
+{{{
+  filter(row.columnNames,cn,isBlank(cells[cn].value)).length()
+}}}
+
+This will give a facet with the number of blank (null or empty strings) cells in each row. If you want to limit by a particular number you can enhance the GREL with a check for a specific length:
+**Rows with more than one blank cell (true/false facet)**
+{{{
+  filter(row.columnNames,cn,isBlank(cells[cn].value)).length()>1
+}}}
+**Rows with exactly one blank cell (true/false facet)**
+{{{
+  filter(row.columnNames,cn,isBlank(cells[cn].value)).length()==1
+}}}
+**Rows with less than two blank cells (true/false facet)**
+{{{
+  filter(row.columnNames,cn,isBlank(cells[cn].value)).length()<2
+}}}
 === "AT&amp;amp;T" --> "AT&T" ===
 
 Sometimes you get content that was extracted from web pages or XML documents and contain entities. These are very hard to deal with manually, mostly because there are tons of potential string values between "&" and ";". OpenRefine provides you a convenient command to do this in GREL
