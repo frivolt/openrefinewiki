@@ -35,17 +35,34 @@ This is a collection of frequently asked questions on OpenRefine. Feel free to a
   VALUE = T:\MyOpenRefineDataFolder
 }}}
 
-==== OpenRefine opens my browser then waits a long time trying to connect to the server at 165.135.222.96 or another address I don't recognize. ====
+==== How do I change the IP address that OpenRefine uses? ====
 
-  Try to run at a specific IP: {{{./refine -i 127.0.0.1}}}. (Windows users must use a slash character like {{{C:>refine /i 127.0.0.1:8088}}})
+On Linux, Mac from the command line,
 
-  Double check your Chrome or Firefox proxy settings - In Firefox options/advanced/network/connection/settings and switch from "use system proxy settings" to "auto-detect proxy settings for this network".
+{{{./refine -i 127.0.0.1}}}.
 
-  If you get a message "Network Error (tcp_error)" in your browser, you might also try to uncheck "automatically detect settings" and also add an exception to your firewall rules to allow 127.0.0.1 (or whatever IP address you decide to run Refine with)
+On Windows use a slash character like,
 
-==== The console shows a BindException - cannot assign requested address ====
+{{{C:>refine /i 127.0.0.1:8088}}})
 
-Try to run on a different port: {{{./refine -i 127.0.0.1 -p 3334}}}. (Windows users must use a slash character like {{{C:>refine /i 127.0.0.1 /p 3334}}})  You can also edit the Refine.ini file to hardcode the IP Address and Port.
+==== How do I change the Port that OpenRefine uses? ====
+
+On Linux, Mac from the command line,
+
+{{{./refine -i 127.0.0.1 -p 3334}}}
+
+On Windows, use a slash character like,
+
+{{{C:>refine /i 127.0.0.1 /p 3334}}})
+
+You can also edit the {{{refine.ini}}} file to permanently set the IP Address and Port.
+
+==== I am having trouble connecting to OpenRefine with my browser ====
+
+You might need to double check your Chrome or Firefox proxy settings.
+In Firefox options->advanced->network->connection->settings and switch from "use system proxy settings" to "auto-detect proxy settings for this network".
+
+If you get a message "Network Error (tcp_error)" in your browser, you might also try to uncheck "automatically detect settings" and also add an exception to your firewall rules to allow 127.0.0.1 (or whatever IP address you decide to run OpenRefine with)
 
 ==== What syntax of regular expression (regex) does OpenRefine support? ====
 
