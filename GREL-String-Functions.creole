@@ -111,6 +111,8 @@ hello 123456 goodbye
 
 More info on [[Regex|Understanding-Regular-Expressions]]
 
+And a nice online learning & testing tool for Regex: [[RegExr|http://regexr.com/]]
+
 =String Parsing and Splitting=
 
 ===toNumber(o)===
