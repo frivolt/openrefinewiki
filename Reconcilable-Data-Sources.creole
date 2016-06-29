@@ -57,6 +57,17 @@ Library of Congress Subject Headings (LCSH) has been actively maintained since 1
 The reconciliation service is hosted by Free Your Metadata group, more details on [[their website|http://freeyourmetadata.org/reconciliation/]].
 
 
+=== Sharedshelf Built Work Registry Reconciliation Service===
+Sharedshelf has offered reconciliation services for its users to enrichment data using Sharedshelf Built Work Registry (BWR) project. Built Work Registry is accessible via http://builtworksregistry.org/.
+
+Endpoint Details
+|=Service Labels|Details|
+|Name|Sharedshelf BWR Display Endpoint|
+|Endpoint|http://lod.sharedshelf.artstor.org/sparql/api/reconcile/display|
+|Graph URI|http://lod.sharedshelf.artstor.org/sparql/api/project/756|
+|Type|Generic SPARQL|
+|Label properties|rdfs:label && http://catalog.sharedshelf.artstor.org/display/prefLabel|
+
 ==Open Data==
 
 ===OpenCorporates===
