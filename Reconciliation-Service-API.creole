@@ -274,16 +274,6 @@ The {{{service_url}}} field is required and it should look like this: {{{http://
 
 The Freebase Suggest widgets embedded in OpenRefine will concatenate {{{_url}}} and {{{_path}}} to make the full URL. Refer to [[the specification for a Suggest API|Suggest Api]] for details.
 
-= Sharedshelf Built Work Registry Reconciliation Service=
-Sharedshelf has offered reconciliation services for its users to enrichment data using Sharedshelf Built Work Registry (BWR) project. Built Work Registry is accessible via http://builtworksregistry.org/.
-
-Endpoint Details
-|=Service Labels|Details|
-|Name|Sharedshelf BWR Display Endpoint|
-|Endpoint|http://lod.sharedshelf.artstor.org/sparql/api/reconcile/display|
-|Graph URI|http://lod.sharedshelf.artstor.org/sparql/api/project/756|
-|Type|Generic SPARQL|
-|Label properties|rdfs:label && http://catalog.sharedshelf.artstor.org/display/prefLabel|
 
 =OpenRefine Integration & Testing=
 
