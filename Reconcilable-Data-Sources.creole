@@ -86,6 +86,12 @@ The Reconciliation API is a simple web service that supports linking of datasets
 
 * [[Official Website|http://data.ordnancesurvey.co.uk/docs/reconciliation]]
 
+===Organized Crime and Corruption Reporting Project===
+OCCRP provides a public reconciliation API endpoint which allows reconciliation of data against a comprehensive list of sanctioned persons and companies, politically exposed persons, and other persons of journalistic interest. The service is intended as a first-level "check for interesting entries" for government or private data.
+
+* [[Official Website|https://data.occrp.org]]
+* [[Documentation|https://data.occrp.org/help/reconcile]]
+* [[Endpoint|https://data.occrp.org/api/freebase/reconcile]]  
 
 ==Biodiversity Researchers==
 
