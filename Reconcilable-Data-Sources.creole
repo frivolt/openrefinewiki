@@ -13,14 +13,6 @@ Reconcile-csv is a reconciliation service for OpenRefine running from a CSV file
 * [[Official Website|http://okfnlabs.org/reconcile-csv/]]
 * [[GitHub Project|https://github.com/okfn/reconcile-csv]]
 
-===Nomenklatura===
-Nomenklatura is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list – for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical “Acme Widgets”.
-
-With Nomenklatura its a matters of minutes to set up your own set of master data to match against and it provides a simple user interface and API which you can then use do matching (the API is compatible with Open Refine’s reconciliation function).
-
-* [[Official Website|http://okfnlabs.org/projects/nomenklatura/index.html]]
-* [[GitHub Project|https://github.com/pudo/nomenklatura]]
-
 ===SPARQL endpoints===
 The RDF Extension by DERI at NUI Galway includes reconciliation against
 any SPARQL endpoint or RDF dump file and publishing of the results in RDF. [[http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]]
@@ -110,6 +102,14 @@ The Freebase Reconciliation Service has been deprecated as of June 2015.  There 
 [[http://reconcile.freebaseapps.com/]]
 
 [[https://developers.google.com/freebase/v1/reconciliation-overview?hl=en]]
+
+===Nomenklatura===
+Nomenklatura is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list – for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical “Acme Widgets”.
+
+With Nomenklatura its a matters of minutes to set up your own set of master data to match against and it provides a simple user interface and API which you can then use do matching (the API is compatible with Open Refine’s reconciliation function).
+
+* [[Official Website|http://okfnlabs.org/projects/nomenklatura/index.html]]
+* [[GitHub Project|https://github.com/pudo/nomenklatura]]
 
 ===Talis Kasabi===
 The Kasabi reconciliation services provide reconciliation against any database published on the Kasabi platform. [[Documentation|http://kasabi.com/doc/api/reconciliation]]
