@@ -113,6 +113,21 @@ In practice, this method is very lax even for small radius values and tends to g
 
 It is also important to note that in practice similarity distances are more effective on longer strings than on shorter ones; this is mostly an artifact of the need for the statistical compressors to 'warm up' and gather enough statistics to start performing well.
 
+= Cluster New Value Suggestions =
+For each cluster identified, one value is chosen as the initial 'New Cell Value' to use as the common value for all values in the cluster. The value chosen is the first value in the Cluster (see the ClusteringDialog.prototype._updateData function in /main/webapp/modules/core/scripts/dialogs/clustering-dialog.js)
+
+The first value in the Cluster is determined by two steps:
+
+* a) The order of the items in the Cluster as the Cluster is built
+* b) The order of the items in the Cluster after sorting by the count of the occurrences of each value
+
+(a) is achieved via a Collections.sort - which is [["guaranteed to be stable: equal elements will not be reordered as a result of the sort."|https://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#sort(java.util.List,%20java.util.Comparator)]]
+(b) is achieved by different methods depending on whether you are doing a Nearest Neighbour or Key Collisions (aka Binning) cluster
+
+If you are using Key Collision/Binning then the Cluster is created using a TreeMap which by default [["is sorted according to the natural ordering of its keys"|https://docs.oracle.com/javase/7/docs/api/java/util/TreeMap.html]. The key is the string in the cell - so that means it will sort by natural ordering of the strings in the cluster - which means that it uses a [['lexicographical' order|http://docs.oracle.com/javase/7/docs/api/java/lang/String.html#compareTo%28java.lang.String%29]] - basically based on the Unicode values in the string
+
+If you are using a Nearest Neighbour sort the Cluster is created in a different way which is (as yet) undocumented. Testing indicates that it may be something like reverse natural ordering.
+
 = Final Notes =
 
 * follow the order of the methods as described in this page (which goes from more strict to more lax), this has proved to be the most effective workflow for us;
