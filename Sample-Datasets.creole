@@ -2,7 +2,9 @@
 
 Here are a few sample data sets to get you started on understanding how to use OpenRefine
 
-* [[Disasters worldwide from 1900-2008 at Infochimps|http://infochimps.org/datasets/disasters-worldwide-from-1900-2008]] (dead link)
+* [[AWS Public Datasets at Amazon|https://aws.amazon.com/public-datasets/]] 
+* [[Million Song Dataset|http://labrosa.ee.columbia.edu/millionsong/]]
+* [[TRADE REPOSITORY PUBLIC DATA|http://www.lseg.com/markets-products-and-services/post-trade-services/unavista/unavista-solutions/emir-trade-repository/trade-repository-public-data]]
 * [[Louisiana elected officials|http://electionstatistics.sos.la.gov/Data/Elected_Officials/ElectedOfficials.xls]] - For OpenRefine versions up to 2.0, you must use Excel itself to convert the .xls file to a .tsv file first because the Java library for dealing with .xls files doesn't like this particular .xls file. OpenRefine versions 2.1 and above will successfully load the .xls directly
 * [[Clean Air Status and Trends Network (CASTNET) raw data|http://java.epa.gov/castnet/clearsession.do]] 
 * [[Federal Advisory Committee Act (FACA) Committee Member Lists|http://facadatabase.gov/datasets/]] 
