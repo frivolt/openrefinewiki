@@ -5,7 +5,7 @@
 === Here for the First Time?
 * Watch [[these screencasts|Screencasts]] to understand what's possible with OpenRefine
 * [[Find out what people say and do with OpenRefine|What People Say]], ... [[live on Twitter|https://twitter.com/search?q=OpenRefine&src=typd]]
-* Watch [OpenRefine 101|https://bigdatauniversity.com/courses/introduction-to-openrefine/] - A free course from Bigdata University
+* Watch [[OpenRefine 101|https://bigdatauniversity.com/courses/introduction-to-openrefine/]] - A free Bigdata University course by Martin Magdinier
 
 === Get started:
 * [[Installation Instructions]]
