@@ -27,6 +27,7 @@
 ==Known Client libraries for Refine==
 Those libraries are using the [[OpenRefine API|OpenRefine-API]]
 * https://github.com/PaulMakepeace/refine-client-py/
+** fork with extended CLI: https://github.com/felixlohmeier/openrefine-client
 * https://github.com/maxogden/refine-python
 * https://github.com/maxogden/refine-ruby
 * https://github.com/pm5/node-openrefine
