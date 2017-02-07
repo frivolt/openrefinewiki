@@ -7,10 +7,10 @@ This can be done by manually **making a copy** of the Refine workspace directory
 * MacOSX: {{{~/Library/Application Support/OpenRefine
 }}}
 * Windows: depending on the Windows version, the data is in one of these directories
-* {{{C:\Documents and Settings\(user id)\Local Settings\Application Data\Google\Refine}}}
-* {{{C:\Users\(user id)\AppData\Roaming\Google\Refine}}}
-* {{{C:\Users\(user id)\AppData\Local\Google\Refine}}}
-* {{{C:\Users\(user id)\Google\Refine}}}
-* Linux: {{{~/.local/share/google/refine/}}} (the folder local is hidden, you can view it using the command {{{ls -al}}})
+* {{{C:\Documents and Settings\(user id)\Local Settings\Application Data\OpenRefine}}}
+* {{{C:\Users\(user id)\AppData\Roaming\OpenRefine}}}
+* {{{C:\Users\(user id)\AppData\Local\OpenRefine}}}
+* {{{C:\Users\(user id)\OpenRefine}}}
+* Linux: {{{~/.local/share/openrefine/}}} (the folder local is hidden, you can view it using the command {{{ls -al}}})
 
 You can quickly get to this directory from the OpenRefine start page by clicking on the {{{Browse workspace directory}}} link at the bottom left of the page.
