@@ -39,7 +39,6 @@ new bugs as well.
 **Install via Homebrew:**
 
 * Follow our detailed [[Homebrew installation guide|Homebrew]]
-
 * or Follow quick steps below:
  
  # Install [[Homebrew from here|http://brew.sh]]
