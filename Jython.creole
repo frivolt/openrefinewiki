@@ -3,7 +3,7 @@
 ==== Tutorials ====
 * [[Using Jython with Java libraries|Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
 * [[Using Jython and BeautifulSoup to handle Entity Extraction and HTML markup removal|StrippingHTML]]
-
+* [[PIP - Extending Jython with pypi modules|Extending-Jython-with-pypi-modules]]
 
 Full docs on the Jython language are at its official site [[http://www.jython.org|http://www.jython.org]].
 
