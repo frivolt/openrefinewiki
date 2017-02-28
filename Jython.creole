@@ -54,3 +54,29 @@ To return the lower case of value (if the value is not null):
   else:
     return None
 }}} 
+
+=== Tutorial - Working with Phone numbers using Java libraries inside Python ===
+
+As mentioned before, you can drop in JAVA .jar files into the classpath and utilize them from OpenRefine with Python/Jython as your expression language.
+
+# Download the [[libphonenumber 8.3.1 .jar file from Maven Central|http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/8.3.1/libphonenumber-8.3.1.jar]]  (repo and docs here: [[Google libphonenumber on Github|https://github.com/googlei18n/libphonenumber]])
+# Copy the .jar file into your {{{openrefine-2.xx/webapp/WEB-INF/lib}}} folder
+# Start OpenRefine
+# Choose **Edit column** -> **Add column based on this column...**
+# Give it a new column name such as VALID_FORMATTED_NUMBER
+# Choose **Python/Jython** as your Expression Language.
+# Copy and paste the following code into the Expression input box:
+{{{
+from com.google.i18n.phonenumbers import PhoneNumberUtil
+from com.google.i18n.phonenumbers.PhoneNumberUtil import PhoneNumberFormat
+
+phoneUtil = PhoneNumberUtil.getInstance()
+number = phoneUtil.parse(value, 'US')
+formatted = phoneUtil.format(number, PhoneNumberFormat.NATIONAL)
+valid = phoneUtil.isValidNumber(number)
+
+if valid == 1:
+  return formatted
+}}}
+* You can now see in the Preview a nicely formatted number if your original string in your column was a valid US number.
+* OPTIONAL - [[Download the Javadoc .jar|http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/8.3.1/libphonenumber-8.3.1-javadoc.jar]], unzip and extract it, then open the index.html file and read and experiment with other methods and classes in Google's libphonenumber library.
