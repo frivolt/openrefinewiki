@@ -1,28 +1,19 @@
 === Using Jython as your Expression Language ===
 
+==== Tutorials ====
+* [[Using Jython with Java libraries|Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
+* [[Using Jython and BeautifulSoup to handle Entity Extraction and HTML markup removal|StrippingHTML]]
+
+
 Full docs on the Jython language are at its official site [[http://www.jython.org|http://www.jython.org]].
 
-Note: The Jython extension has been bundled with OpenRefine since 2.1.  Before that it was an extension which needed to be installed separately.
+You can use almost any Python {{{(.py)}}}{{{(.pyc)}}} files compatible with the bundled Jython 2.5.1 and drop them into the path. Since Jython is essentially Java, you can even [[import Java libraries and utilize those!|Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
 
-Note: You can use almost any Python {{{(.py)}}}{{{(.pyc)}}} files compatible with the bundled Jython 2.5.1 and drop them into the path. For instance, download, extract and drop in {{{BeautifulSoup.py}}} and use it to parse and extract HTML tags or content using Jython as your expression language in OpenRefine.  Since Jython is essentially Java, you can even [[import Java libraries and utilize those!|Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
+** NOTE: Python libraries or code that uses C bindings will not work in OpenRefine which uses Jython / Java only, and has no CPython interpreter built-in**
 
-**OpenRefine now has most of the Jsoup.org library built in for parsing and working with HTML elements and extraction**
+** NOTE: OpenRefine now has most of the Jsoup.org library built in for parsing and working with HTML elements and extraction - [[Built-in GREL Jsoup functions|GREL Other Functions]]**
 
-[[Built-in GREL Jsoup functions|GREL Other Functions]]
-
-**Remember to restart OpenRefine**, so that new Jython/Python libraries are initialized during Butterfly's startup.
-
-[[Using Jython and BeautifulSoup to handle Entity Extraction and HTML markup removal|StrippingHTML]]
-
-A few HTML parsing Python libraries to experiment with :
-
-# [[HTMLParser (bundled with Jython in OpenRefine)|http://docs.python.org/lib/module-HTMLParser.html]]
-# [[BeautifulSoup|http://www.crummy.com/software/BeautifulSoup/]]
-
-A few XML parsing Python libraries:
-
-# [[ElementTree (bundled with Jython in Refine)|http://effbot.org/zone/element-index.htm]]
-# [[lxml|http://codespeak.net/lxml/]] ** will NOT work in Jython, since lxml has C bindings for CPython (regular Python), hence will not work in OpenRefine which is Jython / Java only, and has no CPython interpreter built-in**  
+**NOTE: Remember to restart OpenRefine, so that new Jython/Python libraries are initialized during Butterfly's startup.**
 
 ----
 
@@ -54,6 +45,8 @@ To return the lower case of value (if the value is not null):
   else:
     return None
 }}} 
+
+
 
 === Tutorial - Working with Phone numbers using Java libraries inside Python ===
 
