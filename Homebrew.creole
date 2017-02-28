@@ -6,7 +6,7 @@
 
 == Usage ==
 
-These instructions assume you've installed Homebrew.
+These instructions assume you've installed Homebrew. Instructions for installing Homebrew are prominently displayed on the project's homepage, http://brew.sh.
 
 === Install OpenRefine ===
 
@@ -30,7 +30,7 @@ To uninstall OpenRefine, paste this command into the Terminal:
 
 === Updating OpenRefine ===
 
-To update to the latest version of OpenRefine, paste this command into the Terminal::
+To update to the latest version of OpenRefine, paste this command into the Terminal:
 
 {{{
   brew cask reinstall openrefine-dev
@@ -40,7 +40,7 @@ To update to the latest version of OpenRefine, paste this command into the Termi
 
 OpenRefine's presence on Homebrew is found in the Caskroom project, as a "cask", at https://github.com/caskroom/homebrew-versions/blob/master/Casks/openrefine-dev.rb.
 
-**Terminology:** "Caskroom" is the Homebrew extension project where pre-built binaries and GUI applications go, whereas the original, plain old "Homebrew" project is reserved for command-line utilities that can be built from source.  So OpenRefine clearly belongs in Caskroom.)
+**Terminology:** "Caskroom" is the Homebrew extension project where pre-built binaries and GUI applications go, whereas the original, plain old "Homebrew" project is reserved for command-line utilities that can be built from source.  So OpenRefine clearly belongs in Caskroom.
 
 When there is a new development release of OpenRefine, a member of the community can submit a pull request with the necessary changes to the OpenRefine cask. [[Follow these directions|https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask]] - summarized here adapted to OpenRefine:
 
