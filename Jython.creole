@@ -60,7 +60,7 @@ To return the lower case of value (if the value is not null):
 As mentioned before, you can drop in JAVA .jar files into the classpath and utilize them from OpenRefine with Python/Jython as your expression language.
 
 # Download the [[libphonenumber 8.3.1 .jar file from Maven Central|http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/8.3.1/libphonenumber-8.3.1.jar]]  (repo and docs here: [[Google libphonenumber on Github|https://github.com/googlei18n/libphonenumber]])
-# Copy the .jar file into your {{{openrefine-2.xx/webapp/WEB-INF/lib}}} folder {{https://drive.google.com/file/d/0B533WzlrxWraSU00WU90S3hmaU0/preview|libphonenumber_jar}}
+# Copy the .jar file into your {{{openrefine-2.xx/webapp/WEB-INF/lib}}} folder {{https://cloud.githubusercontent.com/assets/986438/23411643/859b7360-fd98-11e6-8dfb-42c25c328650.PNG|libphonenumber_jar}}
 # Start OpenRefine
 # Choose **Edit column** -> **Add column based on this column...**
 # Give it a new column name such as VALID_FORMATTED_NUMBER
@@ -78,5 +78,5 @@ valid = phoneUtil.isValidNumber(number)
 if valid == 1:
   return formatted
 }}}
-* You can now see in the Preview a nicely formatted number if your original string in your column was a valid US number. {{https://drive.google.com/file/d/0B533WzlrxWraSThkRHNIdzFaTDQ/preview|working with Jython and Java Libraries in OpenRefine}}
+* You can now see in the Preview a nicely formatted number if your original string in your column was a valid US number. {{https://cloud.githubusercontent.com/assets/986438/23411647/884f0b62-fd98-11e6-8eb2-b089bb9020b3.PNG|working with Jython and Java Libraries in OpenRefine}}
 * OPTIONAL - [[Download the Javadoc .jar|http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/8.3.1/libphonenumber-8.3.1-javadoc.jar]], unzip and extract it, then open the index.html file and read and experiment with other methods and classes in Google's libphonenumber library.
