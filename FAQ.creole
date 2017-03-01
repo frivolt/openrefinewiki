@@ -109,7 +109,7 @@ return g.group(1)
 
 ==== Can OpenRefine be used as a piece of a larger [[ETL|http://en.wikipedia.org/wiki/Extract,_transform,_load]] pipeline? ====
 
-You can use one of the [[OpenRefine client libraries|https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers#known-client-libraries-for-refine]] for automating OpenRefine programatically. If you like docker then you might like [[this container approach|https://github.com/felixlohmeier/openrefine-client]] to batch processing.
+You can use one of the [[OpenRefine client libraries|https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Developers#known-client-libraries-for-refine]] for automating OpenRefine programatically. If you like docker then you might like [[this container approach|https://github.com/felixlohmeier/openrefine-batch]] to batch processing.
 
 It's worth pointing out that not all Refine features can work unsupervised and without human interaction (clustering, for example), but some can.
 
