@@ -60,16 +60,29 @@ As mentioned before, you can drop in JAVA .jar files into the classpath and util
 # Choose **Python/Jython** as your Expression Language.
 # Copy and paste the following code into the Expression input box:
 {{{
-from com.google.i18n.phonenumbers import PhoneNumberUtil
-from com.google.i18n.phonenumbers.PhoneNumberUtil import PhoneNumberFormat
+   from com.google.i18n.phonenumbers import PhoneNumberUtil
+   from com.google.i18n.phonenumbers.PhoneNumberUtil import PhoneNumberFormat
 
-phoneUtil = PhoneNumberUtil.getInstance()
-number = phoneUtil.parse(value, 'US')
-formatted = phoneUtil.format(number, PhoneNumberFormat.NATIONAL)
-valid = phoneUtil.isValidNumber(number)
+   phoneUtil = PhoneNumberUtil.getInstance()
+   number = phoneUtil.parse(value, 'US')
+   formatted = phoneUtil.format(number, PhoneNumberFormat.NATIONAL)
+   valid = phoneUtil.isValidNumber(number)
 
-if valid == 1:
-  return formatted
+   if valid == 1:
+     return formatted
 }}}
 * You can now see in the Preview a nicely formatted number if your original string in your column was a valid US number. {{https://cloud.githubusercontent.com/assets/986438/23411647/884f0b62-fd98-11e6-8eb2-b089bb9020b3.PNG|working with Jython and Java Libraries in OpenRefine}}
 * OPTIONAL - [[Download the Javadoc .jar|http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/8.3.1/libphonenumber-8.3.1-javadoc.jar]], unzip and extract it, then open the index.html file and read and experiment with other methods and classes in Google's libphonenumber library.
+* OPTIONAL - If you want a list that you can later split into record rows, you can do something like this.
+{{{
+   from com.google.i18n.phonenumbers import PhoneNumberUtil
+   from com.google.i18n.phonenumbers.PhoneNumberUtil import PhoneNumberFormat
+
+   phoneUtil = PhoneNumberUtil.getInstance()
+   number = phoneUtil.parse(value, 'US')
+   formatted = phoneUtil.format(number, PhoneNumberFormat.INTERNATIONAL)
+   valid = phoneUtil.isValidNumber(number)
+   output = valid, formatted, number
+
+   return '|||'.join(map(str,output))
+}}}
