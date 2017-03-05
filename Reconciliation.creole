@@ -1,63 +1,36 @@
-UPDATE: April 2014 [[regarding freebase availability on the discussion list|https://groups.google.com/forum/#!topic/openrefine/N-O2Wn12S-g|]].
-----
-UPDATE: October 2013
-
-
-----
-
-
-As some of you have noticed, reconciliation against Freebase, one of Refine's most awesome (among many awesome) features, has gone to hell in a handbasket recently. (In other words, it no longer works).
-
-We weren't really counting on having to transition on a moment's notice, but Tom Morris has patched together an *experimental* service which will hopefully help bridge the gap.
-
-The new service is at: http://reconcile.freebaseapps.com/reconcile
-
-You should be able to add it as a standard reconciliation service in either Google Refine 2.5 or OpenRefine (soon to be) 2.6 (aka the current development version)..
-
-The new service is intended to be API compatible with the old service, but it doesn't use any of the old Freebase APIs with their consequent performance issues.  It should be 10x (at least!) faster.
-
-Having said that, it's not without issues.  Tom coded it up in a hurry to bridge the gap.  It's untested.  It's got some known issues.
-
-*IN PARTICULAR*, it has a hard filter on the type that you're reconciling against.  There's a fix in the pipe for this, but in the mean time, if you're not sure that all of your candidates are, say, /people/person you should instead reconcile against /common/topic.
-
-On the plus side, our previous warnings about not including additional columns in your reconciliation no long apply.  If you want to include the person's birth date, death date, whatever, ..., you won't get vectored off to the land of the 18 month stale indexes.
-
-----
-
-Reconciliation:
-
 Reconciliation is a semi-automated process of matching text names to database IDs (keys). This is semi-automated because in some cases, machine alone is not sufficient and human judgement is essential. For example, given "Ocean's Eleven" as the name of a film, should it be matched to
 
-* the original 1960 "Ocean's Eleven" ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven_1960]]), or
-* the 2001 remake "Ocean's Eleven" starring George Clooney ([[Freebase entry|http://www.freebase.com/view/en/oceans_eleven]])?
+* the original 1960 "Ocean's Eleven" ([[Wikidata item Q464933|https://www.wikidata.org/wiki/Q464933]]), or
+* the 2001 remake "Ocean's Eleven" starring George Clooney ([[Wikidata item Q205447|https://www.wikidata.org/wiki/Q205447]])?
 
 While we talk about "databases" here, perhaps a more accurate term would be "name registries". And conceptually, "reconciliation" isn't a new concept. In some fields, it's being done all the time. For example, when the police gets a name of a suspect, they run the name through their databases of known felons. More details about the suspect (e.g., race, height, last known address) would help the police narrow down the suspect among several database matches.
 
-You can use OpenRefine to perform reconciliation of names in your data against any database that exposes a web service following this [[Reconciliation Service API|Reconciliation Service Api]] specification. One such database is [[Freebase|http://www.freebase.com/]], and in this document we will use it as our example service.
+You can use OpenRefine to perform reconciliation of names in your data against any database that exposes a web service following this [[Reconciliation Service API|Reconciliation Service Api]] specification. One such database is [[Wikidata|https://www.wikidata.org/]], and in this document we will use it as our example service.
 
 
 ==Basics==
 
-For a column containing names, to reconcile those names against Freebase, invoke the column's drop-down menu and pick Reconcile > Start reconciling... If you want to reconcile only some cells in that column, then use filters and facets to isolate them first.
+Givan a column containing names, we can reconcile those names against Wikidata. To do so, invoke the column's drop-down menu and pick //Reconcile// > //Start reconciling//. If you want to reconcile only some cells in that column, then use filters and facets to isolate them first.
 
-In the Reconcile dialog box, pick Freebase Reconciliation Service on the left. That service comes by default, but you can install more services. Using that service, OpenRefine will try to determine the type of names we're dealing with. When it's done, it will show you a list of types. Pick the best type in your opinion and click Start Reconcile at the bottom.
+In the Reconcile dialog box, pick //Wikidata Reconciliation Service// on the left. That service comes by default, but you can install more services (see below to get a version of this service in your language).
 
-This process will take a while depending on how much data you have. For now, we would recommend reconciling only a few hundred cells at a time. In the future, perhaps we can afford reconciliation services with greater capacity.
+There are a few options to configure the reconciliation process, which will help you get more reliable matches. These options are covered in the next sections. To start the reconciliation process, click the  //Start Reconciling// button.
 
-When the process is done, you will see that the reconciled cells display either a single link or 3 candidates with a recon score in parentheses. 
+This process will take a while depending on how much data you have. Currently, the Wikidata reconciliation service processes about 3 rows per second.
+
+When the process is done, you will see that the reconciled cells display either a single link or a few candidates with a reconciliation score in parentheses.
 
 Example:
 
-{{{San Francisco, CA (.95)}}}
+{{{San Francisco, CA (95)}}}
 
-Cells with links have been automatically matched, and you don't have to process them manually. Cells with candidates have not been matched yet, and you will have to process them yourself, either individually or in bulk depending on the nature of your data.
+Cells with dark blue links have been automatically matched, and you don't have to check them manually. This happens when the reconciliation service is confident enough in the match. Cells with light blue links candidates have not been matched yet, and you will have to process them yourself, either individually or in bulk depending on the nature of your data.
 
 In addition to changing the ways the reconciled cells are displayed, OpenRefine also automatically creates two facets for you to use to filter the cells based on the reconciliation data. One is a numeric facet for the reconciliation scores of the best candidates of the cells. Higher scores mean better matches. You could filter for the higher scores, and approve them all in bulk (invoking that column's drop-down menu and using the Reconcile > Actions submenu).
 
 There is also the "judgment" facet, which lets you filter for the cells that haven't been matched (pick "None" in the facet). As you process each cell, its judgment changes from "None" to "Matched" and it disappears from the view, because it no longer fits the facet's selection.
 
 Reconciliation is a delicate process, hard to describe here. We will provide some tutorial videos in the near future. For now, if you need help, please email the mailing list or get on IRC and ask us questions.
-
 
 ==Query-based Reconciliation==
 
@@ -76,6 +49,17 @@ To keep all suggestion made by the reconciliation service and not match against 
 ##if you want link to Freebase - usually it is Freebase mid: {{{cell.recon.candidates[0].id}}}
 ##To get all off the IDs at the same time use the expression: {{{cell.recon.candidates.join(',')}}} , which will give you a comma separated list of all the IDs.  Then use the command "Split multi-valued cells" to split the identifiers into individual rows.
 # If you then use reconcile against Freebase using the Freebase identifier option, you'll get the names and links that all you to use "Add column from Freebase" to get any other property values which are of interest.
+
+==Language settings for Wikidata reconciliation==
+You can install a version of the Wikidata reconciliation service that uses your language.
+
+First, you need to find your language code: this is the first letters in the domain name of your Wikipedia (for instance "fr" if your Wikipedia is [[https://fr.wikipedia.org/wiki/]]).
+
+Then, open the reconciliation dialog and click //Add Standard Service//. The URL is
+{{{https://tools.wmflabs.org/openrefine-wikidata/fr/api}}}
+where "fr" is replaced by your language code.
+
+When reconciling using this interface, items and properties will be displayed in your language if a translation is available. The matching score of the reconciliation is not influenced by your choice of language: items are matched by considering all labels and keeping the best possible match. So the language of your dataset is irrelevant to the choice of the language for the reconciliation interface.
 
 == Additional Resources ==
 See also: 
