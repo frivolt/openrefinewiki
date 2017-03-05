@@ -12,19 +12,23 @@ You can use OpenRefine to perform reconciliation of names in your data against a
 
 Givan a column containing names, we can reconcile those names against Wikidata. To do so, invoke the column's drop-down menu and pick //Reconcile// > //Start reconciling//. If you want to reconcile only some cells in that column, then use filters and facets to isolate them first.
 
+{{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_column.png|Screenshot of the reconciliation menu}}
+
 In the Reconcile dialog box, pick //Wikidata Reconciliation Service// on the left. That service comes by default, but you can install more services (see below to get a version of this service in your language).
 
 There are a few options to configure the reconciliation process, which will help you get more reliable matches. These options are covered in the next sections. To start the reconciliation process, click the  //Start Reconciling// button.
 
+{{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_start.png|Screenshot of the reconciliation dialog}}
+
 This process will take a while depending on how much data you have. Currently, the Wikidata reconciliation service processes about 3 rows per second.
 
-When the process is done, you will see that the reconciled cells display either a single link or a few candidates with a reconciliation score in parentheses.
+When the process is done, you will see that the reconciliation data in the cells.
+* Either the cell was successfully matched: it displays a single dark blue link. In this case, the reconciliation is confident that the match is correct: you should not have to check it manually.
 
-Example:
+  {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_match.png|(Screenshot of a matched item)}}
+* Or a few candidates are displayed, together with their reconciliation score, with light blue links. You need to pick manually the correct one. For each matching decision you make, you have two options: either match this cell only ({{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_single_match.png|button to perform a single match}}, or also use the same identifier for all other cells containing the same unreconciled value ({{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_bulk_match.png|button to perform a multiple match}}).
 
-{{{San Francisco, CA (95)}}}
-
-Cells with dark blue links have been automatically matched, and you don't have to check them manually. This happens when the reconciliation service is confident enough in the match. Cells with light blue links candidates have not been matched yet, and you will have to process them yourself, either individually or in bulk depending on the nature of your data.
+  {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_disambig.png|(Screenshot of an unmatched item)}}
 
 In addition to changing the ways the reconciled cells are displayed, OpenRefine also automatically creates two facets for you to use to filter the cells based on the reconciliation data. One is a numeric facet for the reconciliation scores of the best candidates of the cells. Higher scores mean better matches. You could filter for the higher scores, and approve them all in bulk (invoking that column's drop-down menu and using the Reconcile > Actions submenu).
 
