@@ -26,17 +26,19 @@ When the process is done, you will see that the reconciliation data in the cells
 * Either the cell was successfully matched: it displays a single dark blue link. In this case, the reconciliation is confident that the match is correct: you should not have to check it manually.
 
   {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_match.png|(Screenshot of a matched item)}}
-* Or a few candidates are displayed, together with their reconciliation score, with light blue links. You need to pick manually the correct one. For each matching decision you make, you have two options: either match this cell only ({{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_single_match.png|button to perform a single match}}, or also use the same identifier for all other cells containing the same unreconciled value ({{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_bulk_match.png|button to perform a multiple match}}).
+* Or a few candidates are displayed, together with their reconciliation score, with light blue links. You need to pick manually the correct one. For each matching decision you make, you have two options: either match this cell only ({{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_single_match.png|button to perform a single match}}), or also use the same identifier for all other cells containing the same unreconciled value ({{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_bulk_match.png|button to perform a multiple match}}).
 
   {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_disambig.png|(Screenshot of an unmatched item)}}
 
-In addition to changing the ways the reconciled cells are displayed, OpenRefine also automatically creates two facets for you to use to filter the cells based on the reconciliation data. One is a numeric facet for the reconciliation scores of the best candidates of the cells. Higher scores mean better matches. You could filter for the higher scores, and approve them all in bulk (invoking that column's drop-down menu and using the Reconcile > Actions submenu).
+In addition to changing the ways the reconciled cells are displayed, OpenRefine also automatically creates two facets for you to use to filter the cells based on the reconciliation data. One is a numeric facet for the reconciliation scores of the best candidates of the cells. Higher scores mean better matches. You could filter for the higher scores, and approve them all in bulk (invoking that column's drop-down menu and using the //Reconcile// > //Actions// submenu).
 
-There is also the "judgment" facet, which lets you filter for the cells that haven't been matched (pick "None" in the facet). As you process each cell, its judgment changes from "None" to "Matched" and it disappears from the view, because it no longer fits the facet's selection.
+There is also the //judgment// facet, which lets you filter for the cells that haven't been matched (pick "None" in the facet). As you process each cell, its judgment changes from "None" to "Matched" and it disappears from the view, because it no longer fits the facet's selection.
 
 Reconciliation is a delicate process, hard to describe here. We will provide some tutorial videos in the near future. For now, if you need help, please email the mailing list or get on IRC and ask us questions.
 
 ==Query-based Reconciliation==
+
+**This section is deprecated and will be updated soon.**
 
 As a degenerate form of "reconciliation", you can get a column of database IDs to be "reconciled". It's "degenerate" because the process isn't ambiguous since you already have IDs. The process of "reconciliation" here only involves fetching more data for those IDs (such as the official names corresponding to those IDs).
 
