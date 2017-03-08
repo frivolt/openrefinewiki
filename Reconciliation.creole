@@ -51,7 +51,7 @@ are instances of any subclass of the given type. For instance, if you select [[p
 
 By default, OpenRefine will propose you some types based on the first few items of your dataset. It is quite likely that these types will be too specific for your needs. You can specify a broader type that will encompass more items. For instance, if you have a dataset of universities, it might be better to pick [[educational institution (Q2385804)|https://www.wikidata.org/wiki/Q2385804]] rather than [[university (Q3918)|https://www.wikidata.org/wiki/Q3918]], for instance if some entry happens to be marked as a [[college (Q189004)|https://www.wikidata.org/wiki/Q189004]] in Wikidata.
 
-Some items are not marked as the instances of anything, because nobody has taken the time to add these statements yet. If you restrict the reconciliation to a type, these items will not appear in the results, except when no items of the given type could be found for the particular name. In this case, items with no type can be returned: they will have a low score and will not be matched automatically.
+Some items are not marked as the instances of anything, because no one has taken the time to add these statements yet. If you restrict the reconciliation to a type, these items will not appear in the results, except when no items of the given type could be found for the particular name. In this case, items with no type can be returned: they will have a low score and will not be matched automatically.
 
 ==Refining by property==
 
