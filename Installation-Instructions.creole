@@ -44,6 +44,7 @@ new bugs as well.
  # Install [[Homebrew from here|http://brew.sh]]
  # In Terminal enter
 {{{brew tap caskroom/cask}}}
+
 {{{brew cask install openrefine-dev}}}
  # Then find OpenRefine in your Applications folder.
 
