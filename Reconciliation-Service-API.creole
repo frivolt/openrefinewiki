@@ -1,4 +1,4 @@
-//Specification for a standard reconciliation service API//
+//This is a technical description of the mechanisms behind the reconciliation system in OpenRefine. For usage instructions, see [[Reconciliation]].//
 
 =Introduction=
 
@@ -12,6 +12,10 @@ A standard reconciliation service is a HTTP-based RESTful JSON-formatted API. It
 * The root URL. This is the URL that users will need to add the service to OpenRefine. For instance, the Wikidata reconciliation interface in English has the following URL: https://tools.wmflabs.org/openrefine-wikidata/en/api
 * //Optional.// The suggest API, which enables autocompletion at various places in OpenRefine
 * //Optional.// The preview API, which lets users preview the reconciled items directly from OpenRefine.
+
+The specification of each of these endpoints is given in the following sections.
+
+=Main reconciliation service=
 
 The root URL operates in 2 modes: single query mode and multiple query mode. The second is for optimization (reducing number of HTTP calls).  Reconciliation services must implement support for both query modes as well as implementing the metadata query.
 
@@ -65,7 +69,7 @@ both mapped to the same table.  The user would then choose the "type"
 that they want based which ID they want returned. 
 ----
 
-=Service Metadata=
+==Service Metadata==
 
 When a service is called with just a JSONP callback parameter and no other parameters, it must return its metadata as a JSON object literal with at least 3 fields "name", "identifierSpace", and "schemaSpace". Other fields are optional for reconciliation services which can make use of the default Freebase preview, suggest, etc services, but non-Freebase reconciliation services may need to implement them all.
 
@@ -124,9 +128,9 @@ The other fields are for
 * default types for reconciliation - TODO needs more documentation
 
 
-=Query Request=
+==Query Request==
 
-==Single Query Mode==
+===Single Query Mode===
 
 A call to a reconciliation service API for a single query looks like either of these:
 
@@ -176,7 +180,7 @@ Here is an example of a full query parameter:
   }
 }}}
 
-==Multiple Query Mode==
+===Multiple Query Mode===
 
 A call to a standard reconciliation service API for multiple queries looks like this:
 
@@ -195,7 +199,7 @@ The json object literal has zero or more key/value pairs with arbitrary keys whe
   http://standard-reconcile.freebaseapps.com/reconcile?queries={%22q0%22:{%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22},%22q1%22:{%22query%22:%22jaguar%22}}
 
 
-=Query Response=
+==Query Response==
 
 The response for a single query is a JSON literal object
 
@@ -231,7 +235,7 @@ For multiple queries, the response is a JSON literal object with the same keys a
 The service must also support JSONP through a callback parameter ie &callback=foo.
 
 
-==Preview API==
+=Preview API=
 
 The preview service API (complementary to the reconciliation service API) is quite simple. Pass it an identifier and it renders information about the corresponding entity in an HTML page, which will be shown in an iframe inside OpenRefine. The given width and height dimensions tell OpenRefine how to size that iframe.
 
@@ -243,7 +247,7 @@ NOTE: The Freebase Topic Blocks widget is deprecated and will go away when the o
 
   https://www.googleapis.com/freebase/v1/topic/en/apple_inc?filter=suggest&key=${key}
 
-==Suggest APIs==
+=Suggest APIs=
 
 In the "Start Reconciling" dialog box in OpenRefine, you can specify which type of entities the column in question contains. For instance, the column might contains names of politicians. But you don't know the identifier corresponding to the "politician" type. So we need a suggest API that translates "politician" to something like, say, "/government/politician" if we're reconciling against Freebase.
 
