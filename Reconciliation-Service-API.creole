@@ -8,6 +8,11 @@ Entities are identified by strong identifiers in some particular identifier spac
 
 OpenRefine defines a reconciliation API so that users can use the reconciliation features of OpenRefine with various databases.
 
+Informally, the main function of any reconciliation service is to find good candidates in the underlying database, given the following data:
+* A string, which is normally the name or title of the entity, in some language.
+* Optionally, a type which can be used to narrow down the search to entities of this type. OpenRefine does not define a particular set of acceptable types: this choice is left to the reconciliation service (see the suggest API for that).
+* Optionally, a list of properties and their values, which can be used to refine the search. For instance, when reconciling a database of books, the author name or the publication date are useful bits of information that can be transferred to the reconciliation service. This information will be sent to the reconciliation service if the user binds columns to properties. Again, the notion of property is not predefined in OpenRefine: its definition depends on the reconciliation service.
+
 A standard reconciliation service is a HTTP-based RESTful JSON-formatted API. It consists of various endpoints, each of which fulfills a specific function. Only the first one is mandatory.
 * The root URL. This is the URL that users will need to add the service to OpenRefine. For instance, the Wikidata reconciliation interface in English has the following URL: https://tools.wmflabs.org/openrefine-wikidata/en/api
 * //Optional.// The suggest API, which enables autocompletion at various places in OpenRefine
@@ -27,55 +32,24 @@ The next request that your service will see is a multiple reconciliation query r
 
 After the user has chosen a type and, optionally, other columns with associated types to include in the reconciliation, you'll start receiving batches of data in multiple query reconciliation requests.
 
-----
-Here's a little overview and theory from our [[mailing list thread|https://groups.google.com/forum/#!msg/openrefine/tHdYtekAIUk/RaI-xDSGFysJ]].  **TODO:** it needs to be reworked and incorporated into the text.
-----
-The main elements are: 
-
-* reconciliation service - single end point which can reconcile 
-against multiple "types" of entities 
-** type - modeled on Freebase types, but basically a type of thing 
-that can be reconciled against. A type has: 
-*** an ID (the identifier for the type itself) 
-*** a name/label (the string presented to the user for when they're 
-picking types) 
-*** a bunch of properties (e.g. the director or release date for a film) 
-*** a bunch of instances with values for the properties which can be 
-matched in addition to the name, returning: 
-**** an ID (for the matched entity) which is stored by Refine in 
-cell.recon.match.id 
-**** a name which is used as the display name for the cell after it is match 
-
-There's a bunch of ways that you could mix and match this in a table 
-oriented scenario, but one logical mapping would be to have the "type" 
-match to a database/table tuple with "id", "name", and any additional 
-properties mapped to columns and the matched entities being rows. 
-
-Because the reconciliation service only returns a single ID, getting 
-additional column values could be done one of two ways: 
-
-1. The Freebase way using a separate command a la "Add column by 
-fetching from Freebase" (perhaps just using "Add column by fetching 
-URL" against a local REST service) 
-
-2. By defining multiple "types" in the reconciliation service mapped 
-to the same table, but returning different columns as the ID.  In 
-Mr/Ms 9er's example, you could have: 
-
-* CA Corporation ID returning the id column value as the ID 
-* CA Corporation CorpID returning the corpid column value as the ID 
-
-both mapped to the same table.  The user would then choose the "type" 
-that they want based which ID they want returned. 
-----
-
 ==Service Metadata==
 
-When a service is called with just a JSONP callback parameter and no other parameters, it must return its metadata as a JSON object literal with at least 3 fields "name", "identifierSpace", and "schemaSpace". Other fields are optional for reconciliation services which can make use of the default Freebase preview, suggest, etc services, but non-Freebase reconciliation services may need to implement them all.
+When a service is called with just a JSONP callback parameter and no other parameters, it must return its //service metadata// as a JSON object literal with the following fields:
+* {{{"name"}}}: the name of the service, which will be used to display the service in the reconciliation menu;
+* {{{"identifierSpace"}}}: an URI for the type of identifiers returned by the service;
+* {{{"schemaSpace"}}}: an URI for the type of types understood by the service.
+
+The last two parameters are mainly useful to assert that the identifiers returned by two different reconciliation services mean the same thing.
+
+The {{{"view"}}} parameter can be used to specify a way to construct URLs to view a given item from its identifier:
+
+{{{"view": {"url":"http://example.com/object/{{id}}"} }}} 
+
+Other fields are optional: they are used to specify the URLs for the other endpoints (suggest, preview) described in the next sections.
 
 Here are two live examples:
-# http://standard-reconcile.freebaseapps.com/reconcile?callback=jsonp
-# http://netflix-reconcile.freebaseapps.com/reconcile?callback=jsonp
+# https://tools.wmflabs.org/openrefine-wikidata/en/api
+# http://refine.codefork.com/reconcile/viaf
 
 {{{
 {
