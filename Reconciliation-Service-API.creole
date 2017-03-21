@@ -4,11 +4,9 @@
 
 A reconciliation service is a web service that, given some text which is a name or label for something, and optionally some additional details, returns a ranked list of potential entities matching the criteria. The candidate text does not have to match each entity's official name perfectly, and that's the whole point of reconciliation--to get from ambiguous text name to precisely identified entities. For instance, given the text "apple", a reconciliation service probably should return the fruit apple, the Apple Inc. company, and New York city (also known as the Big Apple).
 
-Entities are identified by strong identifiers in some particular identifier space. In the same identifier space, identifiers follow the same syntax. For example, given the string "apple", a reconciliation service might return entities identified by [[Q89|https://www.wikidata.org/wiki/Q89]], [[Q312|https://www.wikidata.org/wiki/Q312]], and [[Q60|https://www.wikidata.org/wiki/Q60]], in the Wikidata ID space. Given the same string, another reconciliation service might return entities identified by URIs, which are in the URI space, so to speak. Some other identifier spaces are ISBN, LSID. (Although ISBN and LSID identifiers are numbers, for uniformity, they are still stored as strings in OpenRefine.)
+Entities are identified by strong identifiers in some particular identifier space. In the same identifier space, identifiers follow the same syntax. For example, given the string "apple", a reconciliation service might return entities identified by the strings "[[Q89|https://www.wikidata.org/wiki/Q89]]", "[[Q312|https://www.wikidata.org/wiki/Q312]]", and "[[Q60|https://www.wikidata.org/wiki/Q60]]", in the Wikidata ID space. Each reconciliation service can only reconcile to one single identifier space, but several reconciliation services can reconcile to the same identifier space.
 
-Each reconciliation service can only reconcile to one single identifier space, but several reconciliation services can reconcile to the same identifier space.
-
-So that it will be easy for users to plug in a variety of interchangeable reconciliation services, we define the API for a standard reconciliation service here.
+OpenRefine defines a reconciliation API so that users can use the reconciliation features of OpenRefine with various databases.
 
 A standard reconciliation service is a HTTP-based RESTful JSON-formatted API. It consists of various endpoints, each of which fulfills a specific function. Only the first one is mandatory.
 * The root URL. This is the URL that users will need to add the service to OpenRefine. For instance, the Wikidata reconciliation interface in English has the following URL: https://tools.wmflabs.org/openrefine-wikidata/en/api
