@@ -33,7 +33,7 @@ OpenRefine communicates with reconciliation services in the following way.
 
 The root URL has three functions:
 * it returns the [[service metadata|Reconciliation Service API#service-metadata]] if no query is provided.
-* when given the {{{queries}}} parameter, it performs a [batch of queries|Reconciliation Service API#multiple-query-mode]] and returns the results for each query. This makes it efficient
+* when given the {{{queries}}} parameter, it performs a [[batch of queries|Reconciliation Service API#multiple-query-mode]] and returns the results for each query. This makes it efficient
 * it performs a single query if the {{{query}}} parameter is given. This mode is deprecated: it is not used by OpenRefine and other API consumers should not rely on it.
 
 ==Service metadata==
