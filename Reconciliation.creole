@@ -44,7 +44,7 @@ Types are organized into an ontology, by specifying which types are subclasses o
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/explanation_types_wikidata.svg|(diagram explaining types in Wikidata)}}
 
-One useful tool to visualize the subclasses of a given type is the [[Wikidata generic tree visualizer|https://tools.wmflabs.org/wikidata-todo/tree.html]]. For instance, here are [[all the subclasses of educational institution (Q2385804)|https://tools.wmflabs.org/wikidata-todo/tree.html?q=2385804&rp=279]].
+One useful tool to visualize the subclasses of a given type is the [[Wikidata Graph Builder|https://angryloki.github.io/wikidata-graph-builder/]]. For instance, here are [[all the subclasses of academic institution (Q4671277)|https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q4671277&mode=reverse]].
 
 The reconciliation dialog allows you to select a type for your rows. This will restrict the matches to items which
 are instances of any subclass of the given type. For instance, if you select [[public institution (Q875538)|https://www.wikidata.org/wiki/Q875538]], then [[university of Ljubljana (Q1377)|https://www.wikidata.org/wiki/Q1377]] will be a possible match, because of the path depicted above.
@@ -73,6 +73,8 @@ As you can see, the score is boosted when the sport matches. In the first row, t
 
 ==Advanced usage: property paths==
 
+**This feature is specific to the reconciliation interface for Wikidata.**
+
 Sometimes, the relation between the reconciled item and the disambiguating column is not direct: it is not represented as a property itself. Let us consider this dataset of cities:
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_city_country.png|(an example dataset with cities and country codes)}}
@@ -81,12 +83,19 @@ To fetch the country code from an item representing a city, you need to follow t
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/sparql_path_1.svg|(an example dataset with cities and country codes)}}
 
-This is supported by the reconciliation interface, with a syntax inspired by [[SPARQL property paths|https://www.w3.org/TR/sparql11-property-paths/]]: just type the sequence of property identifiers separated by slashes, such as **P17/P297**:
+This is supported by the reconciliation interface, with a syntax inspired by [[SPARQL property paths|https://www.w3.org/TR/sparql11-property-paths/]]: just type the sequence of property identifiers separated by slashes, such as {{{P17/P297}}}:
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_city_country_dialog.png|(inputting a property path in the reconciliation interface)}}
 
 This additional information allows to distinguish between namesakes, to some extent. As "Cambridge, US" is still ambiguous, there are multiple items with a perfect matching score, but "Oxford, GB" successfully disambiguates one particular city from its namesakes.
 {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_city_country_disambiguated.png|(the disambiguated dataset)}}
+
+The endpoint currently supports two property combinators: {{{/}}}, to concatenate two paths as above, and {{{|}}}, to compute the union of the values yielded by two paths. Concatenation {{{/}}} has precedence over disjunction {{{|}}}. The dot character {{{.}}} can be used to denote the empty path. For instance, the following property paths are equivalent:
+* {{{P17|P749/P17}}}
+* {{{P17|(P749/P17)}}}
+* {{{(.|P749)/P17}}}
+
+They fetch the [[country (P17)|https://www.wikidata.org/wiki/Property:P17]] of an item or that of its [[parent organization (P749)|https://www.wikidata.org/wiki/Property:P17]].
 
 ==Query-based Reconciliation==
 
