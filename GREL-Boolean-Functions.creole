@@ -2,13 +2,13 @@
 
 See also: [[All GREL functions | GREL functions]].
 
-===and(boolean b1, boolean b2, ...)===
+===and(boolean b1, boolean b2)===
 
-Logically AND two or more booleans to yield a boolean. For example, {{{and(1 < 3, 1 > 0)}}} returns {{{true}}} because both conditions are true.
+Logically AND two booleans to yield a boolean. For example, {{{and(1 < 3, 1 > 0)}}} returns {{{true}}} because both conditions are true.
 
-===or(boolean b1, boolean b2, ...)===
+===or(boolean b1, boolean b2)===
 
-Logically OR two or more booleans to yield a boolean. For example, {{{or(1 < 3, 1 > 7)}}} returns {{{true}}} because at least one of the conditions (the first one) is true.
+Logically OR two or booleans to yield a boolean. For example, {{{or(1 < 3, 1 > 7)}}} returns {{{true}}} because at least one of the conditions (the first one) is true.
 
 ===not(boolean b)===
 
