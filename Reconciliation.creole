@@ -97,17 +97,20 @@ The endpoint currently supports two property combinators: {{{/}}}, to concatenat
 
 They fetch the [[country (P17)|https://www.wikidata.org/wiki/Property:P17]] of an item or that of its [[parent organization (P749)|https://www.wikidata.org/wiki/Property:P17]].
 
-==Query-based Reconciliation==
+==Reconciling via unique identifiers==
 
-**This section is outdated and will be updated soon.**
+Many Wikidata items come with external unique identifiers, so if you have some in your dataset they can be very useful to get a precise reconciliation. When a Wikidata property corresponding to a unique identifier is used, the reconciliation interface uses a different matching strategy. It first retrieves any items with this identifier and gives it the perfect matching score (100). All the other properties are ignored, including the original name in the column being reconciled. If no item bears the supplied unique identifier, the reconciliation interface falls back on the standard strategy, using string search and fuzzy matching.
 
-As a degenerate form of "reconciliation", you can get a column of database IDs to be "reconciled". It's "degenerate" because the process isn't ambiguous since you already have IDs. The process of "reconciliation" here only involves fetching more data for those IDs (such as the official names corresponding to those IDs).
+**Note:** Sometimes the same external identifier is assigned to different Wikidata items (in which case the conflict will be flagged in Wikidata as a uniqueness constraint violation). In this case, the multiple items are returned but are not automatically matched.
 
-Right now OpenRefine only supports this kind of "query-based reconciliation" against Freebase. In the Reconcile dialog box, pick Freebase Query-based Reconciliation on the left. Your data can contain Freebase IDs, GUIDs, Wikipedia IDs, or keys in certain namespaces. For example, if you have country 2-letter ISO codes, you can reconcile against the namespace ISO 3166-1.
+**Note:** It is important to supply the unique identifiers in the same format as they are stored on Wikidata. Matching of identifiers is done with strict string equality. Case differences, spaces or leading zeros all matter. Check the documentation of the relevant Wikidata property for the expected format.
 
-Note that you might have to encode your data into property Freebase keys before performing query-based reconciliation. Use the mqlKeyQuote() function documented [[GREL-String-Functions]].
+This alternative matching strategy is only used for unique identifiers belonging to the reconciled items. For instance, while the [[ISO 3166-1 alpha-2 code (P297)|https://www.wikidata.org/wiki/Property:P297]] is a unique identifier for countries, it will not be used as a unique identifier for cities reconciled with the SPARQL property path {{{P17/P297}}} demonstrated above.
+
+However, disjunctions of unique identifiers can be still used: for instance, suppose you have a column containing sometimes a [[DOI (P356)|https://www.wikidata.org/wiki/Property:P356]], and sometimes a [[CiteSeerX ID (P3784)|https://www.wikidata.org/wiki/Property:P3784]]. If you are confident that such ids are not ambiguous (which is the case in this example as the formats are incompatible), then you can reconcile with this column mapped to {{{(P356|P3784)}}}. For each row, any item with the given value as either a DOI or a CiteSeerX id will be matched, ignoring the other values.
 
 == Keep all the suggestions made ==
+
 To keep all suggestion made by the reconciliation service and not match against the best one:
 # Before starting reconciliation un-check option Auto-match candidates with high confidence in Reconcile dialog (it's at the bottom). 
 ## After reconciliation you should be able to see all three suggested reconciliation candidates. This step is optional - it is just for you to see what will be extracted.
