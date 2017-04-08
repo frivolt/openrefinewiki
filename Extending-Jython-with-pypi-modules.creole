@@ -13,11 +13,20 @@ Quick Answer: Download and install Jython 2.7+ (install 'standard') to manage an
 {{{
   C:\Users\Thad>pip install address-formatter
 }}}
+* **NOTE :**  if you already have a Python version installed, {{{pip install <module>}}} will install the module in your first Python distribution, not in Jython. To work around the problem, use this command instead : 
+
+{{{
+  C:\Users\Thad>jython -m pip install address-formatter
+}}}
+
 * Start OpenRefine
 * Use the Expression dialog and append your path to include Jython 2.7 site-packages folder
 {{{
   import sys
   sys.path.append('E:\\jython2.7.0\\Lib\\site-packages')
+
+  #or, if you don't want escape each slash
+  sys.path.append(r'E:\jython2.7.0\Lib\site-packages')
 }}}
 
 * Then import the package and/or .py files you want to work with
