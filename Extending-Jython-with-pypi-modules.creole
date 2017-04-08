@@ -25,8 +25,8 @@ Quick Answer: Download and install Jython 2.7+ (install 'standard') to manage an
   import sys
   sys.path.append('E:\\jython2.7.0\\Lib\\site-packages')
 
-  #or, if you don't want escape each slash
-  sys.path.append(r'E:\jython2.7.0\Lib\site-packages')
+  #or, if you don't want to escape each backslash in the file path
+  #sys.path.append(r'E:\jython2.7.0\Lib\site-packages')
 }}}
 
 * Then import the package and/or .py files you want to work with
