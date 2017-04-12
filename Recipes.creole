@@ -588,7 +588,7 @@ Example: you want to remove from a text all stopwords contained in a file on you
 
 {{{
     with open(r"C:\Users\ettor\Desktop\stopwords.txt",'r') as f :
-    stopwords = [name.rstrip() for name in f]
+        stopwords = [name.rstrip() for name in f]
 
     return " ".join([x for x in value.split(' ') if x not in stopwords])
 }}}
