@@ -582,7 +582,7 @@ Or, do it all in one expression:
 
 [[Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
 
-=== Remove words contained in a file ===
+=== Remove/extract words contained in a file ===
 
 Example: you want to remove from a text all stopwords contained in a file on your desktop. In this case, use Jython.
 
@@ -591,4 +591,13 @@ Example: you want to remove from a text all stopwords contained in a file on you
         stopwords = [name.rstrip() for name in f]
 
     return " ".join([x for x in value.split(' ') if x not in stopwords])
+}}}
+
+Obviously, you can use the same method to extract words from cells only if they are contained in this file.
+
+{{{
+    with open(r"C:\Users\ettor\Desktop\stopwords.txt",'r') as f :
+        stopwords = [name.rstrip() for name in f]
+
+    return [x for x in value.split(' ') if x in stopwords]
 }}}
