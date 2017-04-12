@@ -597,9 +597,9 @@ Obviously, you can use the same method to extract words from cells only if they 
 
 {{{
     import csv
-    with open(r"C:\Users\ettor\Desktop\test2.csv",'r') as f:
+    with open(r"C:\Users\ettor\Desktop\list_of_words.csv",'r') as f:
     reader = csv.reader(f)   
-    stopwords = [col[0] for col in reader]
+    words_to_match = [col[0] for col in reader]
 
-    return [x for x in value.split(' ') if x in stopwords]
+    return [x for x in value.split(' ') if x in words_to_match]
 }}}
