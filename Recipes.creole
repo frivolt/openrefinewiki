@@ -593,11 +593,13 @@ Example: you want to remove from a text all stopwords contained in a file on you
     return " ".join([x for x in value.split(' ') if x not in stopwords])
 }}}
 
-Obviously, you can use the same method to extract words from cells only if they are contained in this file.
+Obviously, you can use the same method to extract words from cells only if they match those contained in a file. Here is another example with a list of words contained in the first column of a CSV.
 
 {{{
-    with open(r"C:\Users\ettor\Desktop\stopwords.txt",'r') as f :
-        stopwords = [name.rstrip() for name in f]
+    import csv
+    with open(r"C:\Users\ettor\Desktop\test2.csv",'r') as f:
+    reader = csv.reader(f)   
+    stopwords = [col[0] for col in reader]
 
     return [x for x in value.split(' ') if x in stopwords]
 }}}
