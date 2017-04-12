@@ -581,3 +581,14 @@ Or, do it all in one expression:
 === Parse and format Phone Numbers ===
 
 [[Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
+
+=== Remove words contained in a file ===
+
+Example: you want to remove from a text all stopwords contained in a file on your desktop. In this case, use Jython.
+
+{{{
+    with open(r"C:\Users\ettor\Desktop\stopwords.txt",'r') as f :
+    stopwords = [name.rstrip() for name in f]
+
+    return " ".join([x for x in value.split(' ') if x not in stopwords])
+}}}
