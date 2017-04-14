@@ -318,6 +318,19 @@ To make null cells and cells with empty strings behave in the same way you can e
   forEach(row.columnNames,cn,if(isNull(cells[cn]),"",cells[cn].value))
 }}}
 
+Obviously, you can use {{{filter()}}}, {{{[]}}} or {{{slice()}}} to select which column to merge. 
+Example : merge all columns except the column ID : 
+
+{{{
+forEach(filter(row.columnNames, v, v!="ID"),cn,if(isNull(cells[cn]),"",cells[cn].value)).join("|")
+}}}
+
+Or : merge all columns except the first one : 
+
+{{{
+forEach(row.columnNames.slice(1),cn,if(isNull(cells[cn]),"",cells[cn].value)).join("|")
+}}}
+
 === Facet for rows with a certain number of blank cells ===
 
 If you want to find rows that have a certain number of blank cells, including 'all blank' or 'no blanks' you can create a custom facet:
@@ -598,8 +611,8 @@ Obviously, you can use the same method to extract words from cells only if they 
 {{{
     import csv
     with open(r"C:\Users\ettor\Desktop\list_of_words.csv",'r') as f:
-    reader = csv.reader(f)   
-    words_to_match = [col[0] for col in reader]
+        reader = csv.reader(f)   
+        words_to_match = [col[0] for col in reader]
 
     return [x for x in value.split(' ') if x in words_to_match]
 }}}
