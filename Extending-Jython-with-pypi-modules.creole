@@ -45,3 +45,13 @@ ap = AddressParser()
 return ap.parse_address(value)
 }}}
 
+* How to replace diacritic characters
+{{{
+import sys
+sys.path.append(r'E:\jython2.7.1rc1\Lib\site-packages')
+from unidecode import unidecode
+return unidecode(value)
+
+# Boris Villazón -> Boris Villazon
+}}}
+
