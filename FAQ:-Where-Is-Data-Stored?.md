@@ -8,6 +8,7 @@ All your projects are stored on your own computer in the workspace directory lis
 **Windows:** depending on the Windows version, the data is in one of these directories
 * `C:\Documents and Settings\(user id)\Local Settings\Application Data\OpenRefine`
 * `C:\Users\(user id)\AppData\Roaming\OpenRefine`
+* `C:\Users\(user id)\AppData\Local\OpenRefine`
 * `C:\Users\(user id)\OpenRefine`
 
 for older Google Refine releases, replace `OpenRefine` with `Google\Refine`
