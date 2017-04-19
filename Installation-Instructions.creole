@@ -26,11 +26,13 @@ new bugs as well.
 
 ===Windows===
 
-**Install:** Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in {{{C:\Google-Refine}}}).
+**Install:** Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in {{{C:\Open-Refine}}}).
 
 **Run:** Run the {{{.exe}}} file in that folder. You should see the Command window in which OpenRefine runs. By default, the Command window has a black background and text in monospace font in it.
 
 **Shut down:** When you need to shut down OpenRefine, switch to that Command window, and press {{{Ctrl-C}}}. Wait until there's a message that says the shutdown is complete. That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.
+
+**Upgrading:**If you upgrade to a new version of OpenRefine, you may need to update your workspace (update reconciliation links, for example).  Remove your workspace.json file located [[at a data storage location|https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Where-Is-Data-Stored%3F]].  This file will be regenerated when OpenRefine starts.
 
 ===macOS===
 
