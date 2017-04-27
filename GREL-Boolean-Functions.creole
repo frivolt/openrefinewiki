@@ -2,14 +2,18 @@
 
 See also: [[All GREL functions | GREL functions]].
 
-===and(boolean b1, boolean b2)===
+===and(boolean b1, boolean b2, ...etc)===
 
-Logically AND two booleans to yield a boolean. For example, {{{and(1 < 3, 1 > 0)}}} returns {{{true}}} because both conditions are true.
+Logically AND two or more booleans to yield a boolean. For example, {{{and(1 < 3, 1 > 0)}}} returns {{{true}}} because both conditions are true.
 
-===or(boolean b1, boolean b2)===
+===or(boolean b1, boolean b2, ...etc)===
 
-Logically OR two or booleans to yield a boolean. For example, {{{or(1 < 3, 1 > 7)}}} returns {{{true}}} because at least one of the conditions (the first one) is true.
+Logically OR two or more booleans to yield a boolean. For example, {{{or(1 < 3, 1 > 7)}}} returns {{{true}}} because at least one of the conditions (the first one) is true.
 
 ===not(boolean b)===
 
 Logically NOT a boolean to yield another boolean. For example, {{{not(1 > 7)}}} returns {{{true}}} because {{{1 > 7}}} itself is false.
+
+===xor(boolean b1, boolean b2, ...etc)===
+
+Logically XOR (exclusive-or) two or more booleans to yield a boolean. For example, {{{xor(1 < 3, 1 > 7)}}} returns {{{true}}} because only one of the conditions (the first one) is true. {{{xor(1 < 3, 1 < 7)}}} returns {{{false}}} because more than one of the conditions is true.
