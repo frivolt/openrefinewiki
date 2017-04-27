@@ -65,7 +65,7 @@ In the reconciliation dialog, tick the box to include your column and bind it to
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_name_sport_dialog.png|(dialog to bind a column to a property)}}
 
-The reconciliation service will then fuzzy-match on both rows.
+The reconciliation service will then fuzzy-match on both columns.
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_name_sport_disambiguated.png|(example dataset)}}
 
