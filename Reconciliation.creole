@@ -116,9 +116,9 @@ To keep all suggestion made by the reconciliation service and not match against 
 ## After reconciliation you should be able to see all three suggested reconciliation candidates. This step is optional - it is just for you to see what will be extracted.
 # After reconciliation click on the reconciled column and choose Add column based on this column.
 ##Put following expression in the Expression field if you want the value: {{{cell.recon.candidates[0].name}}}
-##if you want link to Freebase - usually it is Freebase mid: {{{cell.recon.candidates[0].id}}}
-##To get all off the IDs at the same time use the expression: {{{cell.recon.candidates.join(',')}}} , which will give you a comma separated list of all the IDs.  Then use the command "Split multi-valued cells" to split the identifiers into individual rows.
-# If you then use reconcile against Freebase using the Freebase identifier option, you'll get the names and links that all you to use "Add column from Freebase" to get any other property values which are of interest.
+##if you want a link to Wikidata use this expression: {{{cell.recon.candidates[0].id}}}
+##To get all of the IDs at the same time use the expression: {{{cell.recon.candidates.join(',')}}} , which will give you a comma separated list of all the IDs.  Then use the command "Split multi-valued cells" to split the identifiers into individual rows.
+# If you then use reconcile against Wikidata using the Wikidata identifier option, you'll get the names and links that allow you to use "Add column from Wikidata" (currently not implemented) to get any other property values which are of interest.
 
 ==Language settings for Wikidata reconciliation==
 You can install a version of the Wikidata reconciliation service that uses your language.
