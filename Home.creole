@@ -10,7 +10,7 @@
 === Get started:
 * [[Installation Instructions]]
 * [[Documentation|Documentation For Users]] for Users
-* [[GREL Reference|https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users#reference]]
+* [[General Refine Expression Language (GREL) Reference|https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users#reference]]
 
 === Get help:
 * [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
