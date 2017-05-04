@@ -1,5 +1,6 @@
 This page list tutorials and resources developed outside the OpenRefine wiki. It also reflect resources used in the _[OpenRefine Custom Search Engine](http://openrefine.org)_
 # English
++ [Reconcile Data - Displaying HTML content from URLs within OpenRefine using IFRAMES](http://savetheworldnotyourmoney.blogspot.hk/2015/10/display-html-content-from-url-within.html)
 + [Converting Spreadsheets into MODSXML using Open Refine
 ](https://www.utsc.utoronto.ca/digitalscholarship/content/blogs/converting-spreadsheets-modsxml-using-open-refine)
 + [import.io + Open Refine + Google Fusion Tables = Magic!](http://blog.import.io/post/importio-open-refine-google-fusion-tables-magic)
