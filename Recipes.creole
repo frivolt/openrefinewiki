@@ -302,7 +302,7 @@ You'd need to use the 'cells' variable:
 If any of cells in the columns are blank, the merge will fail for that row. To fix, create a facet of blank cells with "Text Facet" ⇒ "Customized Facets" ⇒ "Facet by Blank". Then use "Edit Cells" ⇒ "Transform ..." and enter a string with a space: {{{' '}}}. 
 
 
-=== Merging all columns in a project ===
+=== Merging all or more than two columns in a project ===
 
 To merge all values across a row, you can use 'row.columnNames' (which retrieves all the column names in the project) with the 'cells' variable:
 
