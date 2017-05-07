@@ -301,17 +301,6 @@ You'd need to use the 'cells' variable:
 
 If any of cells in the columns are blank, the merge will fail for that row. To fix, create a facet of blank cells with "Text Facet" ⇒ "Customized Facets" ⇒ "Facet by Blank". Then use "Edit Cells" ⇒ "Transform ..." and enter a string with a space: {{{' '}}}. 
 
-You can also tweak this Python/Jython code : 
-
-{{{
-if(cells["col1"]['value'] is not None):
-    try:
-        return cells["col1"]['value'] + cells['col2']['value']
-    except:
-        return cells["col1"]['value']
-else:
-    return cells['Column 2']['value']
-}}}
 
 === Merging all columns in a project ===
 
@@ -343,6 +332,10 @@ Or : merge all columns except the first one :
 forEach(row.columnNames.slice(1),cn,if(isNull(cells[cn]),"",cells[cn].value)).join("|")
 }}}
 
+Another example using {{{.match()}}} (Thanks to Stephen Owen for the "lenght()>0" trick)
+{{{
+forEach(filter(row.columnNames, v, v.match(/(colname1|colname2|colname3|colname4|colname5)/).length()>0),cn,if(isNull(cells[cn]),"",cells[cn].value)).join("|")
+}}}
 === Facet for rows with a certain number of blank cells ===
 
 If you want to find rows that have a certain number of blank cells, including 'all blank' or 'no blanks' you can create a custom facet:
