@@ -332,7 +332,7 @@ Or : merge all columns except the first one :
 forEach(row.columnNames.slice(1),cn,if(isNull(cells[cn]),"",cells[cn].value)).join("|")
 }}}
 
-Another example using {{{.match()}}} (Thanks to Stephen Owen for the "lenght()>0" trick)
+Another example using {{{.match()}}} (Thanks to Stephens Owen for the "lenght()>0" trick)
 {{{
 forEach(filter(row.columnNames, v, v.match(/(colname1|colname2|colname3|colname4|colname5)/).length()>0),cn,if(isNull(cells[cn]),"",cells[cn].value)).join("|")
 }}}
