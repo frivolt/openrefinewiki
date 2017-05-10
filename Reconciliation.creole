@@ -109,6 +109,25 @@ This alternative matching strategy is only used for unique identifiers belonging
 
 However, disjunctions of unique identifiers can be still used: for instance, suppose you have a column containing sometimes a [[DOI (P356)|https://www.wikidata.org/wiki/Property:P356]], and sometimes a [[CiteSeerX ID (P3784)|https://www.wikidata.org/wiki/Property:P3784]]. If you are confident that such ids are not ambiguous (which is the case in this example as the formats are incompatible), then you can reconcile with this column mapped to {{{(P356|P3784)}}}. For each row, any item with the given value as either a DOI or a CiteSeerX id will be matched, ignoring the other values.
 
+== Fetching values from the reconciled database ==
+
+One reason to reconcile a dataset to some database is that it allows you to pull data from the database into OpenRefine. There is currently no standard way for reconciliation interfaces to expose this functionality to OpenRefine, but [[the feature is being discussed|https://github.com/OpenRefine/OpenRefine/issues/1179]].
+
+For the particular case of Wikidata, there is a workaround. You can create a column by fetching URLs, using the following endpoint:
+
+https://tools.wmflabs.org/openrefine-wikidata/en/fetch_values?item=Q3068626&prop=P463&label=true
+
+with the following parameters:
+* {{{item=}}}: the Wikidata identifier of the reconciled item (should be replaced by `cell.recon.match.id` in OpenRefine)
+* {{{prop=}}}: the identifier of the property to fetch. This can also be replaced by a property path as above.
+* {{{label=false}}} or {{{label=true}}} depending on whether you want to fetch the Wikidata identifiers or the labels of the retrieved values (the language of the labels is controlled by the language code in the URL).
+* {{{flat=true}}} if you want to return only the first value as plain text instead of the default JSON payload
+
+For instance, a typical GREL URL expression would look like this:
+
+{{{"https://tools.wmflabs.org/openrefine-wikidata/en/fetch_values?item="+cell.recon.match.id+"&prop=P463&label=true&flat=true"}}}
+
+
 == Keep all the suggestions made ==
 
 To keep all suggestion made by the reconciliation service and not match against the best one:
@@ -118,7 +137,6 @@ To keep all suggestion made by the reconciliation service and not match against 
 ##Put following expression in the Expression field if you want the value: {{{cell.recon.candidates[0].name}}}
 ##if you want a link to Wikidata use this expression: {{{cell.recon.candidates[0].id}}}
 ##To get all of the IDs at the same time use the expression: {{{cell.recon.candidates.join(',')}}} , which will give you a comma separated list of all the IDs.  Then use the command "Split multi-valued cells" to split the identifiers into individual rows.
-# If you then use reconcile against Wikidata using the Wikidata identifier option, you'll get the names and links that allow you to use "Add column from Wikidata" (currently not implemented) to get any other property values which are of interest.
 
 ==Language settings for Wikidata reconciliation==
 You can install a version of the Wikidata reconciliation service that uses your language.
