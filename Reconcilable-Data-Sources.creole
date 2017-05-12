@@ -17,6 +17,8 @@ Reconcile-csv is a reconciliation service for OpenRefine running from a CSV file
 The RDF Extension by DERI at NUI Galway includes reconciliation against
 any SPARQL endpoint or RDF dump file and publishing of the results in RDF. [[http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/|http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/]]
 
+===conciliator===
+[[conciliator|https://github.com/codeforkjeff/conciliator]] is a Java framework for creating OpenRefine reconciliation services. It currently offers out of the box support for VIAF, ORCID, Open Library, and any Apache Solr collection. Run your own service, or use the public server at [[http://refine.codefork.com|http://refine.codefork.com]]
 
 ==Librarians==
 
