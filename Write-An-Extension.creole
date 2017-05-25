@@ -4,6 +4,8 @@
 
 Giuliano Tortoreto write a separate documentation detailling how to build extension for OpenRefine. A LaTeX and PDF version are available on his repository [[giTorto/OpenRefineExtensionDoc|https://github.com/giTorto/OpenRefineExtensionDoc]] (to do: convert the documentation to Creole and add it to this wiki)
 
+Owen Stephens wrote a guide to developing an extension which specifically adds new GREL functions to OpenRefine. This is available as a blog post: [[Writing an extension to add new GREL functions to OpenRefine|http://www.meanboyfriend.com/overdue_ideas/2017/05/writing-an-extension-to-add-new-grel-functions-to-openrefine/]]
+
 
 OpenRefine makes use of the [[Butterfly framework|http://code.google.com/p/simile-butterfly/]] to provide an extension architecture. OpenRefine extensions are Butterfly modules. You don't really need to know about Butterfly itself, but you might encounter "butterfly" here and there in the code base.
 
