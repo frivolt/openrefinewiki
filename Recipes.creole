@@ -506,6 +506,26 @@ This new expression transforms those cells to
 
 What forNonBlank does is test its first argument and decides what to do based on whether that is blank (null or empty string) or not. If it's not blank, bind that value to the variable name in the second argument (v) and evaluates the third argument ("-" + v). Otherwise, it evaluates the fourth argument ("").
 
+=== Replace string list entries
+
+You have a cell with joined image URL entries that you have downloaded and named by an {{{identifier}}} + {{{-Image-N}}}. 
+
+```
+"https://url/2a4d7bd5c8e04c.png", "https://url/bbcfb4168a3.png", "https://url/03b9239f6c514ec.png", "https://url/c02ae6689f1d4b14.png", "https://url/67438c.png"
+```
+
+You like to rename the list to {{{"identifier-Image-N", "..", ".."}}} so you get this result
+
+```
+"identifier-Image-0.png","identifier-Image-1.png","identifier-Image-2.png","identifier-Image-3.png","identifier-Image-4.png"
+```
+
+You can do this with this expression:
+
+```
+join(forEachIndex(split(value,","),i,v,"\"" + cells['Identifier'].value + "-Image-" + i + "." + split(v,".")[length(split(v,"."))-1]), ",")
+```
+
 == Spot Potential Encoding Issues ==
 
 While OpenRefine offers a convenient way to fix encoding issues with the "reinterpret" GREL command, it also helps you find where these problems could be since they can be hidden if most of the content has been properly decoded.
