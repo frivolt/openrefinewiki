@@ -15,7 +15,7 @@
 
 === Get help:
 * [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
-* [[Tutorials|External Resources]] in english, spanish, german, french and japanese
+* [[External Tutorials|External Resources]] in english, spanish, german, french and japanese
 * [[Recipes]] where folks might have solved a similar problem as yours
 * [[Mailing List|http://groups.google.com/group/openrefine/]]
 * [[File bugs and feature requests here|issues]]
