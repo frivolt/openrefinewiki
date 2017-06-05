@@ -1,4 +1,7 @@
 //Announcements of the latest features//
+==June 2017 ==
+Jacky pushed some new functionality into our master branch that lets you transfrom cells across all columns
+
 ==October 2015==
 
 OpenRefine 2.6 release candidate 2 is released
