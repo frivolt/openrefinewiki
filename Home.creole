@@ -15,6 +15,7 @@
 
 === Get help:
 * [[FAQ]] Having TROUBLE? Check our Frequently Asked Questions
+* [[Tutorials|External Resources]] in english, spanish, german, french and japanese
 * [[Recipes]] where folks might have solved a similar problem as yours
 * [[Mailing List|http://groups.google.com/group/openrefine/]]
 * [[File bugs and feature requests here|issues]]
@@ -24,7 +25,7 @@
 * [[See what's new lately|Whats New]]
 * [[Related Software|Related Software]] that might fit your use case better than OpenRefine.
 * [[Understand how to upgrade|Back Up OpenRefine Data]] from Google Refine 2.0 to Google Refine 2.1
-* [[List of curated tutorials|External Resources]] in english, spanish, german, french and japanese
+
 
 === If You Are a Developer, see
 * [[Documentation|Documentation For Developers]] for Developers
