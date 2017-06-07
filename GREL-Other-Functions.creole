@@ -66,6 +66,11 @@ Returns an array of zero or more rows in the project {{{projectName}}} for which
 * https://groups.google.com/forum/#!topic/openrefine/unN6dQsyYUs
 * https://www.bits.vib.be/index.php/software-overview/openrefine
 
+**NOTE: If you don't get matches when using cross(), then you might need to first do a few things, such as**
+* trim() your key column before doing cross()
+* Deduplicate values in your key column if necessary
+
+OK, with that out the way, lets show you an example of how to use the cross() function.
 Consider 2 projects with the following data:
 
 **My Address Book**
