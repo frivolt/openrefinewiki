@@ -120,8 +120,8 @@ Here is some further discussion and a project:
 
 ==== cross() function does not work for me ====
 
-You might be missing a few steps that need to be performed before you can use the cross() function
+You might be missing a few steps that need to be performed before you can use the {{{cross()}}} function
 and expect it to match the keys between the 2 projects correctly.
 
-* trim() your key column before doing cross()
+* {{{trim()}}} your key column before doing {{{cross()}}}
 * De-duplicate values in your key column if necessary
