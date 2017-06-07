@@ -117,3 +117,11 @@ Here is some further discussion and a project:
 * http://groups.google.com/group/openrefine/msg/ee29cf8d660e66a9?hl=en
 * https://groups.google.com/group/openrefine-dev/browse_thread/thread/33374842ccfebfcd#
 * https://github.com/dfhuynh/grefine-proxy
+
+==== cross() function does not work for me ====
+
+You might be missing a few steps that need to be performed before you can use the cross() function
+and expect it to match the keys between the 2 projects correctly.
+
+* trim() your key column before doing cross()
+* De-duplicate values in your key column if necessary
