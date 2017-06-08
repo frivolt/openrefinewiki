@@ -51,7 +51,7 @@ and there are full recipes:
 * [[Parsing and Formatting Phone Numbers - Using Java with Python|Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
 * [[Extending Jython with pypi modules|Extending-Jython-with-pypi-modules]]
 
-Many **worked examples** that illustrate project flow and the logic of using OpenRefine are collected under [[External Resources]]
+Many **tutorials and worked examples** that illustrate project flow and the logic of using OpenRefine are collected under [[External Resources]]
 =Reference=
 
 [[Glossary of Terms]]
