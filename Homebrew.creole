@@ -64,6 +64,13 @@ You should see output like this:
   🍺  openrefine was successfully installed!
 }}}
 
+If you had previously installed the "openrefine-dev" cask (containing a release candidate) and you want to move to the stable release, you need to first uninstall the old cask and then install the new one:
+
+{{{
+  brew cask uninstall openrefine-dev
+  brew cask install openrefine
+}}}
+
 === Maintaining OpenRefine's Homebrew Cask ===
 
 OpenRefine's presence on Homebrew is found in the Caskroom project, as a "cask", at https://github.com/caskroom/homebrew-cask/blob/master/Casks/openrefine.rb.
