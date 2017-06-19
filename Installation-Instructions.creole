@@ -44,8 +44,7 @@ new bugs as well.
 
 2. In Terminal enter 
 {{{
-  brew tap caskroom/versions
-  brew cask install openrefine-dev
+  brew cask install openrefine
 }}}
 
 3. Then find OpenRefine in your Applications folder.
