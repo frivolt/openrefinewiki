@@ -47,7 +47,8 @@ and there are full recipes:
 
 * [[Geocoding|Geocoding]] - translating street addresses to lat/lng coordinates
 * [[Fetching URLs From Web Services|Fetching URLs From Web Services]] - grabbing from the Web more data related to the data you already have
-* [[Web Scraping & Extracting items from HTML pages|StrippingHTML]] 
+* [[Web Scraping & Extracting items from HTML pages|StrippingHTML]]
+* [[Using Python as your expression langugage|Jython]] 
 * [[Parsing and Formatting Phone Numbers - Using Java with Python|Jython#tutorial---working-with-phone-numbers-using-java-libraries-inside-python]]
 * [[Extending Jython with pypi modules|Extending-Jython-with-pypi-modules]]
 
