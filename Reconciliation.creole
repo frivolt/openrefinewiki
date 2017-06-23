@@ -10,7 +10,7 @@ You can use OpenRefine to perform reconciliation of names in your data against a
 
 ==Basics==
 
-Givan a column containing names, we can reconcile those names against Wikidata. To do so, invoke the column's drop-down menu and pick //Reconcile// > //Start reconciling//. If you want to reconcile only some cells in that column, then use filters and facets to isolate them first.
+Given a column containing names, we can reconcile those names against Wikidata. To do so, invoke the column's drop-down menu and pick //Reconcile// > //Start reconciling//. If you want to reconcile only some cells in that column, then use filters and facets to isolate them first.
 
 {{https://tools.wmflabs.org/openrefine-wikidata/static/screenshot_column.png|Screenshot of the reconciliation menu}}
 
