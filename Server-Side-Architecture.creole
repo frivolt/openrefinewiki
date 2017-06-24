@@ -25,7 +25,7 @@ This design lets the same raw data be viewed in different ways by different mode
 
 ===Column Model===
 
-Cells in rows are not named and can only be addressed by their list position indices. So, a //column model// is needed to give a name to each list position. The column model also stores other metadata for each column, including the Freebase type that cells in the column have been reconciled to and the overall reconciliation statistics of those cells.
+Cells in rows are not named and can only be addressed by their list position indices. So, a //column model// is needed to give a name to each list position. The column model also stores other metadata for each column, including the type that cells in the column have been reconciled to and the overall reconciliation statistics of those cells.
 
 Each column also acts as a cache for data computed from the raw data related to that column.
 
