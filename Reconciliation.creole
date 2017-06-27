@@ -100,16 +100,18 @@ They fetch the [[country (P17)|https://www.wikidata.org/wiki/Property:P17]] of a
 ===Comparing values===
 
 By default, the values supplied in OpenRefine and the ones present in Wikidata are compared by string fuzzy-matching. There are some exceptions to this:
-* If the value is an identifier (i.e. if the property used in its claim is an instance of [[Wikidata property representing a unique identifier (Q19847637)|https://www.wikidata.org/wiki/Q19847637]] or any subclass of it), then exact string matching is used.
-* If the values are integers, exact equality between integers is used
+* If the value is an identifier, then exact string matching is used.
+* If the values are integers, exact equality between integers is used.
 * If the values are floating point numbers, the score is 100 if they are equal and decreases towards 0 as their absolute difference increases.
+* If the values are coordinates (specified in the {{{"lat,lng"}}} format on OpenRefine's side), then the matching score is 100 when they are equal and decreases as their distance increases. Currently a score of 0 is reached when the points are 1km away from each other.
 
-Sometimes, we need to match on more complex values, such as dates or coordinate locations. Such matching is not implemented yet as the granularity of the matching highly depends on the data at hand. But it is possible to select parts of these values for matching by appending a modifier at the end of the property path:
+Sometimes, we need a more specific matching on sub-parts of these values. It is possible to select these parts for matching by appending a modifier at the end of the property path:
 * {{{@lat}}} and {{{@lng}}}: latitude and longitude of geographical coordinates (float)
 * {{{@year}}}, {{{@month}}}, {{{@day}}}, {{{@hour}}}, {{{@minute}}} and {{{@second}}}: parts of a time value (int). They are returned only if the precision of the Wikidata value is good enough to define them.
 * {{{@isodate}}}: returns a date in the ISO format {{{1987-08-23}}} (string). A value is always returned.
-* {{{@iso}}}: returns the date and time in the ISO format {{{1987-08-23T08:34:32Z}}}. A value is always returned.
+* {{{@iso}}}: returns the date and time in the ISO format {{{1996-03-17T04:15:00+00:00}}}. A value is always returned.
 For times and dates, all values are returned in the UTC time zone.
+* {{{@urlscheme}}} ({{{"https"}}}), {{{@netloc}}} ({{{"www.wikidata.org"}}}) and {{{@urlpath}}} ({{{"/wiki/Q42"}}}) can be used to perform exact matching on parts of URLs.
 
 For instance, if you want to refine people by their birth dates, but you only have the month and day.
 First, split the birthday dates in two columns, for month and day.
