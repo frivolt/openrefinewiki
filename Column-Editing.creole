@@ -42,6 +42,23 @@ and name that new column "last name", then after that command executes, the data
 
 For more information on expressions, see [[Understanding Expressions|Understanding Expressions]].
 
+==Merge / Concatenate Columns==
+
+see also [[Variables|Variables]] for further advice on how to work with cells, rows, records etc.
+
+To merge or concatenate 2 columns together,
+you can Create a new column called "joinedColumn" or whatever and do this:
+{{{
+cells["Column 1"].value + cells["Column 2"].value
+}}}
+or if the column names do not contain spaces, you can easily do just this:
+{{{
+cells.MyCol1.value + cells.MyCol2.value
+}}}
+or using records mode instead of rows mode, like this:
+{{{
+row.record.cells.AuthorFirstName.value + " " + row.record.cells.AuthorLastName.value
+}}}
 
 ==Splitting Columns==
 
