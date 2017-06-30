@@ -2,7 +2,7 @@
 
 (in no particular order)
 
-* [[Microsoft PowerPivot|https://technet.microsoft.com/en-us/library/gg399131.aspx]]
+* [[JunoLab|http://junolab.org/]] an open source Interactive IDE built on Atom and Julia that provides live feedback and a programmable GUI to create facets like OpenRefine
 * [[Rapid Miner|http://rapid-i.com/content/view/181/190/lang,en/]] (a light version is free)
 * [[Orange|http://orange.biolab.si/]] (open source)
 * [[Apache NiFi|http://nifi.apache.org]] (useful automated dataflow & batch processing, has expression language, extendable)
