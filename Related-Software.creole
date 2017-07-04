@@ -7,7 +7,7 @@
 * [[Orange|http://orange.biolab.si/]] **open source** data mining and machine learning
 * [[Apache NiFi|http://nifi.apache.org]] - **open source** automated dataflow & batch processing, has expression languages, & extendable
 * [[Talend Data Preparation|https://github.com/Talend/data-prep]] - **open source** tool that performs similar functions as OpenRefine
-* [[Rattle|http://rattle.togaware.com/]] **open source**
+* [[Rattle|http://rattle.togaware.com/]] **open source** A Graphical User Interface for Data Mining using R
 * [[Rapid Miner|http://rapid-i.com/content/view/181/190/lang,en/]] (a light version is free)
 * [[Tableau|http://www.tableausoftware.com/]]
 * [[Spotfire|http://spotfire.tibco.com/]]
