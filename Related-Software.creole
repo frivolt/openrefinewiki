@@ -23,7 +23,8 @@ From the academia (open source for the basic community edition)
 * [[Potter's Wheel|http://control.cs.berkeley.edu/abc/]] ([[screenshots|http://control.cs.berkeley.edu/abc/abc-rel/1.3/snapshots/]]) by Vijayshankar Raman and Joseph M. Hellerstein (UCBerkeley) (open source)
 * [[AJAX|http://web.tagus.ist.utl.pt/~helena.galhardas/ajax.html]] by H.Galhardas, D. Florescu, D. Shasha, E. Simon, J.P. Matsumoto, C.A. Saita (error 404)
 * [[Clio|http://queens.db.toronto.edu/project/clio/]] - UToronto, IBM (university project)
-* [[Data Wrangler|http://vis.stanford.edu/wrangler/]]
+* [[Data Wrangler|http://vis.stanford.edu/wrangler/]] - an interactive tool for data cleaning and transformation.
+* [[Trifacta Wrangler|https://www.trifacta.com/products/wrangler/]] - Commercial version of Data Wrangler, but free version available.
 * [[Yeroon.net/ggplot2|http://www.stat.ucla.edu/~jeroen/ggplot2.html]] - a javascript web interface for R package, ggplot2 - Jeroen C.L. Ooms, Hadley Wickham (university project)
 
 Feel free to add suggestions in the comments. 
