@@ -83,11 +83,13 @@ Example:
 
 The service returns a JSON response formatted as follows:
 
-* `meta` contains an object, mapping property ids to an object storing metadata about
-   these properties (all optional):
-   * `type` (containing an object with `id` and `name` keys) represents the expected
+* `meta` contains a list of column metadata. The order of the properties must be the same
+   as the one provided in the query. Each element is an object containing the following keys:
+   * `id` (mandatory): the identifier of the property
+   * `name` (mandatory): the human-readable name of the property
+   * `type` (optional): an object with `id` and `name` keys representing the expected
       type of values for that property. The notion of type is the same as the one
-      used for reconciliation: it should only be provided when the property returns
+      used for reconciliation. The `type` field should only be provided when the property returns
       reconciled items.
 * `rows` contains an object. Its keys must be exactly the record ids (`ids`) passed in the query.
    The value for each record id is an object representing a row for that id. The keys of a    row object must be exactly the property ids passed in the query (`"P856"` and `"P159"` in the example above). The value for a property id should be a list of cell objects.
@@ -107,8 +109,14 @@ Cell objects are JSON objects which contain the representation of an OpenRefine 
 * an object with `"date"` and an ISO-formatted date string represents a point in time.
   Example: `{"date": "1987-02-01T00:00:00+00:00"}`
 
-* an object with `"float"` and a numerical value represents a quantity:
-  Example: `{"float":48.2736}`
+* an object with `"float"` and a numerical value represents a quantity.
+  Example: `{"float": 48.2736}`
+
+* an object with `"int"` and an integer represents a number.
+  Example: `{"int": 54}`
+
+* an object with `"bool"` and `true` or `false` represents a boolean.
+  Example: `{"bool": false}`
 
 Example of a full response (for the example query above):
 
@@ -167,16 +175,26 @@ Example of a full response (for the example query above):
         "Q845632",
         "Q5661356"
       ],
-      "meta": {
-        "P159": {
-          "type": "Q7540126"
+      "meta": [
+        {
+          "id": "P159",
+          "name": "headquarters location",
+          "type": {
+             "id": "Q7540126",
+             "name": "headquarters",
+          }
         },
-        "P856": {}
-      }
+        {
+          "id": "P856",
+          "name": "official website",
+        }
+      ]
     }
 
 
 ## Property proposal protocol
+
+
 
 ## Settings specification
 
