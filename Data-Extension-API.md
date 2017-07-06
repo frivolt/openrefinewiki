@@ -17,8 +17,7 @@ sources. We would need to create an MQL endpoint for Wikidata and add it as a de
      * MQL is rich: it supports retrieving nested properties natively and can integrate constraints on the properties to fetch (e.g. retrieve their count instead of their values)
    * Cons:
      * MQL basically died when Freebase was shut down, even the reference guide of the language has to be retrieved [via the Internet Archive](https://web.archive.org/web/20160305144638/http://mql.freebaseapps.com/index.html)
-     * it will be hard for data providers to implement a MQL service (this is a rich query language with few existing open source implementations as far as I can tell), and [Wikidata is probably not going to implement that
-     * soon](https://phabricator.wikimedia.org/T85181)
+     * it will be hard for data providers to implement a MQL service (this is a rich query language with few existing open source implementations as far as I can tell), and [Wikidata is probably not going to implement that soon](https://phabricator.wikimedia.org/T85181)
      * MQL is not enough, we also need other APIs to suggest properties given a particular type (Freebase had a custom API for that) and for property auto-completion
 2. Add new methods to the existing reconciliation API. Reconciliation services will update their service metadata to expose this new feature.
    * Pros:
@@ -48,11 +47,21 @@ property. The user can run data extension again from that column.
 # Specification
 
 Services supporting data extension must add an `extend` field in their service metadata. This field is expected to have the following subfields, all optional:
-* `propose_properties` stores the endpoint of an API which will be used to suggest properties to fetch (see specification below). The field contains an object with a `service_url` and `service_path` which will be concatenated to obtain the URL where the
-* endpoint is available, just like the other services in the metadata. If this field is not provided, no property will be suggested in the dialog (the user will have to input them manually).
+* `propose_properties` stores the endpoint of an API which will be used to suggest properties to fetch (see specification below). The field contains an object with a `service_url` and `service_path` which will be concatenated to obtain the URL where the endpoint is available, just like the other services in the metadata. If this field is not provided, no property will be suggested in the dialog (the user will have to input them manually).
 * `property_settings` stores the specification of a form where the user will be able to configure how a given property should be fetched (see specification below). If this field is not provided, the user will not be proposed with settings.
 
 The service endpoint must also accept a new parameter `extend` (in addition to `queries` which is used for reconciliation). Its behaviour is described in the following section.
+
+Example service metadata:
+
+    "extend": {
+      "fetch_column": {
+        "service_url": "https://tools.wmflabs.org/openrefine-wikidata",
+        "service_path": "/en/fetch_properties_by_batch"
+      },
+      "property_settings": []
+    }
+
 
 ## Data extension protocol
 
@@ -194,8 +203,42 @@ Example of a full response (for the example query above):
 
 ## Property proposal protocol
 
+The role of the property proposal endpoint is to suggest a list of properties to fetch. As only input, it accepts the type a column was reconciled against, and proposes relevant properties for that type. If no type is provided, it should suggest properties for a column reconciled against no type.
 
+The type is specified by its id in the `type` GET parameter of the endpoint, as follows:
+
+https://tools.wmflabs.org/openrefine-wikidata/en/propose_properties?type=Q3354859
+
+The endpoint returns a JSON response as follows:
+
+    {
+      "properties": [
+        {
+          "id": "P969",
+          "name": "located at street address"
+        },
+        {
+          "id": "P1449",
+          "name": "nickname"
+        },
+        {
+          "id": "P17",
+          "name": "country"
+        },
+      ],
+      "type": "Q3354859"
+    }
+
+This endpoint must support JSONP via the `callback` parameter (just like all other endpoints of the reconciliation service).
 
 ## Settings specification
 
+We need to figure out how the service can specify which settings it accepts for the properties. Here are a few examples of settings we want to support for Wikidata:
+* return counts instead of the lists of values
+* fetch only one claim (the preferred one)
+* fetch claims that hold at a given date
+* only fetch referenced claims
 
+So, the reconciliation service should be able to specify a form which would be exposed to the user, and would obtain the values of that form for each property.
+
+TODO?
