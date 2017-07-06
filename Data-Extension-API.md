@@ -94,12 +94,23 @@ The service returns a JSON response formatted as follows:
 
 Cell objects are JSON objects which contain the representation of an OpenRefine cell.
 * an object with a single `"str"` key and a string value for it represents
-  a cell with a (bare) string in it
+  a cell with a (bare) string in it.
+  Example: `{"str": "193.54.0.0/15"}`
+
 * an object with `"id"` and `"name"` represents a reconciled value
   (from the same reconciliation service). It will be stored as 
   a matched cell (with maximum reconciliation score).
+  Example: `{"name": "Warsaw","id": "Q270"}`
 
-Example:
+* an empty object `{}` represents an empty cell
+
+* an object with `"date"` and an ISO-formatted date string represents a point in time.
+  Example: `{"date": "1987-02-01T00:00:00+00:00"}`
+
+* an object with `"float"` and a numerical value represents a quantity:
+  Example: `{"float":48.2736}`
+
+Example of a full response (for the example query above):
 
     {
       "rows": {
@@ -117,6 +128,9 @@ Example:
           "P856": [
             {
               "str": "http://www.polkomtel.com.pl/english"
+            },
+            {
+              "str": "http://www.polkomtel.com.pl/"
             }
           ]
         },
