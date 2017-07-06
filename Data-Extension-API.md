@@ -241,4 +241,9 @@ We need to figure out how the service can specify which settings it accepts for 
 
 So, the reconciliation service should be able to specify a form which would be exposed to the user, and would obtain the values of that form for each property.
 
-TODO?
+For Freebase, the user had to input the properties directly as a JSON payload which was included in the MQL query:
+![MQL constraint for Freebase](http://pintoch.ulminfo.fr/0113381cff/mql_constraints.png)
+
+It is very easy to keep this setup and let the user pass some arbitrary JSON to the data extension service which will interpret it in some way, but it would be much nicer to have a proper form that would depend on the service.
+
+TODO
