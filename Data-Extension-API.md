@@ -55,9 +55,9 @@ The service endpoint must also accept a new parameter `extend` (in addition to `
 Example service metadata:
 
     "extend": {
-      "fetch_column": {
+      "propose_properties": {
         "service_url": "https://tools.wmflabs.org/openrefine-wikidata",
-        "service_path": "/en/fetch_properties_by_batch"
+        "service_path": "/en/propose_properties"
       },
       "property_settings": []
     }
