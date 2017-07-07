@@ -203,11 +203,13 @@ Example of a full response (for the example query above):
 
 ## Property proposal protocol
 
-The role of the property proposal endpoint is to suggest a list of properties to fetch. As only input, it accepts the type a column was reconciled against, and proposes relevant properties for that type. If no type is provided, it should suggest properties for a column reconciled against no type.
+The role of the property proposal endpoint is to suggest a list of properties to fetch. As only input, it accepts GET parameters:
+* the `type` of a column was reconciled against. If no type is provided, it should suggest properties for a column reconciled against no type.
+* a `limit` on the number of results to return
 
 The type is specified by its id in the `type` GET parameter of the endpoint, as follows:
 
-https://tools.wmflabs.org/openrefine-wikidata/en/propose_properties?type=Q3354859
+https://tools.wmflabs.org/openrefine-wikidata/en/propose_properties?type=Q3354859&limit=3
 
 The endpoint returns a JSON response as follows:
 
@@ -226,7 +228,8 @@ The endpoint returns a JSON response as follows:
           "name": "country"
         },
       ],
-      "type": "Q3354859"
+      "type": "Q3354859",
+      "limit": 3
     }
 
 This endpoint must support JSONP via the `callback` parameter (just like all other endpoints of the reconciliation service).
