@@ -27,7 +27,7 @@ Returns boolean indicating whether {{{s}}} contains {{{sub}}}. For example, {{{c
 
 Returns integer indicating postion of {{{sub}}} within {{{s}}} or {{{-1}}} if {{{sub}}} is not found. For example, {{{indexOf("food", "oo")}}} returns {{{2}}}, whereas {{{indexOf("food", "ee")}}} returns {{{-1}}}.
 
-Returning {{{-1}}} is equivalent returning boolean {{{false}}}, which is very useful for finding strings that do **NOT** contain {{{sub}}}.
+Returning {{{-1}}} is equivalent to returning boolean {{{false}}}, which is very useful for finding strings that do **NOT** contain {{{sub}}}.
 
 =Basic String Modification=
 
