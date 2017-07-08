@@ -23,6 +23,11 @@ Returns boolean indicating whether {{{s}}} ends with {{{sub}}}. For example, {{{
 
 Returns boolean indicating whether {{{s}}} contains {{{sub}}}. For example, {{{contains("food", "oo")}}} returns {{{true}}} whereas {{{contains("food", "ee")}}} returns {{{false}}}. You could also write the first case as {{{"food".contains("oo")}}}.
 
+===indexOf(string s, string sub)===
+
+Returns integer indicating postion of {{{sub}}} within {{{s}}} or -1 if {{{sub}}} is not found. For example, {{{indexOf("food", "oo")}}} returns {{{2}}}, whereas {{{indexOf("food", "ee")}}} returns {{{-1}}}.
+
+Returning {{{-1}}} is equivalent returning boolean {{{false}}}, which is very useful for finding strings that do contain {{{sub}}}.
 
 =Basic String Modification=
 
