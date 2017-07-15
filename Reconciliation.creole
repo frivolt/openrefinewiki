@@ -1,3 +1,5 @@
+//This page is also available in [[Japanese|http://qiita.com/yayamamo/items/eade3e5788e6f359bce7]].//
+
 Reconciliation is a semi-automated process of matching text names to database IDs (keys). This is semi-automated because in some cases, machine alone is not sufficient and human judgement is essential. For example, given "Ocean's Eleven" as the name of a film, should it be matched to
 
 * the original 1960 "Ocean's Eleven" ([[Wikidata item Q464933|https://www.wikidata.org/wiki/Q464933]]), or
