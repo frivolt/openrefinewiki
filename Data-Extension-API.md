@@ -44,6 +44,8 @@ This document proposes to follow the second approach and fleshes out a protocol 
 5. Once the user has clicked "OK", columns are fetched and added to the project. Columns corresponding to other items from the service are directly reconciled, and the column is marked as reconciled against the type suggested by the service for that
 property. The user can run data extension again from that column.
 
+[GIF Screencast](http://pintoch.ulminfo.fr/92dcdd20f3/recorded.gif)
+
 # Specification
 
 Services supporting data extension must add an `extend` field in their service metadata. This field is expected to have the following subfields, all optional:
