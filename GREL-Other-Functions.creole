@@ -58,7 +58,7 @@ will output like this:
 
 {{{York en route:::Anthony Eden:::President Eisenhower}}}
 
-===cross(string value, string projectName, string columnName)===
+===cross(cell c, string projectName, string columnName)===
 
 Returns an array of zero or more rows in the project {{{projectName}}} for which the cells in their column {{{columnName}}} have the same content as cell {{{c}}} (similar to a lookup).
 
@@ -89,7 +89,7 @@ Consider 2 projects with the following data:
 Now in the project "Christmas Gifts", we want to add a column containing the addresses of the recipients, which are in project "My Address Book". So we can invoke the command {{{Add column based on this column}}} on the "recipient" column in "Christmas Gifts" and enter this expression:
 
 {{{
-  value.cross("My Address Book", "friend")[0].cells["address"].value
+  cell.cross("My Address Book", "friend")[0].cells["address"].value
 }}}
 
 When that command is applied, the result is
@@ -100,6 +100,10 @@ When that command is applied, the result is
 |lamp|mary|50 Broadway Ave.|
 |clock|john|120 Main St.|
 
+**NOTE: The [[development version | Get Development Version]] of OpenRefine introduces [[a change to the cross() function|https://github.com/OpenRefine/OpenRefine/issues/1204]]. It takes a string as its first argument instead of a value. Example:
+{{{
+value.cross("My Address Book", "friend")[0].cells["address"].value**
+}}}
 
 ===facetCount(choiceValue, string facetExpression, string columnName)===
 
