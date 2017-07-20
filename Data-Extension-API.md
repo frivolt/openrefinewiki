@@ -232,17 +232,64 @@ This endpoint must support JSONP via the `callback` parameter (just like all oth
 
 ## Settings specification
 
-We need to figure out how the service can specify which settings it accepts for the properties. Here are a few examples of settings we want to support for Wikidata:
-* return counts instead of the lists of values
-* fetch only one claim (the preferred one)
-* fetch claims that hold at a given date
-* only fetch referenced claims
+The `property_settings` field in the service metadata allows the service to declare it accepts some settings for the properties it fetches. They are specified as a list of JSON objects which define the fields which should be exposed to the user.
 
-So, the reconciliation service should be able to specify a form which would be exposed to the user, and would obtain the values of that form for each property.
+    "property_settings": [
+      {
+        "default": 0,
+        "type": "number",
+        "label": "Limit",
+        "name": "limit",
+        "help_text": "Maximum number of values to return per row (0 for no limit)"
+      },
+      {
+        "default": "any",
+        "label": "Ranks",
+        "name": "rank",
+        "type": "select",
+        "choices": [
+          {
+            "value": "any",
+            "name": "Any rank"
+          },
+          {
+            "value": "best",
+            "name": "Only the best rank"
+          },
+          {
+            "value": "no_deprecated",
+            "name": "Preferred and normal ranks"
+          }
+        ],
+        "help_text": "Filter statements by rank"
+      },
+      {
+        "default": "any",
+        "label": "References",
+        "name": "references",
+        "type": "select",
+        "choices": [
+          {
+            "value": "any",
+            "name": "Any statement"
+          },
+          {
+            "value": "referenced",
+            "name": "At least one reference"
+          },
+          {
+            "value": "no_wiki",
+            "name": "At least one non-wiki reference"
+          }
+        ],
+        "help_text": "Filter statements by their references"
+      },
+      {
+        "default": false,
+        "type": "checkbox",
+        "label": "Return counts instead of values",
+        "name": "count",
+        "help_text": "The number of values will be returned."
+      }
+    ]
 
-For Freebase, the user had to input the properties directly as a JSON payload which was included in the MQL query:
-![MQL constraint for Freebase](http://pintoch.ulminfo.fr/0113381cff/mql_constraints.png)
-
-It is very easy to keep this setup and let the user pass some arbitrary JSON to the data extension service which will interpret it in some way, but it would be much nicer to have a proper form that would depend on the service.
-
-TODO
