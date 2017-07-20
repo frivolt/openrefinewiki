@@ -100,7 +100,7 @@ When that command is applied, the result is
 |lamp|mary|50 Broadway Ave.|
 |clock|john|120 Main St.|
 
-**NOTE: The [[development version | Get Development Version]] of OpenRefine introduces [[a change to the cross() function|https://github.com/OpenRefine/OpenRefine/issues/1204]]. It takes a string as its first argument instead of a value. Example:**
+**NOTE: The [[development version | Get Development Version]] of OpenRefine introduces [[a change to the cross() function|https://github.com/OpenRefine/OpenRefine/issues/1204]]. It takes a string as its first argument instead of a cell. Example:**
 {{{
 value.cross("My Address Book", "friend")[0].cells["address"].value
 }}}
