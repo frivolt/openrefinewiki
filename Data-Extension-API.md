@@ -234,35 +234,23 @@ This endpoint must support JSONP via the `callback` parameter (just like all oth
 
 The `property_settings` field in the service metadata allows the service to declare it accepts some settings for the properties it fetches. They are specified as a list of JSON objects which define the fields which should be exposed to the user.
 
-    "property_settings": [
+Each setting object looks like this:
+
       {
         "default": 0,
         "type": "number",
         "label": "Limit",
         "name": "limit",
         "help_text": "Maximum number of values to return per row (0 for no limit)"
-      },
-      {
-        "default": "any",
-        "label": "Ranks",
-        "name": "rank",
-        "type": "select",
-        "choices": [
-          {
-            "value": "any",
-            "name": "Any rank"
-          },
-          {
-            "value": "best",
-            "name": "Only the best rank"
-          },
-          {
-            "value": "no_deprecated",
-            "name": "Preferred and normal ranks"
-          }
-        ],
-        "help_text": "Filter statements by rank"
-      },
+      }
+
+It is essentially a definition of a form field in JSON, with self-explanatory fields.
+The `type` field specifies the type of the form field (among `number`, `select`, `text`, `checkbox`).
+The field `default` gives the default value of the form: the service must assume this value if the
+client does not specify this setting.
+
+For the `select` field, an additional `choices` field defines the possible choices, with both labels and values:
+
       {
         "default": "any",
         "label": "References",
@@ -283,13 +271,17 @@ The `property_settings` field in the service metadata allows the service to decl
           }
         ],
         "help_text": "Filter statements by their references"
-      },
-      {
-        "default": false,
-        "type": "checkbox",
-        "label": "Return counts instead of values",
-        "name": "count",
-        "help_text": "The number of values will be returned."
       }
-    ]
 
+When querying the service for rows, the client can pass an optional `settings` object in each of the requested columns:
+
+     {
+        "id": "P342",
+        "settings": {
+           "limit": "20",
+           "references": "referenced",
+        }
+     }
+
+Each key of the settings object must correspond to one form field proposed by the service. The value of that key is the value of the form field represented as a string (for uniformity and consistency with JSON form serialization).
+The settings are intended to modify the results returned by the service: of course, the semantics of the settings is up to the service (as the service defines itself what settings it accepts).
