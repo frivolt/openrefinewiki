@@ -180,12 +180,6 @@ Example of a full response (for the example query above):
           ]
         }
       },
-      "ids": [
-        "Q7205598",
-        "Q218765",
-        "Q845632",
-        "Q5661356"
-      ],
       "meta": [
         {
           "id": "P159",
