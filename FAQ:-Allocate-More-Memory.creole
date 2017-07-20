@@ -4,7 +4,7 @@
 
 If you plan to use more than 3 Gigs of RAM for OpenRefine you need to
 
-* [[download and install a 64bit Java JDK|https://www.java.com/en/download/help/index_installing.xml?os=All+Platforms&j=8&n=20]]
+* [[download and install a 64bit Java JDK|http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk]]
 
 and set it as your default {{{JAVA_HOME}}}.
 
