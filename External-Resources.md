@@ -162,6 +162,7 @@ This page list tutorials and resources developed outside the OpenRefine wiki. It
 + [Exemples d'usages d'OpenRefine sur le Wiki Bibliopedia](http://bibliopedia.fr/wiki/OpenRefine)
 + [L'attribution d'un code de domaine aux notices en provenance du Sudoc | Punktokomo ;](http://punktokomo.abes.fr/2013/05/27/lattribution-dun-code-de-domaine-aux-notices-en-provenance-du-sudoc/)
 + [Préparer un corpus de tweets avec open/google Refine pour le visualiser dans Gephi](http://blog.sociographie.net/post/2013/04/09/Pr%C3%A9parer-un-corpus-de-tweets-avec-open/google-Refine)
++ [Playlist YouTube dédiée à des tutoriaux avancés d'Open Refine, en français](https://www.youtube.com/playlist?list=PL8iMgiAEwz6RKvqDU1AICqviiSKX-IFk1)
 
 # Japanese
 + [特許データのゴミ取り（名寄せ）へのOpen Refineの利用可能性（1）](http://belvedere4pat.sakura.ne.jp/wp/?p=25)
