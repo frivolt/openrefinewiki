@@ -36,10 +36,9 @@ $('#new-html-element-id').html($.i18n._('dictionaryname')["newkey"]);
 ===Adding a new language===
 The language dictionaries are stored in the {{{langs}}} subdirectory for the module e.g.
 * https://github.com/OpenRefine/OpenRefine/tree/master/main/webapp/modules/langs/ for the main interface
-* https://github.com/OpenRefine/OpenRefine/tree/extensions/freebase/module/langs/ for freebase extension
 * https://github.com/OpenRefine/OpenRefine/tree/extensions/gdata/module/langs/ for google spreadsheet connection
 
-To add support for a new language, copy {{{translation-default.json}}} to {{{translation-<locale>.json}}} and have your translator translate all the value strings (ie right hand side).
+To add support for a new language, copy {{{translation-en.json}}} to {{{translation-<locale>.json}}} and have your translator translate all the value strings (ie right hand side). This is best done [[with Weblate|https://hosted.weblate.org/engage/openrefine/?utm_source=widget]].
 
 By default, the system tries to load the language file corresponding to the currently in-use browser language. To override this setting a new menu item ("Language Settings") has been added at the index page.
 To support a new language file, the developer should add a corresponding entry to the dropdown menu in this file: {{{/OpenRefine/main/webapp/modules/core/scripts/index/lang-settings-ui.html}}}. The entry should look like:
@@ -49,7 +48,7 @@ To support a new language file, the developer should add a corresponding entry t
 
 NOTE: Gettext .po files are better supported for translation, so in the future we may switch to those and use a PO to JSON converter at build time.
 
-Currently supported languages include English and Italian.
+Currently supported languages include English, Spanish, Chinese, French, Hebrew, Italian and Japanese.
 
 == Server / Back end ==
 Additional work needs to be done on to localize the Refine server, so things like error messages, undo history, etc may appear in non-localized (ie English) form.
