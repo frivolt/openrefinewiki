@@ -18,7 +18,7 @@ Example: If you have 2 Gigs of memory and run Windows Vista or 7, you might only
 
 === Side note about dealing with larger datasets ===
 
-If your project is big enough to need more than the default amount of memory, you probably also want to consider turning off "detect types automatically" on import as well.  It's convenient, but less efficient than explicitly converting any columns that you need as a data type other than the default "string" type.
+If your project is big enough to need more than the default amount of memory, you probably also want to consider turning off "Parse cell text into numbers, dates, ..." on import as well.  It's convenient, but less efficient than explicitly converting any columns that you need as a data type other than the default "string" type.
 
 ===Windows===
 
