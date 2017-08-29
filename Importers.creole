@@ -4,10 +4,15 @@ To use OpenRefine on some data, you must first import it into Refine. It's like 
 
 OpenRefine understands a variety of data file formats. Currently, it tries to guess the format based on the file extension. For example, {{{.xml}}} files are of course in XML. By default, an unknown file extension is assumed to be either tab-separated value (TSV) or comma-separated value (CSV). OpenRefine looks for a tab character; if one is found, it assumes TSV.
 
-The formats currently supported (in version 2.0) include:
+The formats currently supported (in version 2.7) include:
 
 * TSV, CSV, or values separated by a custom separator you specify
+* Line-based text files
+* Fixed-width field text files
+* PC-Axis text files
+* MARC files
 * Excel (.xls, xlsx)
+* Open Document Format spreadsheets (.ods)
 * XML, RDF as XML
 * JSON
 * Google Spreadsheets
