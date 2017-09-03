@@ -30,11 +30,11 @@ toDate(value,"dd/mm/YYYY H:m:s")
 
 When {{{o}}} is a date, format specifies how to format the date.
 
-===diff(date d1, date d2, optional string timeUnit)===
+===diff(date d1, date d2, string timeUnit)===
 
-For dates, returns the difference in given time units ("minutes", "hours", "days", "weeks", "months", "years"...)
+For dates, returns the difference in given time units (eg. "minutes", "hours", "days", "weeks", "months", "years")
 
-Example : 
+Example: 
 
 {{{diff(cells['date1'].value, cells['date2'].value, "days")}}}
 
