@@ -32,7 +32,7 @@ When {{{o}}} is a date, format specifies how to format the date.
 
 ===diff(date d1, date d2, optional string timeUnit)===
 
-For dates, returns the difference in given time units ("minutes", "hours", "days", "weeks", "months","years")
+For dates, returns the difference in given time units ("minutes", "hours", "days", "weeks", "months", "years"...)
 
 Example : 
 
