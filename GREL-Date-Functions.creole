@@ -38,6 +38,8 @@ Example:
 
 {{{diff(cells['date1'].value, cells['date2'].value, "days")}}}
 
+In case the value is negative you should invert date1 and date2 or multiply by -1. 
+
 ===inc(date d, number value, string unit)===
 
 Returns a date changed by the given amount in the given unit of time. Unit defaults to 'hour'.
