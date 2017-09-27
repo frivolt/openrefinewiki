@@ -25,10 +25,10 @@ The process that generates the key from a string value is the following (note th
 * remove leading and trailing whitespace
 * change all characters to their lowercase representation
 * remove all punctuation and control characters
+* normalize extended western characters to their ASCII representation (for example "gödel" → "godel")
 * split the string into whitespace-separated tokens
 * sort the tokens and remove duplicates
 * join the tokens back together
-* normalize extended western characters to their ASCII representation (for example "gödel" → "godel")
 
 If you're curious, the code that performs this is [[here|http://github.com/OpenRefine/OpenRefine/blob/master/main/src/com/google/refine/clustering/binning/FingerprintKeyer.java]].
 
