@@ -68,3 +68,9 @@ If you have downloaded the ".tar.gz" package and you start OpenRefine from the c
 
 The number doesn't need to be a multiple of 1024, but always check that your computer is working properly, leaving a fair amount of RAM for the browser and the operating system to function. 
 To make the change permanent/default, edit the refine.ini file and specify the new value.
+
+If you don't want to set this option on the command line each time, you can also set it in the 'refine.ini' file. Edit the line
+
+{{{REFINE_MEMORY=1024M}}}
+
+Make sure it is not commented out (doesn't start with a '#' character) and change '1024' to a higher value. Save the file, and when you next start OpenRefine it will use this value.
