@@ -18,6 +18,7 @@
 * [[External Tutorials|External Resources]] in english, spanish, german, french and japanese
 * [[Recipes]] where folks might have solved a similar problem as yours
 * [[Mailing List|http://groups.google.com/group/openrefine/]]
+* [[Chat on Gitter|https://gitter.im/OpenRefine/OpenRefine]]
 * [[File bugs and feature requests here|issues]]
 
 === Back for More?
