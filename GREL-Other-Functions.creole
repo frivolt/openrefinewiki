@@ -100,9 +100,19 @@ When that command is applied, the result is
 |lamp|mary|50 Broadway Ave.|
 |clock|john|120 Main St.|
 
-**NOTE: The [[development version | Get Development Version]] of OpenRefine introduces [[a change to the cross() function|https://github.com/OpenRefine/OpenRefine/issues/1204]]. It takes a string as its first argument instead of a cell. Example:**
+To extract more than one value from the result of a cross, combine with the {{{forEach()}}} function to iterate over the array and the {{{forNonBlank()}}} function to prevent errors caused by null values present in the looked up column, e.g.
+
 {{{
-value.cross("My Address Book", "friend")[0].cells["address"].value
+  forEach(cell.cross("My Address Book", "friend"),r,forNonBlank(r.cells["address"].value,v,v,"")).join("|")
+}}}
+
+**NOTE: The [[development version | Get Development Version]] of OpenRefine introduces two changes to the cross() function:
+# It takes either a cell or a string as its first argument [[#1204|https://github.com/OpenRefine/OpenRefine/issues/1204]]
+# The cross function now accepts a 4th parameter defining a regular expression separator for splitting multi-value field values when joining projects [[#1290|https://github.com/OpenRefine/OpenRefine/pull/1290]]
+
+Example:**
+{{{
+forEach(value.cross("My Address Book", "friend", ","),r,forNonBlank(r.cells["address"].value,v,v,"")).join("|")
 }}}
 
 ===facetCount(choiceValue, string facetExpression, string columnName)===
