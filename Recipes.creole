@@ -108,6 +108,12 @@ then you select only the range between the 2nd and 4th and you get
 
 then you join them together with the same separator character ":" and you get what you wanted "b:c:d".
 
+===Unique separator for split / join multi-valued cells===
+
+Do not choose a string as separator that might be present somewhere in your data. Consider using these uncommon UTF-8 strings via copy & paste:
+* Unit Separator: ␟ (U+241F)
+* Record Separator: ␞ (U+241E) 
+
 ===Pad with leading zeroes===
 
 If you need to fill out a number with for example leading zeroes up to four characters try,
