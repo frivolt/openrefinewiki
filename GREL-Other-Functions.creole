@@ -110,9 +110,14 @@ To extract more than one value from the result of a cross, combine with the {{{f
 # It takes either a cell or a string as its first argument [[#1204|https://github.com/OpenRefine/OpenRefine/issues/1204]]
 # The cross function now accepts a 4th parameter defining a regular expression separator for splitting multi-value field values when joining projects [[#1290|https://github.com/OpenRefine/OpenRefine/pull/1290]]
 
-Example:**
+Example for splitting multi-value field values in from column and extract more than one value from the results:
 {{{
 forEach(value.cross("My Address Book", "friend", ","),r,forNonBlank(r.cells["address"].value,v,v,"")).join("|")
+}}}
+
+Example for splitting multi-value field values in from column, extract only the first value from the results and return a custom string if there is a match in foreign key ("friend") but no value in target column ("address"):
+{{{
+forEach(value.split(","),v,forNonBlank(v.cross("My Address Book", "friend", ",")[0].cells["address"].value,x,x,"!")).join("|")
 }}}
 
 ===facetCount(choiceValue, string facetExpression, string columnName)===
