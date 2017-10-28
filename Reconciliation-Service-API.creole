@@ -42,13 +42,11 @@ When a service is called with just a JSONP {{{callback}}} parameter and no other
 * {{{"name"}}}: the name of the service, which will be used to display the service in the reconciliation menu;
 * {{{"identifierSpace"}}}: an URI for the type of identifiers returned by the service;
 * {{{"schemaSpace"}}}: an URI for the type of types understood by the service.
-
-The {{{"view"}}} parameter can be used to specify a way to construct URLs to view a given item from its identifier:
-
-{{{"view": {"url":"http://example.com/object/{{id}}"} }}} 
+* {{{"view"}}} an object with a template URL to view a given item from its identifier:
+   {{{"view": {"url":"http://example.com/object/{{id}}"} }}} 
 
 The last two parameters are mainly useful to assert that the identifiers returned by two different reconciliation services mean the same thing.
-Other fields are optional: they are used to specify the URLs for the other endpoints (suggest, preview) described in the next sections.
+Other fields are optional: they are used to specify the URLs for the other endpoints (suggest, preview and extend) described in the next sections.
 
 Here are two live examples:
 # https://tools.wmflabs.org/openrefine-wikidata/en/api
@@ -56,54 +54,24 @@ Here are two live examples:
 
 {{{
 {
-  "name" : "Netflix Reconciliation through Freebase",
-  "identifierSpace" : "http://rdf.freebase.com/ns/authority.netflix.movie",
-  "schemaSpace" : "http://rdf.freebase.com/ns/type.object.id",
+  "name" : "Wikidata Reconciliation for OpenRefine (en)",
+  "identifierSpace" : "http://www.wikidata.org/entity/",
+  "schemaSpace" : "http://www.wikidata.org/prop/direct/",
   "view" : {
-    "url" : "http://www.netflix.com/WiMovie//{{id}}"
+    "url" : "https://www.wikidata.org/wiki/{{id}}"
   },
+  "defaultTypes" : [],
   "preview" : {
-    "url" : "http://netflix-reconcile.freebaseapps.com/preview/{{id}}",
-    "width" : 430,
-    "height" : 300
+    ...
   },
   "suggest" : {
-    "type" : {
-      "service_url" : "http://netflix-reconcile.freebaseapps.com",
-      "service_path" : "/suggest_type",
-      "flyout_service_url" : "http://www.freebase.com"
-    },
-    "property" : {
-      "service_url" : "http://netflix-reconcile.freebaseapps.com",
-      "service_path" : "/suggest_property",
-      "flyout_service_url" : "http://www.freebase.com"
-    },
-    "entity" : {
-      "service_url" : "http://netflix-reconcile.freebaseapps.com",
-      "service_path" : "/suggest",
-      "flyout_service_path" : "/flyout"
-    }
+    ...
   },
-  "defaultTypes" : []
+  "extend" : {
+    ...
+  },
 }
 }}}
-
-Note that Freebase itself supports at least 3 identifier spaces:
-
-* human-friendly IDs such as /en/apple_inc and /government/politician
-* machine ID (mid) such as /m/0k8z
-* GUID such as #9202a8c04000641f800000000000451e (deprecated)
-
-Thus, it's not enough to say that the identifier space is http://www.freebase.com/; we have to use the URI of the specific property (in this case, mid).
-
-The schema space is the identifier space for types and properties. It might be different from the entities' identifier space.
-
-The other fields are for
-
-* formulating URLs to a full topic page or to a small preview page for a given entity
-* customizing the suggest widgets used in various places in the reconciliation UI
-* default types for reconciliation - TODO needs more documentation
-
 
 ==Query Request==
 
@@ -118,15 +86,15 @@ A call to a reconciliation service API for a single query looks like either of t
 
 If the query parameter is a string, then it's an abbreviation of {{{query={"query":...string...}}}}. Here are two live examples:
 
-# http://standard-reconcile.freebaseapps.com/reconcile?query=boston
-# http://standard-reconcile.freebaseapps.com/reconcile?query={%22query%22:%22boston%22,%22type%22:%22/music/musical_group%22}
+# https://tools.wmflabs.org/openrefine-wikidata/en/api?query=boston
+# https://tools.wmflabs.org/openrefine-wikidata/en/api?query={%22query%22:%22boston%22,%22type%22:%22Q515%22}
 
 The query json object literal has a few fields
 
 |=Parameter|=Description|
 |"query"|A string to search for. Required.|
 |"limit"|An integer to specify how many results to return. Optional.|
-|"type"|A single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "/government/politician" as a Freebase type). Optional.|
+|"type"|A single string, or an array of strings, specifying the types of result e.g., person, product, ... The actual format of each type depends on the service (e.g., "Q515" as a Wikidata type). Optional.|
 |"type_strict"|A string, one of "any", "all", "should". Optional.|
 |"properties"|Array of json object literals. Optional|
 
@@ -135,7 +103,7 @@ Each json object literal of the "properties" array is of this form
 {{{
   {
     "p" : string, property name, e.g., "country", or
-    "pid" : string, property ID, e.g., "/people/person/nationality" in the Freebase ID space
+    "pid" : string, property ID, e.g., "P17" as a Wikidata property ID
     "v" : a single, or an array of, string or number or object literal, e.g., "Japan"
   }
 }}}
