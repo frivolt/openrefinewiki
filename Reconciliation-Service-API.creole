@@ -224,6 +224,9 @@ The {{{service_url}}} field is required and it should look like this: {{{http://
 
 The Freebase Suggest widgets embedded in OpenRefine will concatenate {{{_url}}} and {{{_path}}} to make the full URL. Refer to [[the specification for a Suggest API|Suggest Api]] for details.
 
+=Data Extension=
+
+From OpenRefine 2.7.2 it will be possible to fetch values from reconcilied sources natively. This is only possible for the reconciliation endpoints that support this additional feature, described at [[Data Extension API]].
 
 =OpenRefine Integration & Testing=
 
