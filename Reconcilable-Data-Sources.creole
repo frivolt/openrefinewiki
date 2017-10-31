@@ -85,7 +85,14 @@ OCCRP provides a public reconciliation API endpoint which allows reconciliation 
 
 * [[Official Website|https://data.occrp.org]]
 * [[Documentation|https://data.occrp.org/help/reconcile]]
-* [[Endpoint|https://data.occrp.org/api/freebase/reconcile]]  
+* [[Endpoint|https://data.occrp.org/api/freebase/reconcile]]
+
+===Nomisma===
+
+Nomisma provides data about numismatics:
+
+* [[Blog post|https://numishare.blogspot.co.uk/2017/10/nomisma-launches-openrefine.html]]
+* [[Endpoint|http://nomisma.org/apis/reconcile]]
 
 ==Biodiversity Researchers==
 
