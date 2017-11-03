@@ -1,6 +1,6 @@
 //The protocol OpenRefine instances use to communicate with a Broker.//
 
-NOTE: this is still work in progress and not currently implemented in OpenRefine.
+NOTEs: this is still work in progress and not currently implemented in OpenRefine.
 
 = Introduction =
 
