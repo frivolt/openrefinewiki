@@ -23,7 +23,7 @@ value.toDate('MM/yy','MMM-yy').toString('yyyy-MM')
 
 For a date of the form: "1/4/2012 13:30:00" use GREL function: 
 {{{
-toDate(value,"dd/mm/YYYY H:m:s")
+value.toDate('d/M/y H:m:s')
 }}}
 
 ===toString(o, optional string format)===
