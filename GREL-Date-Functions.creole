@@ -26,7 +26,7 @@ For a date of the form: "1/4/2012 13:30:00" use GREL function:
 value.toDate('d/M/y H:m:s')
 }}}
 
-Here is the list of abbreviations : 
+Here is the list of pattern letters: 
 
 |=Letter|=Date or Time Component|=Presentation|=Examples|
 |G|Era designator|Text|AD|
