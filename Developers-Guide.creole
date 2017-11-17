@@ -4,7 +4,7 @@
 
 == Build and Run OpenRefine from an IDE (easier) ==
 
-OpenRefine' source comes with [[Eclipse|http://www.eclipse.org/]] project files (which can also be imported into [[NetBeans|http://netbeans.org/]]). 
+OpenRefine' source comes with [[Eclipse|http://www.eclipse.org/]] project files. 
 
 === Eclipse ===
 
@@ -29,21 +29,6 @@ Locate the directory where you've checked out Google Refine. Eclipse should dete
 Locate the directory where you've checked out OpenRefine. Eclipse should detect the sub-projects "grefine", "grefine-server", etc.
 
   Note that the above steps are already packaged for you if you look for the {{{Refine.launch}}} file in the {{{server/IDEs/eclipse}}} folder inside the OpenRefine source code. To execute, right click on that file, select "Run As...", then click on "Refine", this should run OpenRefine with the above parameters already set. After the first execution, this command should be updated automatically to your list of Run launches so you can find it there.
-
-=== Netbeans ===
-
-# make sure to import the eclipse project and not start one from scratch (either from the "import" command in the File menu, or thru importing directly via svn)
-# in the "run" configuration, in the "(x)= arguments" tab, you need to place this line in the VM configuration (VM Options in NetBeans) text area:
-{{{
--Drefine.autoreloading=true  -Drefine.webapp=src/main/webapp
-}}}
-# apply, close the dialog and then click the green run button and voila', you should see it run and open your default browser.
-
-If you want OpenRefine logs to be more verbose, append this to the line above
-
-{{{
--Drefine.verbosity=TRACE
-}}}
 
 == Build and Run OpenRefine from the command line using Apache Ant (Fairly Easy and recommended for Windows users) ==
 
